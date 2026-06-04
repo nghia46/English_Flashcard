@@ -401,6 +401,406 @@
       "meaning": "tìm thấy"
     },
     {
+      "word": "any",
+      "meaning": "bất kỳ"
+    },
+    {
+      "word": "new",
+      "meaning": "mới"
+    },
+    {
+      "word": "work",
+      "meaning": "công việc, làm việc"
+    },
+    {
+      "word": "part",
+      "meaning": "phần"
+    },
+    {
+      "word": "take",
+      "meaning": "lấy"
+    },
+    {
+      "word": "get",
+      "meaning": "nhận, đạt được"
+    },
+    {
+      "word": "place",
+      "meaning": "nơi chốn"
+    },
+    {
+      "word": "made",
+      "meaning": "đã làm"
+    },
+    {
+      "word": "live",
+      "meaning": "sống"
+    },
+    {
+      "word": "where",
+      "meaning": "ở đâu"
+    },
+    {
+      "word": "after",
+      "meaning": "sau"
+    },
+    {
+      "word": "back",
+      "meaning": "trở lại"
+    },
+    {
+      "word": "little",
+      "meaning": "nhỏ, ít"
+    },
+    {
+      "word": "only",
+      "meaning": "chỉ"
+    },
+    {
+      "word": "round",
+      "meaning": "tròn, vòng quanh"
+    },
+    {
+      "word": "man",
+      "meaning": "người đàn ông"
+    },
+    {
+      "word": "year",
+      "meaning": "năm"
+    },
+    {
+      "word": "came",
+      "meaning": "đã đến"
+    },
+    {
+      "word": "show",
+      "meaning": "chỉ ra, trình bày"
+    },
+    {
+      "word": "every",
+      "meaning": "mọi"
+    },
+    {
+      "word": "good",
+      "meaning": "tốt"
+    },
+    {
+      "word": "me",
+      "meaning": "tôi"
+    },
+    {
+      "word": "give",
+      "meaning": "cho"
+    },
+    {
+      "word": "our",
+      "meaning": "của chúng tôi"
+    },
+    {
+      "word": "under",
+      "meaning": "dưới"
+    },
+    {
+      "word": "name",
+      "meaning": "tên"
+    },
+    {
+      "word": "very",
+      "meaning": "rất"
+    },
+    {
+      "word": "through",
+      "meaning": "xuyên qua"
+    },
+    {
+      "word": "just",
+      "meaning": "chỉ, vừa mới"
+    },
+    {
+      "word": "form",
+      "meaning": "hình thức"
+    },
+    {
+      "word": "much",
+      "meaning": "nhiều"
+    },
+    {
+      "word": "great",
+      "meaning": "tuyệt vời"
+    },
+    {
+      "word": "think",
+      "meaning": "nghĩ"
+    },
+    {
+      "word": "say",
+      "meaning": "nói"
+    },
+    {
+      "word": "help",
+      "meaning": "giúp đỡ"
+    },
+    {
+      "word": "low",
+      "meaning": "thấp"
+    },
+    {
+      "word": "line",
+      "meaning": "dòng, đường"
+    },
+    {
+      "word": "before",
+      "meaning": "trước"
+    },
+    {
+      "word": "turn",
+      "meaning": "quay, rẽ"
+    },
+    {
+      "word": "cause",
+      "meaning": "nguyên nhân"
+    },
+    {
+      "word": "same",
+      "meaning": "giống nhau"
+    },
+    {
+      "word": "mean",
+      "meaning": "nghĩa là"
+    },
+    {
+      "word": "differ",
+      "meaning": "khác nhau"
+    },
+    {
+      "word": "move",
+      "meaning": "di chuyển"
+    },
+    {
+      "word": "right",
+      "meaning": "đúng, bên phải"
+    },
+    {
+      "word": "boy",
+      "meaning": "cậu bé"
+    },
+    {
+      "word": "old",
+      "meaning": "già, cũ"
+    },
+    {
+      "word": "too",
+      "meaning": "cũng, quá"
+    },
+    {
+      "word": "does",
+      "meaning": "làm"
+    },
+    {
+      "word": "tell",
+      "meaning": "kể, nói"
+    },
+    {
+      "word": "sentence",
+      "meaning": "câu"
+    },
+    {
+      "word": "set",
+      "meaning": "đặt, bộ"
+    },
+    {
+      "word": "three",
+      "meaning": "ba"
+    },
+    {
+      "word": "want",
+      "meaning": "muốn"
+    },
+    {
+      "word": "air",
+      "meaning": "không khí"
+    },
+    {
+      "word": "well",
+      "meaning": "tốt, giếng"
+    },
+    {
+      "word": "also",
+      "meaning": "cũng"
+    },
+    {
+      "word": "play",
+      "meaning": "chơi"
+    },
+    {
+      "word": "small",
+      "meaning": "nhỏ"
+    },
+    {
+      "word": "end",
+      "meaning": "kết thúc"
+    },
+    {
+      "word": "put",
+      "meaning": "đặt"
+    },
+    {
+      "word": "home",
+      "meaning": "nhà"
+    },
+    {
+      "word": "read",
+      "meaning": "đọc"
+    },
+    {
+      "word": "hand",
+      "meaning": "tay"
+    },
+    {
+      "word": "port",
+      "meaning": "cảng"
+    },
+    {
+      "word": "large",
+      "meaning": "lớn"
+    },
+    {
+      "word": "spell",
+      "meaning": "đánh vần"
+    },
+    {
+      "word": "add",
+      "meaning": "thêm"
+    },
+    {
+      "word": "even",
+      "meaning": "thậm chí"
+    },
+    {
+      "word": "land",
+      "meaning": "đất"
+    },
+    {
+      "word": "here",
+      "meaning": "ở đây"
+    },
+    {
+      "word": "must",
+      "meaning": "phải"
+    },
+    {
+      "word": "big",
+      "meaning": "lớn"
+    },
+    {
+      "word": "high",
+      "meaning": "cao"
+    },
+    {
+      "word": "such",
+      "meaning": "như vậy"
+    },
+    {
+      "word": "follow",
+      "meaning": "theo"
+    },
+    {
+      "word": "act",
+      "meaning": "hành động"
+    },
+    {
+      "word": "why",
+      "meaning": "tại sao"
+    },
+    {
+      "word": "ask",
+      "meaning": "hỏi"
+    },
+    {
+      "word": "men",
+      "meaning": "đàn ông"
+    },
+    {
+      "word": "change",
+      "meaning": "thay đổi"
+    },
+    {
+      "word": "went",
+      "meaning": "đã đi"
+    },
+    {
+      "word": "light",
+      "meaning": "ánh sáng, nhẹ"
+    },
+    {
+      "word": "kind",
+      "meaning": "loại"
+    },
+    {
+      "word": "off",
+      "meaning": "tắt, khỏi"
+    },
+    {
+      "word": "need",
+      "meaning": "cần"
+    },
+    {
+      "word": "house",
+      "meaning": "ngôi nhà"
+    },
+    {
+      "word": "picture",
+      "meaning": "bức tranh"
+    },
+    {
+      "word": "try",
+      "meaning": "thử"
+    },
+    {
+      "word": "us",
+      "meaning": "chúng tôi"
+    },
+    {
+      "word": "again",
+      "meaning": "lại"
+    },
+    {
+      "word": "animal",
+      "meaning": "động vật"
+    },
+    {
+      "word": "point",
+      "meaning": "điểm"
+    },
+    {
+      "word": "mother",
+      "meaning": "mẹ"
+    },
+    {
+      "word": "world",
+      "meaning": "thế giới"
+    },
+    {
+      "word": "near",
+      "meaning": "gần"
+    },
+    {
+      "word": "build",
+      "meaning": "xây dựng"
+    },
+    {
+      "word": "self",
+      "meaning": "bản thân"
+    },
+    {
+      "word": "earth",
+      "meaning": "trái đất"
+    },
+    {
+      "word": "father",
+      "meaning": "cha"
+    },
+    {
       "word": "head",
       "meaning": "đầu"
     },
