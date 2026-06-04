@@ -180,7 +180,6 @@ function switchTopic() {
 
                 renderCheckerList();
                 proceedToLoadCard();
-                //fileLabel.textContent = `📁 Đã nạp dữ liệu chủ đề: ${selectedTopic}`;
             })
             .catch(err => {
                 console.error(err);
