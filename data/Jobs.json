@@ -1,0 +1,23 @@
+{
+  "Jobs": [
+    { "word": "teacher", "meaning": "giáo viên" }, { "word": "doctor", "meaning": "bác sĩ" }, { "word": "nurse", "meaning": "y tá" }, { "word": "engineer", "meaning": "kỹ sư" }, { "word": "artist", "meaning": "nghệ sĩ" },
+    { "word": "chef", "meaning": "đầu bếp" }, { "word": "police", "meaning": "cảnh sát" }, { "word": "firefighter", "meaning": "lính cứu hỏa" }, { "word": "farmer", "meaning": "nông dân" }, { "word": "driver", "meaning": "tài xế" },
+    { "word": "pilot", "meaning": "phi công" }, { "word": "lawyer", "meaning": "luật sư" }, { "word": "accountant", "meaning": "kế toán" }, { "word": "singer", "meaning": "ca sĩ" }, { "word": "actor", "meaning": "diễn viên" },
+    { "word": "writer", "meaning": "nhà văn" }, { "word": "photographer", "meaning": "nhiếp ảnh gia" }, { "word": "architect", "meaning": "kiến trúc sư" }, { "word": "dentist", "meaning": "nha sĩ" }, { "word": "mechanic", "meaning": "thợ máy" },
+    { "word": "worker", "meaning": "công nhân" }, { "word": "manager", "meaning": "quản lý" }, { "word": "secretary", "meaning": "thư ký" }, { "word": "salesman", "meaning": "nhân viên bán hàng" }, { "word": "waiter", "meaning": "bồi bàn" },
+    { "word": "pilot", "meaning": "phi công" }, { "word": "scientist", "meaning": "nhà khoa học" }, { "word": "soldier", "meaning": "bộ đội" }, { "word": "painter", "meaning": "họa sĩ" }, { "word": "musician", "meaning": "nhạc sĩ" },
+    { "word": "athlete", "meaning": "vận động viên" }, { "word": "reporter", "meaning": "phóng viên" }, { "word": "editor", "meaning": "biên tập viên" }, { "word": "designer", "meaning": "nhà thiết kế" }, { "word": "hairdresser", "meaning": "thợ làm tóc" },
+    { "word": "baker", "meaning": "thợ làm bánh" }, { "word": "butcher", "meaning": "người bán thịt" }, { "word": "tailor", "meaning": "thợ may" }, { "word": "carpenter", "meaning": "thợ mộc" }, { "word": "plumber", "meaning": "thợ ống nước" },
+    { "word": "electrician", "meaning": "thợ điện" }, { "word": "gardener", "meaning": "người làm vườn" }, { "word": "librarian", "meaning": "thủ thư" }, { "word": "banker", "meaning": "nhân viên ngân hàng" }, { "word": "pilot", "meaning": "phi công" },
+    { "word": "student", "meaning": "học sinh" }, { "word": "professor", "meaning": "giáo sư" }, { "word": "judge", "meaning": "thẩm phán" }, { "word": "translator", "meaning": "phiên dịch viên" }, { "word": "tourist guide", "meaning": "hướng dẫn viên" },
+    { "word": "pilot", "meaning": "phi công" }, { "word": "chef", "meaning": "bếp trưởng" }, { "word": "cleaner", "meaning": "lao công" }, { "word": "pilot", "meaning": "phi công" }, { "word": "astronaut", "meaning": "phi hành gia" },
+    { "word": "pilot", "meaning": "phi công" }, { "word": "pharmacist", "meaning": "dược sĩ" }, { "word": "vet", "meaning": "bác sĩ thú y" }, { "word": "pilot", "meaning": "phi công" }, { "word": "pilot", "meaning": "phi công" },
+    { "word": "pilot", "meaning": "phi công" }, { "word": "pilot", "meaning": "phi công" }, { "word": "pilot", "meaning": "phi công" }, { "word": "pilot", "meaning": "phi công" }, { "word": "pilot", "meaning": "phi công" },
+    { "word": "boss", "meaning": "sếp" }, { "word": "staff", "meaning": "nhân viên" }, { "word": "colleague", "meaning": "đồng nghiệp" }, { "word": "career", "meaning": "sự nghiệp" }, { "word": "job", "meaning": "công việc" },
+    { "word": "work", "meaning": "việc làm" }, { "word": "business", "meaning": "kinh doanh" }, { "word": "office", "meaning": "văn phòng" }, { "word": "company", "meaning": "công ty" }, { "word": "salary", "meaning": "lương" },
+    { "word": "wages", "meaning": "tiền công" }, { "word": "bonus", "meaning": "tiền thưởng" }, { "word": "promotion", "meaning": "thăng chức" }, { "word": "interview", "meaning": "phỏng vấn" }, { "word": "resume", "meaning": "sơ yếu lý lịch" },
+    { "word": "application", "meaning": "đơn xin việc" }, { "word": "training", "meaning": "đào tạo" }, { "word": "experience", "meaning": "kinh nghiệm" }, { "word": "skill", "meaning": "kỹ năng" }, { "word": "full-time", "meaning": "toàn thời gian" },
+    { "word": "part-time", "meaning": "bán thời gian" }, { "word": "overtime", "meaning": "tăng ca" }, { "word": "retire", "meaning": "về hưu" }, { "word": "resign", "meaning": "từ chức" }, { "word": "hired", "meaning": "được thuê" },
+    { "word": "fired", "meaning": "bị sa thải" }, { "word": "busy", "meaning": "bận rộn" }, { "word": "productive", "meaning": "năng suất" }, { "word": "professional", "meaning": "chuyên nghiệp" }, { "word": "unemployed", "meaning": "thất nghiệp" }
+  ]
+}

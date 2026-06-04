@@ -1,0 +1,23 @@
+{
+  "Technology": [
+    { "word": "computer", "meaning": "máy tính" }, { "word": "phone", "meaning": "điện thoại" }, { "word": "internet", "meaning": "mạng" }, { "word": "website", "meaning": "trang web" }, { "word": "email", "meaning": "thư điện tử" },
+    { "word": "screen", "meaning": "màn hình" }, { "word": "keyboard", "meaning": "bàn phím" }, { "word": "mouse", "meaning": "chuột" }, { "word": "camera", "meaning": "máy ảnh" }, { "word": "laptop", "meaning": "máy tính xách tay" },
+    { "word": "tablet", "meaning": "máy tính bảng" }, { "word": "battery", "meaning": "pin" }, { "word": "charger", "meaning": "sạc" }, { "word": "speaker", "meaning": "loa" }, { "word": "headphone", "meaning": "tai nghe" },
+    { "word": "software", "meaning": "phần mềm" }, { "word": "hardware", "meaning": "phần cứng" }, { "word": "file", "meaning": "tệp tin" }, { "word": "folder", "meaning": "thư mục" }, { "word": "data", "meaning": "dữ liệu" },
+    { "word": "password", "meaning": "mật khẩu" }, { "word": "username", "meaning": "tên người dùng" }, { "word": "login", "meaning": "đăng nhập" }, { "word": "logout", "meaning": "đăng xuất" }, { "word": "online", "meaning": "trực tuyến" },
+    { "word": "offline", "meaning": "ngoại tuyến" }, { "word": "download", "meaning": "tải xuống" }, { "word": "upload", "meaning": "tải lên" }, { "word": "update", "meaning": "cập nhật" }, { "word": "search", "meaning": "tìm kiếm" },
+    { "word": "browser", "meaning": "trình duyệt" }, { "word": "link", "meaning": "liên kết" }, { "word": "button", "meaning": "nút" }, { "word": "icon", "meaning": "biểu tượng" }, { "word": "system", "meaning": "hệ thống" },
+    { "word": "robot", "meaning": "người máy" }, { "word": "device", "meaning": "thiết bị" }, { "word": "digital", "meaning": "kỹ thuật số" }, { "word": "wired", "meaning": "có dây" }, { "word": "wireless", "meaning": "không dây" },
+    { "word": "wifi", "meaning": "sóng wifi" }, { "word": "bluetooth", "meaning": "kết nối bluetooth" }, { "word": "printer", "meaning": "máy in" }, { "word": "scanner", "meaning": "máy quét" }, { "word": "monitor", "meaning": "màn hình" },
+    { "word": "server", "meaning": "máy chủ" }, { "word": "network", "meaning": "mạng lưới" }, { "word": "code", "meaning": "mã" }, { "word": "program", "meaning": "chương trình" }, { "word": "app", "meaning": "ứng dụng" },
+    { "word": "click", "meaning": "nhấp chuột" }, { "word": "type", "meaning": "gõ" }, { "word": "save", "meaning": "lưu" }, { "word": "delete", "meaning": "xóa" }, { "word": "copy", "meaning": "sao chép" },
+    { "word": "paste", "meaning": "dán" }, { "word": "print", "meaning": "in" }, { "word": "scan", "meaning": "quét" }, { "word": "restart", "meaning": "khởi động lại" }, { "word": "power", "meaning": "nguồn" },
+    { "word": "audio", "meaning": "âm thanh" }, { "word": "video", "meaning": "video" }, { "word": "image", "meaning": "hình ảnh" }, { "word": "pixel", "meaning": "điểm ảnh" }, { "word": "resolution", "meaning": "độ phân giải" },
+    { "word": "memory", "meaning": "bộ nhớ" }, { "word": "storage", "meaning": "lưu trữ" }, { "word": "cloud", "meaning": "đám mây" }, { "word": "security", "meaning": "bảo mật" }, { "word": "virus", "meaning": "vi rút" },
+    { "word": "hack", "meaning": "xâm nhập" }, { "word": "tech", "meaning": "công nghệ" }, { "word": "smart", "meaning": "thông minh" }, { "word": "virtual", "meaning": "ảo" }, { "word": "artificial", "meaning": "nhân tạo" },
+    { "word": "message", "meaning": "tin nhắn" }, { "word": "chat", "meaning": "trò chuyện" }, { "word": "social", "meaning": "xã hội" }, { "word": "profile", "meaning": "hồ sơ" }, { "word": "feed", "meaning": "bảng tin" },
+    { "word": "post", "meaning": "bài đăng" }, { "word": "share", "meaning": "chia sẻ" }, { "word": "like", "meaning": "thích" }, { "word": "follow", "meaning": "theo dõi" }, { "word": "blog", "meaning": "nhật ký web" },
+    { "word": "vlog", "meaning": "nhật ký video" }, { "word": "forum", "meaning": "diễn đàn" }, { "word": "wiki", "meaning": "bách khoa toàn thư" }, { "word": "ai", "meaning": "trí tuệ nhân tạo" }, { "word": "game", "meaning": "trò chơi" },
+    { "word": "gadget", "meaning": "đồ dùng" }, { "word": "cable", "meaning": "cáp" }, { "word": "plug", "meaning": "phích cắm" }, { "word": "socket", "meaning": "ổ cắm" }, { "word": "switch", "meaning": "công tắc" }
+  ]
+}

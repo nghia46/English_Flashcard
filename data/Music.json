@@ -1,0 +1,23 @@
+{
+  "Music": [
+    { "word": "song", "meaning": "bài hát" }, { "word": "music", "meaning": "âm nhạc" }, { "word": "singer", "meaning": "ca sĩ" }, { "word": "band", "meaning": "ban nhạc" }, { "word": "melody", "meaning": "giai điệu" },
+    { "word": "rhythm", "meaning": "nhịp điệu" }, { "word": "lyrics", "meaning": "lời bài hát" }, { "word": "note", "meaning": "nốt nhạc" }, { "word": "album", "meaning": "tuyển tập" }, { "word": "track", "meaning": "bản nhạc" },
+    { "word": "guitar", "meaning": "đàn ghi ta" }, { "word": "piano", "meaning": "đàn piano" }, { "word": "violin", "meaning": "đàn vĩ cầm" }, { "word": "drum", "meaning": "trống" }, { "word": "flute", "meaning": "sáo" },
+    { "word": "trumpet", "meaning": "kèn" }, { "word": "bass", "meaning": "âm trầm" }, { "word": "concert", "meaning": "buổi hòa nhạc" }, { "word": "stage", "meaning": "sân khấu" }, { "word": "sound", "meaning": "âm thanh" },
+    { "word": "pop", "meaning": "nhạc pop" }, { "word": "rock", "meaning": "nhạc rock" }, { "word": "jazz", "meaning": "nhạc jazz" }, { "word": "classical", "meaning": "nhạc cổ điển" }, { "word": "hiphop", "meaning": "nhạc hiphop" },
+    { "word": "blues", "meaning": "nhạc blues" }, { "word": "country", "meaning": "nhạc đồng quê" }, { "word": "opera", "meaning": "nhạc kịch" }, { "word": "record", "meaning": "ghi âm" }, { "word": "listen", "meaning": "nghe" },
+    { "word": "play", "meaning": "chơi" }, { "word": "sing", "meaning": "hát" }, { "word": "dance", "meaning": "nhảy" }, { "word": "tune", "meaning": "điệu" }, { "word": "harmony", "meaning": "hòa âm" },
+    { "word": "solo", "meaning": "độc tấu" }, { "word": "duet", "meaning": "song tấu" }, { "word": "voice", "meaning": "giọng hát" }, { "word": "beat", "meaning": "nhịp" }, { "word": "tempo", "meaning": "tốc độ" },
+    { "word": "volume", "meaning": "âm lượng" }, { "word": "speaker", "meaning": "loa" }, { "word": "mic", "meaning": "micrô" }, { "word": "headphone", "meaning": "tai nghe" }, { "word": "radio", "meaning": "đài" },
+    { "word": "artist", "meaning": "nghệ sĩ" }, { "word": "composer", "meaning": "nhà soạn nhạc" }, { "word": "conductor", "meaning": "nhạc trưởng" }, { "word": "orchestra", "meaning": "dàn nhạc" }, { "word": "festival", "meaning": "lễ hội" },
+    { "word": "show", "meaning": "buổi diễn" }, { "word": "tour", "meaning": "lưu diễn" }, { "word": "fan", "meaning": "người hâm mộ" }, { "word": "hit", "meaning": "bản hit" }, { "word": "chart", "meaning": "bảng xếp hạng" },
+    { "word": "music video", "meaning": "video nhạc" }, { "word": "playlist", "meaning": "danh sách nhạc" }, { "word": "audio", "meaning": "âm thanh" }, { "word": "concert hall", "meaning": "phòng hòa nhạc" }, { "word": "band", "meaning": "nhóm" },
+    { "word": "member", "meaning": "thành viên" }, { "word": "group", "meaning": "nhóm" }, { "word": "debut", "meaning": "ra mắt" }, { "word": "comeback", "meaning": "quay lại" }, { "word": "cover", "meaning": "hát lại" },
+    { "word": "acoustic", "meaning": "nhạc mộc" }, { "word": "electric", "meaning": "điện tử" }, { "word": "vocal", "meaning": "thanh nhạc" }, { "word": "instrument", "meaning": "nhạc cụ" }, { "word": "performance", "meaning": "trình diễn" },
+    { "word": "practice", "meaning": "tập luyện" }, { "word": "rehearse", "meaning": "diễn tập" }, { "word": "talent", "meaning": "tài năng" }, { "word": "skill", "meaning": "kỹ năng" }, { "word": "style", "meaning": "phong cách" },
+    { "word": "genre", "meaning": "thể loại" }, { "word": "rhythm", "meaning": "nhịp" }, { "word": "chord", "meaning": "hợp âm" }, { "word": "key", "meaning": "phím" }, { "word": "scale", "meaning": "gam nhạc" },
+    { "word": "studio", "meaning": "phòng thu" }, { "word": "tape", "meaning": "băng" }, { "word": "digital", "meaning": "kỹ thuật số" }, { "word": "download", "meaning": "tải xuống" }, { "word": "stream", "meaning": "phát trực tuyến" },
+    { "word": "relax", "meaning": "thư giãn" }, { "word": "enjoy", "meaning": "thưởng thức" }, { "word": "loud", "meaning": "to" }, { "word": "soft", "meaning": "nhẹ" }, { "word": "beautiful", "meaning": "đẹp" },
+    { "word": "sad", "meaning": "buồn" }, { "word": "happy", "meaning": "vui" }, { "word": "energetic", "meaning": "năng động" }, { "word": "calm", "meaning": "bình tĩnh" }, { "word": "catchy", "meaning": "bắt tai" }
+  ]
+}

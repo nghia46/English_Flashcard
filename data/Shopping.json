@@ -1,0 +1,23 @@
+{
+  "Shopping": [
+    { "word": "shop", "meaning": "cửa hàng" }, { "word": "store", "meaning": "cửa hiệu" }, { "word": "mall", "meaning": "trung tâm thương mại" }, { "word": "market", "meaning": "chợ" }, { "word": "buy", "meaning": "mua" },
+    { "word": "sell", "meaning": "bán" }, { "word": "price", "meaning": "giá cả" }, { "word": "cost", "meaning": "chi phí" }, { "word": "money", "meaning": "tiền" }, { "word": "cash", "meaning": "tiền mặt" },
+    { "word": "card", "meaning": "thẻ" }, { "word": "coin", "meaning": "tiền xu" }, { "word": "bill", "meaning": "hóa đơn" }, { "word": "sale", "meaning": "giảm giá" }, { "word": "discount", "meaning": "chiết khấu" },
+    { "word": "cheap", "meaning": "rẻ" }, { "word": "expensive", "meaning": "đắt" }, { "word": "item", "meaning": "mặt hàng" }, { "word": "product", "meaning": "sản phẩm" }, { "word": "goods", "meaning": "hàng hóa" },
+    { "word": "basket", "meaning": "giỏ" }, { "word": "cart", "meaning": "xe đẩy" }, { "word": "bag", "meaning": "túi" }, { "word": "size", "meaning": "kích cỡ" }, { "word": "color", "meaning": "màu sắc" },
+    { "word": "brand", "meaning": "nhãn hiệu" }, { "word": "quality", "meaning": "chất lượng" }, { "word": "customer", "meaning": "khách hàng" }, { "word": "clerk", "meaning": "nhân viên bán hàng" }, { "word": "checkout", "meaning": "thanh toán" },
+    { "word": "receipt", "meaning": "biên lai" }, { "word": "refund", "meaning": "hoàn tiền" }, { "word": "return", "meaning": "trả lại" }, { "word": "exchange", "meaning": "đổi hàng" }, { "word": "order", "meaning": "đặt hàng" },
+    { "word": "delivery", "meaning": "giao hàng" }, { "word": "online", "meaning": "trực tuyến" }, { "word": "website", "meaning": "trang web" }, { "word": "browse", "meaning": "xem qua" }, { "word": "choice", "meaning": "sự lựa chọn" },
+    { "word": "stock", "meaning": "hàng trong kho" }, { "word": "aisle", "meaning": "lối đi" }, { "word": "counter", "meaning": "quầy" }, { "word": "label", "meaning": "nhãn" }, { "word": "tag", "meaning": "mác" },
+    { "word": "gift", "meaning": "quà tặng" }, { "word": "wrap", "meaning": "gói" }, { "word": "bargain", "meaning": "mặc cả" }, { "word": "offer", "meaning": "ưu đãi" }, { "word": "deal", "meaning": "thỏa thuận" },
+    { "word": "wallet", "meaning": "ví" }, { "word": "purse", "meaning": "túi xách" }, { "word": "pocket", "meaning": "túi áo/quần" }, { "word": "change", "meaning": "tiền lẻ" }, { "word": "tax", "meaning": "thuế" },
+    { "word": "total", "meaning": "tổng cộng" }, { "word": "pay", "meaning": "trả tiền" }, { "word": "credit", "meaning": "tín dụng" }, { "word": "debit", "meaning": "ghi nợ" }, { "word": "atm", "meaning": "máy rút tiền" },
+    { "word": "bank", "meaning": "ngân hàng" }, { "word": "account", "meaning": "tài khoản" }, { "word": "amount", "meaning": "số tiền" }, { "word": "value", "meaning": "giá trị" }, { "word": "worth", "meaning": "đáng giá" },
+    { "word": "wholesale", "meaning": "bán buôn" }, { "word": "retail", "meaning": "bán lẻ" }, { "word": "vendor", "meaning": "người bán hàng" }, { "word": "stall", "meaning": "gian hàng" }, { "word": "display", "meaning": "trưng bày" },
+    { "word": "variety", "meaning": "sự đa dạng" }, { "word": "limited", "meaning": "giới hạn" }, { "word": "available", "meaning": "có sẵn" }, { "word": "sold", "meaning": "đã bán" }, { "word": "out", "meaning": "hết hàng" },
+    { "word": "supply", "meaning": "nguồn cung" }, { "word": "demand", "meaning": "nhu cầu" }, { "word": "consumer", "meaning": "người tiêu dùng" }, { "word": "purchase", "meaning": "việc mua sắm" }, { "word": "trade", "meaning": "giao dịch" },
+    { "word": "check", "meaning": "kiểm tra" }, { "word": "select", "meaning": "chọn" }, { "word": "pick", "meaning": "lấy" }, { "word": "try", "meaning": "thử" }, { "word": "fit", "meaning": "vừa" },
+    { "word": "match", "meaning": "phù hợp" }, { "word": "style", "meaning": "phong cách" }, { "word": "trend", "meaning": "xu hướng" }, { "word": "fashion", "meaning": "thời trang" }, { "word": "design", "meaning": "thiết kế" },
+    { "word": "material", "meaning": "chất liệu" }, { "word": "fabric", "meaning": "vải" }, { "word": "cotton", "meaning": "bông" }, { "word": "silk", "meaning": "lụa" }, { "word": "wool", "meaning": "len" }
+  ]
+}

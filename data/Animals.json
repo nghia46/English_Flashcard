@@ -1,0 +1,23 @@
+{
+  "Animals": [
+    { "word": "dog", "meaning": "chó" }, { "word": "cat", "meaning": "mèo" }, { "word": "bird", "meaning": "chim" }, { "word": "fish", "meaning": "cá" }, { "word": "lion", "meaning": "sư tử" },
+    { "word": "tiger", "meaning": "hổ" }, { "word": "elephant", "meaning": "voi" }, { "word": "monkey", "meaning": "khỉ" }, { "word": "bear", "meaning": "gấu" }, { "word": "rabbit", "meaning": "thỏ" },
+    { "word": "cow", "meaning": "bò" }, { "word": "pig", "meaning": "lợn" }, { "word": "sheep", "meaning": "cừu" }, { "word": "horse", "meaning": "ngựa" }, { "word": "chicken", "meaning": "gà" },
+    { "word": "duck", "meaning": "vịt" }, { "word": "mouse", "meaning": "chuột" }, { "word": "snake", "meaning": "rắn" }, { "word": "frog", "meaning": "ếch" }, { "word": "turtle", "meaning": "rùa" },
+    { "word": "whale", "meaning": "cá voi" }, { "word": "shark", "meaning": "cá mập" }, { "word": "dolphin", "meaning": "cá heo" }, { "word": "crab", "meaning": "cua" }, { "word": "shrimp", "meaning": "tôm" },
+    { "word": "deer", "meaning": "hươu" }, { "word": "fox", "meaning": "cáo" }, { "word": "wolf", "meaning": "sói" }, { "word": "giraffe", "meaning": "hươu cao cổ" }, { "word": "zebra", "meaning": "ngựa vằn" },
+    { "word": "kangaroo", "meaning": "chuột túi" }, { "word": "panda", "meaning": "gấu trúc" }, { "word": "koala", "meaning": "gấu koala" }, { "word": "eagle", "meaning": "đại bàng" }, { "word": "owl", "meaning": "cú" },
+    { "word": "parrot", "meaning": "vẹt" }, { "word": "penguin", "meaning": "chim cánh cụt" }, { "word": "bat", "meaning": "dơi" }, { "word": "spider", "meaning": "nhện" }, { "word": "bee", "meaning": "ong" },
+    { "word": "butterfly", "meaning": "bướm" }, { "word": "ant", "meaning": "kiến" }, { "word": "mosquito", "meaning": "muỗi" }, { "word": "fly", "meaning": "ruồi" }, { "word": "lizard", "meaning": "thằn lằn" },
+    { "word": "crocodile", "meaning": "cá sấu" }, { "word": "camel", "meaning": "lạc đà" }, { "word": "donkey", "meaning": "lừa" }, { "word": "goat", "meaning": "dê" }, { "word": "swan", "meaning": "thiên nga" },
+    { "word": "peacock", "meaning": "công" }, { "word": "pigeon", "meaning": "bồ câu" }, { "word": "crow", "meaning": "quạ" }, { "word": "hamster", "meaning": "chuột hamster" }, { "word": "squirrel", "meaning": "sóc" },
+    { "word": "hippo", "meaning": "hà mã" }, { "word": "rhino", "meaning": "tê giác" }, { "word": "cheetah", "meaning": "báo đốm" }, { "word": "leopard", "meaning": "báo" }, { "word": "gorilla", "meaning": "khỉ đột" },
+    { "word": "chimpanzee", "meaning": "tinh tinh" }, { "word": "octopus", "meaning": "bạch tuộc" }, { "word": "squid", "meaning": "mực" }, { "word": "jellyfish", "meaning": "sứa" }, { "word": "starfish", "meaning": "sao biển" },
+    { "word": "seahorse", "meaning": "cá ngựa" }, { "word": "lobster", "meaning": "tôm hùm" }, { "word": "snail", "meaning": "ốc" }, { "word": "worm", "meaning": "giun" }, { "word": "beetle", "meaning": "bọ cánh cứng" },
+    { "word": "dragonfly", "meaning": "chuồn chuồn" }, { "word": "ladybug", "meaning": "bọ rùa" }, { "word": "scorpion", "meaning": "bọ cạp" }, { "word": "dinosaur", "meaning": "khủng long" }, { "word": "mammal", "meaning": "động vật có vú" },
+    { "word": "reptile", "meaning": "bò sát" }, { "word": "amphibian", "meaning": "lưỡng cư" }, { "word": "insect", "meaning": "côn trùng" }, { "word": "wild", "meaning": "hoang dã" }, { "word": "tame", "meaning": "thuần hóa" },
+    { "word": "pet", "meaning": "thú cưng" }, { "word": "livestock", "meaning": "gia súc" }, { "word": "poultry", "meaning": "gia cầm" }, { "word": "predator", "meaning": "động vật ăn thịt" }, { "word": "prey", "meaning": "con mồi" },
+    { "word": "habitat", "meaning": "môi trường sống" }, { "word": "tail", "meaning": "cái đuôi" }, { "word": "wing", "meaning": "cánh" }, { "word": "feather", "meaning": "lông vũ" }, { "word": "fur", "meaning": "lông mao" },
+    { "word": "claw", "meaning": "móng vuốt" }, { "word": "horn", "meaning": "sừng" }, { "word": "beak", "meaning": "mỏ" }, { "word": "fin", "meaning": "vây" }, { "word": "scale", "meaning": "vảy" }
+  ]
+}

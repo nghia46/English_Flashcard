@@ -1,0 +1,23 @@
+{
+  "Clothes": [
+    { "word": "shirt", "meaning": "áo sơ mi" }, { "word": "t-shirt", "meaning": "áo thun" }, { "word": "pants", "meaning": "quần dài" }, { "word": "dress", "meaning": "váy liền" }, { "word": "skirt", "meaning": "chân váy" },
+    { "word": "jacket", "meaning": "áo khoác" }, { "word": "coat", "meaning": "áo choàng" }, { "word": "sweater", "meaning": "áo len" }, { "word": "suit", "meaning": "bộ vest" }, { "word": "tie", "meaning": "cà vạt" },
+    { "word": "hat", "meaning": "mũ" }, { "word": "cap", "meaning": "mũ lưỡi trai" }, { "word": "shoes", "meaning": "giày" }, { "word": "boots", "meaning": "ủng" }, { "word": "sandals", "meaning": "dép xăng đan" },
+    { "word": "socks", "meaning": "tất" }, { "word": "belt", "meaning": "thắt lưng" }, { "word": "gloves", "meaning": "găng tay" }, { "word": "scarf", "meaning": "khăn quàng" }, { "word": "glasses", "meaning": "kính" },
+    { "word": "watch", "meaning": "đồng hồ" }, { "word": "ring", "meaning": "nhẫn" }, { "word": "necklace", "meaning": "vòng cổ" }, { "word": "earrings", "meaning": "khuyên tai" }, { "word": "bag", "meaning": "túi" },
+    { "word": "jeans", "meaning": "quần bò" }, { "word": "shorts", "meaning": "quần đùi" }, { "word": "dress", "meaning": "đầm" }, { "word": "blouse", "meaning": "áo kiểu" }, { "word": "vest", "meaning": "áo ghi lê" },
+    { "word": "sneakers", "meaning": "giày thể thao" }, { "word": "slippers", "meaning": "dép đi trong nhà" }, { "word": "underwear", "meaning": "đồ lót" }, { "word": "pajamas", "meaning": "đồ ngủ" }, { "word": "swimsuit", "meaning": "đồ bơi" },
+    { "word": "raincoat", "meaning": "áo mưa" }, { "word": "uniform", "meaning": "đồng phục" }, { "word": "apron", "meaning": "tạp dề" }, { "word": "hoodie", "meaning": "áo nỉ có mũ" }, { "word": "cardigan", "meaning": "áo khoác len" },
+    { "word": "wallet", "meaning": "ví" }, { "word": "umbrella", "meaning": "ô" }, { "word": "handbag", "meaning": "túi xách" }, { "word": "backpack", "meaning": "balo" }, { "word": "purse", "meaning": "ví nữ" },
+    { "word": "bracelet", "meaning": "vòng tay" }, { "word": "sunglasses", "meaning": "kính râm" }, { "word": "hairpin", "meaning": "kẹp tóc" }, { "word": "ribbon", "meaning": "ruy băng" }, { "word": "button", "meaning": "cúc áo" },
+    { "word": "zipper", "meaning": "khóa kéo" }, { "word": "pocket", "meaning": "túi" }, { "word": "collar", "meaning": "cổ áo" }, { "word": "sleeve", "meaning": "tay áo" }, { "word": "fabric", "meaning": "vải" },
+    { "word": "cotton", "meaning": "bông" }, { "word": "silk", "meaning": "lụa" }, { "word": "wool", "meaning": "len" }, { "word": "leather", "meaning": "da" }, { "word": "denim", "meaning": "vải bò" },
+    { "word": "velvet", "meaning": "nhung" }, { "word": "pattern", "meaning": "họa tiết" }, { "word": "stripe", "meaning": "kẻ sọc" }, { "word": "checkered", "meaning": "kẻ caro" }, { "word": "plain", "meaning": "trơn" },
+    { "word": "fit", "meaning": "vừa vặn" }, { "word": "tight", "meaning": "chật" }, { "word": "loose", "meaning": "rộng" }, { "word": "fashion", "meaning": "thời trang" }, { "word": "style", "meaning": "phong cách" },
+    { "word": "casual", "meaning": "thường ngày" }, { "word": "formal", "meaning": "trang trọng" }, { "word": "trendy", "meaning": "hợp thời" }, { "word": "outfit", "meaning": "trang phục" }, { "word": "change", "meaning": "thay" },
+    { "word": "wear", "meaning": "mặc" }, { "word": "put on", "meaning": "mặc vào" }, { "word": "take off", "meaning": "cởi ra" }, { "word": "try on", "meaning": "thử đồ" }, { "word": "match", "meaning": "phối đồ" },
+    { "word": "clean", "meaning": "giặt sạch" }, { "word": "iron", "meaning": "là" }, { "word": "sew", "meaning": "may" }, { "word": "wash", "meaning": "giặt" }, { "word": "dry", "meaning": "phơi khô" },
+    { "word": "size", "meaning": "cỡ" }, { "word": "color", "meaning": "màu" }, { "word": "price", "meaning": "giá" }, { "word": "brand", "meaning": "nhãn hiệu" }, { "word": "shop", "meaning": "cửa hàng" },
+    { "word": "store", "meaning": "cửa hàng" }, { "word": "buy", "meaning": "mua" }, { "word": "sell", "meaning": "bán" }, { "word": "discount", "meaning": "giảm giá" }, { "word": "gift", "meaning": "quà" }
+  ]
+}

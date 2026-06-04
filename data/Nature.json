@@ -1,0 +1,23 @@
+{
+  "Nature": [
+    { "word": "sun", "meaning": "mặt trời" }, { "word": "moon", "meaning": "mặt trăng" }, { "word": "star", "meaning": "ngôi sao" }, { "word": "sky", "meaning": "bầu trời" }, { "word": "cloud", "meaning": "đám mây" },
+    { "word": "rain", "meaning": "mưa" }, { "word": "wind", "meaning": "gió" }, { "word": "snow", "meaning": "tuyết" }, { "word": "storm", "meaning": "bão" }, { "word": "tree", "meaning": "cây" },
+    { "word": "flower", "meaning": "hoa" }, { "word": "grass", "meaning": "cỏ" }, { "word": "mountain", "meaning": "núi" }, { "word": "river", "meaning": "sông" }, { "word": "sea", "meaning": "biển" },
+    { "word": "ocean", "meaning": "đại dương" }, { "word": "lake", "meaning": "hồ" }, { "word": "forest", "meaning": "rừng" }, { "word": "desert", "meaning": "sa mạc" }, { "word": "earth", "meaning": "trái đất" },
+    { "word": "planet", "meaning": "hành tinh" }, { "word": "world", "meaning": "thế giới" }, { "word": "land", "meaning": "đất" }, { "word": "stone", "meaning": "đá" }, { "word": "rock", "meaning": "đá lớn" },
+    { "word": "sand", "meaning": "cát" }, { "word": "beach", "meaning": "bãi biển" }, { "word": "island", "meaning": "đảo" }, { "word": "valley", "meaning": "thung lũng" }, { "word": "hill", "meaning": "đồi" },
+    { "word": "volcano", "meaning": "núi lửa" }, { "word": "earthquake", "meaning": "động đất" }, { "word": "nature", "meaning": "thiên nhiên" }, { "word": "environment", "meaning": "môi trường" }, { "word": "climate", "meaning": "khí hậu" },
+    { "word": "weather", "meaning": "thời tiết" }, { "word": "season", "meaning": "mùa" }, { "word": "spring", "meaning": "mùa xuân" }, { "word": "summer", "meaning": "mùa hè" }, { "word": "autumn", "meaning": "mùa thu" },
+    { "word": "winter", "meaning": "mùa đông" }, { "word": "day", "meaning": "ngày" }, { "word": "night", "meaning": "đêm" }, { "word": "light", "meaning": "ánh sáng" }, { "word": "dark", "meaning": "bóng tối" },
+    { "word": "shadow", "meaning": "cái bóng" }, { "word": "fire", "meaning": "lửa" }, { "word": "water", "meaning": "nước" }, { "word": "air", "meaning": "không khí" }, { "word": "soil", "meaning": "đất" },
+    { "word": "plant", "meaning": "thực vật" }, { "word": "leaf", "meaning": "lá" }, { "word": "root", "meaning": "rễ" }, { "word": "branch", "meaning": "cành" }, { "word": "fruit", "meaning": "quả" },
+    { "word": "seed", "meaning": "hạt" }, { "word": "wood", "meaning": "gỗ" }, { "word": "jungle", "meaning": "rừng rậm" }, { "word": "bush", "meaning": "bụi cây" }, { "word": "field", "meaning": "cánh đồng" },
+    { "word": "meadow", "meaning": "đồng cỏ" }, { "word": "peak", "meaning": "đỉnh" }, { "word": "cave", "meaning": "hang động" }, { "word": "waterfall", "meaning": "thác nước" }, { "word": "stream", "meaning": "suối" },
+    { "word": "coast", "meaning": "bờ biển" }, { "word": "shore", "meaning": "bờ" }, { "word": "wave", "meaning": "sóng" }, { "word": "tide", "meaning": "thủy triều" }, { "word": "current", "meaning": "dòng chảy" },
+    { "word": "galaxy", "meaning": "dải ngân hà" }, { "word": "universe", "meaning": "vũ trụ" }, { "word": "space", "meaning": "không gian" }, { "word": "comet", "meaning": "sao chổi" }, { "word": "eclipse", "meaning": "nhật thực" },
+    { "word": "sunlight", "meaning": "ánh nắng" }, { "word": "sunset", "meaning": "hoàng hôn" }, { "word": "sunrise", "meaning": "bình minh" }, { "word": "fog", "meaning": "sương mù" }, { "word": "mist", "meaning": "sương mỏng" },
+    { "word": "frost", "meaning": "sương giá" }, { "word": "ice", "meaning": "băng" }, { "word": "glacier", "meaning": "sông băng" }, { "word": "continent", "meaning": "lục địa" }, { "word": "pole", "meaning": "cực" },
+    { "word": "equator", "meaning": "xích đạo" }, { "word": "wildlife", "meaning": "động vật hoang dã" }, { "word": "ecosystem", "meaning": "hệ sinh thái" }, { "word": "pollution", "meaning": "ô nhiễm" }, { "word": "recycle", "meaning": "tái chế" },
+    { "word": "clean", "meaning": "sạch" }, { "word": "green", "meaning": "xanh" }, { "word": "fresh", "meaning": "trong lành" }, { "word": "beautiful", "meaning": "đẹp" }, { "word": "peaceful", "meaning": "yên bình" }
+  ]
+}

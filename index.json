@@ -9,6 +9,13 @@
     "Valorant": "Valorant.json",
     "Emotions": "Emotions.json",
     "Hobbies": "Hobbies.json",
-    "Weather": "Weather.json"
+    "Weather": "Weather.json",
+    "Technology": "Technology.json",
+    "Shoping": "Shopping.json",
+    "Animals": "Animals.json",
+    "Jobs": "Jobs.json",
+    "Clothes": "Clothes.json",
+    "Music": "Music.json",
+    "Nature": "Nature.json"
   }
-} 
+}
