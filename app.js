@@ -5,7 +5,9 @@ let topicProgress = {}; // Lưu trữ bộ đếm index của từng chủ đề
 let allCheckedState = false;
 
 // Biến lưu trữ đường dẫn URL cấu hình của từng chủ đề từ API Index danh mục
-let topicUrls = {}; 
+let topicUrls = {};
+// Mảng ghi nhớ các chủ đề hệ thống tải từ API/GitHub để thực hiện làm mờ (disabled) khi quản lý
+let systemTopics = [];
 
 // Khai báo các phần tử DOM giao diện chính
 const card = document.getElementById('card');
@@ -23,6 +25,7 @@ const nextBtn = document.getElementById('nextBtn');
 const shuffleBtn = document.getElementById('shuffleBtn');
 const themeBtn = document.getElementById('themeBtn');
 const manageBtn = document.getElementById('manageBtn');
+const modalOverlay = document.getElementById('modalOverlay');
 const checkerPanel = document.getElementById('checkerPanel');
 const checkerList = document.getElementById('checkerList');
 
@@ -35,11 +38,11 @@ function toggleTheme() {
     const currentTheme = document.documentElement.getAttribute('data-theme');
     if (currentTheme === 'dark') {
         document.documentElement.setAttribute('data-theme', 'light');
-        themeBtn.textContent = '🌙';
+        if (themeBtn) themeBtn.textContent = '🌙';
         localStorage.setItem('theme', 'light');
     } else {
         document.documentElement.setAttribute('data-theme', 'dark');
-        themeBtn.textContent = '☀️';
+        if (themeBtn) themeBtn.textContent = '☀️';
         localStorage.setItem('theme', 'dark');
     }
 }
@@ -62,14 +65,11 @@ function speakWord(event) {
     if (flashcards.length === 0 || !flashcards[currentIndex]) return;
 
     const wordText = flashcards[currentIndex].word;
-    
-    // Hủy các giọng đọc đang bị xếp hàng chờ (nếu có) để phát âm ngay lập tức
-    window.speechSynthesis.cancel();
+    window.speechSynthesis.cancel(); // Hủy các âm thanh đang chờ xếp hàng
 
     const utterance = new SpeechSynthesisUtterance(wordText);
-    utterance.lang = 'en-US'; // Thiết lập chuẩn tiếng Anh - Mỹ
-    utterance.rate = 0.9;     // Tốc độ đọc vừa phải giúp dễ nghe
-    
+    utterance.lang = 'en-US';
+    utterance.rate = 0.9;
     window.speechSynthesis.speak(utterance);
 }
 
@@ -82,14 +82,13 @@ function updateCard() {
         backMeaning.textContent = "Chào mừng";
         counter.textContent = "Vui lòng chọn hoặc nạp file";
         progressBar.style.width = "0%";
-        
+
         prevBtn.disabled = true;
         nextBtn.disabled = true;
         shuffleBtn.disabled = true;
         return;
     }
 
-    // Đảm bảo chỉ mục index không vượt quá giới hạn mảng từ vựng
     if (currentIndex >= flashcards.length) {
         topicProgress[currentTopicName] = 0;
     }
@@ -98,29 +97,22 @@ function updateCard() {
     frontWord.textContent = currentCard.word;
     backMeaning.textContent = currentCard.meaning;
 
-    // Trả thẻ về mặt trước (Xóa hiệu ứng lật đang xoay)
     card.classList.remove('flipped');
-
-    // Cập nhật số đếm Tiến trình văn bản (Ví dụ: 3 / 20 từ)
     counter.textContent = `Từ ${topicProgress[currentTopicName] + 1} / ${flashcards.length} (Chủ đề: ${currentTopicName})`;
 
-    // Cập nhật Thanh Tiến độ (Progress Bar) hình ảnh
     const progressPercent = ((topicProgress[currentTopicName] + 1) / flashcards.length) * 100;
     progressBar.style.width = `${progressPercent}%`;
 
-    // Cập nhật trạng thái bật/tắt của 2 nút bấm điều hướng
     prevBtn.disabled = (topicProgress[currentTopicName] === 0);
     nextBtn.disabled = (topicProgress[currentTopicName] === flashcards.length - 1);
     shuffleBtn.disabled = false;
 }
 
-// Hiệu ứng lật mặt thẻ Flashcard
 function flipCard() {
     if (flashcards.length === 0) return;
     card.classList.toggle('flipped');
 }
 
-// Chuyển sang thẻ tiếp theo
 function nextCard() {
     const currentIndex = topicProgress[currentTopicName] || 0;
     if (currentIndex < flashcards.length - 1) {
@@ -132,7 +124,6 @@ function nextCard() {
     }
 }
 
-// Lùi lại thẻ phía trước
 function prevCard() {
     const currentIndex = topicProgress[currentTopicName] || 0;
     if (currentIndex > 0) {
@@ -142,22 +133,19 @@ function prevCard() {
     }
 }
 
-// Trộn ngẫu nhiên danh sách từ vựng hiện tại
 function shuffleCards() {
     if (flashcards.length === 0) return;
     for (let i = flashcards.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [flashcards[i], flashcards[j]] = [flashcards[j], flashcards[i]];
     }
-
     topicsData[currentTopicName] = [...flashcards];
-    topicProgress[currentTopicName] = 0; // Đưa tiến trình về từ đầu tiên sau khi trộn
-
+    topicProgress[currentTopicName] = 0;
     updateCard();
     saveProgressToStorage();
 }
 
-// === 4. Cơ chế Lazy-Loading: Nạp dữ liệu khi chuyển đổi Chủ đề ===
+// === 4. Cơ chế Lazy-Loading: Nạp dữ liệu từ API danh mục khi chuyển đổi ===
 function switchTopic() {
     const selectedTopic = listSelect.value;
     if (!selectedTopic) {
@@ -167,59 +155,45 @@ function switchTopic() {
 
     currentTopicName = selectedTopic;
 
-    // NẾU CHỦ ĐỀ CHƯA TỪNG ĐƯỢC TẢI CHI TIẾT (Mảng rỗng và có URL liên kết) -> Thực hiện Fetch dữ liệu file JSON tương ứng
+    // Nếu chủ đề thuộc API hệ thống và chưa được tải chi tiết từ vựng xuống bộ nhớ máy
     if (topicsData[selectedTopic] && topicsData[selectedTopic].length === 0 && topicUrls[selectedTopic]) {
         fileLabel.textContent = `⏳ Đang tải từ vựng cho "${selectedTopic}"...`;
-        
+
         fetch(topicUrls[selectedTopic])
             .then(res => {
-                if (!res.ok) throw new Error("Không thể tải danh sách từ vựng của chủ đề này.");
+                if (!res.ok) throw new Error("Không thể tải dữ liệu.");
                 return res.json();
             })
             .then(wordList => {
-                // SỬA LỖI KHÔNG PHẢI MẢNG (Iterable Error): Ép kiểu cứu vãn nếu file JSON lỡ bị bọc bởi key tên chủ đề
                 if (!Array.isArray(wordList)) {
                     if (typeof wordList === 'object' && wordList[selectedTopic]) {
                         wordList = wordList[selectedTopic];
-                    } else if (typeof wordList === 'object') {
-                        const firstKey = Object.keys(wordList)[0];
-                        if (Array.isArray(wordList[firstKey])) {
-                            wordList = wordList[firstKey];
-                        }
                     }
                 }
 
-                // Nếu sau khi kiểm tra vẫn không đúng cấu trúc mảng, chuyển về mảng rỗng để không crash web
-                topicsData[selectedTopic] = Array.isArray(wordList) ? wordList : []; 
-                
-                // Cập nhật hiển thị số lượng từ trên thẻ select option
+                topicsData[selectedTopic] = Array.isArray(wordList) ? wordList : [];
+
                 const currentOption = listSelect.querySelector(`option[value="${selectedTopic}"]`);
                 if (currentOption) {
                     currentOption.textContent = `${selectedTopic} (${topicsData[selectedTopic].length} từ)`;
                 }
 
-                // Cập nhật danh sách bảng điều khiển quản lý checklist
                 renderCheckerList();
-
-                // Tiến hành đưa dữ liệu lên màn hình Flashcard
                 proceedToLoadCard();
                 fileLabel.textContent = `📁 Đã nạp dữ liệu chủ đề: ${selectedTopic}`;
             })
             .catch(err => {
                 console.error(err);
                 fileLabel.textContent = `❌ Lỗi nạp dữ liệu chủ đề ${selectedTopic}`;
-                topicsData[selectedTopic] = []; // Tạo mảng rỗng phòng ngừa lỗi lặp lại
+                topicsData[selectedTopic] = [];
                 proceedToLoadCard();
             });
     } else {
-        // Nếu dữ liệu đã có sẵn trong bộ nhớ (được nạp từ trước hoặc nạp thủ công bằng kéo thả file)
         proceedToLoadCard();
     }
 }
 
-// Xử lý nạp mảng từ vựng vào khung Flashcard sau khi hoàn tất tải dữ liệu
 function proceedToLoadCard() {
-    // SỬA LỖI KHÔNG PHẢI MẢNG: Kiểm tra an toàn biến mảng trước khi clone [...]
     if (!topicsData[currentTopicName] || !Array.isArray(topicsData[currentTopicName])) {
         flashcards = [];
     } else {
@@ -232,27 +206,19 @@ function proceedToLoadCard() {
 
     mainTitle.textContent = currentTopicName.charAt(0).toUpperCase() + currentTopicName.slice(1);
 
-    // Kích hoạt lại các nút chức năng chính dựa theo số lượng từ khả dụng
-    if (flashcards.length > 0) {
-        prevBtn.disabled = false;
-        nextBtn.disabled = false;
-        shuffleBtn.disabled = false;
-    } else {
-        prevBtn.disabled = true;
-        nextBtn.disabled = true;
-        shuffleBtn.disabled = true;
-    }
-    manageBtn.disabled = false;
+    prevBtn.disabled = (flashcards.length === 0);
+    nextBtn.disabled = (flashcards.length === 0);
+    shuffleBtn.disabled = (flashcards.length === 0);
+    if (manageBtn) manageBtn.disabled = false;
 
-    // Kiểm tra kích hoạt nút Ôn tập tổng hợp
     checkGlobalReviewButtonState();
-
     updateCard();
     saveProgressToStorage();
 }
 
-// === 5. Cập nhật danh sách Dropdown hiển thị danh mục chủ đề ===
+// === 5. Cập nhật danh sách Dropdown chủ đề ===
 function updateSelectDropdown(defaultActiveTopic = "") {
+    if (!listSelect) return;
     listSelect.innerHTML = "";
     const keys = Object.keys(topicsData);
 
@@ -264,13 +230,11 @@ function updateSelectDropdown(defaultActiveTopic = "") {
     keys.forEach(topic => {
         const option = document.createElement('option');
         option.value = topic;
-        // Nếu từ vựng đã tải về thì hiển thị kèm số lượng từ, ngược lại giữ nguyên tên
         const countText = (topicsData[topic] && topicsData[topic].length > 0) ? ` (${topicsData[topic].length} từ)` : "";
         option.textContent = topic + countText;
         listSelect.appendChild(option);
     });
 
-    // Chỉ định chủ đề hoạt động mặc định ban đầu
     if (defaultActiveTopic && keys.includes(defaultActiveTopic)) {
         listSelect.value = defaultActiveTopic;
     } else {
@@ -281,9 +245,8 @@ function updateSelectDropdown(defaultActiveTopic = "") {
     switchTopic();
 }
 
-// Đưa ứng dụng về trạng thái trống khi không có dữ liệu học
 function resetToEmptyState() {
-    listSelect.innerHTML = '<option value="">-- Chưa có dữ liệu chủ đề --</option>';
+    if (listSelect) listSelect.innerHTML = '<option value="">-- Chưa có dữ liệu chủ đề --</option>';
     currentTopicName = "";
     flashcards = [];
     mainTitle.textContent = "Sight Words Flashcards";
@@ -292,90 +255,147 @@ function resetToEmptyState() {
     checkGlobalReviewButtonState();
 }
 
-// === 6. Đọc File JSON thủ công qua khu vực Kéo / Thả hoặc Chọn file ===
-fileInput.addEventListener('change', (e) => {
-    const files = e.target.files;
-    if (files.length === 0) return;
+// === 6. Đọc File thủ công (Hỗ trợ cấu trúc file .txt dạng từ: nghĩa; giống Foods.txt) ===
+if (fileInput) {
+    fileInput.addEventListener('change', (e) => {
+        const files = e.target.files;
+        if (files.length === 0) return;
 
-    let loadedCount = 0;
-    let firstNewTopic = "";
+        let loadedCount = 0;
+        let firstNewTopic = "";
 
-    Array.from(files).forEach(file => {
-        const reader = new FileReader();
-        reader.onload = function (event) {
-            try {
-                const jsonData = JSON.parse(event.target.result);
-                
-                // Trường hợp 1: File cấu hình chứa nhiều chủ đề cùng lúc: { "Chủ đề 1": [...], "Chủ đề 2": [...] }
-                if (!Array.isArray(jsonData) && typeof jsonData === 'object') {
-                    Object.keys(jsonData).forEach((topic) => {
-                        if (Array.isArray(jsonData[topic])) {
-                            topicsData[topic] = jsonData[topic];
-                            if (topicProgress[topic] === undefined) topicProgress[topic] = 0;
-                            if (!firstNewTopic) firstNewTopic = topic;
+        Array.from(files).forEach(file => {
+            const reader = new FileReader();
+            const fileNameLower = file.name.toLowerCase();
+            const topicName = file.name.replace(/\.[^/.]+$/, ""); // Cắt đuôi .txt hoặc .json
+
+            reader.onload = function (event) {
+                try {
+                    let parsedWords = [];
+
+                    // Xử lý file văn bản .txt (Dạng: từ: nghĩa;)
+                    if (fileNameLower.endsWith('.txt')) {
+                        const textContent = event.target.result;
+                        const lines = textContent.split('\n');
+
+                        lines.forEach(line => {
+                            const cleanLine = line.trim();
+                            if (!cleanLine) return;
+
+                            const parts = cleanLine.split(':');
+                            if (parts.length >= 2) {
+                                const word = parts[0].trim();
+                                const meaning = parts.slice(1).join(':').replace(/;$/, '').trim();
+
+                                if (word && meaning) {
+                                    parsedWords.push({ word: word, meaning: meaning });
+                                }
+                            }
+                        });
+
+                        if (parsedWords.length > 0) {
+                            topicsData[topicName] = parsedWords;
+                            if (topicProgress[topicName] === undefined) topicProgress[topicName] = 0;
+                            if (!firstNewTopic) firstNewTopic = topicName;
                         }
-                    });
-                } 
-                // Trường hợp 2: File JSON đơn lẻ chứa danh sách từ của đúng 1 chủ đề, lấy tên file làm tên chủ đề
-                else if (Array.isArray(jsonData)) {
-                    const topicName = file.name.replace(/\.[^/.]+$/, ""); // Cắt đuôi mở rộng .json
-                    topicsData[topicName] = jsonData;
-                    if (topicProgress[topicName] === undefined) topicProgress[topicName] = 0;
-                    if (!firstNewTopic) firstNewTopic = topicName;
-                }
+                    }
+                    // Xử lý cấu trúc file định dạng .json chuẩn
+                    else {
+                        const jsonData = JSON.parse(event.target.result);
+                        if (!Array.isArray(jsonData) && typeof jsonData === 'object') {
+                            Object.keys(jsonData).forEach((topic) => {
+                                if (Array.isArray(jsonData[topic])) {
+                                    topicsData[topic] = jsonData[topic];
+                                    if (topicProgress[topic] === undefined) topicProgress[topic] = 0;
+                                    if (!firstNewTopic) firstNewTopic = topic;
+                                }
+                            });
+                        } else if (Array.isArray(jsonData)) {
+                            topicsData[topicName] = jsonData;
+                            if (topicProgress[topicName] === undefined) topicProgress[topicName] = 0;
+                            if (!firstNewTopic) firstNewTopic = topicName;
+                        }
+                    }
 
-                loadedCount++;
+                    loadedCount++;
 
-                // Khi tất cả các file tải lên hoàn tất xử lý thành công
-                if (loadedCount === files.length) {
-                    fileLabel.textContent = `📁 Đã nạp thành công ${files.length} file dữ liệu`;
-                    updateSelectDropdown(firstNewTopic);
-                    saveProgressToStorage();
+                    if (loadedCount === files.length) {
+                        fileLabel.textContent = `📁 Đã nạp thành công ${files.length} file cục bộ`;
+                        updateSelectDropdown(firstNewTopic || Object.keys(topicsData)[0]);
+                        saveProgressToStorage();
+                    }
+                } catch (err) {
+                    console.error("Lỗi phân tích tệp dữ liệu:", err);
+                    alert(`Không thể đọc tệp "${file.name}".`);
+                    loadedCount++;
                 }
-            } catch (err) {
-                console.error("Lỗi cấu trúc dữ liệu tệp JSON:", err);
-                alert(`Không thể đọc file "${file.name}". Vui lòng kiểm tra lại định dạng chuẩn JSON.`);
-            }
-        };
-        reader.readAsText(file);
+            };
+            reader.readAsText(file);
+        });
     });
-});
+}
 
-// === 7. Quản lý Bảng điều khiển Checklist (Bật/Tắt và Xóa nhiều chủ đề) ===
+// === 7. Quản lý Bảng điều khiển Checklist (LÀM MỜ FILE API, POPUP ĐỘC LẬP) ===
 function toggleCheckerPanel() {
-    if (checkerPanel.classList.contains('hidden')) {
-        renderCheckerList();
-        checkerPanel.classList.remove('hidden');
+    if (!modalOverlay) return;
+    if (modalOverlay.classList.contains('active')) {
+        modalOverlay.classList.remove('active');
     } else {
-        checkerPanel.classList.add('hidden');
+        renderCheckerList();
+        modalOverlay.classList.add('active');
+    }
+}
+
+function closeModalOnOverlay(e) {
+    // Đóng modal khi click ra vùng ngoài overlay tối màu
+    if (e.target === modalOverlay) {
+        toggleCheckerPanel();
     }
 }
 
 function renderCheckerList() {
+    if (!checkerList) return;
     checkerList.innerHTML = "";
-    const keys = Object.keys(topicsData);
 
-    if (keys.length === 0) {
-        checkerList.innerHTML = "<div style='padding: 10px; color: var(--text-secondary); text-align: center;'>Danh sách trống</div>";
+    const allKeys = Object.keys(topicsData).filter(topic => topic !== "🔄 Ôn tập tổng hợp");
+
+    if (allKeys.length === 0) {
+        checkerList.innerHTML = "<div style='padding:20px; color:var(--text-secondary); text-align:center; font-size: 14px; font-style: italic;'>Danh sách trống</div>";
         return;
     }
 
-    keys.forEach(topic => {
-        // Không hiện "Ôn tập tổng hợp" vào danh sách xóa quản lý
-        if (topic === "🔄 Ôn tập tổng hợp") return;
-
+    allKeys.forEach(topic => {
+        const isSystem = systemTopics.includes(topic);
         const item = document.createElement('div');
-        item.className = "checker-item";
+
+        // Thêm class phân loại hệ thống để định dạng CSS làm mờ và chặn tương tác
+        item.className = isSystem ? "checker-item system-item" : "checker-item";
 
         const checkbox = document.createElement('input');
         checkbox.type = "checkbox";
         checkbox.value = topic;
         checkbox.id = `check-${topic}`;
 
+        // Vô hiệu hóa nút tích chọn nếu thuộc hệ thống API trực tuyến
+        if (isSystem) {
+            checkbox.disabled = true;
+        }
+
         const label = document.createElement('label');
         label.htmlFor = `check-${topic}`;
-        const countText = (topicsData[topic] && topicsData[topic].length > 0) ? ` (${topicsData[topic].length} từ)` : " (Chưa nạp)";
-        label.textContent = topic + countText;
+        const countText = (topicsData[topic] && topicsData[topic].length > 0) ? ` (${topicsData[topic].length} từ)` : " (Chưa tải)";
+
+        // Tạo thẻ span chứa tên chủ đề
+        const textSpan = document.createElement('span');
+        textSpan.textContent = topic + countText;
+
+        // Tạo Badge ghi chú loại chủ đề rõ ràng và đẹp mắt
+        const badge = document.createElement('span');
+        badge.className = isSystem ? "checker-badge badge-system" : "checker-badge badge-local";
+        badge.textContent = isSystem ? "Hệ thống" : "Cá nhân";
+
+        label.appendChild(textSpan);
+        label.appendChild(badge);
 
         item.appendChild(checkbox);
         item.appendChild(label);
@@ -385,29 +405,30 @@ function renderCheckerList() {
 
 function toggleSelectAllCheckboxes() {
     allCheckedState = !allCheckedState;
-    const checkboxes = checkerList.querySelectorAll('input[type="checkbox"]');
+    const checkboxes = checkerList.querySelectorAll('.checker-item:not(.system-item) input[type="checkbox"]');
     checkboxes.forEach(cb => cb.checked = allCheckedState);
 }
 
 function deleteSelectedTopics() {
     const checkboxes = checkerList.querySelectorAll('input[type="checkbox"]:checked');
     if (checkboxes.length === 0) {
-        alert("Vui lòng tích chọn ít nhất một chủ đề để thực hiện thao tác xóa.");
+        alert("Vui lòng tích chọn ít nhất một bộ từ vựng Local (Cá nhân) để thực hiện thao tác xóa.");
         return;
     }
 
-    if (confirm(`Bạn có chắc chắn muốn gỡ bỏ hoàn toàn ${checkboxes.length} chủ đề đã chọn khỏi bộ nhớ?`)) {
+    if (confirm(`Bạn có chắc muốn xóa vĩnh viễn ${checkboxes.length} chủ đề nạp thủ công được chọn?`)) {
         checkboxes.forEach(cb => {
             const topicToDelete = cb.value;
-            delete topicsData[topicToDelete];
-            delete topicProgress[topicToDelete];
-            if (topicUrls[topicToDelete]) delete topicUrls[topicToDelete];
+            // Chỉ cho xóa nếu bộ từ đó không thuộc mảng systemTopics (bảo mật lớp 2)
+            if (!systemTopics.includes(topicToDelete)) {
+                delete topicsData[topicToDelete];
+                delete topicProgress[topicToDelete];
+            }
         });
 
         allCheckedState = false;
-        
-        // Xác định chủ đề thay thế để kích hoạt sau khi chủ đề hiện tại bị xóa
-        const remainingKeys = Object.keys(topicsData).filter(k => k !== "🔄 Ôn tập tổng hợp");
+
+        const remainingKeys = Object.keys(topicsData);
         let nextActiveTopic = "";
         if (remainingKeys.length > 0) {
             nextActiveTopic = remainingKeys.includes(currentTopicName) ? currentTopicName : remainingKeys[0];
@@ -415,24 +436,22 @@ function deleteSelectedTopics() {
 
         updateSelectDropdown(nextActiveTopic);
         saveProgressToStorage();
-        alert("Đã gỡ bỏ thành công dữ liệu các chủ đề được lựa chọn.");
+        alert("Đã gỡ bỏ thành công dữ liệu các chủ đề local.");
     }
 }
 
 // === 8. Tính năng: Ôn tập tổng hợp kết hợp nhiều chủ đề ===
 function checkGlobalReviewButtonState() {
     if (!startReviewBtn) return;
-    // Chỉ kích hoạt nút nếu có ít nhất 1 chủ đề đã thực sự tải xong từ vựng về bộ nhớ
     const loadedTopics = Object.keys(topicsData).filter(k => k !== "🔄 Ôn tập tổng hợp" && topicsData[k] && topicsData[k].length > 0);
     startReviewBtn.disabled = (loadedTopics.length === 0);
 }
 
 function startGlobalReview() {
-    // Thu thập toàn bộ các từ thuộc những chủ đề ĐÃ ĐƯỢC TẢI dữ liệu về hệ thống
     const loadedTopics = Object.keys(topicsData).filter(k => k !== "🔄 Ôn tập tổng hợp" && topicsData[k] && topicsData[k].length > 0);
-    
+
     if (loadedTopics.length === 0) {
-        alert("Không tìm thấy dữ liệu từ vựng khả dụng để tạo danh sách ôn tập.");
+        alert("Không có từ vựng khả dụng.");
         return;
     }
 
@@ -441,24 +460,20 @@ function startGlobalReview() {
         globalPool = globalPool.concat(topicsData[topic]);
     });
 
-    // Trộn ngẫu nhiên toàn bộ kho từ vựng tổng hợp
     for (let i = globalPool.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [globalPool[i], globalPool[j]] = [globalPool[j], globalPool[i]];
     }
 
-    // Cắt bớt danh sách từ dựa trên số lượng người dùng cấu hình giới hạn học
     const limitCount = parseInt(reviewCountSelect.value, 10);
     if (limitCount > 0 && globalPool.length > limitCount) {
         globalPool = globalPool.slice(0, limitCount);
     }
 
-    // Đăng ký tạo một "Chủ đề giả lập" phục vụ riêng tiến trình ôn tập
     const reviewSessionName = "🔄 Ôn tập tổng hợp";
     topicsData[reviewSessionName] = globalPool;
     topicProgress[reviewSessionName] = 0;
 
-    // Đưa tùy chọn này vào trực tiếp phần select và kích hoạt chạy
     let reviewOption = listSelect.querySelector(`option[value="${reviewSessionName}"]`);
     if (!reviewOption) {
         reviewOption = document.createElement('option');
@@ -466,17 +481,17 @@ function startGlobalReview() {
         listSelect.appendChild(reviewOption);
     }
     reviewOption.textContent = `${reviewSessionName} (${globalPool.length} từ)`;
-    
+
     listSelect.value = reviewSessionName;
     switchTopic();
 
-    // Thu gọn bảng điều khiển checklist nếu đang mở để tránh vướng màn hình học
-    if (checkerPanel) checkerPanel.classList.add('hidden');
+    if (modalOverlay.classList.contains('active')) {
+        modalOverlay.classList.remove('active');
+    }
 }
 
-// === 9. Đồng bộ lưu và tải dữ liệu qua LocalStorage trình duyệt ===
+// === 9. Đồng bộ dữ liệu qua LocalStorage trình duyệt ===
 function saveProgressToStorage() {
-    // Tránh lưu dữ liệu tạm thời của phiên Ôn tập tổng hợp vào bộ nhớ vĩnh viễn
     const cleanTopicsData = { ...topicsData };
     const cleanTopicProgress = { ...topicProgress };
     delete cleanTopicsData["🔄 Ôn tập tổng hợp"];
@@ -485,6 +500,7 @@ function saveProgressToStorage() {
     localStorage.setItem('flashcard_topics_data', JSON.stringify(cleanTopicsData));
     localStorage.setItem('flashcard_topic_progress', JSON.stringify(cleanTopicProgress));
     localStorage.setItem('flashcard_topic_urls', JSON.stringify(topicUrls));
+    localStorage.setItem('flashcard_system_topics', JSON.stringify(systemTopics));
     if (currentTopicName && currentTopicName !== "🔄 Ôn tập tổng hợp") {
         localStorage.setItem('flashcard_current_topic', currentTopicName);
     }
@@ -495,87 +511,84 @@ function loadProgressFromStorage() {
         const storedData = localStorage.getItem('flashcard_topics_data');
         const storedProgress = localStorage.getItem('flashcard_topic_progress');
         const storedUrls = localStorage.getItem('flashcard_topic_urls');
+        const storedSystem = localStorage.getItem('flashcard_system_topics');
         const storedCurrent = localStorage.getItem('flashcard_current_topic');
 
         if (storedData && storedProgress) {
             topicsData = JSON.parse(storedData);
             topicProgress = JSON.parse(storedProgress);
             if (storedUrls) topicUrls = JSON.parse(storedUrls);
+            if (storedSystem) systemTopics = JSON.parse(storedSystem);
 
             const keys = Object.keys(topicsData);
             if (keys.length > 0) {
-                fileLabel.textContent = `💾 Đã khôi phục tiến trình học từ bộ nhớ máy`;
+                fileLabel.textContent = `💾 Đã khôi phục tiến trình học tập từ bộ nhớ máy`;
                 const activeTopic = (storedCurrent && keys.includes(storedCurrent)) ? storedCurrent : keys[0];
                 updateSelectDropdown(activeTopic);
                 return true;
             }
         }
     } catch (e) {
-        console.error("Lỗi đọc dữ liệu từ LocalStorage máy cục bộ:", e);
+        console.error(e);
     }
     return false;
 }
 
-// Xóa toàn bộ lịch sử học tập để reset lại ứng dụng từ đầu
 function clearSavedData() {
-    if (confirm("Hành động này sẽ xóa toàn bộ từ vựng đã nạp cùng tiến trình học hiện tại của tất cả chủ đề. Bạn có chắc chắn muốn làm mới?")) {
+    if (confirm("Xóa toàn bộ tiến trình học và bộ từ vựng cục bộ?")) {
         localStorage.clear();
-        topicsData = {};
-        topicProgress = {};
-        topicUrls = {};
-        resetToEmptyState();
-        alert("Đã xóa sạch bộ nhớ. Trình duyệt sẽ tự động tải lại.");
         window.location.reload();
     }
 }
 
-// === 10. Quản lý Sự kiện phím tắt Bàn phím máy tính ===
+// === 10. Quản lý Sự kiện phím tắt bàn phím ===
 document.addEventListener('keydown', (e) => {
     if (flashcards.length === 0) return;
-    
-    // Bỏ qua phím tắt nếu người dùng đang thao tác nhập liệu bên trong các thẻ cấu hình hoặc nút bấm
     if (e.target.tagName === 'SELECT' || e.target.tagName === 'INPUT') return;
 
     if (e.code === 'Space') {
-        e.preventDefault(); // Chặn hành vi cuộn trang mặc định của phím cách
+        e.preventDefault();
         flipCard();
     } else if (e.code === 'ArrowRight') {
         nextCard();
     } else if (e.code === 'ArrowLeft') {
         prevCard();
-    } else if (e.code === 'KeyV' || e.code === 'KeyV') {
-        speakWord(); // Phím tắt nhanh "V" lệnh phát âm tiếng Anh
+    } else if (e.code === 'Escape') {
+        // Đóng modal quản lý bằng phím ESC
+        if (modalOverlay && modalOverlay.classList.contains('active')) {
+            toggleCheckerPanel();
+        }
     }
 });
 
-// === 11. KHỞI CHẠY ỨNG DỤNG KHI TẢI TRANG XONG ===
+// === 11. KHỞI CHẠY KHI TẢI TRANG XONG ===
 window.addEventListener('DOMContentLoaded', () => {
     const hasSavedData = loadProgressFromStorage();
 
-    // Nếu bộ nhớ trống (Lần đầu chạy trang), kết nối API Index để lấy danh mục chủ đề tối ưu theo cấu trúc gọn
     if (!hasSavedData) {
-        fileLabel.textContent = `⏳ Đang tải danh mục chủ đề từ máy chủ...`;
-        
-        // Trỏ thẳng tới liên kết tệp mục lục chính trên GitHub của bạn
-        const indexApiUrl = 'https://raw.githubusercontent.com/nghia46/English_Flashcard/refs/heads/master/index.json'; 
+        fileLabel.textContent = `⏳ Đang kết nối danh mục chủ đề từ hệ thống API...`;
+
+        // Trỏ đến file mục lục tổng của bạn trên GitHub
+        const indexApiUrl = 'https://raw.githubusercontent.com/nghia46/English_Flashcard/refs/heads/master/index.json';
 
         fetch(indexApiUrl)
             .then(response => {
-                if (!response.ok) throw new Error("Không thể tải cấu hình danh mục chủ đề.");
+                if (!response.ok) throw new Error("Lỗi API cấu hình.");
                 return response.json();
             })
             .then(indexData => {
-                // Giải mã phân tách cấu trúc: baseUrl và danh sách tệp tin ngắn gọn
                 const baseUrl = indexData.baseUrl || "";
                 const topics = indexData.topics || {};
 
                 topicUrls = {};
                 topicsData = {};
+                systemTopics = [];
 
-                // Tự động ghép nối chuỗi đường dẫn tạo ra link Raw GitHub chính xác cho từng tệp
                 Object.keys(topics).forEach(topic => {
                     topicUrls[topic] = baseUrl + topics[topic];
-                    topicsData[topic] = []; // Khởi tạo mảng rỗng chờ người dùng kích hoạt tải (Lazy Loading)
+                    topicsData[topic] = []; // Sử dụng cơ chế Lazy Loading
+                    systemTopics.push(topic); // ĐĂNG KÝ: Đánh dấu các chủ đề thuộc API trực tuyến
+
                     if (topicProgress[topic] === undefined) {
                         topicProgress[topic] = 0;
                     }
@@ -583,15 +596,15 @@ window.addEventListener('DOMContentLoaded', () => {
 
                 const keys = Object.keys(topicsData);
                 if (keys.length > 0) {
-                    fileLabel.textContent = `📁 Đã đồng bộ danh mục hệ thống thành công`;
-                    updateSelectDropdown(keys[0]); // Nạp giao diện và bắt đầu chạy chủ đề mặc định đầu tiên
+                    fileLabel.textContent = `📁 Đồng bộ dữ liệu API danh mục thành công`;
+                    updateSelectDropdown(keys[0]);
                 } else {
                     resetToEmptyState();
                 }
             })
             .catch(error => {
-                console.error("Lỗi đồng bộ API danh mục hệ thống:", error);
-                fileLabel.textContent = `❌ Không tìm thấy danh sách mặc định hệ thống`;
+                console.error(error);
+                fileLabel.textContent = `❌ Không thể đồng bộ danh mục từ hệ thống API`;
                 resetToEmptyState();
             });
     }
