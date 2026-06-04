@@ -44,11 +44,33 @@
            2. CẤU TRÚC LAYOUT VÀ THIẾT KẾ CHUNG
            ========================================================================== */
  * {
+        -webkit-tap-highlight-color: transparent;
+
      box-sizing: border-box;
      margin: 0;
      padding: 0;
  }
+/* Tắt viền focus xanh */
+button,
+select,
+input,
+textarea,
+.flashcard-wrapper,
+.audio-btn {
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
 
+/* Tắt focus trên mobile */
+button:focus,
+button:active,
+button:focus-visible,
+select:focus,
+input:focus,
+.flashcard-wrapper:focus {
+    outline: none;
+    box-shadow: none;
+}
  body {
      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
      background-color: var(--bg);
