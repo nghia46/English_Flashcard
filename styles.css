@@ -59,7 +59,8 @@
      justify-content: center;
      align-items: center;
      min-height: 100vh;
-     padding: 20px;
+     padding: 10px;
+     box-sizing: border-box;
      transition: background-color 0.3s, color 0.3s;
  }
 
@@ -70,22 +71,43 @@
      padding: 30px;
      width: 100%;
      max-width: 550px;
+     height: 100%;
      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
      transition: background-color 0.3s, border-color 0.3s, box-shadow 0.3s;
  }
+
+ /* Điện thoại */
+ @media (max-width: 768px) {
+     .container {
+         max-width: 100%;
+         padding: 20px;
+         border-radius: 15px;
+     }
+ }
+
+ /* Điện thoại rất nhỏ */
+ @media (max-width: 480px) {
+     .container {
+         padding: 15px;
+         border-radius: 12px;
+     }
+ }
+
  .top-bar {
      display: flex;
      justify-content: space-between;
      align-items: center;
      margin-bottom: 25px;
  }
+
  .top-bar h1 {
-    text-align: center;
+     text-align: center;
      font-size: 24px;
      font-weight: 700;
      color: var(--text);
      letter-spacing: -0.5px;
  }
+
  /* h1 {
      font-size: 24px;
      text-align: center;
@@ -164,6 +186,7 @@
 
  .selector-row {
      display: flex;
+     max-height: 50px;
      gap: 8px;
  }
 
@@ -557,7 +580,7 @@
  }
 
  .audio-btn:hover {
-    
+
      transform: scale(1.08);
  }
 
