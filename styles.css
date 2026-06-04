@@ -93,7 +93,7 @@
      background-color: var(--select-bg);
      border: 2px dashed var(--btn-border);
      border-radius: 10px;
-    
+
      width: 60%;
      height: 70px;
      padding: 0 16px;
@@ -607,11 +607,3 @@
      font-size: 18px;
      border-radius: 50%;
  }
- /* Thêm vào styles.css */
-.checker-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 8px;
-    object-fit: contain;
-    vertical-align: middle;
-}
