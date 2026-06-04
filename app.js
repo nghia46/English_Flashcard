@@ -557,7 +557,7 @@ window.addEventListener('DOMContentLoaded', () => {
         fileLabel.textContent = `⏳ Đang tải danh mục chủ đề từ máy chủ...`;
         
         // Trỏ thẳng tới liên kết tệp mục lục chính trên GitHub của bạn
-        const indexApiUrl = 'https://raw.githubusercontent.com/nghia46/English_Flashcard/refs/heads/master/English-words.json'; 
+        const indexApiUrl = 'https://raw.githubusercontent.com/nghia46/English_Flashcard/refs/heads/master/index.json'; 
 
         fetch(indexApiUrl)
             .then(response => {
