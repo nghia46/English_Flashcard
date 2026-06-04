@@ -420,7 +420,7 @@ window.addEventListener('DOMContentLoaded', () => {
         fileLabel.textContent = `⏳ Đang đồng bộ từ vựng mặc định từ hệ thống...`;
         
         // Bạn có thể đổi đường dẫn này thành link API online thật của bạn (ví dụ: MockAPI, GitHub raw)
-        const targetApiUrl = 'default_words.json'; 
+        const targetApiUrl = 'https://raw.githubusercontent.com/nghia46/English_Flashcard/refs/heads/master/English-words.json'; 
 
         fetch(targetApiUrl)
             .then(response => {
