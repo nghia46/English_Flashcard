@@ -607,3 +607,11 @@
      font-size: 18px;
      border-radius: 50%;
  }
+ /* Thêm vào styles.css */
+.checker-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    object-fit: contain;
+    vertical-align: middle;
+}

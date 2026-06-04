@@ -356,46 +356,53 @@ function closeModalOnOverlay(e) {
 function renderCheckerList() {
     if (!checkerList) return;
     checkerList.innerHTML = "";
-
+    
     const allKeys = Object.keys(topicsData).filter(topic => topic !== "🔄 Ôn tập tổng hợp");
 
     if (allKeys.length === 0) {
-        checkerList.innerHTML = "<div style='padding:20px; color:var(--text-secondary); text-align:center; font-size: 14px; font-style: italic;'>Danh sách trống</div>";
+        checkerList.innerHTML = "<div style='padding:20px; color:var(--text-secondary); text-align:center; font-size:14px; font-style:italic;'>Chưa nạp bộ từ vựng nào</div>";
         return;
     }
 
     allKeys.forEach(topic => {
         const isSystem = systemTopics.includes(topic);
         const item = document.createElement('div');
-
-        // Thêm class phân loại hệ thống để định dạng CSS làm mờ và chặn tương tác
         item.className = isSystem ? "checker-item system-item" : "checker-item";
 
         const checkbox = document.createElement('input');
         checkbox.type = "checkbox";
         checkbox.value = topic;
         checkbox.id = `check-${topic}`;
-
-        // Vô hiệu hóa nút tích chọn nếu thuộc hệ thống API trực tuyến
-        if (isSystem) {
-            checkbox.disabled = true;
-        }
+        if (isSystem) checkbox.disabled = true;
 
         const label = document.createElement('label');
         label.htmlFor = `check-${topic}`;
-        const countText = (topicsData[topic] && topicsData[topic].length > 0) ? ` (${topicsData[topic].length} từ)` : " (Chưa tải)";
+        
+        // --- PHẦN MỚI: Xử lý Icon ---
+        // Giả sử cấu trúc JSON của bạn có { "icon": "URL_HOẶC_EMOJI", "data": [...] }
+        const topicData = topicsData[topic]; 
+        const iconSource = topicData.icon || "📚"; // Mặc định là icon sách nếu không có
+        
+        const iconSpan = document.createElement('span');
+        iconSpan.className = "checker-icon";
+        if (iconSource.startsWith('http')) {
+            iconSpan.innerHTML = `<img src="${iconSource}" class="checker-icon" />`;
+        } else {
+            iconSpan.textContent = iconSource; // Trường hợp là Emoji
+        }
 
-        // Tạo thẻ span chứa tên chủ đề
-        const textSpan = document.createElement('span');
-        textSpan.textContent = topic + countText;
+        const nameSpan = document.createElement('span');
+        const countText = (Array.isArray(topicData) ? topicData.length : (topicData.data ? topicData.data.length : 0)) + " từ";
+        nameSpan.textContent = `${topic} (${countText})`;
+        
+        const badgeSpan = document.createElement('span');
+        badgeSpan.className = isSystem ? "checker-badge badge-system" : "checker-badge badge-local";
+        badgeSpan.textContent = isSystem ? "Hệ thống" : "Cá nhân";
 
-        // Tạo Badge ghi chú loại chủ đề rõ ràng và đẹp mắt
-        const badge = document.createElement('span');
-        badge.className = isSystem ? "checker-badge badge-system" : "checker-badge badge-local";
-        badge.textContent = isSystem ? "Hệ thống" : "Cá nhân";
-
-        label.appendChild(textSpan);
-        label.appendChild(badge);
+        label.appendChild(iconSpan);
+        label.appendChild(nameSpan);
+        label.appendChild(badgeSpan);
+        // ----------------------------
 
         item.appendChild(checkbox);
         item.appendChild(label);
