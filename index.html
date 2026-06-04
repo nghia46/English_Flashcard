@@ -79,8 +79,10 @@
                 </div>
             </div>
         </div>
-
-        <div class="counter" id="counter">Vui lòng chọn file để bắt đầu</div>
+        <div class="action-bar">
+            <div class="counter" id="counter">Vui lòng chọn file để bắt đầu</div>
+            <button class="shuffleBtn" id="shuffleBtn" onclick="shuffleCards()" disabled>🔀 Trộn từ</button>
+        </div>
 
         <div class="progress-container">
             <div class="progress-bar" id="progressBar"></div>
@@ -103,11 +105,10 @@
         <div class="controls">
             <button id="prevBtn" onclick="prevCard()" disabled>Trước</button>
             <button id="nextBtn" class="primary-btn" onclick="nextCard()" disabled>Tiếp theo</button>
+
         </div>
 
-        <div class="action-btns" style="justify-content: center;">
-            <button id="shuffleBtn" onclick="shuffleCards()" disabled>🔀 Trộn từ</button>
-        </div>
+
     </div>
 
     <!-- Script điều khiển Logic của Ứng dụng -->

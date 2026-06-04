@@ -108,12 +108,24 @@
      letter-spacing: -0.5px;
  }
 
- /* h1 {
-     font-size: 24px;
-     text-align: center;
-     margin-bottom: 25px;
-     font-weight: 700;
- } */
+ .action-bar {
+     display: flex;
+        justify-content: space-between;
+     margin-bottom: .5rem;
+ }
+ .action-bar .counter {
+     font-size: 1rem;
+     color: var(--text-secondary);
+     font-weight: 600;
+     
+ }
+
+ .action-bar .shuffleBtn {
+     background-color: var(--select-bg);
+     border: 2px dashed var(--btn-border);
+     color: var(--text-secondary);
+     transition: border-color 0.2s, background-color 0.2s, color 0.2s;
+ }
 
  /* ==========================================================================
            3. KHU VỰC CẤU HÌNH & CHỌN FILE (CONFIG-ZONE)
@@ -455,6 +467,8 @@
      color: var(--text-secondary);
      margin-bottom: 10px;
      font-weight: 600;
+
+     
  }
 
  .progress-container {
@@ -667,3 +681,17 @@
      font-size: 18px;
      border-radius: 50%;
  }
+ .current-word {
+    color: #ef4444; /* đỏ */
+    font-weight: 700;
+}
+
+.total-word {
+    color: #22c55e; /* xanh */
+    font-weight: 700;
+}
+
+.topic-name {
+    color: var(--text-secondary);
+    font-size: 0.9em;
+}

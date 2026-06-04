@@ -98,8 +98,13 @@ function updateCard() {
     backMeaning.textContent = currentCard.meaning;
 
     card.classList.remove('flipped');
-    counter.textContent = `Từ ${topicProgress[currentTopicName] + 1} / ${flashcards.length} (Chủ đề: ${currentTopicName})`;
-
+    //counter.textContent = `Từ ${topicProgress[currentTopicName] + 1} / ${flashcards.length} (Chủ đề: ${currentTopicName})`;
+    counter.innerHTML = `
+    Từ <span class="current-word">${topicProgress[currentTopicName] + 1}</span>
+    /
+    <span class="total-word">${flashcards.length}</span>
+    <span class="topic-name">(Chủ đề: ${currentTopicName})</span>
+`;
     const progressPercent = ((topicProgress[currentTopicName] + 1) / flashcards.length) * 100;
     progressBar.style.width = `${progressPercent}%`;
 
@@ -521,7 +526,7 @@ function loadProgressFromStorage() {
 
             const keys = Object.keys(topicsData);
             if (keys.length > 0) {
-               // fileLabel.textContent = `💾 Đã khôi phục tiến trình học tập từ bộ nhớ máy`;
+                // fileLabel.textContent = `💾 Đã khôi phục tiến trình học tập từ bộ nhớ máy`;
                 const activeTopic = (storedCurrent && keys.includes(storedCurrent)) ? storedCurrent : keys[0];
                 updateSelectDropdown(activeTopic);
                 return true;
