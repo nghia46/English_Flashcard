@@ -15,8 +15,12 @@
      --btn-bg: #ffffff;
      --btn-border: #cbd5e1;
      --select-bg: #f1f5f9;
-     --danger: #ef4444;
+     --danger: #ef44448c;
      --danger-hover: #dc2626;
+     --warning: #f59f0b8f;
+     --warning-hover: #d97706;
+     --btn-comfirm: #10b98188;
+     --btn-comfirm-hover: #059669;
      --overlay-bg: rgba(15, 23, 42, 0.4);
  }
 
@@ -93,9 +97,8 @@
      background-color: var(--select-bg);
      border: 2px dashed var(--btn-border);
      border-radius: 10px;
-
-     width: 60%;
-     height: 70px;
+     width: 50%;
+     height: auto;
      padding: 0 16px;
 
      display: flex;
@@ -283,16 +286,32 @@
  .checker-actions-top button.action-sub-btn {
      background-color: var(--select-bg);
      border-color: var(--btn-border);
+     border: 2px dashed var(--btn-comfirm);
+ }
+
+ .checker-actions-top button.action-sub-btn:hover {
+     background-color: var(--select-bg);
+     border-color: var(--btn-comfirm-hover);
  }
 
  .checker-actions-top button.danger-btn {
-     background-color: var(--danger);
-     color: white;
-     border: none;
+     background-color: var(--select-bg);
+     border: 2px dashed var(--danger);
  }
 
  .checker-actions-top button.danger-btn:hover {
-     background-color: var(--danger-hover);
+     background-color: var(--select-bg);
+     border-color: var(--danger-hover);
+ }
+
+ .checker-actions-top button.warning-btn {
+     background-color: var(--select-bg);
+     border: 2px dashed var(--warning);
+ }
+
+ .checker-actions-top button.warning-btn:hover {
+     background-color: var(--select-bg);
+     border-color: var(--warning-hover);
  }
 
  .checker-list {
@@ -449,13 +468,18 @@
      height: 100%;
      backface-visibility: hidden;
      border-radius: 16px;
-     border: 1px solid var(--border);
+     border: 2px dashed var(--primary);
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
      padding: 20px;
      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
+ }
+
+ .card-face:hover {
+     border-color: var(--btn-comfirm-hover);
+     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
  }
 
  /* Mặt trước */
@@ -509,7 +533,7 @@
      font-size: 18px;
      border-radius: 50%;
      background-color: var(--bg);
-     border: 1px solid var(--btn-border);
+     border: 1px dashed var(--warning);
      color: var(--text);
      cursor: pointer;
      display: flex;
@@ -521,8 +545,8 @@
  }
 
  .audio-btn:hover {
+    
      transform: scale(1.08);
-     background-color: var(--select-bg);
  }
 
  /* ==========================================================================
@@ -589,6 +613,7 @@
  }
 
  .action-btns button {
+     flex: 1;
      font-size: 13px;
      padding: 8px 12px;
  }

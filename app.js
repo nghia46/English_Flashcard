@@ -180,7 +180,7 @@ function switchTopic() {
 
                 renderCheckerList();
                 proceedToLoadCard();
-                fileLabel.textContent = `📁 Đã nạp dữ liệu chủ đề: ${selectedTopic}`;
+                //fileLabel.textContent = `📁 Đã nạp dữ liệu chủ đề: ${selectedTopic}`;
             })
             .catch(err => {
                 console.error(err);
@@ -522,7 +522,7 @@ function loadProgressFromStorage() {
 
             const keys = Object.keys(topicsData);
             if (keys.length > 0) {
-                fileLabel.textContent = `💾 Đã khôi phục tiến trình học tập từ bộ nhớ máy`;
+               // fileLabel.textContent = `💾 Đã khôi phục tiến trình học tập từ bộ nhớ máy`;
                 const activeTopic = (storedCurrent && keys.includes(storedCurrent)) ? storedCurrent : keys[0];
                 updateSelectDropdown(activeTopic);
                 return true;
