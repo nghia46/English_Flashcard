@@ -1,0 +1,404 @@
+{
+    "Foods": [
+        {
+            "word": "apple",
+            "meaning": "táo"
+        },
+        {
+            "word": "banana",
+            "meaning": "chuối"
+        },
+        {
+            "word": "orange",
+            "meaning": "cam"
+        },
+        {
+            "word": "grape",
+            "meaning": "nho"
+        },
+        {
+            "word": "mango",
+            "meaning": "xoài"
+        },
+        {
+            "word": "pineapple",
+            "meaning": "dứa"
+        },
+        {
+            "word": "watermelon",
+            "meaning": "dưa hấu"
+        },
+        {
+            "word": "strawberry",
+            "meaning": "dâu tây"
+        },
+        {
+            "word": "lemon",
+            "meaning": "chanh"
+        },
+        {
+            "word": "peach",
+            "meaning": "đào"
+        },
+        {
+            "word": "pear",
+            "meaning": "lê"
+        },
+        {
+            "word": "coconut",
+            "meaning": "dừa"
+        },
+        {
+            "word": "papaya",
+            "meaning": "đũ đủ"
+        },
+        {
+            "word": "avocado",
+            "meaning": "bơ"
+        },
+        {
+            "word": "cherry",
+            "meaning": "anh đào"
+        },
+        {
+            "word": "kiwi",
+            "meaning": "kiwi"
+        },
+        {
+            "word": "lychee",
+            "meaning": "vải"
+        },
+        {
+            "word": "dragon fruit",
+            "meaning": "thanh long"
+        },
+        {
+            "word": "durian",
+            "meaning": "sầu riêng"
+        },
+        {
+            "word": "guava",
+            "meaning": "ổi"
+        },
+        {
+            "word": "carrot",
+            "meaning": "cà rốt"
+        },
+        {
+            "word": "potato",
+            "meaning": "khoai tây"
+        },
+        {
+            "word": "tomato",
+            "meaning": "cà chua"
+        },
+        {
+            "word": "onion",
+            "meaning": "hành tây"
+        },
+        {
+            "word": "garlic",
+            "meaning": "tỏi"
+        },
+        {
+            "word": "cucumber",
+            "meaning": "dưa leo"
+        },
+        {
+            "word": "cabbage",
+            "meaning": "bắp cải"
+        },
+        {
+            "word": "lettuce",
+            "meaning": "rau diếp"
+        },
+        {
+            "word": "spinach",
+            "meaning": "rau chân vịt"
+        },
+        {
+            "word": "broccoli",
+            "meaning": "bông cải xanh"
+        },
+        {
+            "word": "corn",
+            "meaning": "bắp"
+        },
+        {
+            "word": "pea",
+            "meaning": "đậu Hà Lan"
+        },
+        {
+            "word": "bean",
+            "meaning": "đậu"
+        },
+        {
+            "word": "mushroom",
+            "meaning": "nấm"
+        },
+        {
+            "word": "pumpkin",
+            "meaning": "bí ngô"
+        },
+        {
+            "word": "eggplant",
+            "meaning": "cà tím"
+        },
+        {
+            "word": "chili",
+            "meaning": "ớt"
+        },
+        {
+            "word": "ginger",
+            "meaning": "gừng"
+        },
+        {
+            "word": "sweet potato",
+            "meaning": "khoai lang"
+        },
+        {
+            "word": "radish",
+            "meaning": "củ cải"
+        },
+        {
+            "word": "rice",
+            "meaning": "cơm"
+        },
+        {
+            "word": "bread",
+            "meaning": "bánh mì"
+        },
+        {
+            "word": "noodle",
+            "meaning": "mì"
+        },
+        {
+            "word": "pasta",
+            "meaning": "mì Ý"
+        },
+        {
+            "word": "sandwich",
+            "meaning": "bánh sandwich"
+        },
+        {
+            "word": "hamburger",
+            "meaning": "bánh hamburger"
+        },
+        {
+            "word": "pizza",
+            "meaning": "bánh pizza"
+        },
+        {
+            "word": "cake",
+            "meaning": "bánh ngọt"
+        },
+        {
+            "word": "cookie",
+            "meaning": "bánh quy"
+        },
+        {
+            "word": "donut",
+            "meaning": "bánh vòng"
+        },
+        {
+            "word": "dumpling",
+            "meaning": "bánh bao"
+        },
+        {
+            "word": "pancake",
+            "meaning": "bánh kếp"
+        },
+        {
+            "word": "waffle",
+            "meaning": "bánh waffle"
+        },
+        {
+            "word": "pie",
+            "meaning": "bánh nướng"
+        },
+        {
+            "word": "croissant",
+            "meaning": "bánh sừng bò"
+        },
+        {
+            "word": "cracker",
+            "meaning": "bánh giòn"
+        },
+        {
+            "word": "toast",
+            "meaning": "bánh mì nướng"
+        },
+        {
+            "word": "cereal",
+            "meaning": "ngũ cốc"
+        },
+        {
+            "word": "oatmeal",
+            "meaning": "cháo yến mạch"
+        },
+        {
+            "word": "soup",
+            "meaning": "súp"
+        },
+        {
+            "word": "beef",
+            "meaning": "thịt bò"
+        },
+        {
+            "word": "pork",
+            "meaning": "thịt heo"
+        },
+        {
+            "word": "chicken",
+            "meaning": "thịt gà"
+        },
+        {
+            "word": "duck",
+            "meaning": "thịt vịt"
+        },
+        {
+            "word": "fish",
+            "meaning": "cá"
+        },
+        {
+            "word": "shrimp",
+            "meaning": "tôm"
+        },
+        {
+            "word": "crab",
+            "meaning": "cua"
+        },
+        {
+            "word": "squid",
+            "meaning": "mực"
+        },
+        {
+            "word": "egg",
+            "meaning": "trứng"
+        },
+        {
+            "word": "sausage",
+            "meaning": "xúc xích"
+        },
+        {
+            "word": "ham",
+            "meaning": "thịt nguội"
+        },
+        {
+            "word": "bacon",
+            "meaning": "thịt xông khói"
+        },
+        {
+            "word": "steak",
+            "meaning": "bít tết"
+        },
+        {
+            "word": "meatball",
+            "meaning": "thịt viên"
+        },
+        {
+            "word": "cheese",
+            "meaning": "phô mai"
+        },
+        {
+            "word": "butter",
+            "meaning": "bơ động vật"
+        },
+        {
+            "word": "milk",
+            "meaning": "sữa"
+        },
+        {
+            "word": "yogurt",
+            "meaning": "sữa chua"
+        },
+        {
+            "word": "ice cream",
+            "meaning": "kem"
+        },
+        {
+            "word": "cream",
+            "meaning": "kem sữa"
+        },
+        {
+            "word": "water",
+            "meaning": "nước"
+        },
+        {
+            "word": "juice",
+            "meaning": "nước ép"
+        },
+        {
+            "word": "tea",
+            "meaning": "trà"
+        },
+        {
+            "word": "coffee",
+            "meaning": "cà phê"
+        },
+        {
+            "word": "milkshake",
+            "meaning": "sữa lắc"
+        },
+        {
+            "word": "smoothie",
+            "meaning": "sinh tố"
+        },
+        {
+            "word": "soda",
+            "meaning": "nước ngọt"
+        },
+        {
+            "word": "cola",
+            "meaning": "cola"
+        },
+        {
+            "word": "hot chocolate",
+            "meaning": "sô-cô-la nóng"
+        },
+        {
+            "word": "energy drink",
+            "meaning": "nước tăng lực"
+        },
+        {
+            "word": "salt",
+            "meaning": "muối"
+        },
+        {
+            "word": "sugar",
+            "meaning": "đường"
+        },
+        {
+            "word": "pepper",
+            "meaning": "tiêu"
+        },
+        {
+            "word": "honey",
+            "meaning": "mật ong"
+        },
+        {
+            "word": "jam",
+            "meaning": "mứt"
+        },
+        {
+            "word": "oil",
+            "meaning": "dầu ăn"
+        },
+        {
+            "word": "vinegar",
+            "meaning": "giấm"
+        },
+        {
+            "word": "sauce",
+            "meaning": "nước sốt"
+        },
+        {
+            "word": "ketchup",
+            "meaning": "tương cà"
+        },
+        {
+            "word": "mustard",
+            "meaning": "mù tạt"
+        }
+    ]
+}

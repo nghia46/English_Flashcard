@@ -1,0 +1,404 @@
+{
+  "Valorant": [
+    {
+      "word": "agent",
+      "meaning": "đặc vụ"
+    },
+    {
+      "word": "player",
+      "meaning": "người chơi"
+    },
+    {
+      "word": "team",
+      "meaning": "đội"
+    },
+    {
+      "word": "match",
+      "meaning": "trận đấu"
+    },
+    {
+      "word": "round",
+      "meaning": "vòng đấu"
+    },
+    {
+      "word": "map",
+      "meaning": "bản đồ"
+    },
+    {
+      "word": "rank",
+      "meaning": "bậc xếp hạng"
+    },
+    {
+      "word": "queue",
+      "meaning": "hàng chờ"
+    },
+    {
+      "word": "lobby",
+      "meaning": "phòng chờ"
+    },
+    {
+      "word": "server",
+      "meaning": "máy chủ"
+    },
+    {
+      "word": "attack",
+      "meaning": "tấn công"
+    },
+    {
+      "word": "defense",
+      "meaning": "phòng thủ"
+    },
+    {
+      "word": "attacker",
+      "meaning": "phe tấn công"
+    },
+    {
+      "word": "defender",
+      "meaning": "phe phòng thủ"
+    },
+    {
+      "word": "site",
+      "meaning": "khu đặt bom"
+    },
+    {
+      "word": "spike",
+      "meaning": "bom Spike"
+    },
+    {
+      "word": "plant",
+      "meaning": "đặt bom"
+    },
+    {
+      "word": "defuse",
+      "meaning": "gỡ bom"
+    },
+    {
+      "word": "retake",
+      "meaning": "chiếm lại khu vực"
+    },
+    {
+      "word": "rotate",
+      "meaning": "đổi hướng di chuyển"
+    },
+    {
+      "word": "kill",
+      "meaning": "hạ gục"
+    },
+    {
+      "word": "death",
+      "meaning": "bị hạ gục"
+    },
+    {
+      "word": "assist",
+      "meaning": "hỗ trợ"
+    },
+    {
+      "word": "headshot",
+      "meaning": "bắn trúng đầu"
+    },
+    {
+      "word": "ace",
+      "meaning": "hạ gục cả đội địch"
+    },
+    {
+      "word": "clutch",
+      "meaning": "thắng trong tình huống khó"
+    },
+    {
+      "word": "frag",
+      "meaning": "mạng hạ gục"
+    },
+    {
+      "word": "trade",
+      "meaning": "đổi mạng"
+    },
+    {
+      "word": "elimination",
+      "meaning": "loại bỏ"
+    },
+    {
+      "word": "damage",
+      "meaning": "sát thương"
+    },
+    {
+      "word": "weapon",
+      "meaning": "vũ khí"
+    },
+    {
+      "word": "gun",
+      "meaning": "súng"
+    },
+    {
+      "word": "rifle",
+      "meaning": "súng trường"
+    },
+    {
+      "word": "sniper",
+      "meaning": "súng bắn tỉa"
+    },
+    {
+      "word": "pistol",
+      "meaning": "súng lục"
+    },
+    {
+      "word": "shotgun",
+      "meaning": "súng ngắn"
+    },
+    {
+      "word": "machine gun",
+      "meaning": "súng máy"
+    },
+    {
+      "word": "knife",
+      "meaning": "dao"
+    },
+    {
+      "word": "bullet",
+      "meaning": "đạn"
+    },
+    {
+      "word": "magazine",
+      "meaning": "băng đạn"
+    },
+    {
+      "word": "Vandal",
+      "meaning": "súng Vandal"
+    },
+    {
+      "word": "Phantom",
+      "meaning": "súng Phantom"
+    },
+    {
+      "word": "Operator",
+      "meaning": "súng Operator"
+    },
+    {
+      "word": "Sheriff",
+      "meaning": "súng Sheriff"
+    },
+    {
+      "word": "Ghost",
+      "meaning": "súng Ghost"
+    },
+    {
+      "word": "Classic",
+      "meaning": "súng Classic"
+    },
+    {
+      "word": "Bulldog",
+      "meaning": "súng Bulldog"
+    },
+    {
+      "word": "Guardian",
+      "meaning": "súng Guardian"
+    },
+    {
+      "word": "Spectre",
+      "meaning": "súng Spectre"
+    },
+    {
+      "word": "Odin",
+      "meaning": "súng Odin"
+    },
+    {
+      "word": "ability",
+      "meaning": "kỹ năng"
+    },
+    {
+      "word": "skill",
+      "meaning": "chiêu thức"
+    },
+    {
+      "word": "ultimate",
+      "meaning": "chiêu cuối"
+    },
+    {
+      "word": "cooldown",
+      "meaning": "thời gian hồi chiêu"
+    },
+    {
+      "word": "charge",
+      "meaning": "điểm tích lũy chiêu cuối"
+    },
+    {
+      "word": "flash",
+      "meaning": "kỹ năng làm mù"
+    },
+    {
+      "word": "smoke",
+      "meaning": "kỹ năng tạo khói"
+    },
+    {
+      "word": "wall",
+      "meaning": "tường chắn"
+    },
+    {
+      "word": "trap",
+      "meaning": "bẫy"
+    },
+    {
+      "word": "drone",
+      "meaning": "máy bay do thám"
+    },
+    {
+      "word": "peek",
+      "meaning": "ló ra kiểm tra"
+    },
+    {
+      "word": "angle",
+      "meaning": "góc nhìn"
+    },
+    {
+      "word": "crosshair",
+      "meaning": "tâm ngắm"
+    },
+    {
+      "word": "spray",
+      "meaning": "xả đạn"
+    },
+    {
+      "word": "tap",
+      "meaning": "bắn từng viên"
+    },
+    {
+      "word": "burst",
+      "meaning": "bắn loạt ngắn"
+    },
+    {
+      "word": "aim",
+      "meaning": "ngắm bắn"
+    },
+    {
+      "word": "recoil",
+      "meaning": "độ giật"
+    },
+    {
+      "word": "movement",
+      "meaning": "di chuyển"
+    },
+    {
+      "word": "position",
+      "meaning": "vị trí"
+    },
+    {
+      "word": "economy",
+      "meaning": "kinh tế trận đấu"
+    },
+    {
+      "word": "credit",
+      "meaning": "tiền trong game"
+    },
+    {
+      "word": "buy",
+      "meaning": "mua trang bị"
+    },
+    {
+      "word": "save",
+      "meaning": "tiết kiệm tiền"
+    },
+    {
+      "word": "eco round",
+      "meaning": "vòng tiết kiệm"
+    },
+    {
+      "word": "full buy",
+      "meaning": "mua đầy đủ"
+    },
+    {
+      "word": "force buy",
+      "meaning": "cố mua"
+    },
+    {
+      "word": "bonus round",
+      "meaning": "vòng thưởng"
+    },
+    {
+      "word": "armor",
+      "meaning": "giáp"
+    },
+    {
+      "word": "shield",
+      "meaning": "khiên"
+    },
+    {
+      "word": "ping",
+      "meaning": "đánh dấu"
+    },
+    {
+      "word": "callout",
+      "meaning": "thông báo vị trí"
+    },
+    {
+      "word": "communication",
+      "meaning": "giao tiếp"
+    },
+    {
+      "word": "voice chat",
+      "meaning": "trò chuyện thoại"
+    },
+    {
+      "word": "teammate",
+      "meaning": "đồng đội"
+    },
+    {
+      "word": "enemy",
+      "meaning": "kẻ địch"
+    },
+    {
+      "word": "opponent",
+      "meaning": "đối thủ"
+    },
+    {
+      "word": "coach",
+      "meaning": "huấn luyện viên"
+    },
+    {
+      "word": "captain",
+      "meaning": "đội trưởng"
+    },
+    {
+      "word": "strategy",
+      "meaning": "chiến thuật"
+    },
+    {
+      "word": "entry",
+      "meaning": "người mở giao tranh"
+    },
+    {
+      "word": "lurker",
+      "meaning": "người đi lẻ"
+    },
+    {
+      "word": "support",
+      "meaning": "hỗ trợ"
+    },
+    {
+      "word": "anchor",
+      "meaning": "người giữ site"
+    },
+    {
+      "word": "duelist",
+      "meaning": "đấu sĩ"
+    },
+    {
+      "word": "initiator",
+      "meaning": "khởi tranh"
+    },
+    {
+      "word": "controller",
+      "meaning": "kiểm soát"
+    },
+    {
+      "word": "sentinel",
+      "meaning": "hộ vệ"
+    },
+    {
+      "word": "ranked",
+      "meaning": "đấu xếp hạng"
+    },
+    {
+      "word": "competitive",
+      "meaning": "chế độ cạnh tranh"
+    }
+  ]
+}

@@ -1,0 +1,404 @@
+{
+    "Trường học": [
+        {
+            "word": "student",
+            "meaning": "học sinh"
+        },
+        {
+            "word": "teacher",
+            "meaning": "giáo viên"
+        },
+        {
+            "word": "principal",
+            "meaning": "hiệu trưởng"
+        },
+        {
+            "word": "classmate",
+            "meaning": "bạn cùng lớp"
+        },
+        {
+            "word": "friend",
+            "meaning": "bạn bè"
+        },
+        {
+            "word": "school",
+            "meaning": "trường học"
+        },
+        {
+            "word": "classroom",
+            "meaning": "lớp học"
+        },
+        {
+            "word": "library",
+            "meaning": "thư viện"
+        },
+        {
+            "word": "canteen",
+            "meaning": "căn tin"
+        },
+        {
+            "word": "playground",
+            "meaning": "sân chơi"
+        },
+        {
+            "word": "gym",
+            "meaning": "nhà thể chất"
+        },
+        {
+            "word": "laboratory",
+            "meaning": "phòng thí nghiệm"
+        },
+        {
+            "word": "office",
+            "meaning": "văn phòng"
+        },
+        {
+            "word": "hall",
+            "meaning": "hội trường"
+        },
+        {
+            "word": "corridor",
+            "meaning": "hành lang"
+        },
+        {
+            "word": "stairs",
+            "meaning": "cầu thang"
+        },
+        {
+            "word": "gate",
+            "meaning": "cổng trường"
+        },
+        {
+            "word": "yard",
+            "meaning": "sân trường"
+        },
+        {
+            "word": "parking lot",
+            "meaning": "bãi đỗ xe"
+        },
+        {
+            "word": "bathroom",
+            "meaning": "nhà vệ sinh"
+        },
+        {
+            "word": "book",
+            "meaning": "sách"
+        },
+        {
+            "word": "textbook",
+            "meaning": "sách giáo khoa"
+        },
+        {
+            "word": "notebook",
+            "meaning": "vở"
+        },
+        {
+            "word": "dictionary",
+            "meaning": "từ điển"
+        },
+        {
+            "word": "worksheet",
+            "meaning": "phiếu bài tập"
+        },
+        {
+            "word": "paper",
+            "meaning": "giấy"
+        },
+        {
+            "word": "exam paper",
+            "meaning": "đề thi"
+        },
+        {
+            "word": "pen",
+            "meaning": "bút"
+        },
+        {
+            "word": "pencil",
+            "meaning": "bút chì"
+        },
+        {
+            "word": "marker",
+            "meaning": "bút lông"
+        },
+        {
+            "word": "eraser",
+            "meaning": "cục tẩy"
+        },
+        {
+            "word": "sharpener",
+            "meaning": "đồ gọt bút chì"
+        },
+        {
+            "word": "ruler",
+            "meaning": "thước kẻ"
+        },
+        {
+            "word": "calculator",
+            "meaning": "máy tính"
+        },
+        {
+            "word": "backpack",
+            "meaning": "ba lô"
+        },
+        {
+            "word": "schoolbag",
+            "meaning": "cặp sách"
+        },
+        {
+            "word": "folder",
+            "meaning": "bìa hồ sơ"
+        },
+        {
+            "word": "glue",
+            "meaning": "keo dán"
+        },
+        {
+            "word": "scissors",
+            "meaning": "kéo"
+        },
+        {
+            "word": "highlighter",
+            "meaning": "bút đánh dấu"
+        },
+        {
+            "word": "desk",
+            "meaning": "bàn học"
+        },
+        {
+            "word": "chair",
+            "meaning": "ghế"
+        },
+        {
+            "word": "whiteboard",
+            "meaning": "bảng trắng"
+        },
+        {
+            "word": "blackboard",
+            "meaning": "bảng đen"
+        },
+        {
+            "word": "projector",
+            "meaning": "máy chiếu"
+        },
+        {
+            "word": "screen",
+            "meaning": "màn chiếu"
+        },
+        {
+            "word": "computer",
+            "meaning": "máy tính"
+        },
+        {
+            "word": "laptop",
+            "meaning": "máy tính xách tay"
+        },
+        {
+            "word": "printer",
+            "meaning": "máy in"
+        },
+        {
+            "word": "speaker",
+            "meaning": "loa"
+        },
+        {
+            "word": "lesson",
+            "meaning": "bài học"
+        },
+        {
+            "word": "homework",
+            "meaning": "bài tập về nhà"
+        },
+        {
+            "word": "exercise",
+            "meaning": "bài tập"
+        },
+        {
+            "word": "quiz",
+            "meaning": "bài kiểm tra ngắn"
+        },
+        {
+            "word": "test",
+            "meaning": "bài kiểm tra"
+        },
+        {
+            "word": "exam",
+            "meaning": "kỳ thi"
+        },
+        {
+            "word": "question",
+            "meaning": "câu hỏi"
+        },
+        {
+            "word": "answer",
+            "meaning": "câu trả lời"
+        },
+        {
+            "word": "grade",
+            "meaning": "điểm số"
+        },
+        {
+            "word": "score",
+            "meaning": "điểm thi"
+        },
+        {
+            "word": "subject",
+            "meaning": "môn học"
+        },
+        {
+            "word": "math",
+            "meaning": "toán"
+        },
+        {
+            "word": "English",
+            "meaning": "tiếng Anh"
+        },
+        {
+            "word": "science",
+            "meaning": "khoa học"
+        },
+        {
+            "word": "history",
+            "meaning": "lịch sử"
+        },
+        {
+            "word": "geography",
+            "meaning": "địa lý"
+        },
+        {
+            "word": "physics",
+            "meaning": "vật lý"
+        },
+        {
+            "word": "chemistry",
+            "meaning": "hóa học"
+        },
+        {
+            "word": "biology",
+            "meaning": "sinh học"
+        },
+        {
+            "word": "art",
+            "meaning": "mỹ thuật"
+        },
+        {
+            "word": "music",
+            "meaning": "âm nhạc"
+        },
+        {
+            "word": "reading",
+            "meaning": "đọc hiểu"
+        },
+        {
+            "word": "writing",
+            "meaning": "viết"
+        },
+        {
+            "word": "speaking",
+            "meaning": "nói"
+        },
+        {
+            "word": "listening",
+            "meaning": "nghe"
+        },
+        {
+            "word": "vocabulary",
+            "meaning": "từ vựng"
+        },
+        {
+            "word": "grammar",
+            "meaning": "ngữ pháp"
+        },
+        {
+            "word": "project",
+            "meaning": "dự án"
+        },
+        {
+            "word": "presentation",
+            "meaning": "bài thuyết trình"
+        },
+        {
+            "word": "research",
+            "meaning": "nghiên cứu"
+        },
+        {
+            "word": "semester",
+            "meaning": "học kỳ"
+        },
+        {
+            "word": "term",
+            "meaning": "học kỳ"
+        },
+        {
+            "word": "schedule",
+            "meaning": "thời khóa biểu"
+        },
+        {
+            "word": "timetable",
+            "meaning": "thời gian biểu"
+        },
+        {
+            "word": "break",
+            "meaning": "giờ giải lao"
+        },
+        {
+            "word": "recess",
+            "meaning": "giờ ra chơi"
+        },
+        {
+            "word": "attendance",
+            "meaning": "điểm danh"
+        },
+        {
+            "word": "uniform",
+            "meaning": "đồng phục"
+        },
+        {
+            "word": "club",
+            "meaning": "câu lạc bộ"
+        },
+        {
+            "word": "graduation",
+            "meaning": "lễ tốt nghiệp"
+        },
+        {
+            "word": "certificate",
+            "meaning": "chứng chỉ"
+        },
+        {
+            "word": "scholarship",
+            "meaning": "học bổng"
+        },
+        {
+            "word": "competition",
+            "meaning": "cuộc thi"
+        },
+        {
+            "word": "team",
+            "meaning": "đội nhóm"
+        },
+        {
+            "word": "group",
+            "meaning": "nhóm"
+        },
+        {
+            "word": "partner",
+            "meaning": "bạn cùng nhóm"
+        },
+        {
+            "word": "leader",
+            "meaning": "nhóm trưởng"
+        },
+        {
+            "word": "meeting",
+            "meaning": "buổi họp"
+        },
+        {
+            "word": "training",
+            "meaning": "buổi tập huấn"
+        },
+        {
+            "word": "education",
+            "meaning": "giáo dục"
+        }
+    ]
+}

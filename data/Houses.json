@@ -1,0 +1,404 @@
+{
+    "Vật dụng trong nhà": [
+        {
+            "word": "book",
+            "meaning": "quyển sách"
+        },
+        {
+            "word": "pen",
+            "meaning": "cây bút"
+        },
+        {
+            "word": "pencil",
+            "meaning": "cây bút chì"
+        },
+        {
+            "word": "eraser",
+            "meaning": "cục tẩy"
+        },
+        {
+            "word": "ruler",
+            "meaning": "thước kẻ"
+        },
+        {
+            "word": "notebook",
+            "meaning": "quyển vở"
+        },
+        {
+            "word": "table",
+            "meaning": "cái bàn"
+        },
+        {
+            "word": "desk",
+            "meaning": "bàn học"
+        },
+        {
+            "word": "chair",
+            "meaning": "cái ghế"
+        },
+        {
+            "word": "sofa",
+            "meaning": "ghế sofa"
+        },
+        {
+            "word": "bed",
+            "meaning": "cái giường"
+        },
+        {
+            "word": "pillow",
+            "meaning": "cái gối"
+        },
+        {
+            "word": "blanket",
+            "meaning": "cái chăn"
+        },
+        {
+            "word": "mattress",
+            "meaning": "nệm"
+        },
+        {
+            "word": "wardrobe",
+            "meaning": "tủ quần áo"
+        },
+        {
+            "word": "cabinet",
+            "meaning": "tủ"
+        },
+        {
+            "word": "drawer",
+            "meaning": "ngăn kéo"
+        },
+        {
+            "word": "shelf",
+            "meaning": "kệ"
+        },
+        {
+            "word": "mirror",
+            "meaning": "gương"
+        },
+        {
+            "word": "clock",
+            "meaning": "đồng hồ"
+        },
+        {
+            "word": "lamp",
+            "meaning": "đèn"
+        },
+        {
+            "word": "fan",
+            "meaning": "quạt"
+        },
+        {
+            "word": "air conditioner",
+            "meaning": "máy lạnh"
+        },
+        {
+            "word": "television",
+            "meaning": "tivi"
+        },
+        {
+            "word": "remote",
+            "meaning": "điều khiển từ xa"
+        },
+        {
+            "word": "computer",
+            "meaning": "máy tính"
+        },
+        {
+            "word": "laptop",
+            "meaning": "máy tính xách tay"
+        },
+        {
+            "word": "phone",
+            "meaning": "điện thoại"
+        },
+        {
+            "word": "charger",
+            "meaning": "bộ sạc"
+        },
+        {
+            "word": "speaker",
+            "meaning": "loa"
+        },
+        {
+            "word": "refrigerator",
+            "meaning": "tủ lạnh"
+        },
+        {
+            "word": "microwave",
+            "meaning": "lò vi sóng"
+        },
+        {
+            "word": "oven",
+            "meaning": "lò nướng"
+        },
+        {
+            "word": "stove",
+            "meaning": "bếp"
+        },
+        {
+            "word": "rice cooker",
+            "meaning": "nồi cơm điện"
+        },
+        {
+            "word": "kettle",
+            "meaning": "ấm đun nước"
+        },
+        {
+            "word": "pot",
+            "meaning": "cái nồi"
+        },
+        {
+            "word": "pan",
+            "meaning": "cái chảo"
+        },
+        {
+            "word": "knife",
+            "meaning": "con dao"
+        },
+        {
+            "word": "spoon",
+            "meaning": "cái muỗng"
+        },
+        {
+            "word": "fork",
+            "meaning": "cái nĩa"
+        },
+        {
+            "word": "plate",
+            "meaning": "cái đĩa"
+        },
+        {
+            "word": "bowl",
+            "meaning": "cái bát"
+        },
+        {
+            "word": "cup",
+            "meaning": "cái cốc"
+        },
+        {
+            "word": "glass",
+            "meaning": "ly thủy tinh"
+        },
+        {
+            "word": "bottle",
+            "meaning": "chai"
+        },
+        {
+            "word": "mug",
+            "meaning": "ca uống nước"
+        },
+        {
+            "word": "chopsticks",
+            "meaning": "đôi đũa"
+        },
+        {
+            "word": "tray",
+            "meaning": "cái khay"
+        },
+        {
+            "word": "sink",
+            "meaning": "bồn rửa"
+        },
+        {
+            "word": "toothbrush",
+            "meaning": "bàn chải đánh răng"
+        },
+        {
+            "word": "toothpaste",
+            "meaning": "kem đánh răng"
+        },
+        {
+            "word": "soap",
+            "meaning": "xà phòng"
+        },
+        {
+            "word": "shampoo",
+            "meaning": "dầu gội"
+        },
+        {
+            "word": "towel",
+            "meaning": "khăn tắm"
+        },
+        {
+            "word": "comb",
+            "meaning": "cái lược"
+        },
+        {
+            "word": "hair dryer",
+            "meaning": "máy sấy tóc"
+        },
+        {
+            "word": "bucket",
+            "meaning": "cái xô"
+        },
+        {
+            "word": "basin",
+            "meaning": "cái chậu"
+        },
+        {
+            "word": "toilet",
+            "meaning": "bồn cầu"
+        },
+        {
+            "word": "door",
+            "meaning": "cánh cửa"
+        },
+        {
+            "word": "window",
+            "meaning": "cửa sổ"
+        },
+        {
+            "word": "curtain",
+            "meaning": "rèm cửa"
+        },
+        {
+            "word": "floor",
+            "meaning": "sàn nhà"
+        },
+        {
+            "word": "wall",
+            "meaning": "bức tường"
+        },
+        {
+            "word": "ceiling",
+            "meaning": "trần nhà"
+        },
+        {
+            "word": "carpet",
+            "meaning": "thảm"
+        },
+        {
+            "word": "mat",
+            "meaning": "tấm thảm nhỏ"
+        },
+        {
+            "word": "picture",
+            "meaning": "bức tranh"
+        },
+        {
+            "word": "vase",
+            "meaning": "bình hoa"
+        },
+        {
+            "word": "flower",
+            "meaning": "bông hoa"
+        },
+        {
+            "word": "plant",
+            "meaning": "cây cảnh"
+        },
+        {
+            "word": "basket",
+            "meaning": "cái giỏ"
+        },
+        {
+            "word": "box",
+            "meaning": "cái hộp"
+        },
+        {
+            "word": "bag",
+            "meaning": "cái túi"
+        },
+        {
+            "word": "umbrella",
+            "meaning": "cái ô"
+        },
+        {
+            "word": "key",
+            "meaning": "chìa khóa"
+        },
+        {
+            "word": "lock",
+            "meaning": "ổ khóa"
+        },
+        {
+            "word": "hanger",
+            "meaning": "móc treo quần áo"
+        },
+        {
+            "word": "laundry basket",
+            "meaning": "giỏ đựng quần áo"
+        },
+        {
+            "word": "washing machine",
+            "meaning": "máy giặt"
+        },
+        {
+            "word": "vacuum cleaner",
+            "meaning": "máy hút bụi"
+        },
+        {
+            "word": "broom",
+            "meaning": "cây chổi"
+        },
+        {
+            "word": "mop",
+            "meaning": "cây lau nhà"
+        },
+        {
+            "word": "dustpan",
+            "meaning": "hốt rác"
+        },
+        {
+            "word": "trash can",
+            "meaning": "thùng rác"
+        },
+        {
+            "word": "cleaner",
+            "meaning": "chất tẩy rửa"
+        },
+        {
+            "word": "detergent",
+            "meaning": "bột giặt"
+        },
+        {
+            "word": "rope",
+            "meaning": "sợi dây"
+        },
+        {
+            "word": "scissors",
+            "meaning": "cái kéo"
+        },
+        {
+            "word": "tape",
+            "meaning": "băng keo"
+        },
+        {
+            "word": "glue",
+            "meaning": "keo dán"
+        },
+        {
+            "word": "flashlight",
+            "meaning": "đèn pin"
+        },
+        {
+            "word": "battery",
+            "meaning": "pin"
+        },
+        {
+            "word": "wallet",
+            "meaning": "ví tiền"
+        },
+        {
+            "word": "coin",
+            "meaning": "đồng xu"
+        },
+        {
+            "word": "calendar",
+            "meaning": "lịch"
+        },
+        {
+            "word": "alarm clock",
+            "meaning": "đồng hồ báo thức"
+        },
+        {
+            "word": "cushion",
+            "meaning": "đệm ghế"
+        },
+        {
+            "word": "toy",
+            "meaning": "đồ chơi"
+        }
+    ]
+}
