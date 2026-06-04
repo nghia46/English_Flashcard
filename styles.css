@@ -75,7 +75,9 @@
  }
  .top-bar {
      display: flex;
-    align-items: center;
+     justify-content: space-between;
+     align-items: center;
+     margin-bottom: 25px;
  }
  .top-bar h1 {
     text-align: center;
