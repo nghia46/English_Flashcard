@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Stylesheet chính -->
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
@@ -53,8 +54,7 @@
                     <div class="checker-actions-top">
                         <button class="warning-btn" id="clearStorageBtn" onclick="clearSavedData()">🧹 Reset Ứng
                             dụng</button>
-                        <label for="fileInput" class="file-upload-label" id="fileLabel">📁 Chọn một hoặc nhiều file
-                            từ vựng
+                        <label for="fileInput" class="file-upload-label" id="fileLabel">📁 Load file
                             (.txt, .json)</label>
                         <input type="file" id="fileInput" accept=".txt,.json" multiple>
 
@@ -65,7 +65,7 @@
                     <div id="checkerList" class="checker-list"></div>
                 </div>
             </div>
-
+        
             <div class="review-zone">
                 <label for="reviewCountSelect">Số lượng từ ôn tập ngẫu nhiên:</label>
                 <div class="selector-row">
@@ -79,15 +79,16 @@
                 </div>
             </div>
         </div>
+        <hr/>
         <div class="action-bar">
             <div class="counter" id="counter">Vui lòng chọn file để bắt đầu</div>
-            <button class="shuffleBtn" id="shuffleBtn" onclick="shuffleCards()" disabled>🔀 Trộn từ</button>
+            <button  id="shuffleBtn" onclick="shuffleCards()" disabled>🔀 Trộn từ</button>
         </div>
 
         <div class="progress-container">
             <div class="progress-bar" id="progressBar"></div>
         </div>
-
+        
         <div class="flashcard-wrapper" onclick="flipCard()">
             <div class="flashcard" id="card">
                 <div class="card-face card-front">
