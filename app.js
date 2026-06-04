@@ -5,7 +5,7 @@ let topicProgress = {}; // Lưu trữ bộ đếm index của từng chủ đề
 let allCheckedState = false;
 
 // Biến lưu trữ đường dẫn URL cấu hình của từng chủ đề từ API Index danh mục
-let topicUrls = {};
+let topicUrls = {}; 
 
 // Khai báo các phần tử DOM giao diện chính
 const card = document.getElementById('card');
@@ -30,7 +30,7 @@ const checkerList = document.getElementById('checkerList');
 const reviewCountSelect = document.getElementById('reviewCountSelect');
 const startReviewBtn = document.getElementById('startReviewBtn');
 
-// === Xử lý Giao diện sáng / tối (Theme) ===
+// === 1. Xử lý Giao diện sáng / tối (Theme) ===
 function toggleTheme() {
     const currentTheme = document.documentElement.getAttribute('data-theme');
     if (currentTheme === 'dark') {
@@ -54,7 +54,7 @@ if (savedTheme === 'dark') {
     if (themeBtn) themeBtn.textContent = '🌙';
 }
 
-// === Tính năng Phát âm (Text-to-Speech) ===
+// === 2. Tính năng Phát âm (Text-to-Speech) ===
 function speakWord(event) {
     if (event) event.stopPropagation(); // Ngăn hành vi lật thẻ khi bấm nút loa
 
@@ -62,18 +62,18 @@ function speakWord(event) {
     if (flashcards.length === 0 || !flashcards[currentIndex]) return;
 
     const wordText = flashcards[currentIndex].word;
-
+    
     // Hủy các giọng đọc đang bị xếp hàng chờ (nếu có) để phát âm ngay lập tức
     window.speechSynthesis.cancel();
 
     const utterance = new SpeechSynthesisUtterance(wordText);
     utterance.lang = 'en-US'; // Thiết lập chuẩn tiếng Anh - Mỹ
     utterance.rate = 0.9;     // Tốc độ đọc vừa phải giúp dễ nghe
-
+    
     window.speechSynthesis.speak(utterance);
 }
 
-// === Cập nhật trạng thái hiển thị Flashcard ===
+// === 3. Cập nhật trạng thái hiển thị Flashcard ===
 function updateCard() {
     const currentIndex = topicProgress[currentTopicName] || 0;
 
@@ -82,7 +82,7 @@ function updateCard() {
         backMeaning.textContent = "Chào mừng";
         counter.textContent = "Vui lòng chọn hoặc nạp file";
         progressBar.style.width = "0%";
-
+        
         prevBtn.disabled = true;
         nextBtn.disabled = true;
         shuffleBtn.disabled = true;
@@ -157,7 +157,7 @@ function shuffleCards() {
     saveProgressToStorage();
 }
 
-// === Cơ chế Lazy-Loading: Nạp dữ liệu khi chuyển đổi Chủ đề ===
+// === 4. Cơ chế Lazy-Loading: Nạp dữ liệu khi chuyển đổi Chủ đề ===
 function switchTopic() {
     const selectedTopic = listSelect.value;
     if (!selectedTopic) {
@@ -170,19 +170,32 @@ function switchTopic() {
     // NẾU CHỦ ĐỀ CHƯA TỪNG ĐƯỢC TẢI CHI TIẾT (Mảng rỗng và có URL liên kết) -> Thực hiện Fetch dữ liệu file JSON tương ứng
     if (topicsData[selectedTopic] && topicsData[selectedTopic].length === 0 && topicUrls[selectedTopic]) {
         fileLabel.textContent = `⏳ Đang tải từ vựng cho "${selectedTopic}"...`;
-
+        
         fetch(topicUrls[selectedTopic])
             .then(res => {
                 if (!res.ok) throw new Error("Không thể tải danh sách từ vựng của chủ đề này.");
                 return res.json();
             })
             .then(wordList => {
-                topicsData[selectedTopic] = wordList; // Đổ mảng từ vựng vào bộ nhớ cục bộ
+                // SỬA LỖI KHÔNG PHẢI MẢNG (Iterable Error): Ép kiểu cứu vãn nếu file JSON lỡ bị bọc bởi key tên chủ đề
+                if (!Array.isArray(wordList)) {
+                    if (typeof wordList === 'object' && wordList[selectedTopic]) {
+                        wordList = wordList[selectedTopic];
+                    } else if (typeof wordList === 'object') {
+                        const firstKey = Object.keys(wordList)[0];
+                        if (Array.isArray(wordList[firstKey])) {
+                            wordList = wordList[firstKey];
+                        }
+                    }
+                }
 
+                // Nếu sau khi kiểm tra vẫn không đúng cấu trúc mảng, chuyển về mảng rỗng để không crash web
+                topicsData[selectedTopic] = Array.isArray(wordList) ? wordList : []; 
+                
                 // Cập nhật hiển thị số lượng từ trên thẻ select option
                 const currentOption = listSelect.querySelector(`option[value="${selectedTopic}"]`);
                 if (currentOption) {
-                    currentOption.textContent = `${selectedTopic} (${wordList.length} từ)`;
+                    currentOption.textContent = `${selectedTopic} (${topicsData[selectedTopic].length} từ)`;
                 }
 
                 // Cập nhật danh sách bảng điều khiển quản lý checklist
@@ -195,6 +208,8 @@ function switchTopic() {
             .catch(err => {
                 console.error(err);
                 fileLabel.textContent = `❌ Lỗi nạp dữ liệu chủ đề ${selectedTopic}`;
+                topicsData[selectedTopic] = []; // Tạo mảng rỗng phòng ngừa lỗi lặp lại
+                proceedToLoadCard();
             });
     } else {
         // Nếu dữ liệu đã có sẵn trong bộ nhớ (được nạp từ trước hoặc nạp thủ công bằng kéo thả file)
@@ -204,7 +219,12 @@ function switchTopic() {
 
 // Xử lý nạp mảng từ vựng vào khung Flashcard sau khi hoàn tất tải dữ liệu
 function proceedToLoadCard() {
-    flashcards = [...topicsData[currentTopicName]];
+    // SỬA LỖI KHÔNG PHẢI MẢNG: Kiểm tra an toàn biến mảng trước khi clone [...]
+    if (!topicsData[currentTopicName] || !Array.isArray(topicsData[currentTopicName])) {
+        flashcards = [];
+    } else {
+        flashcards = [...topicsData[currentTopicName]];
+    }
 
     if (topicProgress[currentTopicName] === undefined || topicProgress[currentTopicName] >= flashcards.length) {
         topicProgress[currentTopicName] = 0;
@@ -212,10 +232,16 @@ function proceedToLoadCard() {
 
     mainTitle.textContent = currentTopicName.charAt(0).toUpperCase() + currentTopicName.slice(1);
 
-    // Kích hoạt lại các nút chức năng chính
-    prevBtn.disabled = false;
-    nextBtn.disabled = false;
-    shuffleBtn.disabled = false;
+    // Kích hoạt lại các nút chức năng chính dựa theo số lượng từ khả dụng
+    if (flashcards.length > 0) {
+        prevBtn.disabled = false;
+        nextBtn.disabled = false;
+        shuffleBtn.disabled = false;
+    } else {
+        prevBtn.disabled = true;
+        nextBtn.disabled = true;
+        shuffleBtn.disabled = true;
+    }
     manageBtn.disabled = false;
 
     // Kiểm tra kích hoạt nút Ôn tập tổng hợp
@@ -225,7 +251,7 @@ function proceedToLoadCard() {
     saveProgressToStorage();
 }
 
-// === Cập nhật danh sách Dropdown hiển thị danh mục chủ đề ===
+// === 5. Cập nhật danh sách Dropdown hiển thị danh mục chủ đề ===
 function updateSelectDropdown(defaultActiveTopic = "") {
     listSelect.innerHTML = "";
     const keys = Object.keys(topicsData);
@@ -239,7 +265,7 @@ function updateSelectDropdown(defaultActiveTopic = "") {
         const option = document.createElement('option');
         option.value = topic;
         // Nếu từ vựng đã tải về thì hiển thị kèm số lượng từ, ngược lại giữ nguyên tên
-        const countText = topicsData[topic].length > 0 ? ` (${topicsData[topic].length} từ)` : "";
+        const countText = (topicsData[topic] && topicsData[topic].length > 0) ? ` (${topicsData[topic].length} từ)` : "";
         option.textContent = topic + countText;
         listSelect.appendChild(option);
     });
@@ -266,7 +292,7 @@ function resetToEmptyState() {
     checkGlobalReviewButtonState();
 }
 
-// === Đọc File JSON thủ công qua khu vực Kéo / Thả hoặc Chọn file ===
+// === 6. Đọc File JSON thủ công qua khu vực Kéo / Thả hoặc Chọn file ===
 fileInput.addEventListener('change', (e) => {
     const files = e.target.files;
     if (files.length === 0) return;
@@ -279,17 +305,17 @@ fileInput.addEventListener('change', (e) => {
         reader.onload = function (event) {
             try {
                 const jsonData = JSON.parse(event.target.result);
-
+                
                 // Trường hợp 1: File cấu hình chứa nhiều chủ đề cùng lúc: { "Chủ đề 1": [...], "Chủ đề 2": [...] }
                 if (!Array.isArray(jsonData) && typeof jsonData === 'object') {
-                    Object.keys(jsonData).forEach((topic, index) => {
+                    Object.keys(jsonData).forEach((topic) => {
                         if (Array.isArray(jsonData[topic])) {
                             topicsData[topic] = jsonData[topic];
                             if (topicProgress[topic] === undefined) topicProgress[topic] = 0;
                             if (!firstNewTopic) firstNewTopic = topic;
                         }
                     });
-                }
+                } 
                 // Trường hợp 2: File JSON đơn lẻ chứa danh sách từ của đúng 1 chủ đề, lấy tên file làm tên chủ đề
                 else if (Array.isArray(jsonData)) {
                     const topicName = file.name.replace(/\.[^/.]+$/, ""); // Cắt đuôi mở rộng .json
@@ -315,7 +341,7 @@ fileInput.addEventListener('change', (e) => {
     });
 });
 
-// === Quản lý Bảng điều khiển Checklist (Bật/Tắt và Xóa nhiều chủ đề) ===
+// === 7. Quản lý Bảng điều khiển Checklist (Bật/Tắt và Xóa nhiều chủ đề) ===
 function toggleCheckerPanel() {
     if (checkerPanel.classList.contains('hidden')) {
         renderCheckerList();
@@ -335,6 +361,9 @@ function renderCheckerList() {
     }
 
     keys.forEach(topic => {
+        // Không hiện "Ôn tập tổng hợp" vào danh sách xóa quản lý
+        if (topic === "🔄 Ôn tập tổng hợp") return;
+
         const item = document.createElement('div');
         item.className = "checker-item";
 
@@ -345,7 +374,7 @@ function renderCheckerList() {
 
         const label = document.createElement('label');
         label.htmlFor = `check-${topic}`;
-        const countText = topicsData[topic].length > 0 ? ` (${topicsData[topic].length} từ)` : " (Chưa nạp)";
+        const countText = (topicsData[topic] && topicsData[topic].length > 0) ? ` (${topicsData[topic].length} từ)` : " (Chưa nạp)";
         label.textContent = topic + countText;
 
         item.appendChild(checkbox);
@@ -376,9 +405,9 @@ function deleteSelectedTopics() {
         });
 
         allCheckedState = false;
-
+        
         // Xác định chủ đề thay thế để kích hoạt sau khi chủ đề hiện tại bị xóa
-        const remainingKeys = Object.keys(topicsData);
+        const remainingKeys = Object.keys(topicsData).filter(k => k !== "🔄 Ôn tập tổng hợp");
         let nextActiveTopic = "";
         if (remainingKeys.length > 0) {
             nextActiveTopic = remainingKeys.includes(currentTopicName) ? currentTopicName : remainingKeys[0];
@@ -390,18 +419,18 @@ function deleteSelectedTopics() {
     }
 }
 
-// === Tính năng: Ôn tập tổng hợp kết hợp nhiều chủ đề ===
+// === 8. Tính năng: Ôn tập tổng hợp kết hợp nhiều chủ đề ===
 function checkGlobalReviewButtonState() {
     if (!startReviewBtn) return;
     // Chỉ kích hoạt nút nếu có ít nhất 1 chủ đề đã thực sự tải xong từ vựng về bộ nhớ
-    const loadedTopics = Object.keys(topicsData).filter(k => topicsData[k].length > 0);
+    const loadedTopics = Object.keys(topicsData).filter(k => k !== "🔄 Ôn tập tổng hợp" && topicsData[k] && topicsData[k].length > 0);
     startReviewBtn.disabled = (loadedTopics.length === 0);
 }
 
 function startGlobalReview() {
     // Thu thập toàn bộ các từ thuộc những chủ đề ĐÃ ĐƯỢC TẢI dữ liệu về hệ thống
-    const loadedTopics = Object.keys(topicsData).filter(k => topicsData[k].length > 0);
-
+    const loadedTopics = Object.keys(topicsData).filter(k => k !== "🔄 Ôn tập tổng hợp" && topicsData[k] && topicsData[k].length > 0);
+    
     if (loadedTopics.length === 0) {
         alert("Không tìm thấy dữ liệu từ vựng khả dụng để tạo danh sách ôn tập.");
         return;
@@ -437,7 +466,7 @@ function startGlobalReview() {
         listSelect.appendChild(reviewOption);
     }
     reviewOption.textContent = `${reviewSessionName} (${globalPool.length} từ)`;
-
+    
     listSelect.value = reviewSessionName;
     switchTopic();
 
@@ -445,7 +474,7 @@ function startGlobalReview() {
     if (checkerPanel) checkerPanel.classList.add('hidden');
 }
 
-// === Đồng bộ lưu và tải dữ liệu qua LocalStorage trình duyệt ===
+// === 9. Đồng bộ lưu và tải dữ liệu qua LocalStorage trình duyệt ===
 function saveProgressToStorage() {
     // Tránh lưu dữ liệu tạm thời của phiên Ôn tập tổng hợp vào bộ nhớ vĩnh viễn
     const cleanTopicsData = { ...topicsData };
@@ -500,11 +529,11 @@ function clearSavedData() {
     }
 }
 
-// === Quản lý Sự kiện phím tắt Bàn phím máy tính ===
+// === 10. Quản lý Sự kiện phím tắt Bàn phím máy tính ===
 document.addEventListener('keydown', (e) => {
     if (flashcards.length === 0) return;
-
-    // Bỏ qua phím tắt nếu người dùng đang thao tác nhập liệu bên trong các thẻ cấu hình select dropdown
+    
+    // Bỏ qua phím tắt nếu người dùng đang thao tác nhập liệu bên trong các thẻ cấu hình hoặc nút bấm
     if (e.target.tagName === 'SELECT' || e.target.tagName === 'INPUT') return;
 
     if (e.code === 'Space') {
@@ -515,18 +544,20 @@ document.addEventListener('keydown', (e) => {
     } else if (e.code === 'ArrowLeft') {
         prevCard();
     } else if (e.code === 'KeyV' || e.code === 'KeyV') {
-        speakWord(); // Phím tắt nhanh "V" hoặc lệnh phát âm
+        speakWord(); // Phím tắt nhanh "V" lệnh phát âm tiếng Anh
     }
 });
 
-// === KHỞI CHẠY ỨNG DỤNG KHI TẢI TRANG XONG ===
+// === 11. KHỞI CHẠY ỨNG DỤNG KHI TẢI TRANG XONG ===
 window.addEventListener('DOMContentLoaded', () => {
     const hasSavedData = loadProgressFromStorage();
 
+    // Nếu bộ nhớ trống (Lần đầu chạy trang), kết nối API Index để lấy danh mục chủ đề tối ưu theo cấu trúc gọn
     if (!hasSavedData) {
         fileLabel.textContent = `⏳ Đang tải danh mục chủ đề từ máy chủ...`;
-
-        const indexApiUrl = 'https://raw.githubusercontent.com/nghia46/English_Flashcard/refs/heads/master/index.json';
+        
+        // Trỏ thẳng tới liên kết tệp mục lục chính trên GitHub của bạn
+        const indexApiUrl = 'https://raw.githubusercontent.com/nghia46/English_Flashcard/refs/heads/master/English-words.json'; 
 
         fetch(indexApiUrl)
             .then(response => {
@@ -534,17 +565,17 @@ window.addEventListener('DOMContentLoaded', () => {
                 return response.json();
             })
             .then(indexData => {
-                // Tách lấy baseUrl và danh sách tệp tin
+                // Giải mã phân tách cấu trúc: baseUrl và danh sách tệp tin ngắn gọn
                 const baseUrl = indexData.baseUrl || "";
                 const topics = indexData.topics || {};
 
                 topicUrls = {};
                 topicsData = {};
 
-                // Tự động nối baseUrl với tên file để tạo link Raw hoàn chỉnh
+                // Tự động ghép nối chuỗi đường dẫn tạo ra link Raw GitHub chính xác cho từng tệp
                 Object.keys(topics).forEach(topic => {
                     topicUrls[topic] = baseUrl + topics[topic];
-                    topicsData[topic] = [];
+                    topicsData[topic] = []; // Khởi tạo mảng rỗng chờ người dùng kích hoạt tải (Lazy Loading)
                     if (topicProgress[topic] === undefined) {
                         topicProgress[topic] = 0;
                     }
@@ -553,13 +584,13 @@ window.addEventListener('DOMContentLoaded', () => {
                 const keys = Object.keys(topicsData);
                 if (keys.length > 0) {
                     fileLabel.textContent = `📁 Đã đồng bộ danh mục hệ thống thành công`;
-                    updateSelectDropdown(keys[0]);
+                    updateSelectDropdown(keys[0]); // Nạp giao diện và bắt đầu chạy chủ đề mặc định đầu tiên
                 } else {
                     resetToEmptyState();
                 }
             })
             .catch(error => {
-                console.error("Lỗi đồng bộ API danh mục:", error);
+                console.error("Lỗi đồng bộ API danh mục hệ thống:", error);
                 fileLabel.textContent = `❌ Không tìm thấy danh sách mặc định hệ thống`;
                 resetToEmptyState();
             });
