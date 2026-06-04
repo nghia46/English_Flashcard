@@ -86,7 +86,7 @@
     },
     {
       "word": "at",
-      "meaning": "tai"
+      "meaning": "tại"
     },
     {
       "word": "one",
@@ -230,7 +230,7 @@
     },
     {
       "word": "about",
-      "meaning": "về, khoảng"
+      "meaning": "về"
     },
     {
       "word": "many",
@@ -242,31 +242,31 @@
     },
     {
       "word": "them",
-      "meaning": "họ, chúng"
+      "meaning": "họ"
+    },
+    {
+      "word": "would",
+      "meaning": "sẽ"
     },
     {
       "word": "write",
       "meaning": "viết"
     },
     {
-      "word": "would",
-      "meaning": "sẽ, muốn"
-    },
-    {
       "word": "like",
-      "meaning": "như, thích"
+      "meaning": "thích, như"
     },
     {
       "word": "so",
-      "meaning": "vì vậy, như thế"
+      "meaning": "vì vậy"
     },
     {
       "word": "these",
-      "meaning": "những... này"
+      "meaning": "những cái này"
     },
     {
       "word": "her",
-      "meaning": "của cô ấy, cô ấy"
+      "meaning": "của cô ấy"
     },
     {
       "word": "long",
@@ -278,11 +278,11 @@
     },
     {
       "word": "thing",
-      "meaning": "vật, điều"
+      "meaning": "vật, việc"
     },
     {
       "word": "see",
-      "meaning": "nhìn, thấy"
+      "meaning": "nhìn thấy"
     },
     {
       "word": "him",
@@ -298,7 +298,7 @@
     },
     {
       "word": "look",
-      "meaning": "nhìn, xem"
+      "meaning": "nhìn"
     },
     {
       "word": "more",
@@ -325,8 +325,8 @@
       "meaning": "đã làm"
     },
     {
-      "word": "number",
-      "meaning": "số"
+      "word": "my",
+      "meaning": "của tôi"
     },
     {
       "word": "sound",
@@ -338,19 +338,19 @@
     },
     {
       "word": "most",
-      "meaning": "nhất, phần lớn"
+      "meaning": "hầu hết"
     },
     {
-      "word": "people",
-      "meaning": "người, nhân dân"
+      "word": "number",
+      "meaning": "số"
     },
     {
-      "word": "my",
-      "meaning": "của tôi"
+      "word": "who",
+      "meaning": "ai"
     },
     {
       "word": "over",
-      "meaning": "qua, trên"
+      "meaning": "trên, hơn"
     },
     {
       "word": "know",
@@ -373,424 +373,24 @@
       "meaning": "đầu tiên"
     },
     {
-      "word": "who",
-      "meaning": "ai"
+      "word": "people",
+      "meaning": "mọi người"
     },
     {
       "word": "may",
-      "meaning": "có thể, tháng năm"
-    },
-    {
-      "word": "down",
-      "meaning": "xuống"
-    },
-    {
-      "word": "side",
-      "meaning": "phía, cạnh"
-    },
-    {
-      "word": "been",
-      "meaning": "đã là"
-    },
-    {
-      "word": "now",
-      "meaning": "bây giờ"
-    },
-    {
-      "word": "find",
-      "meaning": "tìm thấy"
-    },
-    {
-      "word": "any",
-      "meaning": "bất kỳ"
-    },
-    {
-      "word": "new",
-      "meaning": "mới"
-    },
-    {
-      "word": "work",
-      "meaning": "làm việc, công việc"
-    },
-    {
-      "word": "part",
-      "meaning": "phần"
-    },
-    {
-      "word": "take",
-      "meaning": "lấy, đón"
-    },
-    {
-      "word": "get",
-      "meaning": "nhận, được"
-    },
-    {
-      "word": "place",
-      "meaning": "nơi chốn"
-    },
-    {
-      "word": "made",
-      "meaning": "đã làm"
-    },
-    {
-      "word": "live",
-      "meaning": "sống"
-    },
-    {
-      "word": "where",
-      "meaning": "ở đâu"
-    },
-    {
-      "word": "after",
-      "meaning": "sau khi"
-    },
-    {
-      "word": "back",
-      "meaning": "phía sau, trở lại"
-    },
-    {
-      "word": "little",
-      "meaning": "nhỏ, ít"
-    },
-    {
-      "word": "only",
-      "meaning": "chỉ"
-    },
-    {
-      "word": "round",
-      "meaning": "tròn, vòng quanh"
-    },
-    {
-      "word": "man",
-      "meaning": "đàn ông"
-    },
-    {
-      "word": "year",
-      "meaning": "năm"
-    },
-    {
-      "word": "came",
-      "meaning": "đã đến"
-    },
-    {
-      "word": "show",
-      "meaning": "hiển thị, chương trình"
-    },
-    {
-      "word": "every",
-      "meaning": "mỗi"
-    },
-    {
-      "word": "good",
-      "meaning": "tốt"
-    },
-    {
-      "word": "me",
-      "meaning": "tôi"
-    },
-    {
-      "word": "give",
-      "meaning": "cho, tặng"
-    },
-    {
-      "word": "our",
-      "meaning": "của chúng tôi"
-    },
-    {
-      "word": "under",
-      "meaning": "dưới"
-    },
-    {
-      "word": "name",
-      "meaning": "tên"
-    },
-    {
-      "word": "very",
-      "meaning": "rất"
-    },
-    {
-      "word": "through",
-      "meaning": "xuyên qua"
-    },
-    {
-      "word": "just",
-      "meaning": "chỉ, vừa mới"
-    },
-    {
-      "word": "form",
-      "meaning": "hình thức, biểu mẫu"
-    },
-    {
-      "word": "sentence",
-      "meaning": "câu"
-    },
-    {
-      "word": "great",
-      "meaning": "tuyệt vời, lớn"
-    },
-    {
-      "word": "think",
-      "meaning": "nghĩ"
-    },
-    {
-      "word": "say",
-      "meaning": "nói"
-    },
-    {
-      "word": "help",
-      "meaning": "giúp đỡ"
-    },
-    {
-      "word": "low",
-      "meaning": "thấp"
-    },
-    {
-      "word": "line",
-      "meaning": "đường thẳng, hàng"
-    },
-    {
-      "word": "differ",
-      "meaning": "khác biệt"
-    },
-    {
-      "word": "turn",
-      "meaning": "xoay, lượt"
-    },
-    {
-      "word": "cause",
-      "meaning": "nguyên nhân, gây ra"
-    },
-    {
-      "word": "much",
-      "meaning": "nhiều"
-    },
-    {
-      "word": "mean",
-      "meaning": "nghĩa là, keo kiệt"
-    },
-    {
-      "word": "before",
-      "meaning": "trước khi"
-    },
-    {
-      "word": "move",
-      "meaning": "di chuyển"
-    },
-    {
-      "word": "right",
-      "meaning": "phải, đúng"
-    },
-    {
-      "word": "boy",
-      "meaning": "con trai"
-    },
-    {
-      "word": "old",
-      "meaning": "cũ, già"
-    },
-    {
-      "word": "too",
-      "meaning": "quá, cũng vậy"
-    },
-    {
-      "word": "same",
-      "meaning": "giống nhau"
-    },
-    {
-      "word": "she",
-      "meaning": "cô ấy"
-    },
-    {
-      "word": "all",
-      "meaning": "tất cả"
-    },
-    {
-      "word": "there",
-      "meaning": "ở đó"
-    },
-    {
-      "word": "when",
-      "meaning": "khi"
-    },
-    {
-      "word": "up",
-      "meaning": "lên"
-    },
-    {
-      "word": "use",
-      "meaning": "sử dụng"
-    },
-    {
-      "word": "your",
-      "meaning": "của bạn"
-    },
-    {
-      "word": "way",
-      "meaning": "cách"
-    },
-    {
-      "word": "about",
-      "meaning": "về, khoảng"
-    },
-    {
-      "word": "many",
-      "meaning": "nhiều"
-    },
-    {
-      "word": "then",
-      "meaning": "sau đó"
-    },
-    {
-      "word": "them",
-      "meaning": "họ, chúng"
-    },
-    {
-      "word": "would",
-      "meaning": "sẽ, muốn"
-    },
-    {
-      "word": "write",
-      "meaning": "viết"
-    },
-    {
-      "word": "like",
-      "meaning": "như, thích"
-    },
-    {
-      "word": "so",
-      "meaning": "vì vậy, như thế"
-    },
-    {
-      "word": "these",
-      "meaning": "những... này"
-    },
-    {
-      "word": "her",
-      "meaning": "của cô ấy, cô ấy"
-    },
-    {
-      "word": "long",
-      "meaning": "dài"
-    },
-    {
-      "word": "make",
-      "meaning": "làm, tạo ra"
-    },
-    {
-      "word": "thing",
-      "meaning": "vật, điều"
-    },
-    {
-      "word": "see",
-      "meaning": "nhìn, thấy"
-    },
-    {
-      "word": "him",
-      "meaning": "anh ấy"
-    },
-    {
-      "word": "two",
-      "meaning": "hai"
-    },
-    {
-      "word": "has",
-      "meaning": "có"
-    },
-    {
-      "word": "look",
-      "meaning": "nhìn, xem"
-    },
-    {
-      "word": "more",
-      "meaning": "nhiều hơn"
-    },
-    {
-      "word": "day",
-      "meaning": "ngày"
-    },
-    {
-      "word": "could",
       "meaning": "có thể"
     },
     {
-      "word": "go",
-      "meaning": "đi"
-    },
-    {
-      "word": "come",
-      "meaning": "đến"
-    },
-    {
-      "word": "did",
-      "meaning": "đã làm"
-    },
-    {
-      "word": "number",
-      "meaning": "số"
-    },
-    {
-      "word": "sound",
-      "meaning": "âm thanh"
-    },
-    {
-      "word": "no",
-      "meaning": "không"
-    },
-    {
-      "word": "most",
-      "meaning": "nhất, phần lớn"
-    },
-    {
-      "word": "people",
-      "meaning": "người, nhân dân"
-    },
-    {
-      "word": "my",
-      "meaning": "của tôi"
-    },
-    {
-      "word": "over",
-      "meaning": "qua, trên"
-    },
-    {
-      "word": "know",
-      "meaning": "biết"
-    },
-    {
-      "word": "water",
-      "meaning": "nước"
-    },
-    {
-      "word": "than",
-      "meaning": "hơn"
-    },
-    {
-      "word": "call",
-      "meaning": "gọi"
-    },
-    {
-      "word": "first",
-      "meaning": "đầu tiên"
-    },
-    {
-      "word": "who",
-      "meaning": "ai"
-    },
-    {
-      "word": "may",
-      "meaning": "có thể, tháng năm"
-    },
-    {
       "word": "down",
       "meaning": "xuống"
     },
     {
       "word": "side",
-      "meaning": "phía, cạnh"
+      "meaning": "bên"
     },
     {
       "word": "been",
-      "meaning": "đã là"
+      "meaning": "đã từng"
     },
     {
       "word": "now",
@@ -799,406 +399,6 @@
     {
       "word": "find",
       "meaning": "tìm thấy"
-    },
-    {
-      "word": "any",
-      "meaning": "bất kỳ"
-    },
-    {
-      "word": "new",
-      "meaning": "mới"
-    },
-    {
-      "word": "work",
-      "meaning": "làm việc, công việc"
-    },
-    {
-      "word": "part",
-      "meaning": "phần"
-    },
-    {
-      "word": "take",
-      "meaning": "lấy, đón"
-    },
-    {
-      "word": "get",
-      "meaning": "nhận, được"
-    },
-    {
-      "word": "place",
-      "meaning": "nơi chốn"
-    },
-    {
-      "word": "made",
-      "meaning": "đã làm"
-    },
-    {
-      "word": "live",
-      "meaning": "sống"
-    },
-    {
-      "word": "where",
-      "meaning": "ở đâu"
-    },
-    {
-      "word": "after",
-      "meaning": "sau khi"
-    },
-    {
-      "word": "back",
-      "meaning": "phía sau, trở lại"
-    },
-    {
-      "word": "little",
-      "meaning": "nhỏ, ít"
-    },
-    {
-      "word": "only",
-      "meaning": "chỉ"
-    },
-    {
-      "word": "round",
-      "meaning": "tròn, vòng quanh"
-    },
-    {
-      "word": "man",
-      "meaning": "đàn ông"
-    },
-    {
-      "word": "year",
-      "meaning": "năm"
-    },
-    {
-      "word": "came",
-      "meaning": "đã đến"
-    },
-    {
-      "word": "show",
-      "meaning": "hiển thị, chương trình"
-    },
-    {
-      "word": "every",
-      "meaning": "mỗi"
-    },
-    {
-      "word": "good",
-      "meaning": "tốt"
-    },
-    {
-      "word": "me",
-      "meaning": "tôi"
-    },
-    {
-      "word": "give",
-      "meaning": "cho, tặng"
-    },
-    {
-      "word": "our",
-      "meaning": "của chúng tôi"
-    },
-    {
-      "word": "under",
-      "meaning": "dưới"
-    },
-    {
-      "word": "name",
-      "meaning": "tên"
-    },
-    {
-      "word": "very",
-      "meaning": "rất"
-    },
-    {
-      "word": "through",
-      "meaning": "xuyên qua"
-    },
-    {
-      "word": "just",
-      "meaning": "chỉ, vừa mới"
-    },
-    {
-      "word": "form",
-      "meaning": "hình thức, biểu mẫu"
-    },
-    {
-      "word": "sentence",
-      "meaning": "câu"
-    },
-    {
-      "word": "great",
-      "meaning": "tuyệt vời, lớn"
-    },
-    {
-      "word": "think",
-      "meaning": "nghĩ"
-    },
-    {
-      "word": "say",
-      "meaning": "nói"
-    },
-    {
-      "word": "help",
-      "meaning": "giúp đỡ"
-    },
-    {
-      "word": "low",
-      "meaning": "thấp"
-    },
-    {
-      "word": "line",
-      "meaning": "đường thẳng, hàng"
-    },
-    {
-      "word": "differ",
-      "meaning": "khác biệt"
-    },
-    {
-      "word": "turn",
-      "meaning": "xoay, lượt"
-    },
-    {
-      "word": "cause",
-      "meaning": "nguyên nhân, gây ra"
-    },
-    {
-      "word": "much",
-      "meaning": "nhiều"
-    },
-    {
-      "word": "mean",
-      "meaning": "nghĩa là, keo kiệt"
-    },
-    {
-      "word": "before",
-      "meaning": "trước khi"
-    },
-    {
-      "word": "move",
-      "meaning": "di chuyển"
-    },
-    {
-      "word": "right",
-      "meaning": "phải, đúng"
-    },
-    {
-      "word": "boy",
-      "meaning": "con trai"
-    },
-    {
-      "word": "old",
-      "meaning": "cũ, già"
-    },
-    {
-      "word": "too",
-      "meaning": "quá, cũng vậy"
-    },
-    {
-      "word": "same",
-      "meaning": "giống nhau"
-    },
-    {
-      "word": "tell",
-      "meaning": "kể, nói"
-    },
-    {
-      "word": "does",
-      "meaning": "làm"
-    },
-    {
-      "word": "set",
-      "meaning": "thiết lập, bộ"
-    },
-    {
-      "word": "three",
-      "meaning": "ba"
-    },
-    {
-      "word": "want",
-      "meaning": "muốn"
-    },
-    {
-      "word": "air",
-      "meaning": "không khí"
-    },
-    {
-      "word": "well",
-      "meaning": "tốt, giếng nước"
-    },
-    {
-      "word": "also",
-      "meaning": "cũng"
-    },
-    {
-      "word": "play",
-      "meaning": "chơi"
-    },
-    {
-      "word": "small",
-      "meaning": "nhỏ"
-    },
-    {
-      "word": "end",
-      "meaning": "kết thúc"
-    },
-    {
-      "word": "put",
-      "meaning": "đặt, để"
-    },
-    {
-      "word": "home",
-      "meaning": "nhà"
-    },
-    {
-      "word": "read",
-      "meaning": "đọc"
-    },
-    {
-      "word": "hand",
-      "meaning": "bàn tay"
-    },
-    {
-      "word": "port",
-      "meaning": "cảng"
-    },
-    {
-      "word": "large",
-      "meaning": "lớn"
-    },
-    {
-      "word": "spell",
-      "meaning": "đánh vần, câu chú"
-    },
-    {
-      "word": "add",
-      "meaning": "thêm vào"
-    },
-    {
-      "word": "even",
-      "meaning": "thậm chí, chẵn"
-    },
-    {
-      "word": "land",
-      "meaning": "đất liền"
-    },
-    {
-      "word": "here",
-      "meaning": "ở đây"
-    },
-    {
-      "word": "must",
-      "meaning": "phải"
-    },
-    {
-      "word": "big",
-      "meaning": "lớn"
-    },
-    {
-      "word": "high",
-      "meaning": "cao"
-    },
-    {
-      "word": "such",
-      "meaning": "như vậy, như thế"
-    },
-    {
-      "word": "follow",
-      "meaning": "theo sau"
-    },
-    {
-      "word": "act",
-      "meaning": "hành động, diễn"
-    },
-    {
-      "word": "why",
-      "meaning": "tại sao"
-    },
-    {
-      "word": "ask",
-      "meaning": "hỏi"
-    },
-    {
-      "word": "men",
-      "meaning": "đàn ông (số nhiều)"
-    },
-    {
-      "word": "change",
-      "meaning": "thay đổi, tiền lẻ"
-    },
-    {
-      "word": "went",
-      "meaning": "đã đi"
-    },
-    {
-      "word": "light",
-      "meaning": "ánh sáng, nhẹ"
-    },
-    {
-      "word": "kind",
-      "meaning": "loại, tử tế"
-    },
-    {
-      "word": "off",
-      "meaning": "tắt, rời khỏi"
-    },
-    {
-      "word": "need",
-      "meaning": "cần"
-    },
-    {
-      "word": "house",
-      "meaning": "ngôi nhà"
-    },
-    {
-      "word": "picture",
-      "meaning": "bức tranh, hình ảnh"
-    },
-    {
-      "word": "try",
-      "meaning": "thử, cố gắng"
-    },
-    {
-      "word": "us",
-      "meaning": "chúng tôi (tân ngữ)"
-    },
-    {
-      "word": "again",
-      "meaning": "lại, một lần nữa"
-    },
-    {
-      "word": "animal",
-      "meaning": "động vật"
-    },
-    {
-      "word": "point",
-      "meaning": "điểm"
-    },
-    {
-      "word": "mother",
-      "meaning": "mẹ"
-    },
-    {
-      "word": "world",
-      "meaning": "thế giới"
-    },
-    {
-      "word": "near",
-      "meaning": "gần"
-    },
-    {
-      "word": "build",
-      "meaning": "xây dựng"
-    },
-    {
-      "word": "self",
-      "meaning": "bản thân"
-    },
-    {
-      "word": "earth",
-      "meaning": "trái đất"
-    },
-    {
-      "word": "father",
-      "meaning": "cha"
     },
     {
       "word": "head",
@@ -1210,11 +410,11 @@
     },
     {
       "word": "own",
-      "meaning": "sở hữu, riêng"
+      "meaning": "sở hữu"
     },
     {
       "word": "page",
-      "meaning": "trang giấy"
+      "meaning": "trang"
     },
     {
       "word": "should",
@@ -1222,11 +422,11 @@
     },
     {
       "word": "country",
-      "meaning": "đất nước"
+      "meaning": "quốc gia"
     },
     {
       "word": "found",
-      "meaning": "tìm thấy (quá khứ), thành lập"
+      "meaning": "tìm thấy"
     },
     {
       "word": "answer",
@@ -1238,15 +438,15 @@
     },
     {
       "word": "grow",
-      "meaning": "phát triển, trồng"
+      "meaning": "phát triển"
     },
     {
       "word": "study",
-      "meaning": "học tập, nghiên cứu"
+      "meaning": "học tập"
     },
     {
       "word": "still",
-      "meaning": "vẫn, yên lặng"
+      "meaning": "vẫn"
     },
     {
       "word": "learn",
@@ -1254,11 +454,11 @@
     },
     {
       "word": "plant",
-      "meaning": "thực vật, nhà máy"
+      "meaning": "cây, trồng"
     },
     {
       "word": "cover",
-      "meaning": "bao phủ, vỏ bọc"
+      "meaning": "bao phủ"
     },
     {
       "word": "food",
@@ -1273,12 +473,12 @@
       "meaning": "bốn"
     },
     {
-      "word": "between",
-      "meaning": "giữa (hai thứ)"
+      "word": "thought",
+      "meaning": "suy nghĩ"
     },
     {
-      "word": "state",
-      "meaning": "bang, trạng thái, phát biểu"
+      "word": "let",
+      "meaning": "để cho"
     },
     {
       "word": "keep",
@@ -1294,15 +494,15 @@
     },
     {
       "word": "last",
-      "meaning": "cuối cùng, kéo dài"
+      "meaning": "cuối cùng"
     },
     {
-      "word": "let",
-      "meaning": "để cho"
+      "word": "door",
+      "meaning": "cửa"
     },
     {
-      "word": "thought",
-      "meaning": "suy nghĩ (danh từ hoặc quá khứ)"
+      "word": "between",
+      "meaning": "giữa"
     },
     {
       "word": "city",
@@ -1314,15 +514,15 @@
     },
     {
       "word": "cross",
-      "meaning": "băng qua, cây thánh giá"
+      "meaning": "băng qua"
     },
     {
-      "word": "farm",
-      "meaning": "nông trại"
+      "word": "since",
+      "meaning": "từ khi"
     },
     {
       "word": "hard",
-      "meaning": "cứng, chăm chỉ, khó"
+      "meaning": "khó, cứng"
     },
     {
       "word": "start",
@@ -1330,7 +530,7 @@
     },
     {
       "word": "might",
-      "meaning": "có thể, sức mạnh"
+      "meaning": "có thể"
     },
     {
       "word": "story",
@@ -1338,7 +538,7 @@
     },
     {
       "word": "saw",
-      "meaning": "đã nhìn thấy, cái cưa"
+      "meaning": "đã thấy"
     },
     {
       "word": "far",
@@ -1350,7 +550,7 @@
     },
     {
       "word": "draw",
-      "meaning": "vẽ, rút ra"
+      "meaning": "vẽ"
     },
     {
       "word": "left",
@@ -1358,7 +558,7 @@
     },
     {
       "word": "late",
-      "meaning": "trễ, muộn"
+      "meaning": "muộn"
     },
     {
       "word": "run",
@@ -1374,19 +574,19 @@
     },
     {
       "word": "press",
-      "meaning": "nhấn, báo chí"
+      "meaning": "nhấn"
     },
     {
       "word": "close",
-      "meaning": "đóng, gần gũi"
+      "meaning": "đóng, gần"
     },
     {
       "word": "night",
-      "meaning": "ban đêm"
+      "meaning": "đêm"
     },
     {
       "word": "real",
-      "meaning": "có thật"
+      "meaning": "thật"
     },
     {
       "word": "life",
@@ -1394,11 +594,11 @@
     },
     {
       "word": "few",
-      "meaning": "một vài, ít"
+      "meaning": "ít"
     },
     {
-      "word": "north",
-      "meaning": "phía bắc"
+      "word": "stop",
+      "meaning": "dừng lại"
     },
     {
       "word": "open",
@@ -1442,207 +642,7 @@
     },
     {
       "word": "ease",
-      "meaning": "sự thoải mái, làm dịu"
-    },
-    {
-      "word": "paper",
-      "meaning": "giấy"
-    },
-    {
-      "word": "group",
-      "meaning": "nhóm"
-    },
-    {
-      "word": "always",
-      "meaning": "luôn luôn"
-    },
-    {
-      "word": "music",
-      "meaning": "âm nhạc"
-    },
-    {
-      "word": "those",
-      "meaning": "những cái đó"
-    },
-    {
-      "word": "both",
-      "meaning": "cả hai"
-    },
-    {
-      "word": "mark",
-      "meaning": "dấu vết, điểm số"
-    },
-    {
-      "word": "often",
-      "meaning": "thường xuyên"
-    },
-    {
-      "word": "letter",
-      "meaning": "bức thư, chữ cái"
-    },
-    {
-      "word": "until",
-      "meaning": "cho đến khi"
-    },
-    {
-      "word": "mile",
-      "meaning": "dặm"
-    },
-    {
-      "word": "river",
-      "meaning": "dòng sông"
-    },
-    {
-      "word": "car",
-      "meaning": "xe hơi"
-    },
-    {
-      "word": "feet",
-      "meaning": "bàn chân (số nhiều)"
-    },
-    {
-      "word": "care",
-      "meaning": "chăm sóc, quan tâm"
-    },
-    {
-      "word": "second",
-      "meaning": "thứ hai, giây"
-    },
-    {
-      "word": "group",
-      "meaning": "nhóm"
-    },
-    {
-      "word": "carry",
-      "meaning": "mang, vác"
-    },
-    {
-      "word": "took",
-      "meaning": "đã lấy"
-    },
-    {
-      "word": "rain",
-      "meaning": "mưa"
-    },
-    {
-      "word": "eat",
-      "meaning": "ăn"
-    },
-    {
-      "word": "room",
-      "meaning": "phòng, khoảng trống"
-    },
-    {
-      "word": "friend",
-      "meaning": "bạn bè"
-    },
-    {
-      "word": "began",
-      "meaning": "đã bắt đầu"
-    },
-    {
-      "word": "idea",
-      "meaning": "ý tưởng"
-    },
-    {
-      "word": "fish",
-      "meaning": "cá"
-    },
-    {
-      "word": "mountain",
-      "meaning": "ngọn núi"
-    },
-    {
-      "word": "stop",
-      "meaning": "dừng lại"
-    },
-    {
-      "word": "once",
-      "meaning": "một lần"
-    },
-    {
-      "word": "base",
-      "meaning": "căn cứ, nền tảng"
-    },
-    {
-      "word": "hear",
-      "meaning": "nghe"
-    },
-    {
-      "word": "horse",
-      "meaning": "con ngựa"
-    },
-    {
-      "word": "cut",
-      "meaning": "cắt"
-    },
-    {
-      "word": "sure",
-      "meaning": "chắc chắn"
-    },
-    {
-      "word": "watch",
-      "meaning": "xem, đồng hồ đeo tay"
-    },
-    {
-      "word": "color",
-      "meaning": "màu sắc"
-    },
-    {
-      "word": "face",
-      "meaning": "khuôn mặt, đối mặt"
-    },
-    {
-      "word": "wood",
-      "meaning": "gỗ"
-    },
-    {
-      "word": "main",
-      "meaning": "chính"
-    },
-    {
-      "word": "open",
-      "meaning": "mở"
-    },
-    {
-      "word": "seem",
-      "meaning": "dường như"
-    },
-    {
-      "word": "together",
-      "meaning": "cùng nhau"
-    },
-    {
-      "word": "next",
-      "meaning": "tiếp theo"
-    },
-    {
-      "word": "white",
-      "meaning": "màu trắng"
-    },
-    {
-      "word": "children",
-      "meaning": "trẻ em"
-    },
-    {
-      "word": "begin",
-      "meaning": "bắt đầu"
-    },
-    {
-      "word": "got",
-      "meaning": "đã nhận"
-    },
-    {
-      "word": "walk",
-      "meaning": "đi bộ"
-    },
-    {
-      "word": "example",
-      "meaning": "ví dụ"
-    },
-    {
-      "word": "ease",
-      "meaning": "sự thanh thản, làm dịu"
+      "meaning": "dễ dàng"
     },
     {
       "word": "paper",
@@ -1670,7 +670,7 @@
     },
     {
       "word": "mark",
-      "meaning": "dấu vết, điểm số"
+      "meaning": "dấu, đánh dấu"
     },
     {
       "word": "book",
@@ -1678,7 +678,7 @@
     },
     {
       "word": "letter",
-      "meaning": "bức thư, chữ cái"
+      "meaning": "chữ cái, thư"
     },
     {
       "word": "until",
@@ -1690,7 +690,7 @@
     },
     {
       "word": "river",
-      "meaning": "dòng sông"
+      "meaning": "con sông"
     },
     {
       "word": "car",
@@ -1698,15 +698,15 @@
     },
     {
       "word": "feet",
-      "meaning": "bàn chân (số nhiều)"
+      "meaning": "bàn chân"
     },
     {
       "word": "care",
-      "meaning": "chăm sóc, quan tâm"
+      "meaning": "chăm sóc"
     },
     {
       "word": "second",
-      "meaning": "thứ hai, giây"
+      "meaning": "thứ hai"
     },
     {
       "word": "group",
@@ -1714,7 +714,7 @@
     },
     {
       "word": "carry",
-      "meaning": "mang, vác"
+      "meaning": "mang"
     },
     {
       "word": "took",
@@ -1730,7 +730,7 @@
     },
     {
       "word": "room",
-      "meaning": "phòng"
+      "meaning": "căn phòng"
     },
     {
       "word": "friend",
@@ -1750,19 +750,19 @@
     },
     {
       "word": "mountain",
-      "meaning": "ngọn núi"
+      "meaning": "núi"
     },
     {
-      "word": "stop",
-      "meaning": "dừng lại"
+      "word": "north",
+      "meaning": "phía bắc"
     },
     {
       "word": "once",
-      "meaning": "một lần, khi mà"
+      "meaning": "một lần"
     },
     {
       "word": "base",
-      "meaning": "căn cứ, cơ sở"
+      "meaning": "nền tảng, căn cứ"
     },
     {
       "word": "hear",
@@ -1782,7 +782,7 @@
     },
     {
       "word": "watch",
-      "meaning": "xem, đồng hồ đeo tay"
+      "meaning": "xem, đồng hồ"
     },
     {
       "word": "color",
@@ -1790,7 +790,7 @@
     },
     {
       "word": "face",
-      "meaning": "khuôn mặt, đối mặt"
+      "meaning": "khuôn mặt"
     },
     {
       "word": "wood",
@@ -1806,19 +806,19 @@
     },
     {
       "word": "plain",
-      "meaning": "đồng bằng, rõ ràng"
+      "meaning": "đơn giản, đồng bằng"
     },
     {
       "word": "girl",
-      "meaning": "con gái"
+      "meaning": "cô gái"
     },
     {
       "word": "usual",
-      "meaning": "bình thường"
+      "meaning": "thông thường"
     },
     {
       "word": "young",
-      "meaning": "trẻ tuổi"
+      "meaning": "trẻ"
     },
     {
       "word": "ready",
@@ -1830,7 +830,7 @@
     },
     {
       "word": "ever",
-      "meaning": "đã từng"
+      "meaning": "từng"
     },
     {
       "word": "red",
@@ -1854,7 +854,7 @@
     },
     {
       "word": "bird",
-      "meaning": "con chim"
+      "meaning": "chim"
     },
     {
       "word": "soon",
@@ -1866,7 +866,7 @@
     },
     {
       "word": "dog",
-      "meaning": "con chó"
+      "meaning": "chó"
     },
     {
       "word": "family",
@@ -1874,15 +874,15 @@
     },
     {
       "word": "direct",
-      "meaning": "trực tiếp, hướng dẫn"
+      "meaning": "trực tiếp"
     },
     {
       "word": "pose",
-      "meaning": "tư thế, đặt ra"
+      "meaning": "tạo dáng, đặt ra"
     },
     {
       "word": "leave",
-      "meaning": "rời đi, kỳ nghỉ"
+      "meaning": "rời đi"
     },
     {
       "word": "song",
@@ -1890,11 +890,11 @@
     },
     {
       "word": "measure",
-      "meaning": "đo lường, biện pháp"
+      "meaning": "đo lường"
     },
     {
-      "word": "door",
-      "meaning": "cửa ra vào"
+      "word": "state",
+      "meaning": "bang, trạng thái"
     },
     {
       "word": "product",
@@ -1914,11 +914,11 @@
     },
     {
       "word": "class",
-      "meaning": "lớp học, tầng lớp"
+      "meaning": "lớp học"
     },
     {
       "word": "wind",
-      "meaning": "gió, quấn quanh"
+      "meaning": "gió"
     },
     {
       "word": "question",
@@ -1930,15 +930,15 @@
     },
     {
       "word": "complete",
-      "meaning": "hoàn thành, đầy đủ"
+      "meaning": "hoàn thành"
     },
     {
       "word": "ship",
-      "meaning": "tàu thủy, vận chuyển"
+      "meaning": "con tàu"
     },
     {
       "word": "area",
-      "meaning": "khu vực, diện tích"
+      "meaning": "khu vực"
     },
     {
       "word": "half",
@@ -1946,15 +946,15 @@
     },
     {
       "word": "rock",
-      "meaning": "đá, nhạc rock, đung đưa"
+      "meaning": "đá"
     },
     {
       "word": "order",
-      "meaning": "thứ tự, đơn hàng, ra lệnh"
+      "meaning": "thứ tự, đặt hàng"
     },
     {
       "word": "fire",
-      "meaning": "lửa, sa thải"
+      "meaning": "lửa"
     },
     {
       "word": "south",
@@ -1966,11 +966,11 @@
     },
     {
       "word": "piece",
-      "meaning": "mảnh, mẩu"
+      "meaning": "mảnh"
     },
     {
       "word": "told",
-      "meaning": "đã nói"
+      "meaning": "đã kể, đã nói"
     },
     {
       "word": "knew",
@@ -1981,12 +981,12 @@
       "meaning": "vượt qua"
     },
     {
-      "word": "since",
-      "meaning": "từ khi, vì"
+      "word": "farm",
+      "meaning": "nông trại"
     },
     {
       "word": "top",
-      "meaning": "đỉnh, hàng đầu"
+      "meaning": "đỉnh, trên cùng"
     },
     {
       "word": "whole",
@@ -1997,664 +997,268 @@
       "meaning": "vua"
     },
     {
-      "word": "street",
-      "meaning": "đường phố"
-    },
-    {
-      "word": "inch",
-      "meaning": "inch"
-    },
-    {
-      "word": "multiply",
-      "meaning": "nhân lên"
-    },
-    {
-      "word": "nothing",
-      "meaning": "không có gì"
-    },
-    {
-      "word": "course",
-      "meaning": "khóa học, lộ trình"
-    },
-    {
-      "word": "stay",
-      "meaning": "ở lại"
-    },
-    {
-      "word": "wheel",
-      "meaning": "bánh xe"
-    },
-    {
-      "word": "full",
-      "meaning": "đầy"
-    },
-    {
-      "word": "force",
-      "meaning": "lực lượng, ép buộc"
-    },
-    {
-      "word": "blue",
-      "meaning": "màu xanh dương"
-    },
-    {
-      "word": "object",
-      "meaning": "vật thể, phản đối"
-    },
-    {
-      "word": "decide",
-      "meaning": "quyết định"
-    },
-    {
-      "word": "surface",
-      "meaning": "bề mặt"
-    },
-    {
-      "word": "deep",
-      "meaning": "sâu"
-    },
-    {
-      "word": "moon",
-      "meaning": "mặt trăng"
-    },
-    {
-      "word": "island",
-      "meaning": "hòn đảo"
-    },
-    {
-      "word": "foot",
-      "meaning": "bàn chân"
-    },
-    {
-      "word": "system",
-      "meaning": "hệ thống"
-    },
-    {
-      "word": "busy",
-      "meaning": "bận rộn"
-    },
-    {
-      "word": "test",
-      "meaning": "bài kiểm tra, thử nghiệm"
-    },
-    {
-      "word": "record",
-      "meaning": "kỷ lục, ghi âm, hồ sơ"
-    },
-    {
-      "word": "boat",
-      "meaning": "thuyền"
-    },
-    {
-      "word": "common",
-      "meaning": "phổ biến, chung"
-    },
-    {
-      "word": "gold",
-      "meaning": "vàng"
-    },
-    {
-      "word": "possible",
-      "meaning": "có thể"
-    },
-    {
-      "word": "plane",
-      "meaning": "máy bay, mặt phẳng"
-    },
-    {
-      "word": "stead",
-      "meaning": "vị trí, sự thay thế"
-    },
-    {
-      "word": "dry",
-      "meaning": "khô ráo"
-    },
-    {
-      "word": "wonder",
-      "meaning": "kỳ quan, tự hỏi"
-    },
-    {
-      "word": "laugh",
-      "meaning": "cười"
-    },
-    {
-      "word": "thousand",
-      "meaning": "ngàn"
-    },
-    {
-      "word": "ago",
-      "meaning": "trước đây"
-    },
-    {
-      "word": "ran",
-      "meaning": "đã chạy"
-    },
-    {
-      "word": "check",
-      "meaning": "kiểm tra, hóa đơn"
-    },
-    {
-      "word": "game",
-      "meaning": "trò chơi"
-    },
-    {
-      "word": "shape",
-      "meaning": "hình dạng"
-    },
-    {
-      "word": "equate",
-      "meaning": "làm cho bằng nhau"
-    },
-    {
-      "word": "hot",
-      "meaning": "nóng"
-    },
-    {
-      "word": "miss",
-      "meaning": "bỏ lỡ, nhớ, cô gái"
-    },
-    {
-      "word": "brought",
-      "meaning": "đã mang đến"
-    },
-    {
-      "word": "heat",
-      "meaning": "nhiệt độ, làm nóng"
-    },
-    {
-      "word": "snow",
-      "meaning": "tuyết"
-    },
-    {
-      "word": "tire",
-      "meaning": "lốp xe, làm mệt mỏi"
-    },
-    {
-      "word": "bring",
-      "meaning": "mang đến"
-    },
-    {
-      "word": "yes",
-      "meaning": "vâng, đúng"
-    },
-    {
-      "word": "distant",
-      "meaning": "xa xôi"
-    },
-    {
-      "word": "fill",
-      "meaning": "lấp đầy"
-    },
-    {
-      "word": "east",
-      "meaning": "phía đông"
-    },
-    {
-      "word": "paint",
-      "meaning": "sơn, vẽ"
-    },
-    {
-      "word": "language",
-      "meaning": "ngôn ngữ"
-    },
-    {
-      "word": "among",
-      "meaning": "giữa (nhiều thứ)"
-    },
-    {
-      "word": "grand",
-      "meaning": "vĩ đại, lớn"
-    },
-    {
-      "word": "ball",
-      "meaning": "quả bóng"
-    },
-    {
-      "word": "yet",
-      "meaning": "vẫn, chưa"
-    },
-    {
-      "word": "wave",
-      "meaning": "sóng, vẫy tay"
-    },
-    {
-      "word": "drop",
-      "meaning": "rơi, giọt nước"
-    },
-    {
-      "word": "heart",
-      "meaning": "trái tim"
-    },
-    {
-      "word": "am",
-      "meaning": "là"
-    },
-    {
-      "word": "present",
-      "meaning": "hiện tại, món quà, trình bày"
-    },
-    {
-      "word": "heavy",
-      "meaning": "nặng"
-    },
-    {
-      "word": "dance",
-      "meaning": "nhảy múa"
-    },
-    {
-      "word": "engine",
-      "meaning": "động cơ"
-    },
-    {
-      "word": "position",
-      "meaning": "vị trí"
-    },
-    {
-      "word": "arm",
-      "meaning": "cánh tay, vũ trang"
-    },
-    {
-      "word": "wide",
-      "meaning": "rộng"
-    },
-    {
-      "word": "sail",
-      "meaning": "thuyền buồm, ra khơi"
-    },
-    {
-      "word": "material",
-      "meaning": "vật liệu"
-    },
-    {
       "word": "size",
       "meaning": "kích thước"
     },
     {
-      "word": "vary",
-      "meaning": "thay đổi"
+      "word": "heard",
+      "meaning": "đã nghe"
     },
     {
-      "word": "settle",
-      "meaning": "định cư, giải quyết"
+      "word": "best",
+      "meaning": "tốt nhất"
     },
     {
-      "word": "speak",
-      "meaning": "nói"
+      "word": "hour",
+      "meaning": "giờ"
     },
     {
-      "word": "weight",
-      "meaning": "trọng lượng"
+      "word": "better",
+      "meaning": "tốt hơn"
     },
     {
-      "word": "general",
-      "meaning": "chung, đại tướng"
+      "word": "TRUE",
+      "meaning": "đúng, thật"
     },
     {
-      "word": "ice",
-      "meaning": "băng, đá"
+      "word": "during",
+      "meaning": "trong suốt"
     },
     {
-      "word": "matter",
-      "meaning": "vấn đề, vật chất"
+      "word": "hundred",
+      "meaning": "một trăm"
     },
     {
-      "word": "circle",
-      "meaning": "vòng tròn"
+      "word": "am",
+      "meaning": "thì, là"
     },
     {
-      "word": "pair",
-      "meaning": "đôi, cặp"
+      "word": "remember",
+      "meaning": "nhớ"
     },
     {
-      "word": "include",
-      "meaning": "bao gồm"
+      "word": "step",
+      "meaning": "bước"
     },
     {
-      "word": "divide",
-      "meaning": "chia"
+      "word": "early",
+      "meaning": "sớm"
     },
     {
-      "word": "syllable",
-      "meaning": "âm tiết"
+      "word": "hold",
+      "meaning": "giữ"
     },
     {
-      "word": "felt",
-      "meaning": "đã cảm thấy"
+      "word": "west",
+      "meaning": "phía tây"
     },
     {
-      "word": "grandking",
-      "meaning": "vua lớn"
+      "word": "ground",
+      "meaning": "mặt đất"
     },
     {
-      "word": "huge",
-      "meaning": "khổng lồ"
+      "word": "interest",
+      "meaning": "sự quan tâm, lãi suất"
     },
     {
-      "word": "sister",
-      "meaning": "chị em gái"
+      "word": "reach",
+      "meaning": "đạt tới"
     },
     {
-      "word": "steel",
-      "meaning": "thép"
+      "word": "fast",
+      "meaning": "nhanh"
     },
     {
-      "word": "discuss",
-      "meaning": "thảo luận"
+      "word": "five",
+      "meaning": "năm"
     },
     {
-      "word": "forward",
-      "meaning": "phía trước, tiến tới"
+      "word": "sing",
+      "meaning": "hát"
     },
     {
-      "word": "similar",
-      "meaning": "tương tự"
+      "word": "listen",
+      "meaning": "lắng nghe"
     },
     {
-      "word": "guide",
-      "meaning": "hướng dẫn"
+      "word": "six",
+      "meaning": "sáu"
     },
     {
-      "word": "experience",
-      "meaning": "kinh nghiệm, trải nghiệm"
+      "word": "table",
+      "meaning": "cái bàn"
     },
     {
-      "word": "score",
-      "meaning": "điểm số"
+      "word": "travel",
+      "meaning": "du lịch"
     },
     {
-      "word": "apple",
-      "meaning": "quả táo"
+      "word": "less",
+      "meaning": "ít hơn"
     },
     {
-      "word": "bought",
-      "meaning": "đã mua"
+      "word": "morning",
+      "meaning": "buổi sáng"
     },
     {
-      "word": "led",
-      "meaning": "đã dẫn dắt"
+      "word": "ten",
+      "meaning": "mười"
     },
     {
-      "word": "pitch",
-      "meaning": "sân cỏ, cao độ, ném"
+      "word": "simple",
+      "meaning": "đơn giản"
     },
     {
-      "word": "coat",
-      "meaning": "áo khoác"
+      "word": "several",
+      "meaning": "một vài"
     },
     {
-      "word": "mass",
-      "meaning": "khối lượng, quần chúng"
+      "word": "vowel",
+      "meaning": "nguyên âm"
     },
     {
-      "word": "card",
-      "meaning": "thẻ, bài"
+      "word": "toward",
+      "meaning": "hướng tới"
     },
     {
-      "word": "band",
-      "meaning": "băng nhóm, ban nhạc"
+      "word": "war",
+      "meaning": "chiến tranh"
     },
     {
-      "word": "rope",
-      "meaning": "sợi dây"
+      "word": "lay",
+      "meaning": "đặt, nằm"
     },
     {
-      "word": "slip",
-      "meaning": "trượt"
+      "word": "against",
+      "meaning": "chống lại"
     },
     {
-      "word": "win",
-      "meaning": "chiến thắng"
+      "word": "pattern",
+      "meaning": "mẫu, kiểu"
     },
     {
-      "word": "dream",
-      "meaning": "giấc mơ"
+      "word": "slow",
+      "meaning": "chậm"
     },
     {
-      "word": "evening",
-      "meaning": "buổi tối"
+      "word": "center",
+      "meaning": "trung tâm"
     },
     {
-      "word": "condition",
-      "meaning": "điều kiện"
+      "word": "love",
+      "meaning": "tình yêu, yêu"
     },
     {
-      "word": "feed",
-      "meaning": "cho ăn"
+      "word": "person",
+      "meaning": "người"
     },
     {
-      "word": "tool",
-      "meaning": "công cụ"
+      "word": "money",
+      "meaning": "tiền"
     },
     {
-      "word": "total",
-      "meaning": "tổng cộng"
+      "word": "serve",
+      "meaning": "phục vụ"
     },
     {
-      "word": "basic",
-      "meaning": "cơ bản"
+      "word": "appear",
+      "meaning": "xuất hiện"
     },
     {
-      "word": "smell",
-      "meaning": "mùi, ngửi"
+      "word": "road",
+      "meaning": "con đường"
     },
     {
-      "word": "valley",
-      "meaning": "thung lũng"
+      "word": "map",
+      "meaning": "bản đồ"
     },
     {
-      "word": "nor",
-      "meaning": "cũng không"
+      "word": "science",
+      "meaning": "khoa học"
     },
     {
-      "word": "double",
-      "meaning": "gấp đôi"
+      "word": "rule",
+      "meaning": "quy tắc"
     },
     {
-      "word": "seat",
-      "meaning": "chỗ ngồi"
+      "word": "govern",
+      "meaning": "cai trị"
     },
     {
-      "word": "continue",
-      "meaning": "tiếp tục"
+      "word": "pull",
+      "meaning": "kéo"
     },
     {
-      "word": "block",
-      "meaning": "khối, làm tắc nghẽn"
+      "word": "cold",
+      "meaning": "lạnh"
     },
     {
-      "word": "chart",
-      "meaning": "biểu đồ"
+      "word": "notice",
+      "meaning": "chú ý, thông báo"
     },
     {
-      "word": "hat",
-      "meaning": "cái mũ"
+      "word": "voice",
+      "meaning": "giọng nói"
     },
     {
-      "word": "sell",
-      "meaning": "bán"
+      "word": "fall",
+      "meaning": "ngã, mùa thu"
     },
     {
-      "word": "success",
-      "meaning": "sự thành công"
+      "word": "power",
+      "meaning": "sức mạnh, điện năng"
     },
     {
-      "word": "company",
-      "meaning": "công ty, sự đồng hành"
+      "word": "town",
+      "meaning": "thị trấn"
     },
     {
-      "word": "subtract",
-      "meaning": "trừ"
+      "word": "fine",
+      "meaning": "tốt, đẹp"
     },
     {
-      "word": "event",
-      "meaning": "sự kiện"
+      "word": "certain",
+      "meaning": "chắc chắn"
     },
     {
-      "word": "particular",
-      "meaning": "cụ thể, đặc biệt"
+      "word": "fly",
+      "meaning": "bay"
     },
     {
-      "word": "deal",
-      "meaning": "thỏa thuận, đối phó"
+      "word": "unit",
+      "meaning": "đơn vị"
     },
     {
-      "word": "swim",
-      "meaning": "bơi"
+      "word": "lead",
+      "meaning": "dẫn dắt"
     },
     {
-      "word": "term",
-      "meaning": "thuật ngữ, học kỳ"
+      "word": "cry",
+      "meaning": "khóc"
     },
     {
-      "word": "opposite",
-      "meaning": "đối diện"
+      "word": "dark",
+      "meaning": "tối"
     },
     {
-      "word": "wife",
-      "meaning": "vợ"
+      "word": "machine",
+      "meaning": "máy móc"
     },
     {
-      "word": "shoe",
-      "meaning": "giày"
+      "word": "note",
+      "meaning": "ghi chú"
     },
     {
-      "word": "shoulder",
-      "meaning": "vai"
+      "word": "wait",
+      "meaning": "chờ đợi"
     },
     {
-      "word": "spread",
-      "meaning": "lan truyền"
+      "word": "plan",
+      "meaning": "kế hoạch"
     },
     {
-      "word": "arrange",
-      "meaning": "sắp xếp"
-    },
-    {
-      "word": "camp",
-      "meaning": "trại, cắm trại"
-    },
-    {
-      "word": "invent",
-      "meaning": "phát minh"
-    },
-    {
-      "word": "cotton",
-      "meaning": "bông vải"
-    },
-    {
-      "word": "born",
-      "meaning": "sinh ra"
-    },
-    {
-      "word": "determine",
-      "meaning": "xác định"
-    },
-    {
-      "word": "quart",
-      "meaning": "lít (đơn vị đo)"
-    },
-    {
-      "word": "nine",
-      "meaning": "chín"
-    },
-    {
-      "word": "truck",
-      "meaning": "xe tải"
-    },
-    {
-      "word": "noise",
-      "meaning": "tiếng ồn"
-    },
-    {
-      "word": "level",
-      "meaning": "mức độ, cấp độ"
-    },
-    {
-      "word": "chance",
-      "meaning": "cơ hội"
-    },
-    {
-      "word": "gather",
-      "meaning": "thu thập, tụ họp"
-    },
-    {
-      "word": "shop",
-      "meaning": "cửa hàng, mua sắm"
-    },
-    {
-      "word": "stretch",
-      "meaning": "kéo căng"
-    },
-    {
-      "word": "throw",
-      "meaning": "ném"
-    },
-    {
-      "word": "shine",
-      "meaning": "tỏa sáng"
-    },
-    {
-      "word": "property",
-      "meaning": "tài sản, đặc tính"
-    },
-    {
-      "word": "column",
-      "meaning": "cột"
-    },
-    {
-      "word": "molecule",
-      "meaning": "phân tử"
-    },
-    {
-      "word": "select",
-      "meaning": "lựa chọn"
-    },
-    {
-      "word": "wrong",
-      "meaning": "sai"
-    },
-    {
-      "word": "gray",
-      "meaning": "màu xám"
-    },
-    {
-      "word": "repeat",
-      "meaning": "lặp lại"
-    },
-    {
-      "word": "require",
-      "meaning": "yêu cầu"
-    },
-    {
-      "word": "broad",
-      "meaning": "rộng"
-    },
-    {
-      "word": "prepare",
-      "meaning": "chuẩn bị"
-    },
-    {
-      "word": "salt",
-      "meaning": "muối"
-    },
-    {
-      "word": "nose",
-      "meaning": "mũi"
-    },
-    {
-      "word": "plural",
-      "meaning": "số nhiều"
-    },
-    {
-      "word": "anger",
-      "meaning": "sự tức giận"
-    },
-    {
-      "word": "claim",
-      "meaning": "đòi hỏi, tuyên bố"
-    },
-    {
-      "word": "continent",
-      "meaning": "lục địa"
+      "word": "figure",
+      "meaning": "hình vẽ, con số"
     },
     {
       "word": "star",
@@ -2793,12 +1397,208 @@
       "meaning": "sự thật"
     },
     {
+      "word": "street",
+      "meaning": "đường phố"
+    },
+    {
+      "word": "inch",
+      "meaning": "inch"
+    },
+    {
       "word": "lot",
       "meaning": "nhiều, lô đất"
     },
     {
-      "word": "int",
-      "meaning": "số nguyên"
+      "word": "nothing",
+      "meaning": "không gì cả"
+    },
+    {
+      "word": "course",
+      "meaning": "khóa học, lộ trình"
+    },
+    {
+      "word": "stay",
+      "meaning": "ở lại"
+    },
+    {
+      "word": "wheel",
+      "meaning": "bánh xe"
+    },
+    {
+      "word": "full",
+      "meaning": "đầy"
+    },
+    {
+      "word": "force",
+      "meaning": "lực"
+    },
+    {
+      "word": "blue",
+      "meaning": "màu xanh dương"
+    },
+    {
+      "word": "object",
+      "meaning": "vật thể"
+    },
+    {
+      "word": "decide",
+      "meaning": "quyết định"
+    },
+    {
+      "word": "surface",
+      "meaning": "bề mặt"
+    },
+    {
+      "word": "deep",
+      "meaning": "sâu"
+    },
+    {
+      "word": "moon",
+      "meaning": "mặt trăng"
+    },
+    {
+      "word": "island",
+      "meaning": "hòn đảo"
+    },
+    {
+      "word": "foot",
+      "meaning": "bàn chân"
+    },
+    {
+      "word": "yet",
+      "meaning": "vẫn, chưa"
+    },
+    {
+      "word": "busy",
+      "meaning": "bận rộn"
+    },
+    {
+      "word": "test",
+      "meaning": "bài kiểm tra"
+    },
+    {
+      "word": "record",
+      "meaning": "ghi lại, hồ sơ"
+    },
+    {
+      "word": "boat",
+      "meaning": "thuyền"
+    },
+    {
+      "word": "common",
+      "meaning": "phổ biến"
+    },
+    {
+      "word": "gold",
+      "meaning": "vàng"
+    },
+    {
+      "word": "possible",
+      "meaning": "có thể"
+    },
+    {
+      "word": "plane",
+      "meaning": "máy bay, mặt phẳng"
+    },
+    {
+      "word": "age",
+      "meaning": "tuổi"
+    },
+    {
+      "word": "dry",
+      "meaning": "khô"
+    },
+    {
+      "word": "wonder",
+      "meaning": "thắc mắc, kỳ quan"
+    },
+    {
+      "word": "laugh",
+      "meaning": "cười"
+    },
+    {
+      "word": "thousand",
+      "meaning": "một nghìn"
+    },
+    {
+      "word": "ago",
+      "meaning": "trước đây"
+    },
+    {
+      "word": "ran",
+      "meaning": "đã chạy"
+    },
+    {
+      "word": "check",
+      "meaning": "kiểm tra"
+    },
+    {
+      "word": "game",
+      "meaning": "trò chơi"
+    },
+    {
+      "word": "shape",
+      "meaning": "hình dạng"
+    },
+    {
+      "word": "yes",
+      "meaning": "vâng"
+    },
+    {
+      "word": "hot",
+      "meaning": "nóng"
+    },
+    {
+      "word": "miss",
+      "meaning": "nhớ, bỏ lỡ"
+    },
+    {
+      "word": "brought",
+      "meaning": "đã mang"
+    },
+    {
+      "word": "heat",
+      "meaning": "nhiệt"
+    },
+    {
+      "word": "snow",
+      "meaning": "tuyết"
+    },
+    {
+      "word": "bed",
+      "meaning": "giường"
+    },
+    {
+      "word": "bring",
+      "meaning": "mang đến"
+    },
+    {
+      "word": "sit",
+      "meaning": "ngồi"
+    },
+    {
+      "word": "perhaps",
+      "meaning": "có lẽ"
+    },
+    {
+      "word": "fill",
+      "meaning": "lấp đầy"
+    },
+    {
+      "word": "east",
+      "meaning": "phía đông"
+    },
+    {
+      "word": "weight",
+      "meaning": "trọng lượng"
+    },
+    {
+      "word": "language",
+      "meaning": "ngôn ngữ"
+    },
+    {
+      "word": "among",
+      "meaning": "giữa, trong số"
     }
   ]
 }
