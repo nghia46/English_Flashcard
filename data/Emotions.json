@@ -1,0 +1,384 @@
+{
+    "Emotions": [
+        {
+            "word": "happy",
+            "meaning": "vui vẻ"
+        },
+        {
+            "word": "sad",
+            "meaning": "buồn"
+        },
+        {
+            "word": "angry",
+            "meaning": "tức giận"
+        },
+        {
+            "word": "excited",
+            "meaning": "hào hứng"
+        },
+        {
+            "word": "nervous",
+            "meaning": "lo lắng"
+        },
+        {
+            "word": "afraid",
+            "meaning": "sợ hãi"
+        },
+        {
+            "word": "surprised",
+            "meaning": "ngạc nhiên"
+        },
+        {
+            "word": "confused",
+            "meaning": "bối rối"
+        },
+        {
+            "word": "proud",
+            "meaning": "tự hào"
+        },
+        {
+            "word": "bored",
+            "meaning": "chán nản"
+        },
+        {
+            "word": "calm",
+            "meaning": "bình tĩnh"
+        },
+        {
+            "word": "stressed",
+            "meaning": "căng thẳng"
+        },
+        {
+            "word": "lonely",
+            "meaning": "cô đơn"
+        },
+        {
+            "word": "joyful",
+            "meaning": "vui sướng"
+        },
+        {
+            "word": "jealous",
+            "meaning": "ghen tị"
+        },
+        {
+            "word": "anxious",
+            "meaning": "lo âu"
+        },
+        {
+            "word": "determined",
+            "meaning": "quyết tâm"
+        },
+        {
+            "word": "guilty",
+            "meaning": "tội lỗi"
+        },
+        {
+            "word": "hopeful",
+            "meaning": "hy vọng"
+        },
+        {
+            "word": "gloomy",
+            "meaning": "u ám"
+        },
+        {
+            "word": "delighted",
+            "meaning": "vui mừng"
+        },
+        {
+            "word": "furious",
+            "meaning": "giận dữ"
+        },
+        {
+            "word": "ashamed",
+            "meaning": "xấu hổ"
+        },
+        {
+            "word": "content",
+            "meaning": "hài lòng"
+        },
+        {
+            "word": "relaxed",
+            "meaning": "thư giãn"
+        },
+        {
+            "word": "shocked",
+            "meaning": "bị sốc"
+        },
+        {
+            "word": "miserable",
+            "meaning": "khốn khổ"
+        },
+        {
+            "word": "inspired",
+            "meaning": "được truyền cảm hứng"
+        },
+        {
+            "word": "determined",
+            "meaning": "kiên định"
+        },
+        {
+            "word": "frustrated",
+            "meaning": "nản lòng"
+        },
+        {
+            "word": "ecstatic",
+            "meaning": "phấn khích"
+        },
+        {
+            "word": "devastated",
+            "meaning": "suy sụp"
+        },
+        {
+            "word": "curious",
+            "meaning": "tò mò"
+        },
+        {
+            "word": "shy",
+            "meaning": "nhút nhát"
+        },
+        {
+            "word": "brave",
+            "meaning": "dũng cảm"
+        },
+        {
+            "word": "tired",
+            "meaning": "mệt mỏi"
+        },
+        {
+            "word": "energetic",
+            "meaning": "tràn đầy năng lượng"
+        },
+        {
+            "word": "gloomy",
+            "meaning": "ảm đạm"
+        },
+        {
+            "word": "upset",
+            "meaning": "buồn bã"
+        },
+        {
+            "word": "relieved",
+            "meaning": "nhẹ nhõm"
+        },
+        {
+            "word": "amused",
+            "meaning": "thích thú"
+        },
+        {
+            "word": "annoyed",
+            "meaning": "bực mình"
+        },
+        {
+            "word": "depressed",
+            "meaning": "trầm cảm"
+        },
+        {
+            "word": "cheerful",
+            "meaning": "vui tươi"
+        },
+        {
+            "word": "scared",
+            "meaning": "hoảng sợ"
+        },
+        {
+            "word": "irritated",
+            "meaning": "cáu kỉnh"
+        },
+        {
+            "word": "patient",
+            "meaning": "kiên nhẫn"
+        },
+        {
+            "word": "impatient",
+            "meaning": "thiếu kiên nhẫn"
+        },
+        {
+            "word": "stubborn",
+            "meaning": "bướng bỉnh"
+        },
+        {
+            "word": "serene",
+            "meaning": "thanh thản"
+        },
+        {
+            "word": "enthusiastic",
+            "meaning": "nhiệt tình"
+        },
+        {
+            "word": "envious",
+            "meaning": "đố kỵ"
+        },
+        {
+            "word": "thrilled",
+            "meaning": "rùng mình vì vui"
+        },
+        {
+            "word": "terrified",
+            "meaning": "khiếp sợ"
+        },
+        {
+            "word": "baffled",
+            "meaning": "hoang mang"
+        },
+        {
+            "word": "optimistic",
+            "meaning": "lạc quan"
+        },
+        {
+            "word": "pessimistic",
+            "meaning": "bi quan"
+        },
+        {
+            "word": "thankful",
+            "meaning": "biết ơn"
+        },
+        {
+            "word": "indifferent",
+            "meaning": "thờ ơ"
+        },
+        {
+            "word": "melancholy",
+            "meaning": "u sầu"
+        },
+        {
+            "word": "jubilant",
+            "meaning": "hân hoan"
+        },
+        {
+            "word": "dismayed",
+            "meaning": "thất vọng"
+        },
+        {
+            "word": "tense",
+            "meaning": "căng thẳng"
+        },
+        {
+            "word": "restless",
+            "meaning": "bồn chồn"
+        },
+        {
+            "word": "weary",
+            "meaning": "kiệt sức"
+        },
+        {
+            "word": "vulnerable",
+            "meaning": "dễ bị tổn thương"
+        },
+        {
+            "word": "hostile",
+            "meaning": "thù địch"
+        },
+        {
+            "word": "satisfied",
+            "meaning": "thỏa mãn"
+        },
+        {
+            "word": "distressed",
+            "meaning": "đau khổ"
+        },
+        {
+            "word": "frightened",
+            "meaning": "sợ hãi"
+        },
+        {
+            "word": "awed",
+            "meaning": "kinh ngạc"
+        },
+        {
+            "word": "bewildered",
+            "meaning": "ngơ ngác"
+        },
+        {
+            "word": "bored",
+            "meaning": "nhàm chán"
+        },
+        {
+            "word": "disappointed",
+            "meaning": "thất vọng"
+        },
+        {
+            "word": "hurt",
+            "meaning": "tổn thương"
+        },
+        {
+            "word": "cautious",
+            "meaning": "thận trọng"
+        },
+        {
+            "word": "confident",
+            "meaning": "tự tin"
+        },
+        {
+            "word": "muddled",
+            "meaning": "lúng túng"
+        },
+        {
+            "word": "elated",
+            "meaning": "phấn khởi"
+        },
+        {
+            "word": "cross",
+            "meaning": "cáu gắt"
+        },
+        {
+            "word": "puzzled",
+            "meaning": "khó hiểu"
+        },
+        {
+            "word": "composed",
+            "meaning": "điềm tĩnh"
+        },
+        {
+            "word": "eager",
+            "meaning": "háo hức"
+        },
+        {
+            "word": "hesitant",
+            "meaning": "do dự"
+        },
+        {
+            "word": "cynical",
+            "meaning": "hoài nghi"
+        },
+        {
+            "word": "disgusted",
+            "meaning": "ghê tởm"
+        },
+        {
+            "word": "agitated",
+            "meaning": "bất an"
+        },
+        {
+            "word": "hopeful",
+            "meaning": "đầy hy vọng"
+        },
+        {
+            "word": "desperate",
+            "meaning": "tuyệt vọng"
+        },
+        {
+            "word": "sentimental",
+            "meaning": "đa cảm"
+        },
+        {
+            "word": "furious",
+            "meaning": "căm phẫn"
+        },
+        {
+            "word": "enchanted",
+            "meaning": "mê hoặc"
+        },
+        {
+            "word": "smug",
+            "meaning": "tự mãn"
+        },
+        {
+            "word": "uncomfortable",
+            "meaning": "không thoải mái"
+        },
+        {
+            "word": "dread",
+            "meaning": "kinh hãi"
+        }
+    ]
+}

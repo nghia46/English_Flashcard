@@ -1,0 +1,23 @@
+{
+  "Weather": [
+    { "word": "sunny", "meaning": "nắng" }, { "word": "rainy", "meaning": "mưa" }, { "word": "cloudy", "meaning": "nhiều mây" }, { "word": "windy", "meaning": "nhiều gió" }, { "word": "stormy", "meaning": "giông bão" },
+    { "word": "foggy", "meaning": "sương mù" }, { "word": "snowy", "meaning": "tuyết rơi" }, { "word": "humid", "meaning": "ẩm ướt" }, { "word": "chilly", "meaning": "lạnh lẽo" }, { "word": "hot", "meaning": "nóng" },
+    { "word": "cold", "meaning": "lạnh" }, { "word": "warm", "meaning": "ấm áp" }, { "word": "cool", "meaning": "mát mẻ" }, { "word": "freezing", "meaning": "đóng băng" }, { "word": "drizzly", "meaning": "mưa phùn" },
+    { "word": "misty", "meaning": "có sương mỏng" }, { "word": "hail", "meaning": "mưa đá" }, { "word": "thunder", "meaning": "sấm sét" }, { "word": "lightning", "meaning": "tia chớp" }, { "word": "overcast", "meaning": "âm u" },
+    { "word": "breezy", "meaning": "gió nhẹ" }, { "word": "showery", "meaning": "mưa rào" }, { "word": "sleet", "meaning": "mưa tuyết" }, { "word": "frosty", "meaning": "giá rét" }, { "word": "gloomy", "meaning": "u ám" },
+    { "word": "dry", "meaning": "hanh khô" }, { "word": "muggy", "meaning": "oi bức" }, { "word": "clear", "meaning": "trời trong xanh" }, { "word": "fair", "meaning": "trời đẹp" }, { "word": "gloomy", "meaning": "mờ mịt" },
+    { "word": "sweltering", "meaning": "nóng bức" }, { "word": "blustery", "meaning": "gió lớn" }, { "word": "tempestuous", "meaning": "dông tố" }, { "word": "arctic", "meaning": "lạnh buốt" }, { "word": "gale", "meaning": "gió giật" },
+    { "word": "sunlit", "meaning": "có ánh nắng" }, { "word": "snowdrift", "meaning": "bão tuyết" }, { "word": "blizzard", "meaning": "bão tuyết lớn" }, { "word": "typhoon", "meaning": "siêu bão" }, { "word": "hurricane", "meaning": "cuồng phong" },
+    { "word": "cyclone", "meaning": "lốc xoáy" }, { "word": "monsoon", "meaning": "gió mùa" }, { "word": "tornado", "meaning": "vòi rồng" }, { "word": "dewy", "meaning": "đẫm sương" }, { "word": "parched", "meaning": "khô cằn" },
+    { "word": "stifling", "meaning": "ngột ngạt" }, { "word": "bitter", "meaning": "lạnh buốt" }, { "word": "brisk", "meaning": "lạnh nhanh" }, { "word": "clement", "meaning": "ôn hòa" }, { "word": "inclement", "meaning": "khắc nghiệt" },
+    { "word": "turbulent", "meaning": "náo động" }, { "word": "unsettled", "meaning": "không ổn định" }, { "word": "smoggy", "meaning": "nhiều khói bụi" }, { "word": "hazy", "meaning": "mờ nhạt" }, { "word": "glaring", "meaning": "nắng gắt" },
+    { "word": "radiant", "meaning": "rạng rỡ" }, { "word": "thundery", "meaning": "có sấm" }, { "word": "damp", "meaning": "ẩm thấp" }, { "word": "sodden", "meaning": "ướt sũng" }, { "word": "heavy", "meaning": "mưa nặng hạt" },
+    { "word": "intermittent", "meaning": "lúc mưa lúc tạnh" }, { "word": "gossamer", "meaning": "sương mỏng" }, { "word": "wintry", "meaning": "có vẻ mùa đông" }, { "word": "autumnal", "meaning": "có vẻ mùa thu" }, { "word": "vernal", "meaning": "có vẻ mùa xuân" },
+    { "word": "estival", "meaning": "có vẻ mùa hè" }, { "word": "polar", "meaning": "thuộc cực" }, { "word": "equatorial", "meaning": "nhiệt đới" }, { "word": "tropical", "meaning": "nhiệt đới" }, { "word": "temperate", "meaning": "ôn đới" },
+    { "word": "subtropical", "meaning": "cận nhiệt đới" }, { "word": "alpine", "meaning": "vùng núi cao" }, { "word": "coastal", "meaning": "vùng ven biển" }, { "word": "desert", "meaning": "sa mạc" }, { "word": "continental", "meaning": "lục địa" },
+    { "word": "variable", "meaning": "hay thay đổi" }, { "word": "stable", "meaning": "ổn định" }, { "word": "predictable", "meaning": "dễ dự báo" }, { "word": "erratic", "meaning": "thất thường" }, { "word": "extreme", "meaning": "cực đoan" },
+    { "word": "pleasant", "meaning": "dễ chịu" }, { "word": "miserable", "meaning": "khó chịu" }, { "word": "invigorating", "meaning": "tươi mát" }, { "word": "bleak", "meaning": "lạnh lẽo" }, { "word": "dreary", "meaning": "ảm đạm" },
+    { "word": "glowing", "meaning": "ấm áp" }, { "word": "icy", "meaning": "đầy băng" }, { "word": "melted", "meaning": "tan chảy" }, { "word": "frozen", "meaning": "đóng băng" }, { "word": "sunburnt", "meaning": "cháy nắng" },
+    { "word": "shady", "meaning": "có bóng râm" }, { "word": "exposed", "meaning": "phơi nắng" }, { "word": "wind-swept", "meaning": "lộng gió" }, { "word": "calm", "meaning": "lặng gió" }, { "word": "still", "meaning": "tĩnh lặng" }
+  ]
+}

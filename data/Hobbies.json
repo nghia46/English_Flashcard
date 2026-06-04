@@ -1,0 +1,23 @@
+{
+  "Hobbies": [
+    { "word": "reading", "meaning": "đọc sách" }, { "word": "painting", "meaning": "vẽ tranh" }, { "word": "swimming", "meaning": "bơi lội" }, { "word": "cooking", "meaning": "nấu ăn" }, { "word": "dancing", "meaning": "nhảy múa" },
+    { "word": "gardening", "meaning": "làm vườn" }, { "word": "traveling", "meaning": "du lịch" }, { "word": "cycling", "meaning": "đạp xe" }, { "word": "photography", "meaning": "nhiếp ảnh" }, { "word": "singing", "meaning": "ca hát" },
+    { "word": "fishing", "meaning": "câu cá" }, { "word": "hiking", "meaning": "đi bộ đường dài" }, { "word": "skating", "meaning": "trượt băng" }, { "word": "knitting", "meaning": "đan lát" }, { "word": "writing", "meaning": "viết lách" },
+    { "word": "running", "meaning": "chạy bộ" }, { "word": "yoga", "meaning": "tập yoga" }, { "word": "sculpting", "meaning": "điêu khắc" }, { "word": "camping", "meaning": "cắm trại" }, { "word": "playing chess", "meaning": "chơi cờ" },
+    { "word": "surfing", "meaning": "lướt sóng" }, { "word": "gaming", "meaning": "chơi game" }, { "word": "sewing", "meaning": "may vá" }, { "word": "baking", "meaning": "làm bánh" }, { "word": "pottery", "meaning": "làm gốm" },
+    { "word": "woodworking", "meaning": "mộc" }, { "word": "skipping", "meaning": "nhảy dây" }, { "word": "climbing", "meaning": "leo núi" }, { "word": "birdwatching", "meaning": "ngắm chim" }, { "word": "collecting coins", "meaning": "sưu tầm tiền xu" },
+    { "word": "archery", "meaning": "bắn cung" }, { "word": "fencing", "meaning": "đấu kiếm" }, { "word": "calligraphy", "meaning": "thư pháp" }, { "word": "origami", "meaning": "xếp giấy" }, { "word": "karate", "meaning": "võ karate" },
+    { "word": "boxing", "meaning": "đấm bốc" }, { "word": "sailing", "meaning": "chèo thuyền" }, { "word": "skiing", "meaning": "trượt tuyết" }, { "word": "skateboarding", "meaning": "trượt ván" }, { "word": "fishing", "meaning": "câu cá" },
+    { "word": "billiards", "meaning": "bida" }, { "word": "bowling", "meaning": "chơi bowling" }, { "word": "darts", "meaning": "ném phi tiêu" }, { "word": "puzzles", "meaning": "chơi giải đố" }, { "word": "blogging", "meaning": "viết blog" },
+    { "word": "vlogging", "meaning": "làm vlog" }, { "word": "coding", "meaning": "lập trình" }, { "word": "astronomy", "meaning": "ngắm sao" }, { "word": "volunteering", "meaning": "tình nguyện" }, { "word": "meditating", "meaning": "thiền" },
+    { "word": "quiltmaking", "meaning": "may chăn" }, { "word": "modeling", "meaning": "làm mô hình" }, { "word": "magic", "meaning": "ảo thuật" }, { "word": "taxidermy", "meaning": "nhồi bông động vật" }, { "word": "genealogy", "meaning": "nghiên cứu phả hệ" },
+    { "word": "metalworking", "meaning": "gia công kim loại" }, { "word": "beading", "meaning": "kết cườm" }, { "word": "embroidery", "meaning": "thêu thùa" }, { "word": "leathercraft", "meaning": "làm đồ da" }, { "word": "juggling", "meaning": "tung hứng" },
+    { "word": "diving", "meaning": "lặn" }, { "word": "horseback riding", "meaning": "cưỡi ngựa" }, { "word": "badminton", "meaning": "cầu lông" }, { "word": "tennis", "meaning": "quần vợt" }, { "word": "soccer", "meaning": "đá bóng" },
+    { "word": "basketball", "meaning": "bóng rổ" }, { "word": "volleyball", "meaning": "bóng chuyền" }, { "word": "cricket", "meaning": "bóng chày" }, { "word": "rugby", "meaning": "bóng bầu dục" }, { "word": "weightlifting", "meaning": "cử tạ" },
+    { "word": "gymnastics", "meaning": "thể dục dụng cụ" }, { "word": "archery", "meaning": "bắn cung" }, { "word": "kayaking", "meaning": "chèo kayak" }, { "word": "canoeing", "meaning": "chèo thuyền" }, { "word": "snorkeling", "meaning": "lặn ống thở" },
+    { "word": "gardening", "meaning": "trồng hoa" }, { "word": "bonsai", "meaning": "chăm cây bonsai" }, { "word": "hydroponics", "meaning": "trồng cây thủy canh" }, { "word": "baking", "meaning": "nướng bánh" }, { "word": "cooking", "meaning": "nấu món ngon" },
+    { "word": "brewing", "meaning": "pha chế cà phê" }, { "word": "winemaking", "meaning": "làm rượu" }, { "word": "distilling", "meaning": "chưng cất" }, { "word": "tanning", "meaning": "tắm nắng" }, { "word": "sightseeing", "meaning": "tham quan" },
+    { "word": "backpacking", "meaning": "du lịch bụi" }, { "word": "camping", "meaning": "cắm trại" }, { "word": "caving", "meaning": "khám phá hang động" }, { "word": "scuba diving", "meaning": "lặn bình khí" }, { "word": "bungee jumping", "meaning": "nhảy bungee" },
+    { "word": "skydiving", "meaning": "nhảy dù" }, { "word": "paragliding", "meaning": "dù lượn" }, { "word": "hang gliding", "meaning": "diều lượn" }, { "word": "rafting", "meaning": "bơi thuyền vượt thác" }, { "word": "archery", "meaning": "bắn cung" }
+  ]
+}

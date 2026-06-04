@@ -6,6 +6,9 @@
     "Foods": "Foods.json",
     "Schools": "Schools.json",
     "Travels": "Travels.json",
-    "Valorant": "Valorant.json"
+    "Valorant": "Valorant.json",
+    "Emotions": "Emotions.json",
+    "Hobbies": "Hobbies.json",
+    "Weather": "Weather.json"
   }
 } 
