@@ -1,6 +1,7 @@
 {
   "baseUrl": "https://raw.githubusercontent.com/nghia46/English_Flashcard/refs/heads/master/data/",
   "topics": {
-    "500_Common_Words": "500_Common_Words.json"
+    "500_Common_Words": "500_Common_Words.json",
+    "Valorant": "Valorant.json"
   }
 }
