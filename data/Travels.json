@@ -1,0 +1,204 @@
+{
+  "Du lịch": [
+    {
+      "word": "travel",
+      "meaning": "du lịch"
+    },
+    {
+      "word": "trip",
+      "meaning": "chuyến đi"
+    },
+    {
+      "word": "journey",
+      "meaning": "hành trình"
+    },
+    {
+      "word": "tour",
+      "meaning": "tour du lịch"
+    },
+    {
+      "word": "vacation",
+      "meaning": "kỳ nghỉ"
+    },
+    {
+      "word": "holiday",
+      "meaning": "ngày nghỉ"
+    },
+    {
+      "word": "tourist",
+      "meaning": "du khách"
+    },
+    {
+      "word": "guide",
+      "meaning": "hướng dẫn viên"
+    },
+    {
+      "word": "passport",
+      "meaning": "hộ chiếu"
+    },
+    {
+      "word": "visa",
+      "meaning": "thị thực"
+    },
+    {
+      "word": "ticket",
+      "meaning": "vé"
+    },
+    {
+      "word": "luggage",
+      "meaning": "hành lý"
+    },
+    {
+      "word": "bag",
+      "meaning": "túi"
+    },
+    {
+      "word": "suitcase",
+      "meaning": "va li"
+    },
+    {
+      "word": "airport",
+      "meaning": "sân bay"
+    },
+    {
+      "word": "airplane",
+      "meaning": "máy bay"
+    },
+    {
+      "word": "flight",
+      "meaning": "chuyến bay"
+    },
+    {
+      "word": "train",
+      "meaning": "tàu hỏa"
+    },
+    {
+      "word": "station",
+      "meaning": "ga tàu"
+    },
+    {
+      "word": "bus",
+      "meaning": "xe buýt"
+    },
+    {
+      "word": "taxi",
+      "meaning": "xe taxi"
+    },
+    {
+      "word": "hotel",
+      "meaning": "khách sạn"
+    },
+    {
+      "word": "room",
+      "meaning": "phòng"
+    },
+    {
+      "word": "reservation",
+      "meaning": "đặt chỗ"
+    },
+    {
+      "word": "check-in",
+      "meaning": "nhận phòng"
+    },
+    {
+      "word": "check-out",
+      "meaning": "trả phòng"
+    },
+    {
+      "word": "map",
+      "meaning": "bản đồ"
+    },
+    {
+      "word": "destination",
+      "meaning": "điểm đến"
+    },
+    {
+      "word": "beach",
+      "meaning": "bãi biển"
+    },
+    {
+      "word": "island",
+      "meaning": "hòn đảo"
+    },
+    {
+      "word": "mountain",
+      "meaning": "núi"
+    },
+    {
+      "word": "forest",
+      "meaning": "rừng"
+    },
+    {
+      "word": "lake",
+      "meaning": "hồ"
+    },
+    {
+      "word": "river",
+      "meaning": "sông"
+    },
+    {
+      "word": "waterfall",
+      "meaning": "thác nước"
+    },
+    {
+      "word": "museum",
+      "meaning": "bảo tàng"
+    },
+    {
+      "word": "temple",
+      "meaning": "đền chùa"
+    },
+    {
+      "word": "park",
+      "meaning": "công viên"
+    },
+    {
+      "word": "market",
+      "meaning": "chợ"
+    },
+    {
+      "word": "restaurant",
+      "meaning": "nhà hàng"
+    },
+    {
+      "word": "food",
+      "meaning": "thức ăn"
+    },
+    {
+      "word": "drink",
+      "meaning": "đồ uống"
+    },
+    {
+      "word": "camera",
+      "meaning": "máy ảnh"
+    },
+    {
+      "word": "photo",
+      "meaning": "ảnh"
+    },
+    {
+      "word": "money",
+      "meaning": "tiền"
+    },
+    {
+      "word": "currency",
+      "meaning": "tiền tệ"
+    },
+    {
+      "word": "souvenir",
+      "meaning": "quà lưu niệm"
+    },
+    {
+      "word": "adventure",
+      "meaning": "cuộc phiêu lưu"
+    },
+    {
+      "word": "explore",
+      "meaning": "khám phá"
+    },
+    {
+      "word": "backpack",
+      "meaning": "ba lô"
+    }
+  ]
+}
