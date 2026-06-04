@@ -1,10 +1,6 @@
 {
   "baseUrl": "https://raw.githubusercontent.com/nghia46/English_Flashcard/refs/heads/master/data/",
   "topics": {
-    "500 Từ Cơ Bản": "500_Common_Words.json",
-    "Vật Dụng Trong Nhà": "Houses.json",
-    "Trường Học": "Schools.json",
-    "Foods": "Foods.json",
-    "Valorant": "Valorant.json"
+    "500_Common_Words": "500_Common_Words.json"
   }
 }
