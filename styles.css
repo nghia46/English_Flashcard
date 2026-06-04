@@ -87,28 +87,38 @@
      margin-bottom: 25px;
  }
 
- /* Khu vực tải file */
- .file-upload-zone {
-     position: relative;
- }
+
 
  .file-upload-label {
-     display: block;
-     padding: 12px;
      background-color: var(--select-bg);
      border: 2px dashed var(--btn-border);
      border-radius: 10px;
+    
+     width: 60%;
+     height: 70px;
+     padding: 0 16px;
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     gap: 8px;
+
      text-align: center;
      cursor: pointer;
+
      font-size: 13px;
      font-weight: 600;
      color: var(--text-secondary);
-     transition: border-color 0.2s, background-color 0.2s, color 0.2s;
+
+     transition:
+         border-color 0.2s,
+         background-color 0.2s,
+         color 0.2s;
  }
 
  .file-upload-label:hover {
-     border-color: var(--primary);
-     color: var(--text);
+     border-color: var(--accent-color);
+     background: rgba(0, 123, 255, 0.05);
  }
 
  #fileInput {

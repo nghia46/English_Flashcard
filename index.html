@@ -25,11 +25,11 @@
         <h1 id="mainTitle">Sight Words Flashcards</h1>
 
         <div class="config-zone">
-            <div class="file-upload-zone">
+            <!-- <div class="file-upload-zone">
                 <label for="fileInput" class="file-upload-label" id="fileLabel">📁 Chọn một hoặc nhiều file từ vựng
                     (.txt, .json)</label>
                 <input type="file" id="fileInput" accept=".txt,.json" multiple>
-            </div>
+            </div> -->
 
             <div class="list-selector-zone">
                 <label for="listSelect">Chủ đề đang học:</label>
@@ -55,6 +55,12 @@
                     </div>
 
                     <div class="checker-actions-top">
+
+                        <label for="fileInput" class="file-upload-label" id="fileLabel">📁 Chọn một hoặc nhiều file
+                            từ vựng
+                            (.txt, .json)</label>
+                        <input type="file" id="fileInput" accept=".txt,.json" multiple>
+
                         <button onclick="toggleSelectAllCheckboxes()" class="action-sub-btn">Chọn tất cả Local</button>
                         <button onclick="deleteSelectedTopics()" class="danger-btn">🗑️ Xóa đã chọn</button>
                     </div>
@@ -111,7 +117,7 @@
 
     <!-- Script điều khiển Logic của Ứng dụng -->
     <script src="app.js"></script>
-    
+
 </body>
 
 </html>
