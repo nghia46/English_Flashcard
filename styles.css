@@ -1,0 +1,399 @@
+/* Định nghĩa biến màu sắc cho 2 chế độ */
+:root {
+    --bg: #f8fafc;
+    --container-bg: #ffffff;
+    --text: #1e293b;
+    --text-secondary: #64748b;
+    --card-front: #ffffff;
+    --card-back: #e0e7ff;
+    --card-text-back: #1e1b4b;
+    --border: #e2e8f0;
+    --primary: #4f46e5;
+    --primary-hover: #4338ca;
+    --btn-bg: #ffffff;
+    --btn-border: #cbd5e1;
+    --select-bg: #f1f5f9;
+    --danger: #ef4444;
+    --danger-hover: #dc2626;
+}
+
+/* Khi kích hoạt chế độ nền tối (Dark Mode) */
+[data-theme="dark"] {
+    --bg: #0f172a;
+    --container-bg: #1e293b;
+    --text: #f8fafc;
+    --text-secondary: #94a3b8;
+    --card-front: #1e293b;
+    --card-back: #312e81;
+    --card-text-back: #e0e7ff;
+    --border: #334155;
+    --primary: #6366f1;
+    --primary-hover: #4f46e5;
+    --btn-bg: #334155;
+    --btn-border: #475569;
+    --select-bg: #334155;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Nút chuyển đổi Dark Mode góc màn hình */
+.theme-toggle-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.theme-btn {
+    background: var(--container-bg);
+    border: 1px solid var(--btn-border);
+    color: var(--text);
+    padding: .5rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+}
+
+.container {
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    background: var(--container-bg);
+    padding: 30px;
+    border-radius: 24px;
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+    border: 1px solid var(--border);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 0;
+    margin-bottom: 15px;
+    color: var(--primary);
+}
+
+/* Vùng tải và quản lý danh sách */
+.config-zone {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.file-upload-zone {
+    background: var(--bg);
+    padding: 15px;
+    border: 2px dashed var(--btn-border);
+    border-radius: 12px;
+    transition: background-color 0.3s;
+}
+
+.file-upload-zone input {
+    display: none;
+}
+
+.file-upload-label {
+    cursor: pointer;
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.list-selector-zone {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+}
+
+.list-selector-zone label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-secondary);
+}
+
+.selector-row {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+select {
+    flex: 1;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: 1px solid var(--btn-border);
+    background-color: var(--select-bg);
+    color: var(--text);
+    outline: none;
+    cursor: pointer;
+}
+
+/* Nút quản lý danh sách xóa */
+.manage-btn {
+    background-color: var(--btn-bg);
+    border: 1px solid var(--btn-border);
+    border-radius: 10px;
+    padding: 0 12px;
+    font-size: 14px;
+    cursor: pointer;
+    flex: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Khu vực danh sách Checkbox ẩn/hiển */
+.checker-box-container {
+    display: none;
+    /* Mặc định ẩn */
+    background: var(--bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 15px;
+    margin-top: 5px;
+    text-align: left;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.checker-box-container.active {
+    display: block;
+}
+
+.checker-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 0;
+    font-size: 14px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="dark"] .checker-item {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.checker-item input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.checker-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    gap: 8px;
+}
+
+.checker-actions button {
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 6px;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: var(--bg);
+    border-radius: 10px;
+    height: 8px;
+    margin: 20px 0;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background-color: var(--primary);
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+.counter {
+    font-size: 14px;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+/* Flashcard 3D Flip Effect */
+.flashcard-wrapper {
+    perspective: 1000px;
+    width: 100%;
+    height: 280px;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.flashcard {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.flashcard.flipped {
+    transform: rotateY(180deg);
+}
+
+.card-face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 2px solid var(--border);
+}
+
+.card-front {
+    background-color: var(--card-front);
+    color: var(--text);
+}
+
+.word {
+    font-size: 44px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    word-break: break-word;
+}
+
+.hint-text {
+    margin-top: 15px;
+    font-size: 13px;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.card-back {
+    background-color: var(--card-back);
+    color: var(--card-text-back);
+    transform: rotateY(180deg);
+}
+
+.meaning {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    word-break: break-word;
+}
+
+/* Controls */
+.controls {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+button {
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s;
+    background-color: var(--btn-bg);
+    color: var(--text);
+    border: 1px solid var(--btn-border);
+}
+
+button:hover:not(:disabled) {
+    filter: brightness(0.95);
+}
+
+button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+button.primary-btn {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+}
+
+button.primary-btn:hover:not(:disabled) {
+    background-color: var(--primary-hover);
+}
+
+.action-btns {
+    display: flex;
+    gap: 10px;
+}
+
+.action-btns button {
+    font-size: 14px;
+    padding: 8px 12px;
+}
+
+.audio-btn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    font-size: 18px;
+    border-radius: 50%;
+    background-color: var(--bg);
+    border: 1px solid var(--btn-border);
+    color: var(--text);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s, background-color 0.2s;
+    z-index: 10;
+}
+
+.audio-btn:hover {
+    transform: scale(1.1);
+    background-color: var(--border);
+}
+
+.audio-btn:active {
+    transform: scale(0.95);
+}
+
+/* Bổ sung style đồng bộ cho khu vực ôn tập tổng hợp */
+.review-zone select {
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+#startReviewBtn:hover:not(:disabled) {
+    background-color: var(--primary-hover) !important;
+    filter: brightness(1.05);
+}
+
+#startReviewBtn:active:not(:disabled) {
+    transform: scale(0.98);
+}

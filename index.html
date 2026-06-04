@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sight Words Flashcards - JSON & API Mode</title>
+</head>
+
+<body>
+
+    <div class="theme-toggle-container">
+        <button class="theme-btn" id="themeBtn" onclick="toggleTheme()" title="Chuyển chế độ màu">🌙</button>
+    </div>
+
+    <div class="container">
+        <h1 id="mainTitle">Sight Words Flashcards</h1>
+
+        <div class="config-zone">
+            <div class="file-upload-zone">
+                <label for="fileInput" class="file-upload-label" id="fileLabel">📁 Chọn một hoặc nhiều file JSON từ vựng</label>
+                <input type="file" id="fileInput" accept=".json" multiple>
+            </div>
+
+            <div class="list-selector-zone">
+                <label for="listSelect">Chủ đề đang học:</label>
+                <div class="selector-row">
+                    <select id="listSelect" onchange="switchTopic()">
+                        <option value="">-- Chưa có dữ liệu chủ đề --</option>
+                    </select>
+                    <button id="manageBtn" class="manage-btn" onclick="toggleCheckerPanel()" title="Quản lý / Xóa nhiều chủ đề" disabled>⚙️ Quản lý</button>
+                </div>
+
+                <div id="checkerPanel" class="checker-box-container">
+                    <div id="checkerList"></div> 
+                    <div class="checker-actions">
+                        <button onclick="toggleSelectAllCheckboxes()" style="padding: 4px 8px;">Chọn tất cả</button>
+                        <button onclick="deleteCheckedCollections()" style="color: white; background-color: var(--danger); border: none;">❌ Xóa bộ đã chọn</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-zone" style="display: flex; flex-direction: column; text-align: left; gap: 5px; margin-top: 5px;">
+                <label for="reviewCountSelect">🎲 Ôn tập tổng hợp (Tất cả chủ đề):</label>
+                <div class="selector-row">
+                    <select id="reviewCountSelect">
+                        <option value="20">Lấy ngẫu nhiên 20 từ</option>
+                        <option value="50">Lấy ngẫu nhiên 50 từ</option>
+                        <option value="100">Lấy ngẫu nhiên 100 từ</option>
+                        <option value="all">Lấy tất cả các từ</option>
+                    </select>
+                    <button id="startReviewBtn" onclick="startGlobalReview()" style="flex: none; padding: 10px 15px; font-size: 14px; border-radius: 10px; background-color: var(--primary); color: white; border: none; font-weight: 600;" disabled>🚀 Bắt đầu ôn</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="counter" id="counter">Vui lòng chọn file để bắt đầu</div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+
+        <div class="flashcard-wrapper" onclick="flipCard()">
+            <div class="flashcard" id="card">
+                <div class="card-face card-front">
+                    <button class="audio-btn" onclick="speakWord(event)" title="Nghe phát âm">🔊</button>
+                    <div class="word" id="frontWord">Welcome</div>
+                    <div class="hint-text">Bấm để xem nghĩa</div>
+                </div>
+                <div class="card-face card-back">
+                    <div class="meaning" id="backMeaning">Chào mừng</div>
+                    <div class="hint-text">Bấm để quay lại</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button id="prevBtn" onclick="prevCard()" disabled>Trước</button>
+            <button id="nextBtn" class="primary-btn" onclick="nextCard()" disabled>Tiếp theo</button>
+        </div>
+
+        <div class="action-btns" style="justify-content: center;">
+            <button id="shuffleBtn" onclick="shuffleCards()" disabled>🔀 Trộn từ</button>
+            <button id="clearStorageBtn" onclick="clearSavedData()" style="color: #ef4444; border-color: rgba(239, 68, 68, 0.3);">🗑️ Xóa hết app</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
