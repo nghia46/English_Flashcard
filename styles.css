@@ -6,8 +6,8 @@
      --container-bg: #ffffff;
      --text: #1e293b;
      --text-secondary: #64748b;
-     --card-front: #ffffff;
-     --card-back: #e0e7ff;
+     --card-front: #4e46e518;
+     --card-back: #10b9811f;
      --card-text-back: #1e1b4b;
      --border: #c5cbd3;
      --primary: #4f46e5;
@@ -30,8 +30,6 @@
      --container-bg: #1e293b;
      --text: #f8fafc;
      --text-secondary: #94a3b8;
-     --card-front: #1e293b;
-     --card-back: #312e812c;
      --card-text-back: #e0e7ff;
      --border: #334155;
      --primary: #6366f1;
@@ -109,15 +107,15 @@
      color: var(--text);
      letter-spacing: -0.5px;
  }
- 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 2px dashed var(--border);
-    margin: .5rem 0 .5rem 0;
-    padding: 0;
-}
+
+ hr {
+     display: block;
+     height: 1px;
+     border: 0;
+     border-top: 2px dashed var(--border);
+     margin: .5rem 0 .5rem 0;
+     padding: 0;
+ }
 
  .action-bar {
      display: flex;
@@ -516,27 +514,25 @@ hr {
  }
 
  .card-face {
-    display: flex;
+     display: flex;
      position: absolute;
      width: 100%;
      height: 100%;
      backface-visibility: hidden;
      border-radius: 16px;
-     border: 2px dashed var(--primary);
-     
+     border: 2px dashed var(--btn-comfirm);
+
      flex-direction: column;
      justify-content: center;
      align-items: center;
      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
  }
 
- .card-face:hover {
-     border-color: var(--btn-comfirm-hover);
-     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
- }
+
 
  /* Mặt trước */
  .card-front {
+     border-color: var(--primary);
      background-color: var(--card-front);
      color: var(--text);
  }
