@@ -1,0 +1,269 @@
+{
+  "Unit_6": [
+    {
+      "word": "activate",
+      "pos": "v",
+      "meaning": "kích hoạt, khởi động"
+    },
+    {
+      "word": "advanced",
+      "pos": "adj",
+      "meaning": "tiên tiến, trình độ cao"
+    },
+    {
+      "word": "analyse",
+      "pos": "v",
+      "meaning": "phân tích"
+    },
+    {
+      "word": "application",
+      "pos": "n",
+      "meaning": "sự ứng dụng, áp dụng"
+    },
+    {
+      "word": "artificial intelligence (AI)",
+      "pos": "n",
+      "meaning": "trí thông minh nhân tạo"
+    },
+    {
+      "word": "capable",
+      "pos": "adj",
+      "meaning": "có khả năng"
+    },
+    {
+      "word": "chatbot",
+      "pos": "n",
+      "meaning": "hộp trò chuyện"
+    },
+    {
+      "word": "data",
+      "pos": "n",
+      "meaning": "dữ liệu"
+    },
+    {
+      "word": "digital",
+      "pos": "adj",
+      "meaning": "thuộc kỹ thuật số"
+    },
+    {
+      "word": "evolution",
+      "pos": "n",
+      "meaning": "sự tiến hóa, phát triển"
+    },
+    {
+      "word": "facial recognition",
+      "pos": "n",
+      "meaning": "nhận dạng khuôn mặt"
+    },
+    {
+      "word": "function",
+      "pos": "n",
+      "meaning": "chức năng"
+    },
+    {
+      "word": "hands-on",
+      "pos": "adj",
+      "meaning": "thực tiễn, trực tiếp"
+    },
+    {
+      "word": "human-like",
+      "pos": "adj",
+      "meaning": "giống con người"
+    },
+    {
+      "word": "interact",
+      "pos": "v",
+      "meaning": "tương tác"
+    },
+    {
+      "word": "personalised",
+      "pos": "adj",
+      "meaning": "được cá nhân hóa"
+    },
+    {
+      "word": "platform",
+      "pos": "n",
+      "meaning": "nền tảng (công nghệ)"
+    },
+    {
+      "word": "portfolio",
+      "pos": "n",
+      "meaning": "hồ sơ"
+    },
+    {
+      "word": "programme",
+      "pos": "v",
+      "meaning": "lập trình"
+    },
+    {
+      "word": "robotic",
+      "pos": "adj",
+      "meaning": "thuộc rô bốt"
+    },
+    {
+      "word": "upgrade",
+      "pos": "v",
+      "meaning": "nâng cấp"
+    },
+    {
+      "word": "virtual reality",
+      "pos": "n",
+      "meaning": "thực tế ảo"
+    },
+    {
+      "word": "voice command",
+      "pos": "n.p",
+      "meaning": "ra lệnh bằng giọng nói"
+    },
+    {
+      "word": "recognition",
+      "pos": "n",
+      "meaning": "sự nhận dạng"
+    },
+    {
+      "word": "traditional",
+      "pos": "adj",
+      "meaning": "truyền thống"
+    },
+    {
+      "word": "visual",
+      "pos": "adj",
+      "meaning": "trực quan"
+    },
+    {
+      "word": "identity",
+      "pos": "n",
+      "meaning": "danh tính"
+    },
+    {
+      "word": "explore",
+      "pos": "v",
+      "meaning": "khám phá"
+    },
+    {
+      "word": "scientist",
+      "pos": "n",
+      "meaning": "nhà khoa học"
+    },
+    {
+      "word": "engineer",
+      "pos": "n",
+      "meaning": "kỹ sư"
+    },
+    {
+      "word": "recognise",
+      "pos": "v",
+      "meaning": "nhận ra"
+    },
+    {
+      "word": "extinct",
+      "pos": "adj",
+      "meaning": "tuyệt chủng"
+    },
+    {
+      "word": "extinction",
+      "pos": "n",
+      "meaning": "sự tuyệt chủng"
+    },
+    {
+      "word": "habitat",
+      "pos": "n",
+      "meaning": "môi trường sống"
+    },
+    {
+      "word": "poach",
+      "pos": "v",
+      "meaning": "săn trộm"
+    },
+    {
+      "word": "rhino",
+      "pos": "n",
+      "meaning": "tê giác"
+    },
+    {
+      "word": "sea turtle",
+      "pos": "n",
+      "meaning": "rùa biển"
+    },
+    {
+      "word": "survive",
+      "pos": "v",
+      "meaning": "sống sót"
+    },
+    {
+      "word": "survival",
+      "pos": "n",
+      "meaning": "sự sống sót"
+    },
+    {
+      "word": "trade",
+      "pos": "n",
+      "meaning": "thương mại"
+    },
+    {
+      "word": "vulnerable",
+      "pos": "adj",
+      "meaning": "dễ bị tổn thương"
+    },
+    {
+      "word": "artificial intelligence (AI)",
+      "meaning": "trí thông minh nhân tạo"
+    },
+    {
+      "word": "voice command",
+      "meaning": "ra lệnh bằng giọng nói"
+    },
+    {
+      "word": "facial recognition",
+      "meaning": "nhận dạng khuôn mặt"
+    },
+    {
+      "word": "virtual reality",
+      "meaning": "thực tế ảo"
+    },
+    {
+      "word": "human-like behaviour",
+      "meaning": "hành vi giống con người"
+    },
+    {
+      "word": "hands-on experience",
+      "meaning": "kinh nghiệm thực hành"
+    },
+    {
+      "word": "personalised learning",
+      "meaning": "học tập được cá nhân hóa"
+    },
+    {
+      "word": "technological platform",
+      "meaning": "nền tảng công nghệ"
+    },
+    {
+      "word": "scientific research",
+      "meaning": "nghiên cứu khoa học"
+    },
+    {
+      "word": "survive in the wild",
+      "meaning": "sống sót trong tự nhiên"
+    },
+    {
+      "word": "poach endangered species",
+      "meaning": "săn trộm các loài nguy cấp"
+    },
+    {
+      "word": "protect the environment",
+      "meaning": "bảo vệ môi trường"
+    },
+    {
+      "word": "explore new opportunities",
+      "meaning": "khám phá cơ hội mới"
+    },
+    {
+      "word": "upgrade software/system",
+      "meaning": "nâng cấp phần mềm/hệ thống"
+    },
+    {
+      "word": "analyse data/information",
+      "meaning": "phân tích dữ liệu/thông tin"
+    }
+  ]
+}

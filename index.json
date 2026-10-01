@@ -1,10 +1,13 @@
 {
   "baseUrl": "https://raw.githubusercontent.com/nghia46/English_Flashcard/refs/heads/master/data/",
   "topics": {
-    "500_Common_Words": "500_Common_Words.json",
-    "Sample_Words": "Sample_Words.json",
     "Unit_1": "Unit_1.json",
     "Unit_2": "Unit_2.json",
-    "Unit_3": "Unit_3.json"
+    "Unit_3": "Unit_3.json",
+    "Unit_4": "Unit_4.json",
+    "Unit_5": "Unit_5.json",
+    "Unit_6": "Unit_6.json",
+    "Unit_7": "Unit_7.json",
+    "Unit_8": "Unit_8.json"
   }
 }

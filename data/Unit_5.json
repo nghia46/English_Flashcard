@@ -1,0 +1,514 @@
+{
+  "Unit_5": [
+    {
+      "word": "apprenticeship",
+      "pos": "n",
+      "meaning": "học việc"
+    },
+    {
+      "word": "bill",
+      "pos": "n",
+      "meaning": "hóa đơn"
+    },
+    {
+      "word": "bonus",
+      "pos": "n",
+      "meaning": "tiền thưởng"
+    },
+    {
+      "word": "candidate",
+      "pos": "n",
+      "meaning": "ứng viên"
+    },
+    {
+      "word": "client",
+      "pos": "n",
+      "meaning": "khách hàng"
+    },
+    {
+      "word": "commuter",
+      "pos": "n",
+      "meaning": "người đi làm (xa)"
+    },
+    {
+      "word": "department",
+      "pos": "n",
+      "meaning": "bộ phận, khoa"
+    },
+    {
+      "word": "order",
+      "pos": "n",
+      "meaning": "đơn hàng, gọi món"
+    },
+    {
+      "word": "qualification",
+      "pos": "n",
+      "meaning": "bằng cấp, trình độ chuyên môn"
+    },
+    {
+      "word": "quality",
+      "pos": "n",
+      "meaning": "phẩm chất, chất lượng"
+    },
+    {
+      "word": "recipient",
+      "pos": "n",
+      "meaning": "người nhận"
+    },
+    {
+      "word": "reference",
+      "pos": "n",
+      "meaning": "lời giới thiệu, tài liệu tham khảo"
+    },
+    {
+      "word": "regulation",
+      "pos": "n",
+      "meaning": "quy định"
+    },
+    {
+      "word": "relationship",
+      "pos": "n",
+      "meaning": "mối quan hệ"
+    },
+    {
+      "word": "role",
+      "pos": "n",
+      "meaning": "vai trò"
+    },
+    {
+      "word": "shift",
+      "pos": "n",
+      "meaning": "ca làm việc"
+    },
+    {
+      "word": "target",
+      "pos": "n",
+      "meaning": "mục tiêu"
+    },
+    {
+      "word": "vacancy",
+      "pos": "n",
+      "meaning": "vị trí còn trống"
+    },
+    {
+      "word": "wage",
+      "pos": "n",
+      "meaning": "tiền công"
+    },
+    {
+      "word": "accountant",
+      "pos": "n",
+      "meaning": "kế toán viên"
+    },
+    {
+      "word": "attendant",
+      "pos": "n",
+      "meaning": "người phục vụ"
+    },
+    {
+      "word": "babysitter",
+      "pos": "n",
+      "meaning": "người giữ trẻ"
+    },
+    {
+      "word": "receptionist",
+      "pos": "n",
+      "meaning": "nhân viên lễ tân"
+    },
+    {
+      "word": "crawl",
+      "pos": "v",
+      "meaning": "bò"
+    },
+    {
+      "word": "employ",
+      "pos": "v",
+      "meaning": "tuyển dụng"
+    },
+    {
+      "word": "endure",
+      "pos": "v",
+      "meaning": "chịu đựng"
+    },
+    {
+      "word": "offer",
+      "pos": "v",
+      "meaning": "đề nghị"
+    },
+    {
+      "word": "quit",
+      "pos": "v",
+      "meaning": "bỏ, từ bỏ"
+    },
+    {
+      "word": "require",
+      "pos": "v",
+      "meaning": "yêu cầu"
+    },
+    {
+      "word": "squeeze",
+      "pos": "v",
+      "meaning": "nhét, bóp"
+    },
+    {
+      "word": "submit",
+      "pos": "v",
+      "meaning": "nộp"
+    },
+    {
+      "word": "casual",
+      "pos": "adj",
+      "meaning": "tạm thời"
+    },
+    {
+      "word": "challenging",
+      "pos": "adj",
+      "meaning": "đầy thử thách"
+    },
+    {
+      "word": "demanding",
+      "pos": "adj",
+      "meaning": "đòi hỏi cao"
+    },
+    {
+      "word": "desired",
+      "pos": "adj",
+      "meaning": "được mong muốn"
+    },
+    {
+      "word": "enthusiastic",
+      "pos": "adj",
+      "meaning": "nhiệt tình"
+    },
+    {
+      "word": "hourly",
+      "pos": "adj",
+      "meaning": "theo giờ"
+    },
+    {
+      "word": "nine-to-five",
+      "pos": "adj",
+      "meaning": "giờ hành chính"
+    },
+    {
+      "word": "organised",
+      "pos": "adj",
+      "meaning": "ngăn nắp, có tổ chức"
+    },
+    {
+      "word": "overtime",
+      "pos": "adj",
+      "meaning": "làm thêm giờ"
+    },
+    {
+      "word": "relevant",
+      "pos": "adj",
+      "meaning": "liên quan"
+    },
+    {
+      "word": "retired",
+      "pos": "adj",
+      "meaning": "đã nghỉ hưu"
+    },
+    {
+      "word": "rewarding",
+      "pos": "adj",
+      "meaning": "đáng làm, bổ ích"
+    },
+    {
+      "word": "stressful",
+      "pos": "adj",
+      "meaning": "căng thẳng"
+    },
+    {
+      "word": "willing",
+      "pos": "adj",
+      "meaning": "sẵn sàng"
+    },
+    {
+      "word": "worth",
+      "pos": "adj",
+      "meaning": "đáng giá"
+    },
+    {
+      "word": "preferably",
+      "pos": "adv",
+      "meaning": "tốt hơn hết là"
+    },
+    {
+      "word": "factory worker",
+      "pos": "n.p",
+      "meaning": "công nhân nhà máy"
+    },
+    {
+      "word": "scuba diver",
+      "pos": "n.p",
+      "meaning": "thợ lặn có bình khí"
+    },
+    {
+      "word": "teaching assistant",
+      "pos": "n.p",
+      "meaning": "trợ giảng"
+    },
+    {
+      "word": "application letter",
+      "pos": "n.p",
+      "meaning": "thư xin việc"
+    },
+    {
+      "word": "business trip",
+      "pos": "n.p",
+      "meaning": "chuyến đi công tác"
+    },
+    {
+      "word": "hospitality industry",
+      "pos": "n.p",
+      "meaning": "ngành khách sạn, dịch vụ, nhà hàng"
+    },
+    {
+      "word": "on-the-job training",
+      "pos": "n.p",
+      "meaning": "đào tạo tại chỗ, thực tế"
+    },
+    {
+      "word": "time management",
+      "pos": "n.p",
+      "meaning": "quản lý thời gian"
+    },
+    {
+      "word": "window display",
+      "pos": "n.p",
+      "meaning": "trưng bày cửa sổ (shop)"
+    },
+    {
+      "word": "check attendance",
+      "pos": "phr v",
+      "meaning": "điểm danh"
+    },
+    {
+      "word": "follow one’s footsteps",
+      "pos": "phr",
+      "meaning": "theo truyền thống/ bước chân ai đó"
+    },
+    {
+      "word": "interfere with",
+      "pos": "phr v",
+      "meaning": "can thiệp, ảnh hưởng tới"
+    },
+    {
+      "word": "take order",
+      "pos": "phr v",
+      "meaning": "nhận đặt hàng, gọi món"
+    },
+    {
+      "word": "wait on tables",
+      "pos": "phr",
+      "meaning": "phục vụ bàn (nhà hàng)"
+    },
+    {
+      "word": "work overtime",
+      "pos": "phr v",
+      "meaning": "làm thêm giờ"
+    },
+    {
+      "word": "put up (ideas)",
+      "pos": "phr v",
+      "meaning": "đưa ra (ý tưởng)"
+    },
+    {
+      "word": "give up",
+      "pos": "phr v",
+      "meaning": "từ bỏ"
+    },
+    {
+      "word": "look after",
+      "pos": "phr v",
+      "meaning": "chăm sóc, trông nom"
+    },
+    {
+      "word": "in person",
+      "pos": "phr",
+      "meaning": "trực tiếp, gặp mặt"
+    },
+    {
+      "word": "on average",
+      "pos": "phr",
+      "meaning": "trung bình"
+    },
+    {
+      "word": "And",
+      "pos": "conj",
+      "meaning": "Và (VD: She bought apples and oranges.)"
+    },
+    {
+      "word": "Nor",
+      "pos": "conj",
+      "meaning": "Cũng không (VD: He didn’t come, nor did he call.)"
+    },
+    {
+      "word": "But",
+      "pos": "conj",
+      "meaning": "Nhưng (VD: I want to go, but I’m too tired.)"
+    },
+    {
+      "word": "Or",
+      "pos": "conj",
+      "meaning": "Hoặc (VD: Do you want tea or coffee?)"
+    },
+    {
+      "word": "Yet",
+      "pos": "conj",
+      "meaning": "Tuy nhiên (VD: She’s allergic to cats, yet she has three of them.)"
+    },
+    {
+      "word": "So",
+      "pos": "conj",
+      "meaning": "Vì vậy (VD: It was raining, so we stayed indoors.)"
+    },
+    {
+      "word": "Either...or",
+      "pos": "conj",
+      "meaning": "Hoặc...hoặc (VD: You can either come or stay home.)"
+    },
+    {
+      "word": "Neither...nor",
+      "pos": "conj",
+      "meaning": "Không...cũng không (VD: Neither John nor Mary can attend the meeting.)"
+    },
+    {
+      "word": "Not only...but also",
+      "pos": "conj",
+      "meaning": "Không chỉ...mà còn (VD: Not only is he a great teacher, but also a musician.)"
+    },
+    {
+      "word": "Both...and",
+      "pos": "conj",
+      "meaning": "Cả...và (VD: Both the manager and the employees were satisfied.)"
+    },
+    {
+      "word": "Whether...or",
+      "pos": "conj",
+      "meaning": "Dù...hoặc (VD: Whether you win or lose, it’s important to try.)"
+    },
+    {
+      "word": "However",
+      "pos": "adv",
+      "meaning": "Tuy nhiên (VD: She was tired; however, she continued working.)"
+    },
+    {
+      "word": "Therefore",
+      "pos": "adv",
+      "meaning": "Do đó (VD: He missed the bus; therefore, he was late for the meeting.)"
+    },
+    {
+      "word": "Moreover",
+      "pos": "adv",
+      "meaning": "Hơn nữa (VD: The product is inexpensive; moreover, it’s eco-friendly.)"
+    },
+    {
+      "word": "Nevertheless",
+      "pos": "adv",
+      "meaning": "Tuy nhiên (VD: It was cold; nevertheless, we went swimming.)"
+    },
+    {
+      "word": "In addition",
+      "pos": "adv",
+      "meaning": "Thêm vào đó (VD: She’s intelligent; in addition, she’s hardworking.)"
+    },
+    {
+      "word": "As a result",
+      "pos": "adv",
+      "meaning": "Kết quả là (VD: He was late; as a result, he missed the presentation.)"
+    },
+    {
+      "word": "On the other hand",
+      "pos": "adv",
+      "meaning": "Mặt khác (VD: She’s very talented; on the other hand, she lacks experience.)"
+    },
+    {
+      "word": "Although/Though",
+      "pos": "conj",
+      "meaning": "Mặc dù (VD: Although it was raining, we went for a walk. / Although he is rich, he is not happy.)"
+    },
+    {
+      "word": "Because",
+      "pos": "conj",
+      "meaning": "Bởi vì (VD: She stayed home because she was sick.)"
+    },
+    {
+      "word": "Since",
+      "pos": "conj",
+      "meaning": "Vì, bởi vì (VD: Since you’re here, let’s start the meeting.)"
+    },
+    {
+      "word": "If",
+      "pos": "conj",
+      "meaning": "Nếu (VD: If it rains, we’ll stay inside.)"
+    },
+    {
+      "word": "Unless",
+      "pos": "conj",
+      "meaning": "Trừ khi, nếu không (VD: We’ll be late unless we leave now. / You won’t pass unless you study harder.)"
+    },
+    {
+      "word": "While",
+      "pos": "conj",
+      "meaning": "Trong khi (VD: While he was studying, she was watching TV.)"
+    },
+    {
+      "word": "After",
+      "pos": "conj",
+      "meaning": "Sau khi (VD: After he finished work, he went home.)"
+    },
+    {
+      "word": "Before",
+      "pos": "conj",
+      "meaning": "Trước khi (VD: Before you leave, please turn off the lights.)"
+    },
+    {
+      "word": "When",
+      "pos": "conj",
+      "meaning": "Khi (VD: When I arrived, everyone was already there.)"
+    },
+    {
+      "word": "As",
+      "pos": "conj",
+      "meaning": "Khi, bởi vì (VD: As I was leaving, he called me.)"
+    },
+    {
+      "word": "Even though",
+      "pos": "conj",
+      "meaning": "Mặc dù (VD: Even though she was tired, she finished the project.)"
+    },
+    {
+      "word": "So that",
+      "pos": "conj",
+      "meaning": "Để mà (VD: He worked hard so that he could save money.)"
+    },
+    {
+      "word": "In case",
+      "pos": "conj",
+      "meaning": "Trong trường hợp (VD: Take an umbrella in case it rains.)"
+    },
+    {
+      "word": "As soon as",
+      "pos": "conj",
+      "meaning": "Ngay khi (VD: As soon as he arrived, the meeting started.)"
+    },
+    {
+      "word": "Until",
+      "pos": "conj",
+      "meaning": "Cho đến khi (VD: Wait here until I come back.)"
+    },
+    {
+      "word": "Whenever",
+      "pos": "conj",
+      "meaning": "Bất cứ khi nào (VD: Call me whenever you need help.)"
+    },
+    {
+      "word": "Wherever",
+      "pos": "conj",
+      "meaning": "Bất cứ nơi nào (VD: I’ll follow you wherever you go.)"
+    }
+  ]
+}

@@ -1,0 +1,456 @@
+{
+  "Unit_7": [
+    {
+      "word": "publicity",
+      "pos": "n",
+      "meaning": "quảng bá"
+    },
+    {
+      "word": "advert",
+      "pos": "n",
+      "meaning": "quảng cáo"
+    },
+    {
+      "word": "commercial",
+      "pos": "adj/n",
+      "meaning": "quảng cáo thương mại / thương mại"
+    },
+    {
+      "word": "subscription",
+      "pos": "n",
+      "meaning": "đăng ký dài hạn"
+    },
+    {
+      "word": "press",
+      "pos": "n",
+      "meaning": "báo chí"
+    },
+    {
+      "word": "podcast",
+      "pos": "n",
+      "meaning": "chương trình phát thanh"
+    },
+    {
+      "word": "accessible",
+      "pos": "adj",
+      "meaning": "có thể tiếp cận được"
+    },
+    {
+      "word": "account for",
+      "pos": "phr v",
+      "meaning": "chiếm (tỉ lệ)"
+    },
+    {
+      "word": "audio",
+      "pos": "adj/n",
+      "meaning": "bằng/có âm thanh"
+    },
+    {
+      "word": "bias",
+      "pos": "n",
+      "meaning": "thiên kiến, thiên vị"
+    },
+    {
+      "word": "broadcast",
+      "pos": "v/n",
+      "meaning": "phát sóng"
+    },
+    {
+      "word": "by contrast",
+      "pos": "adv",
+      "meaning": "ngược lại"
+    },
+    {
+      "word": "the press",
+      "pos": "n",
+      "meaning": "báo chí"
+    },
+    {
+      "word": "update",
+      "pos": "v/n",
+      "meaning": "cập nhật"
+    },
+    {
+      "word": "viewer",
+      "pos": "n",
+      "meaning": "người xem"
+    },
+    {
+      "word": "visual",
+      "pos": "adj/n",
+      "meaning": "bằng/có hình ảnh"
+    },
+    {
+      "word": "activate",
+      "pos": "v",
+      "meaning": "kích hoạt"
+    },
+    {
+      "word": "algorithm",
+      "pos": "n",
+      "meaning": "thuật toán"
+    },
+    {
+      "word": "artificial intelligence",
+      "pos": "n",
+      "meaning": "trí tuệ nhân tạo"
+    },
+    {
+      "word": "automated",
+      "pos": "adj",
+      "meaning": "tự động"
+    },
+    {
+      "word": "call for",
+      "pos": "phr v",
+      "meaning": "kêu gọi"
+    },
+    {
+      "word": "resurrect",
+      "pos": "v",
+      "meaning": "làm sống lại, phục hồi"
+    },
+    {
+      "word": "unbelievable",
+      "pos": "adj",
+      "meaning": "khó tin"
+    },
+    {
+      "word": "announcement",
+      "pos": "n",
+      "meaning": "thông báo"
+    },
+    {
+      "word": "brochure",
+      "pos": "n",
+      "meaning": "sách hướng dẫn nhỏ"
+    },
+    {
+      "word": "debate",
+      "pos": "n/v",
+      "meaning": "sự tranh luận / tranh luận"
+    },
+    {
+      "word": "discount",
+      "pos": "n",
+      "meaning": "sự hạ giá"
+    },
+    {
+      "word": "element",
+      "pos": "n",
+      "meaning": "yếu tố"
+    },
+    {
+      "word": "figure",
+      "pos": "n",
+      "meaning": "số liệu"
+    },
+    {
+      "word": "infographic",
+      "pos": "n",
+      "meaning": "đồ hoạ thông minh"
+    },
+    {
+      "word": "leaflet",
+      "pos": "n",
+      "meaning": "tờ rơi"
+    },
+    {
+      "word": "loudspeaker",
+      "pos": "n",
+      "meaning": "loa"
+    },
+    {
+      "word": "marketing",
+      "pos": "n",
+      "meaning": "tiếp thị"
+    },
+    {
+      "word": "megaphone",
+      "pos": "n",
+      "meaning": "loa phóng thanh"
+    },
+    {
+      "word": "permission",
+      "pos": "n",
+      "meaning": "sự cho phép"
+    },
+    {
+      "word": "presence",
+      "pos": "n",
+      "meaning": "sức thu hút, sức ảnh hưởng"
+    },
+    {
+      "word": "snapshot",
+      "pos": "n",
+      "meaning": "ảnh chụp nhanh"
+    },
+    {
+      "word": "source",
+      "pos": "n",
+      "meaning": "nguồn tin"
+    },
+    {
+      "word": "tool",
+      "pos": "n",
+      "meaning": "công cụ"
+    },
+    {
+      "word": "digital advertising",
+      "pos": "n",
+      "meaning": "quảng cáo kỹ thuật số"
+    },
+    {
+      "word": "digital billboard",
+      "pos": "n",
+      "meaning": "bảng quảng cáo kỹ thuật số"
+    },
+    {
+      "word": "electronic book",
+      "pos": "n",
+      "meaning": "sách điện tử"
+    },
+    {
+      "word": "fake news",
+      "pos": "n",
+      "meaning": "tin giả, tin bịa đặt"
+    },
+    {
+      "word": "mass media",
+      "pos": "n",
+      "meaning": "phương tiện truyền thông đại chúng"
+    },
+    {
+      "word": "generate publicity",
+      "meaning": "tạo ra quảng bá"
+    },
+    {
+      "word": "receive publicity",
+      "meaning": "nhận được quảng bá"
+    },
+    {
+      "word": "place an advert",
+      "meaning": "đăng quảng cáo"
+    },
+    {
+      "word": "run an advert",
+      "meaning": "phát quảng cáo"
+    },
+    {
+      "word": "TV commercial",
+      "meaning": "quảng cáo trên TV"
+    },
+    {
+      "word": "radio commercial",
+      "meaning": "quảng cáo trên radio"
+    },
+    {
+      "word": "take out a subscription",
+      "meaning": "đăng ký dài hạn"
+    },
+    {
+      "word": "cancel a subscription",
+      "meaning": "hủy đăng ký dài hạn"
+    },
+    {
+      "word": "press conference",
+      "meaning": "họp báo"
+    },
+    {
+      "word": "freedom of the press",
+      "meaning": "tự do báo chí"
+    },
+    {
+      "word": "produce a podcast",
+      "meaning": "sản xuất podcast"
+    },
+    {
+      "word": "listen to a podcast",
+      "meaning": "nghe podcast"
+    },
+    {
+      "word": "easily accessible",
+      "meaning": "dễ tiếp cận"
+    },
+    {
+      "word": "accessible information",
+      "meaning": "thông tin dễ truy cập"
+    },
+    {
+      "word": "account for 50%",
+      "meaning": "chiếm 50%"
+    },
+    {
+      "word": "account for differences",
+      "meaning": "giải thích sự khác biệt"
+    },
+    {
+      "word": "audio equipment",
+      "meaning": "thiết bị âm thanh"
+    },
+    {
+      "word": "audio recording",
+      "meaning": "ghi âm"
+    },
+    {
+      "word": "political bias",
+      "meaning": "thiên kiến chính trị"
+    },
+    {
+      "word": "media bias",
+      "meaning": "thiên kiến truyền thông"
+    },
+    {
+      "word": "broadcast live",
+      "meaning": "phát sóng trực tiếp"
+    },
+    {
+      "word": "broadcast news",
+      "meaning": "phát sóng tin tức"
+    },
+    {
+      "word": "update information",
+      "meaning": "cập nhật thông tin"
+    },
+    {
+      "word": "update software",
+      "meaning": "cập nhật phần mềm"
+    },
+    {
+      "word": "TV viewer",
+      "meaning": "khán giả truyền hình"
+    },
+    {
+      "word": "attract viewers",
+      "meaning": "thu hút người xem"
+    },
+    {
+      "word": "visual effect",
+      "meaning": "hiệu ứng hình ảnh"
+    },
+    {
+      "word": "visual image",
+      "meaning": "hình ảnh trực quan"
+    },
+    {
+      "word": "activate account",
+      "meaning": "kích hoạt tài khoản"
+    },
+    {
+      "word": "activate function",
+      "meaning": "kích hoạt chức năng"
+    },
+    {
+      "word": "search algorithm",
+      "meaning": "thuật toán tìm kiếm"
+    },
+    {
+      "word": "ranking algorithm",
+      "meaning": "thuật toán xếp hạng"
+    },
+    {
+      "word": "AI technology",
+      "meaning": "công nghệ trí tuệ nhân tạo"
+    },
+    {
+      "word": "AI system",
+      "meaning": "hệ thống trí tuệ nhân tạo"
+    },
+    {
+      "word": "automated system",
+      "meaning": "hệ thống tự động"
+    },
+    {
+      "word": "automated process",
+      "meaning": "quy trình tự động"
+    },
+    {
+      "word": "call for action",
+      "meaning": "kêu gọi hành động"
+    },
+    {
+      "word": "call for help",
+      "meaning": "kêu gọi giúp đỡ"
+    },
+    {
+      "word": "resurrect tradition",
+      "meaning": "hồi sinh truyền thống"
+    },
+    {
+      "word": "resurrect old habits",
+      "meaning": "phục hồi thói quen cũ"
+    },
+    {
+      "word": "absolutely unbelievable",
+      "meaning": "hoàn toàn khó tin"
+    },
+    {
+      "word": "unbelievably fast",
+      "meaning": "nhanh không tưởng"
+    },
+    {
+      "word": "make an announcement",
+      "meaning": "thông báo"
+    },
+    {
+      "word": "official announcement",
+      "meaning": "thông báo chính thức"
+    },
+    {
+      "word": "travel brochure",
+      "meaning": "sách hướng dẫn du lịch"
+    },
+    {
+      "word": "product brochure",
+      "meaning": "sách hướng dẫn sản phẩm"
+    },
+    {
+      "word": "hold a debate",
+      "meaning": "tổ chức tranh luận"
+    },
+    {
+      "word": "debate issue",
+      "meaning": "tranh luận vấn đề"
+    },
+    {
+      "word": "offer a discount",
+      "meaning": "đưa ra giảm giá"
+    },
+    {
+      "word": "get a discount",
+      "meaning": "nhận được giảm giá"
+    },
+    {
+      "word": "create an infographic",
+      "meaning": "tạo đồ họa thông minh"
+    },
+    {
+      "word": "informative infographic",
+      "meaning": "đồ họa cung cấp thông tin"
+    },
+    {
+      "word": "distribute leaflets",
+      "meaning": "phát tờ rơi"
+    },
+    {
+      "word": "leaflet campaign",
+      "meaning": "chiến dịch tờ rơi"
+    },
+    {
+      "word": "spread fake news",
+      "meaning": "lan truyền tin giả"
+    },
+    {
+      "word": "combat fake news",
+      "meaning": "chống tin giả"
+    },
+    {
+      "word": "mass media coverage",
+      "meaning": "phủ sóng truyền thông đại chúng"
+    },
+    {
+      "word": "mass media outlet",
+      "meaning": "cơ quan truyền thông"
+    }
+  ]
+}

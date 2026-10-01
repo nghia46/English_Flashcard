@@ -1,0 +1,594 @@
+{
+  "Unit_8": [
+    {
+      "word": "biodiversity",
+      "pos": "n",
+      "meaning": "đa dạng sinh học"
+    },
+    {
+      "word": "ecosystem",
+      "pos": "n",
+      "meaning": "hệ sinh thái"
+    },
+    {
+      "word": "species",
+      "pos": "n",
+      "meaning": "loài"
+    },
+    {
+      "word": "endangered",
+      "pos": "adj",
+      "meaning": "bị đe doạ"
+    },
+    {
+      "word": "extinction",
+      "pos": "n",
+      "meaning": "sự tuyệt chủng"
+    },
+    {
+      "word": "conserve",
+      "pos": "v",
+      "meaning": "bảo tồn"
+    },
+    {
+      "word": "conservation",
+      "pos": "n",
+      "meaning": "sự bảo tồn"
+    },
+    {
+      "word": "preserve",
+      "pos": "v",
+      "meaning": "gìn giữ"
+    },
+    {
+      "word": "preservation",
+      "pos": "n",
+      "meaning": "sự gìn giữ"
+    },
+    {
+      "word": "protect",
+      "pos": "v",
+      "meaning": "bảo vệ"
+    },
+    {
+      "word": "protection",
+      "pos": "n",
+      "meaning": "sự bảo vệ"
+    },
+    {
+      "word": "survival",
+      "pos": "n",
+      "meaning": "sự sống sót"
+    },
+    {
+      "word": "captivity",
+      "pos": "n",
+      "meaning": "tình trạng nuôi nhốt"
+    },
+    {
+      "word": "poach",
+      "pos": "v",
+      "meaning": "săn trộm"
+    },
+    {
+      "word": "poacher",
+      "pos": "n",
+      "meaning": "kẻ săn trộm"
+    },
+    {
+      "word": "poaching",
+      "pos": "n",
+      "meaning": "nạn săn trộm"
+    },
+    {
+      "word": "habitat",
+      "pos": "n",
+      "meaning": "môi trường sống"
+    },
+    {
+      "word": "wildlife sanctuary",
+      "pos": "n",
+      "meaning": "khu bảo tồn động vật hoang dã"
+    },
+    {
+      "word": "reserve",
+      "pos": "n",
+      "meaning": "khu dự trữ, khu bảo tồn"
+    },
+    {
+      "word": "national park",
+      "pos": "n",
+      "meaning": "vườn quốc gia"
+    },
+    {
+      "word": "illegal",
+      "pos": "adj",
+      "meaning": "bất hợp pháp"
+    },
+    {
+      "word": "law",
+      "pos": "n",
+      "meaning": "luật"
+    },
+    {
+      "word": "legislation",
+      "pos": "n",
+      "meaning": "pháp luật"
+    },
+    {
+      "word": "law enforcement",
+      "pos": "n",
+      "meaning": "thực thi pháp luật"
+    },
+    {
+      "word": "deforestation",
+      "pos": "n",
+      "meaning": "nạn phá rừng"
+    },
+    {
+      "word": "pollution",
+      "pos": "n",
+      "meaning": "ô nhiễm"
+    },
+    {
+      "word": "climate change",
+      "pos": "n",
+      "meaning": "biến đổi khí hậu"
+    },
+    {
+      "word": "overexploitation",
+      "pos": "n",
+      "meaning": "sự khai thác quá mức"
+    },
+    {
+      "word": "invasive species",
+      "pos": "n",
+      "meaning": "loài xâm lấn"
+    },
+    {
+      "word": "reintroduce",
+      "pos": "v",
+      "meaning": "tái thả (về tự nhiên)"
+    },
+    {
+      "word": "reintroduction",
+      "pos": "n",
+      "meaning": "sự tái thả"
+    },
+    {
+      "word": "breeding",
+      "pos": "n",
+      "meaning": "sự sinh sản, nhân giống"
+    },
+    {
+      "word": "captive breeding",
+      "pos": "n",
+      "meaning": "nhân giống trong điều kiện nuôi nhốt"
+    },
+    {
+      "word": "awareness",
+      "pos": "n",
+      "meaning": "nhận thức"
+    },
+    {
+      "word": "raise awareness",
+      "pos": "phr v",
+      "meaning": "nâng cao nhận thức"
+    },
+    {
+      "word": "campaign",
+      "pos": "n",
+      "meaning": "chiến dịch"
+    },
+    {
+      "word": "community-based conservation",
+      "pos": "n",
+      "meaning": "bảo tồn dựa vào cộng đồng"
+    },
+    {
+      "word": "sustainable",
+      "pos": "adj",
+      "meaning": "bền vững"
+    },
+    {
+      "word": "sustainability",
+      "pos": "n",
+      "meaning": "tính bền vững"
+    },
+    {
+      "word": "renewable",
+      "pos": "adj",
+      "meaning": "có thể tái tạo"
+    },
+    {
+      "word": "migrate",
+      "pos": "v",
+      "meaning": "di cư"
+    },
+    {
+      "word": "migration",
+      "pos": "n",
+      "meaning": "sự di cư"
+    },
+    {
+      "word": "adapt",
+      "pos": "v",
+      "meaning": "thích nghi"
+    },
+    {
+      "word": "adaptation",
+      "pos": "n",
+      "meaning": "sự thích nghi"
+    },
+    {
+      "word": "threatened",
+      "pos": "adj",
+      "meaning": "bị đe doạ"
+    },
+    {
+      "word": "vulnerable",
+      "pos": "adj",
+      "meaning": "dễ bị tổn thương"
+    },
+    {
+      "word": "critically endangered",
+      "pos": "adj",
+      "meaning": "cực kỳ nguy cấp"
+    },
+    {
+      "word": "rehabilitation",
+      "pos": "n",
+      "meaning": "phục hồi (cá thể/động vật)"
+    },
+    {
+      "word": "restoration",
+      "pos": "n",
+      "meaning": "sự phục hồi (hệ sinh thái)"
+    },
+    {
+      "word": "trafficking",
+      "pos": "n",
+      "meaning": "buôn bán trái phép"
+    },
+    {
+      "word": "wildlife trafficking",
+      "pos": "n",
+      "meaning": "buôn bán động vật hoang dã"
+    },
+    {
+      "word": "NGO (non-governmental organization)",
+      "pos": "n",
+      "meaning": "tổ chức phi chính phủ"
+    },
+    {
+      "word": "WWF (World Wide Fund for Nature)",
+      "pos": "n",
+      "meaning": "quỹ Thiên nhiên Thế giới"
+    },
+    {
+      "word": "IUCN (International Union for Conservation of Nature)",
+      "pos": "n",
+      "meaning": "liên minh Bảo tồn Thiên nhiên Quốc tế"
+    },
+    {
+      "word": "fund",
+      "pos": "n/v",
+      "meaning": "quỹ; gây quỹ"
+    },
+    {
+      "word": "fundraising",
+      "pos": "n",
+      "meaning": "gây quỹ"
+    },
+    {
+      "word": "impose",
+      "pos": "v",
+      "meaning": "áp đặt (hình phạt, lệnh cấm)"
+    },
+    {
+      "word": "penalty",
+      "pos": "n",
+      "meaning": "hình phạt"
+    },
+    {
+      "word": "ban",
+      "pos": "n/v",
+      "meaning": "lệnh cấm; cấm"
+    },
+    {
+      "word": "monitor",
+      "pos": "v",
+      "meaning": "giám sát"
+    },
+    {
+      "word": "recover",
+      "pos": "v",
+      "meaning": "phục hồi"
+    },
+    {
+      "word": "recovery",
+      "pos": "n",
+      "meaning": "sự phục hồi"
+    },
+    {
+      "word": "viable",
+      "pos": "adj",
+      "meaning": "khả thi"
+    },
+    {
+      "word": "irreversible",
+      "pos": "adj",
+      "meaning": "không thể đảo ngược"
+    },
+    {
+      "word": "devastating",
+      "pos": "adj",
+      "meaning": "tàn phá"
+    },
+    {
+      "word": "long-term",
+      "pos": "adj",
+      "meaning": "dài hạn"
+    },
+    {
+      "word": "short-term",
+      "pos": "adj",
+      "meaning": "ngắn hạn"
+    },
+    {
+      "word": "loss of biodiversity",
+      "meaning": "sự mất đa dạng sinh học"
+    },
+    {
+      "word": "habitat loss",
+      "meaning": "sự mất môi trường sống"
+    },
+    {
+      "word": "habitat destruction",
+      "meaning": "sự tàn phá môi trường sống"
+    },
+    {
+      "word": "habitat fragmentation",
+      "meaning": "sự phân mảnh môi trường sống"
+    },
+    {
+      "word": "endangered species",
+      "meaning": "loài bị đe doạ"
+    },
+    {
+      "word": "critically endangered species",
+      "meaning": "loài cực kỳ nguy cấp"
+    },
+    {
+      "word": "human–wildlife conflict",
+      "meaning": "xung đột giữa con người và động vật hoang dã"
+    },
+    {
+      "word": "illegal wildlife trade / trafficking",
+      "meaning": "buôn bán động vật hoang dã bất hợp pháp"
+    },
+    {
+      "word": "conservation efforts",
+      "meaning": "những nỗ lực bảo tồn"
+    },
+    {
+      "word": "conservation measures",
+      "meaning": "các biện pháp bảo tồn"
+    },
+    {
+      "word": "conservation strategies",
+      "meaning": "các chiến lược bảo tồn"
+    },
+    {
+      "word": "raise public awareness",
+      "meaning": "nâng cao nhận thức cộng đồng"
+    },
+    {
+      "word": "impose strict penalties",
+      "meaning": "áp dụng hình phạt nghiêm khắc"
+    },
+    {
+      "word": "enforce a hunting ban",
+      "meaning": "thực thi lệnh cấm săn bắn"
+    },
+    {
+      "word": "protect endangered species",
+      "meaning": "bảo vệ loài bị đe doạ"
+    },
+    {
+      "word": "restore degraded ecosystems",
+      "meaning": "phục hồi các hệ sinh thái đã suy thoái"
+    },
+    {
+      "word": "strike a balance between … and …",
+      "meaning": "cân bằng giữa … và …"
+    },
+    {
+      "word": "climate-resilient habitats",
+      "meaning": "môi trường sống có khả năng chống chịu khí hậu"
+    },
+    {
+      "word": "community-based conservation",
+      "meaning": "bảo tồn dựa vào cộng đồng"
+    },
+    {
+      "word": "sustainable livelihoods",
+      "meaning": "sinh kế bền vững"
+    },
+    {
+      "word": "species recovery plan",
+      "meaning": "kế hoạch phục hồi loài"
+    },
+    {
+      "word": "captive-breeding programme",
+      "meaning": "chương trình nhân giống nuôi nhốt"
+    },
+    {
+      "word": "reintroduction programme",
+      "meaning": "chương trình tái thả về tự nhiên"
+    },
+    {
+      "word": "zero-tolerance policy toward poaching",
+      "meaning": "chính sách “không khoan nhượng” với săn trộm"
+    },
+    {
+      "word": "monitor populations",
+      "meaning": "theo dõi quần thể"
+    },
+    {
+      "word": "allocate resources",
+      "meaning": "phân bổ nguồn lực"
+    },
+    {
+      "word": "mitigate negative impacts",
+      "meaning": "giảm thiểu tác động tiêu cực"
+    },
+    {
+      "word": "conduct research / surveys",
+      "meaning": "tiến hành nghiên cứu / khảo sát"
+    },
+    {
+      "word": "raise funds",
+      "meaning": "gây quỹ"
+    },
+    {
+      "word": "mobilize resources",
+      "meaning": "huy động nguồn lực"
+    },
+    {
+      "word": "if",
+      "pos": "conj",
+      "meaning": "nếu — dùng phổ biến nhất để diễn tả điều kiện ở mọi loại câu điều kiện (VD: If it rains, we will stay at home.)"
+    },
+    {
+      "word": "unless",
+      "pos": "conj",
+      "meaning": "trừ khi / nếu không thì — mang nghĩa phủ định, thay cho “if… not” (VD: Unless you study hard, you won’t pass the exam.)"
+    },
+    {
+      "word": "provided (that)",
+      "pos": "conj",
+      "meaning": "miễn là — nhấn mạnh điều kiện phải được đáp ứng (VD: You can borrow the car provided (that) you drive carefully.)"
+    },
+    {
+      "word": "providing (that)",
+      "pos": "conj",
+      "meaning": "miễn là — giống “provided that”, thường dùng trong văn nói (VD: Providing (that) it doesn’t rain, we’ll go camping.)"
+    },
+    {
+      "word": "as long as",
+      "pos": "conj",
+      "meaning": "miễn là / chỉ cần — nhấn mạnh sự kéo dài hoặc điều kiện duy nhất (VD: You can stay here as long as you keep quiet.)"
+    },
+    {
+      "word": "so long as",
+      "pos": "conj",
+      "meaning": "miễn là — đồng nghĩa “as long as”, hơi trang trọng (VD: You may come with us so long as you behave yourself.)"
+    },
+    {
+      "word": "only if",
+      "pos": "conj",
+      "meaning": "chỉ khi — nhấn mạnh tính duy nhất của điều kiện (VD: You will succeed only if you work hard.)"
+    },
+    {
+      "word": "in case (that)",
+      "pos": "conj",
+      "meaning": "phòng khi — đề phòng một khả năng có thể xảy ra (VD: Take an umbrella in case it rains.)"
+    },
+    {
+      "word": "in the event (that)",
+      "pos": "conj",
+      "meaning": "trong trường hợp mà — trang trọng, thường dùng trong văn bản chính thức (VD: In the event (that) the flight is delayed, we will notify you.)"
+    },
+    {
+      "word": "on condition (that)",
+      "pos": "conj",
+      "meaning": "với điều kiện là — thường gặp trong văn bản pháp lý, hợp đồng (VD: They agreed to the plan on condition that all expenses were paid.)"
+    },
+    {
+      "word": "suppose / supposing (that)",
+      "pos": "conj",
+      "meaning": "giả sử — đưa ra tình huống giả định, ít trang trọng (VD: Suppose (that) you won a lottery, what would you do?)"
+    },
+    {
+      "word": "assuming (that)",
+      "pos": "conj",
+      "meaning": "giả định rằng — dùng khi giả định một điều gì đó (VD: Assuming (that) he arrives late, we will start without him.)"
+    },
+    {
+      "word": "even if",
+      "pos": "conj",
+      "meaning": "ngay cả khi — nhấn mạnh điều kiện không ảnh hưởng đến kết quả (VD: Even if she invites me, I won’t go.)"
+    },
+    {
+      "word": "whether … or not",
+      "pos": "conj",
+      "meaning": "dù … hay không — nhấn mạnh kết quả không phụ thuộc vào điều kiện (VD: Whether you like it or not, you have to obey the rules.)"
+    },
+    {
+      "word": "once",
+      "pos": "conj",
+      "meaning": "một khi — khi điều kiện xảy ra thì hệ quả chắc chắn diễn ra (VD: Once you try, you will find it easy.)"
+    },
+    {
+      "word": "provided always that",
+      "pos": "conj",
+      "meaning": "miễn là (nhấn mạnh, trang trọng) — hiếm gặp, thường trong văn bản luật, hợp đồng (VD: You may use the facilities, provided always that you pay the fees.)"
+    },
+    {
+      "word": "given (that)",
+      "pos": "conj",
+      "meaning": "nếu xét rằng / trong điều kiện mà — thường dùng trong văn viết trang trọng (VD: Given that it’s raining, the match will be postponed.)"
+    }
+  ],
+  "Unit8_Grammar_Comparison": [
+    {
+      "word": "as … as",
+      "meaning": "như … — so sánh ngang bằng (VD: She is as tall as her brother.)"
+    },
+    {
+      "word": "not so … as / not as … as",
+      "meaning": "không … bằng — so sánh kém (VD: This room is not as big as that one.)"
+    },
+    {
+      "word": "the same … as",
+      "meaning": "giống như — nhấn mạnh sự tương đồng (VD: He arrived at the same time as me.)"
+    },
+    {
+      "word": "different from / to",
+      "meaning": "khác với — so sánh sự khác biệt (VD: This book is different from the one you lent me.)"
+    },
+    {
+      "word": "than",
+      "meaning": "hơn — so sánh hơn (VD: She runs faster than I do.)"
+    },
+    {
+      "word": "the … the …",
+      "meaning": "càng … càng … — cấu trúc so sánh tỉ lệ (VD: The harder you study, the more successful you will be.)"
+    },
+    {
+      "word": "more … than",
+      "meaning": "nhiều hơn — so sánh hơn (VD: He is more intelligent than his classmates.)"
+    },
+    {
+      "word": "less … than",
+      "meaning": "ít … hơn — so sánh ít hơn (VD: This job is less stressful than my old one.)"
+    },
+    {
+      "word": "as if / as though",
+      "meaning": "như thể — so sánh giả định, thường + động từ lùi thì (VD: He talks as if he knew everything.)"
+    },
+    {
+      "word": "like",
+      "meaning": "như — so sánh giống nhau, ít trang trọng hơn “as if” (VD: She looks like her mother.)"
+    },
+    {
+      "word": "than ever",
+      "meaning": "hơn bao giờ hết — nhấn mạnh so sánh hơn (VD: He works harder than ever.)"
+    },
+    {
+      "word": "as … as possible",
+      "meaning": "… nhất có thể — dùng để nhấn mạnh mức độ tối đa (VD: Please come as soon as possible.)"
+    }
+  ]
+}

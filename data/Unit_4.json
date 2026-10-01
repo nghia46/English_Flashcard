@@ -1,0 +1,611 @@
+{
+  "Unit_4": [
+    {
+      "word": "urbanisation",
+      "pos": "n",
+      "pronunciation": "/ˌɜːbənaɪˈzeɪʃən/",
+      "meaning": "quá trình đô thị hóa"
+    },
+    {
+      "word": "rural",
+      "pos": "adj",
+      "pronunciation": "/ˈrʊərəl/",
+      "meaning": "thuộc nông thôn"
+    },
+    {
+      "word": "authority",
+      "pos": "n",
+      "pronunciation": "/ɔːˈθɒrəti/",
+      "meaning": "chính quyền"
+    },
+    {
+      "word": "infrastructure",
+      "pos": "n",
+      "pronunciation": "/ˌɪnfrəˈstrʌktʃə/",
+      "meaning": "cơ sở hạ tầng"
+    },
+    {
+      "word": "immigration",
+      "pos": "n",
+      "pronunciation": "/ˌɪmɪˈɡreɪʃən/",
+      "meaning": "sự nhập cư"
+    },
+    {
+      "word": "crowded",
+      "pos": "adj",
+      "pronunciation": "/ˈkraʊdɪd/",
+      "meaning": "đông đúc"
+    },
+    {
+      "word": "overcrowded",
+      "pos": "adj",
+      "pronunciation": "/ˌəʊvəˈkraʊdɪd/",
+      "meaning": "quá đông đúc"
+    },
+    {
+      "word": "resident",
+      "pos": "n",
+      "pronunciation": "/ˈrezɪdənt/",
+      "meaning": "người dân"
+    },
+    {
+      "word": "modernise",
+      "pos": "v",
+      "pronunciation": "/ˈmɒdənaɪz/",
+      "meaning": "hiện đại hóa"
+    },
+    {
+      "word": "expansion",
+      "pos": "n",
+      "pronunciation": "/ɪkˈspænʃən/",
+      "meaning": "sự mở rộng"
+    },
+    {
+      "word": "condition",
+      "pos": "n",
+      "pronunciation": "/kənˈdɪʃən/",
+      "meaning": "tình trạng"
+    },
+    {
+      "word": "couple",
+      "pos": "n",
+      "pronunciation": "/ˈkʌpəl/",
+      "meaning": "cặp đôi"
+    },
+    {
+      "word": "facility",
+      "pos": "n",
+      "pronunciation": "/fəˈsɪləti/",
+      "meaning": "cơ sở vật chất"
+    },
+    {
+      "word": "housing",
+      "pos": "n",
+      "pronunciation": "/ˈhaʊzɪŋ/",
+      "meaning": "nhà ở"
+    },
+    {
+      "word": "leisure",
+      "pos": "n",
+      "pronunciation": "/ˈleʒə/",
+      "meaning": "sự giải trí, thư giãn"
+    },
+    {
+      "word": "line",
+      "pos": "n",
+      "pronunciation": "/laɪn/",
+      "meaning": "tuyến (tàu)"
+    },
+    {
+      "word": "metro",
+      "pos": "n",
+      "pronunciation": "/ˈmetrəʊ/",
+      "meaning": "tàu điện"
+    },
+    {
+      "word": "policy",
+      "pos": "n",
+      "pronunciation": "/ˈpɒləsi/",
+      "meaning": "chính sách"
+    },
+    {
+      "word": "proportion",
+      "pos": "n",
+      "pronunciation": "/prəˈpɔːʃən/",
+      "meaning": "tỷ lệ"
+    },
+    {
+      "word": "satisfaction",
+      "pos": "n",
+      "pronunciation": "/ˌsætɪsˈfækʃən/",
+      "meaning": "sự hài lòng"
+    },
+    {
+      "word": "shortage",
+      "pos": "n",
+      "pronunciation": "/ˈʃɔːtɪdʒ/",
+      "meaning": "sự thiếu"
+    },
+    {
+      "word": "skyscraper",
+      "pos": "n",
+      "pronunciation": "/ˈskaɪˌskreɪpə/",
+      "meaning": "tòa nhà chọc trời"
+    },
+    {
+      "word": "smog",
+      "pos": "n",
+      "pronunciation": "/smɒg/",
+      "meaning": "khói bụi"
+    },
+    {
+      "word": "space",
+      "pos": "n",
+      "pronunciation": "/speɪs/",
+      "meaning": "không gian"
+    },
+    {
+      "word": "statistics",
+      "pos": "n",
+      "pronunciation": "/stəˈtɪstɪks/",
+      "meaning": "số liệu thống kê"
+    },
+    {
+      "word": "trade",
+      "pos": "n",
+      "pronunciation": "/treɪd/",
+      "meaning": "buôn bán"
+    },
+    {
+      "word": "unemployment",
+      "pos": "n",
+      "pronunciation": "/ˌʌnɪmˈplɔɪmənt/",
+      "meaning": "nạn thất nghiệp"
+    },
+    {
+      "word": "cause",
+      "pos": "v",
+      "pronunciation": "/kɔːz/",
+      "meaning": "gây ra"
+    },
+    {
+      "word": "chair",
+      "pos": "v",
+      "pronunciation": "/tʃeə/",
+      "meaning": "chủ trì"
+    },
+    {
+      "word": "decrease",
+      "pos": "v",
+      "pronunciation": "/dɪˈkriːs/",
+      "meaning": "giảm"
+    },
+    {
+      "word": "expand",
+      "pos": "v",
+      "pronunciation": "/ɪksˈpænd/",
+      "meaning": "mở rộng"
+    },
+    {
+      "word": "expose",
+      "pos": "v",
+      "pronunciation": "/ɪksˈpəʊz/",
+      "meaning": "tiếp xúc"
+    },
+    {
+      "word": "seek",
+      "pos": "v",
+      "pronunciation": "/siːk/",
+      "meaning": "tìm kiếm"
+    },
+    {
+      "word": "Eastern",
+      "pos": "adj",
+      "pronunciation": "/ˈiːstən/",
+      "meaning": "phương Đông"
+    },
+    {
+      "word": "equal",
+      "pos": "adj",
+      "pronunciation": "/ˈiːkwəl/",
+      "meaning": "bằng nhau"
+    },
+    {
+      "word": "frequent",
+      "pos": "adj",
+      "pronunciation": "/ˈfriːkwənt/",
+      "meaning": "thường xuyên"
+    },
+    {
+      "word": "high-rise",
+      "pos": "adj",
+      "pronunciation": "/ˈhaɪ-raɪz/",
+      "meaning": "cao tầng"
+    },
+    {
+      "word": "low-rise",
+      "pos": "adj",
+      "pronunciation": "/ˈləʊ-raɪz/",
+      "meaning": "thấp tầng"
+    },
+    {
+      "word": "reliable",
+      "pos": "adj",
+      "pronunciation": "/rɪˈlaɪəbəl/",
+      "meaning": "đáng tin cậy"
+    },
+    {
+      "word": "gradually",
+      "pos": "adv",
+      "pronunciation": "/ˈɡrædʒuəli/",
+      "meaning": "dần dần"
+    },
+    {
+      "word": "slightly",
+      "pos": "adv",
+      "pronunciation": "/ˈslaɪtli/",
+      "meaning": "một chút"
+    },
+    {
+      "word": "steadily",
+      "pos": "adv",
+      "pronunciation": "/ˈstedəli/",
+      "meaning": "đều đặn"
+    },
+    {
+      "word": "convenience store",
+      "pos": "n",
+      "pronunciation": "/kənˈviːniəns stɔː/",
+      "meaning": "cửa hàng tiện lợi"
+    },
+    {
+      "word": "electric bus",
+      "pos": "n",
+      "pronunciation": "/ɪˈlektrɪk bʌs/",
+      "meaning": "xe buýt điện"
+    },
+    {
+      "word": "public park",
+      "pos": "n",
+      "pronunciation": "/ˈpʌblɪk pɑːk/",
+      "meaning": "công viên công cộng"
+    },
+    {
+      "word": "wet market",
+      "pos": "n",
+      "pronunciation": "/wet ˈmɑːkɪt/",
+      "meaning": "chợ truyền thống"
+    },
+    {
+      "word": "carbon emission",
+      "pos": "n",
+      "pronunciation": "/ˈkɑːbən ɪˈmɪʃən/",
+      "meaning": "khí thải cacbon"
+    },
+    {
+      "word": "city dweller",
+      "pos": "n",
+      "pronunciation": "/ˈsɪti ˈdwɛlə/",
+      "meaning": "người dân thành phố"
+    },
+    {
+      "word": "community meeting",
+      "pos": "n",
+      "pronunciation": "/kəˈmjuːnəti ˈmiːtɪŋ/",
+      "meaning": "cuộc họp cộng đồng"
+    },
+    {
+      "word": "cost of living",
+      "pos": "phr",
+      "pronunciation": "/kɒst əv ˈlɪvɪŋ/",
+      "meaning": "chi phí sinh hoạt"
+    },
+    {
+      "word": "crime rate",
+      "pos": "n",
+      "pronunciation": "/kraɪm reɪt/",
+      "meaning": "tỷ lệ tội phạm"
+    },
+    {
+      "word": "government official",
+      "pos": "n",
+      "pronunciation": "/ˈɡʌvənmənt əˈfɪʃəl/",
+      "meaning": "quan chức chính phủ"
+    },
+    {
+      "word": "house price",
+      "pos": "n",
+      "pronunciation": "/haʊs praɪs/",
+      "meaning": "giá nhà"
+    },
+    {
+      "word": "Old Quarter",
+      "pos": "n",
+      "pronunciation": "/əʊld ˈkwɔːtə/",
+      "meaning": "phố cổ"
+    },
+    {
+      "word": "rush hour",
+      "pos": "n",
+      "pronunciation": "/rʌʃ ˈaʊə/",
+      "meaning": "giờ cao điểm"
+    },
+    {
+      "word": "traffic jam",
+      "pos": "n",
+      "pronunciation": "/ˈtræfɪk dʒæm/",
+      "meaning": "tắc đường"
+    },
+    {
+      "word": "date back",
+      "pos": "v",
+      "pronunciation": "/deɪt bæk/",
+      "meaning": "có từ (xảy ra từ thời)"
+    },
+    {
+      "word": "get lost",
+      "pos": "v",
+      "pronunciation": "/ɡet lɒst/",
+      "meaning": "bị lạc"
+    },
+    {
+      "word": "get stuck",
+      "pos": "v",
+      "pronunciation": "/ɡet stʌk/",
+      "meaning": "bị mắc kẹt"
+    },
+    {
+      "word": "go for a ride",
+      "pos": "phr",
+      "pronunciation": "/ɡəʊ fɔːr ə raɪd/",
+      "meaning": "đi dạo/đi xe"
+    },
+    {
+      "word": "go up",
+      "pos": "v",
+      "pronunciation": "/ɡəʊ ʌp/",
+      "meaning": "tăng (giá, tỉ lệ…)"
+    },
+    {
+      "word": "settle in",
+      "pos": "v",
+      "pronunciation": "/ˈsetəl ɪn/",
+      "meaning": "ổn định, định cư"
+    },
+    {
+      "word": "afford",
+      "pos": "v",
+      "pronunciation": "/əˈfɔːd/",
+      "meaning": "có khả năng chi trả"
+    },
+    {
+      "word": "affordable",
+      "pos": "adj",
+      "pronunciation": "/əˈfɔːdəbəl/",
+      "meaning": "giá phải chăng"
+    },
+    {
+      "word": "colonial",
+      "pos": "adj",
+      "pronunciation": "/kəˈləʊniəl/",
+      "meaning": "thuộc địa"
+    },
+    {
+      "word": "colony",
+      "pos": "n",
+      "pronunciation": "/ˈkɒləni/",
+      "meaning": "thuộc địa"
+    },
+    {
+      "word": "modernisation",
+      "pos": "n",
+      "pronunciation": "/ˌmɒdənaɪˈzeɪʃən/",
+      "meaning": "sự hiện đại hóa"
+    },
+    {
+      "word": "stability",
+      "pos": "n",
+      "pronunciation": "/stəˈbɪləti/",
+      "meaning": "sự ổn định"
+    },
+    {
+      "word": "stable",
+      "pos": "adj",
+      "pronunciation": "/ˈsteɪbəl/",
+      "meaning": "ổn định"
+    },
+    {
+      "word": "urban",
+      "pos": "adj",
+      "pronunciation": "/ˈɜːbən/",
+      "meaning": "thuộc đô thị"
+    },
+    {
+      "word": "urbanised",
+      "pos": "adj",
+      "pronunciation": "/ˈɜːbənaɪzd/",
+      "meaning": "được đô thị hóa"
+    }
+  ],
+  "Unit4_Collocations_Phrases": [
+    {
+      "word": "rapid urbanisation",
+      "pos": "n",
+      "meaning": "đô thị hóa nhanh chóng"
+    },
+    {
+      "word": "urban population",
+      "pos": "n",
+      "meaning": "dân số thành thị"
+    },
+    {
+      "word": "rural/urban area",
+      "pos": "n",
+      "meaning": "khu vực nông thôn / đô thị"
+    },
+    {
+      "word": "urban development",
+      "pos": "n",
+      "meaning": "sự phát triển đô thị"
+    },
+    {
+      "word": "living condition(s)",
+      "pos": "n",
+      "meaning": "điều kiện sống"
+    },
+    {
+      "word": "housing shortage",
+      "pos": "n",
+      "meaning": "thiếu hụt nhà ở"
+    },
+    {
+      "word": "traffic congestion",
+      "pos": "n",
+      "meaning": "tắc nghẽn giao thông"
+    },
+    {
+      "word": "cost of living",
+      "pos": "n",
+      "meaning": "chi phí sinh hoạt"
+    },
+    {
+      "word": "job opportunities",
+      "pos": "n",
+      "meaning": "cơ hội việc làm"
+    },
+    {
+      "word": "environmental degradation",
+      "pos": "n",
+      "meaning": "sự suy thoái môi trường"
+    },
+    {
+      "word": "concrete jungle",
+      "pos": "idiom",
+      "meaning": "thành phố bê tông (thiếu cây xanh)"
+    },
+    {
+      "word": "the hustle and bustle",
+      "pos": "idiom",
+      "meaning": "sự nhộn nhịp, ồn ào"
+    },
+    {
+      "word": "bright lights of the city",
+      "pos": "idiom",
+      "meaning": "sức hấp dẫn của thành phố"
+    },
+    {
+      "word": "cost an arm and a leg",
+      "pos": "idiom",
+      "meaning": "rất đắt đỏ"
+    },
+    {
+      "word": "It is + adj + to V",
+      "meaning": "thật... để làm gì đó"
+    },
+    {
+      "word": "There is/are + N + in...",
+      "meaning": "có... ở đâu đó"
+    },
+    {
+      "word": "S + cause/lead to + N/V-ing",
+      "meaning": "gây ra điều gì"
+    },
+    {
+      "word": "S + be exposed to + N/V-ing",
+      "meaning": "bị tiếp xúc với..."
+    },
+    {
+      "word": "Due to / Because of + N/V-ing",
+      "meaning": "bởi vì..."
+    },
+    {
+      "word": "More and more + N (plural)",
+      "meaning": "ngày càng nhiều..."
+    },
+    {
+      "word": "The + comparative..., the + comparative...",
+      "meaning": "càng... thì càng..."
+    },
+    {
+      "word": "settle in",
+      "pos": "v",
+      "meaning": "ổn định cuộc sống"
+    },
+    {
+      "word": "move away from",
+      "pos": "v",
+      "meaning": "rời khỏi nơi nào đó"
+    },
+    {
+      "word": "adapt to urban life",
+      "pos": "v",
+      "meaning": "thích nghi với cuộc sống đô thị"
+    },
+    {
+      "word": "deal with",
+      "pos": "v",
+      "meaning": "giải quyết"
+    },
+    {
+      "word": "be faced with",
+      "pos": "v",
+      "meaning": "đối mặt với"
+    },
+    {
+      "word": "S + struggle to V",
+      "meaning": "gặp khó khăn khi làm gì"
+    },
+    {
+      "word": "S + find it + adj + to V",
+      "meaning": "thấy việc gì đó như thế nào"
+    },
+    {
+      "word": "It takes (time) to V",
+      "meaning": "mất bao lâu để làm gì"
+    },
+    {
+      "word": "Too + adj + to V",
+      "meaning": "quá... để có thể làm gì"
+    },
+    {
+      "word": "Enough + N + to V / adj + enough to V",
+      "meaning": "đủ... để làm gì"
+    },
+    {
+      "word": "Prefer V-ing to V-ing",
+      "meaning": "thích cái gì hơn cái gì"
+    },
+    {
+      "word": "Used to V",
+      "meaning": "đã từng (trong quá khứ)"
+    },
+    {
+      "word": "Be used to + V-ing",
+      "meaning": "quen với việc gì"
+    },
+    {
+      "word": "Be/get accustomed to + V-ing",
+      "meaning": "quen với việc gì"
+    },
+    {
+      "word": "By + time/mốc thời gian, S + will have V3",
+      "meaning": "tương lai hoàn thành với 'by...'"
+    },
+    {
+      "word": "Despite / In spite of + N/V-ing",
+      "meaning": "mặc dù"
+    },
+    {
+      "word": "Although / Even though + S + V",
+      "meaning": "mặc dù"
+    },
+    {
+      "word": "So that / In order that + S + can/could + V",
+      "meaning": "để mà"
+    },
+    {
+      "word": "Not only... but also...",
+      "meaning": "không chỉ... mà còn..."
+    }
+  ]
+}
