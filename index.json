@@ -3,8 +3,8 @@
   "topics": {
     "500_Common_Words": "500_Common_Words.json",
     "Sample_Words": "Sample_Words.json",
-    "Unit1_Vocabulary": "Unit1_Vocabulary.json",
-    "Unit2_Vocabulary": "Unit2_Vocabulary.json",
-    "Unit3_Vocabulary": "Unit3_Vocabulary.json"
+    "Unit_1": "Unit_1.json",
+    "Unit_2": "Unit_2.json",
+    "Unit_3": "Unit_3.json"
   }
 }
