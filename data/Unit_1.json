@@ -1,0 +1,292 @@
+{
+  "Unit_1: LIFE STORIES WE ADMIRE": [
+    {
+      "word": "admire",
+      "pos": "v",
+      "pronunciation": "/ədˈmaɪə(r)/",
+      "meaning": "ngưỡng mộ"
+    },
+    {
+      "word": "volunteer",
+      "pos": "v",
+      "pronunciation": "/ˌvɒlənˈtɪə(r)/",
+      "meaning": "tình nguyện"
+    },
+    {
+      "word": "army",
+      "pos": "n",
+      "pronunciation": "/ˈɑːmi/",
+      "meaning": "quân đội"
+    },
+    {
+      "word": "surgeon",
+      "pos": "n",
+      "pronunciation": "/ˈsɜːdʒən/",
+      "meaning": "bác sĩ phẫu thuật"
+    },
+    {
+      "word": "resistance war",
+      "pos": "n",
+      "pronunciation": "/rɪˈzɪstəns wɔː(r)/",
+      "meaning": "cuộc kháng chiến"
+    },
+    {
+      "word": "diary",
+      "pos": "n",
+      "pronunciation": "/ˈdaɪəri/",
+      "meaning": "nhật ký"
+    },
+    {
+      "word": "field hospital",
+      "pos": "n",
+      "pronunciation": "/ˈfiːld hɒspɪtl/",
+      "meaning": "bệnh viện dã chiến"
+    },
+    {
+      "word": "an account of sth",
+      "pos": "n",
+      "pronunciation": "/əˈkaʊnt/",
+      "meaning": "câu chuyện, vụ việc, báo cáo về…"
+    },
+    {
+      "word": "experience",
+      "pos": "n",
+      "pronunciation": "/ɪkˈspɪəriəns/",
+      "meaning": "trải nghiệm"
+    },
+    {
+      "word": "enemy",
+      "pos": "n",
+      "pronunciation": "/ˈenəmi/",
+      "meaning": "kẻ thù"
+    },
+    {
+      "word": "duty",
+      "pos": "n",
+      "pronunciation": "/ˈdjuːti/",
+      "meaning": "nghĩa vụ, nhiệm vụ"
+    },
+    {
+      "word": "hero",
+      "pos": "n",
+      "pronunciation": "/ˈhɪərəʊ/",
+      "meaning": "anh hùng"
+    },
+    {
+      "word": "devote",
+      "pos": "v",
+      "pronunciation": "/dɪˈvəʊt/",
+      "meaning": "cống hiến"
+    },
+    {
+      "word": "youth",
+      "pos": "n",
+      "pronunciation": "/juːθ/",
+      "meaning": "tuổi trẻ"
+    },
+    {
+      "word": "death",
+      "pos": "n",
+      "pronunciation": "/deθ/",
+      "meaning": "cái chết"
+    },
+    {
+      "word": "attend",
+      "pos": "v",
+      "pronunciation": "/əˈtend/",
+      "meaning": "đi học, tham dự"
+    },
+    {
+      "word": "childhood",
+      "pos": "n",
+      "pronunciation": "/ˈtʃaɪldhʊd/",
+      "meaning": "tuổi thơ ấu"
+    },
+    {
+      "word": "marriage",
+      "pos": "n",
+      "pronunciation": "/ˈmærɪdʒ/",
+      "meaning": "cuộc hôn nhân"
+    },
+    {
+      "word": "impressive",
+      "pos": "adj",
+      "pronunciation": "/ɪmˈpresɪv/",
+      "meaning": "đầy ấn tượng"
+    },
+    {
+      "word": "achievement",
+      "pos": "n",
+      "pronunciation": "/əˈtʃiːvmənt/",
+      "meaning": "thành tựu"
+    },
+    {
+      "word": "biological",
+      "pos": "adj",
+      "pronunciation": "/ˌbaɪəˈlɒdʒɪkl/",
+      "meaning": "(quan hệ) ruột thịt"
+    },
+    {
+      "word": "adopt",
+      "pos": "v",
+      "pronunciation": "/əˈdɒpt/",
+      "meaning": "nhận con nuôi"
+    },
+    {
+      "word": "bond",
+      "pos": "v",
+      "pronunciation": "/bɒnd/",
+      "meaning": "kết thân, kết nối"
+    },
+    {
+      "word": "accessible",
+      "pos": "adj",
+      "pronunciation": "/əkˈsesəbl/",
+      "meaning": "dễ tiếp cận"
+    },
+    {
+      "word": "touchscreen",
+      "pos": "n",
+      "pronunciation": "/ˈtʌtʃskriːn/",
+      "meaning": "màn hình chạm"
+    },
+    {
+      "word": "cutting-edge",
+      "pos": "adj",
+      "pronunciation": "/ˌkʌtɪŋ ˈedʒ/",
+      "meaning": "hiện đại"
+    },
+    {
+      "word": "stylish",
+      "pos": "adj",
+      "pronunciation": "/ˈstaɪlɪʃ/",
+      "meaning": "kiểu cách"
+    },
+    {
+      "word": "animated",
+      "pos": "adj",
+      "pronunciation": "/ˈænɪmeɪtɪd/",
+      "meaning": "hoạt hình"
+    },
+    {
+      "word": "blockbuster",
+      "pos": "n",
+      "pronunciation": "/ˈblɒkbʌstə(r)/",
+      "meaning": "phim bom tấn"
+    },
+    {
+      "word": "diagnose",
+      "pos": "v",
+      "pronunciation": "/ˌdaɪəɡˈnəʊz/",
+      "meaning": "chẩn đoán"
+    },
+    {
+      "word": "rare",
+      "pos": "adj",
+      "pronunciation": "/reə(r)/",
+      "meaning": "hiếm"
+    },
+    {
+      "word": "cancer",
+      "pos": "n",
+      "pronunciation": "/ˈkænsə(r)/",
+      "meaning": "ung thư"
+    },
+    {
+      "word": "visionary",
+      "pos": "adj",
+      "pronunciation": "/ˈvɪʒənri/",
+      "meaning": "có tầm nhìn"
+    },
+    {
+      "word": "creative",
+      "pos": "adj",
+      "pronunciation": "/kriˈeɪtɪv/",
+      "meaning": "sáng tạo"
+    },
+    {
+      "word": "genius",
+      "pos": "n",
+      "pronunciation": "/ˈdʒiːniəs/",
+      "meaning": "thiên tài"
+    },
+    {
+      "word": "military",
+      "pos": "n",
+      "pronunciation": "/ˈmɪlətri/",
+      "meaning": "quân sự"
+    },
+    {
+      "word": "the Communist Party",
+      "pos": "n",
+      "pronunciation": "/ðə ˈkɒmjənɪst pɑːti/",
+      "meaning": "Đảng Cộng sản"
+    },
+    {
+      "word": "battle",
+      "pos": "n",
+      "pronunciation": "/ˈbætl/",
+      "meaning": "trận chiến"
+    },
+    {
+      "word": "biography",
+      "pos": "n",
+      "pronunciation": "/baɪˈɒɡrəfi/",
+      "meaning": "tiểu sử"
+    },
+    {
+      "word": "rule",
+      "pos": "v/n",
+      "pronunciation": "/ruːl/",
+      "meaning": "trị vì, cai trị"
+    },
+    {
+      "word": "determination",
+      "pos": "n",
+      "pronunciation": "/dɪˌtɜːmɪˈneɪʃn/",
+      "meaning": "lòng quyết tâm"
+    },
+    {
+      "word": "defeat",
+      "pos": "v",
+      "pronunciation": "/dɪˈfiːt/",
+      "meaning": "đánh bại"
+    },
+    {
+      "word": "ambitious",
+      "pos": "adj",
+      "pronunciation": "/æmˈbɪʃəs/",
+      "meaning": "tham vọng"
+    }
+  ],
+  "Collocations_Phrases": [
+    {
+      "word": "devote something to (doing) something",
+      "meaning": "cống hiến thứ gì cho thứ gì/ việc gì"
+    },
+    {
+      "word": "attend school/ college",
+      "meaning": "đi học (trường đại học, cao đẳng)"
+    },
+    {
+      "word": "be admired for something",
+      "meaning": "được ngưỡng mộ vì điều gì"
+    },
+    {
+      "word": "drop out",
+      "meaning": "bỏ học"
+    },
+    {
+      "word": "be diagnosed with something",
+      "meaning": "được chẩn đoán mắc bệnh gì"
+    },
+    {
+      "word": "pass away",
+      "meaning": "qua đời"
+    },
+    {
+      "word": "be dedicated to something",
+      "meaning": "cống hiến cho thứ gì"
+    }
+  ]
+}
