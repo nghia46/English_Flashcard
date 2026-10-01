@@ -1,0 +1,364 @@
+{
+  "Unit3_Vocabulary": [
+    {
+      "word": "ecotour",
+      "pos": "n",
+      "pronunciation": "/ˈiː.kəʊˌtʊə/",
+      "meaning": "du lịch sinh thái"
+    },
+    {
+      "word": "awareness",
+      "pos": "n",
+      "pronunciation": "/əˈweə.nəs/",
+      "meaning": "sự nhận thức"
+    },
+    {
+      "word": "carbon footprint",
+      "pos": "n",
+      "pronunciation": "/ˈkɑː.bən ˈfʊt.prɪnt/",
+      "meaning": "dấu chân carbon"
+    },
+    {
+      "word": "efficient",
+      "pos": "adj",
+      "pronunciation": "/ɪˈfɪʃ.ənt/",
+      "meaning": "hiệu quả"
+    },
+    {
+      "word": "clean up",
+      "pos": "phr v",
+      "pronunciation": "/kliːn ʌp/",
+      "meaning": "dọn dẹp"
+    },
+    {
+      "word": "throw away",
+      "pos": "phr v",
+      "pronunciation": "/θrəʊ əˈweɪ/",
+      "meaning": "vứt đi"
+    },
+    {
+      "word": "decompose",
+      "pos": "v",
+      "pronunciation": "/ˌdiː.kəmˈpəʊz/",
+      "meaning": "phân hủy"
+    },
+    {
+      "word": "jug",
+      "pos": "n",
+      "pronunciation": "/dʒʌɡ/",
+      "meaning": "bình đựng"
+    },
+    {
+      "word": "reusable",
+      "pos": "adj",
+      "pronunciation": "/riːˈjuː.zə.bəl/",
+      "meaning": "có thể tái sử dụng"
+    },
+    {
+      "word": "air conditioner",
+      "pos": "n",
+      "pronunciation": "/ˈeə kənˌdɪʃ.ən.ər/",
+      "meaning": "máy điều hòa"
+    },
+    {
+      "word": "rush out",
+      "pos": "phr v",
+      "pronunciation": "/rʌʃ aʊt/",
+      "meaning": "lao ra"
+    },
+    {
+      "word": "eco friendly",
+      "pos": "adj",
+      "pronunciation": "/ˌiː.kəʊ ˈfrend.li/",
+      "meaning": "thân thiện với môi trường"
+    },
+    {
+      "word": "be aware of",
+      "pos": "phr v",
+      "pronunciation": "/bi əˈweər ɒv/",
+      "meaning": "nhận thức về"
+    },
+    {
+      "word": "waste",
+      "pos": "n",
+      "pronunciation": "/weɪst/",
+      "meaning": "rác thải"
+    },
+    {
+      "word": "landfill",
+      "pos": "n",
+      "pronunciation": "/ˈlænd.fɪl/",
+      "meaning": "bãi rác"
+    },
+    {
+      "word": "packaging",
+      "pos": "n",
+      "pronunciation": "/ˈpæk.ɪ.dʒɪŋ/",
+      "meaning": "bao bì"
+    },
+    {
+      "word": "container",
+      "pos": "n",
+      "pronunciation": "/kənˈteɪ.nər/",
+      "meaning": "đồ chứa"
+    },
+    {
+      "word": "leaking tap",
+      "pos": "n",
+      "pronunciation": "/ˈliː.kɪŋ tæp/",
+      "meaning": "vòi nước bị rò rỉ"
+    },
+    {
+      "word": "plastic bag",
+      "pos": "n",
+      "pronunciation": "/ˈplæs.tɪk bæɡ/",
+      "meaning": "túi nhựa"
+    },
+    {
+      "word": "recyclable",
+      "pos": "adj",
+      "pronunciation": "/ˌriːˈsaɪ.klə.bəl/",
+      "meaning": "có thể tái chế"
+    },
+    {
+      "word": "cardboard boxes",
+      "pos": "n",
+      "pronunciation": "/ˈkɑːd.bɔːd bɒksɪz/",
+      "meaning": "thùng carton"
+    },
+    {
+      "word": "get rid of",
+      "pos": "phr v",
+      "pronunciation": "/ɡɛt rɪd ʌv/",
+      "meaning": "loại bỏ"
+    },
+    {
+      "word": "vending machine",
+      "pos": "n",
+      "pronunciation": "/ˈven.dɪŋ məˈʃiːn/",
+      "meaning": "máy bán hàng tự động"
+    },
+    {
+      "word": "leftover",
+      "pos": "n",
+      "pronunciation": "/ˈleftˌəʊ.vər/",
+      "meaning": "thức ăn thừa"
+    },
+    {
+      "word": "contaminated",
+      "pos": "adj",
+      "pronunciation": "/kənˈtæm.ɪ.neɪ.tɪd/",
+      "meaning": "bị ô nhiễm"
+    },
+    {
+      "word": "rinse out",
+      "pos": "phr v",
+      "pronunciation": "/rɪns aʊt/",
+      "meaning": "xối nước, rửa sạch"
+    },
+    {
+      "word": "reduce",
+      "pos": "v",
+      "pronunciation": "/rɪˈdjuːs/",
+      "meaning": "giảm"
+    },
+    {
+      "word": "reuse",
+      "pos": "v",
+      "pronunciation": "/ˌriːˈjuːz/",
+      "meaning": "tái sử dụng"
+    },
+    {
+      "word": "recycle",
+      "pos": "v",
+      "pronunciation": "/ˌriːˈsaɪ.kəl/",
+      "meaning": "tái chế"
+    },
+    {
+      "word": "compost",
+      "pos": "n",
+      "pronunciation": "/ˈkɒm.pɒst/",
+      "meaning": "phân hữu cơ"
+    },
+    {
+      "word": "layer",
+      "pos": "n",
+      "pronunciation": "/ˈleɪ.ər/",
+      "meaning": "tầng, lớp"
+    },
+    {
+      "word": "fruit peel",
+      "pos": "n",
+      "pronunciation": "/fruːt piːl/",
+      "meaning": "vỏ trái cây"
+    },
+    {
+      "word": "pile",
+      "pos": "n",
+      "pronunciation": "/paɪl/",
+      "meaning": "đống"
+    },
+    {
+      "word": "materials",
+      "pos": "n",
+      "pronunciation": "/məˈtɪə.ri.əlz/",
+      "meaning": "vật liệu"
+    },
+    {
+      "word": "in the long run",
+      "pos": "phr",
+      "pronunciation": "/ɪn ðə lɒŋ rʌn/",
+      "meaning": "về lâu dài"
+    },
+    {
+      "word": "fertiliser",
+      "pos": "n",
+      "pronunciation": "/ˈfɜː.tɪ.laɪ.zər/",
+      "meaning": "phân bón"
+    },
+    {
+      "word": "wildfire",
+      "pos": "n",
+      "pronunciation": "/ˈwaɪld.faɪər/",
+      "meaning": "cháy rừng"
+    },
+    {
+      "word": "firework display",
+      "pos": "n",
+      "pronunciation": "/ˈfaɪə.wɜːk dɪsˈpleɪ/",
+      "meaning": "trình diễn pháo hoa"
+    },
+    {
+      "word": "pollutant",
+      "pos": "n",
+      "pronunciation": "/pəˈluː.tənt/",
+      "meaning": "chất gây ô nhiễm"
+    },
+    {
+      "word": "bamboo straw",
+      "pos": "n",
+      "pronunciation": "/ˌbæmˈbuː strɔː/",
+      "meaning": "ống hút tre"
+    },
+    {
+      "word": "work out",
+      "pos": "phr v",
+      "meaning": "tập luyện, giải quyết, tính toán"
+    },
+    {
+      "word": "carry out",
+      "pos": "phr v",
+      "meaning": "thực hiện, tiến hành"
+    },
+    {
+      "word": "turn on",
+      "pos": "phr v",
+      "meaning": "bật (thiết bị)"
+    },
+    {
+      "word": "turn off",
+      "pos": "phr v",
+      "meaning": "tắt (thiết bị)"
+    },
+    {
+      "word": "look for",
+      "pos": "phr v",
+      "meaning": "tìm kiếm"
+    },
+    {
+      "word": "look after",
+      "pos": "phr v",
+      "meaning": "chăm sóc"
+    },
+    {
+      "word": "look up",
+      "pos": "phr v",
+      "meaning": "tra cứu, cải thiện"
+    },
+    {
+      "word": "break down",
+      "pos": "phr v",
+      "meaning": "hỏng hóc, suy sụp"
+    },
+    {
+      "word": "bring up",
+      "pos": "phr v",
+      "meaning": "nuôi dưỡng, đề cập đến"
+    },
+    {
+      "word": "come across",
+      "pos": "phr v",
+      "meaning": "tình cờ gặp"
+    },
+    {
+      "word": "come up with",
+      "pos": "phr v",
+      "meaning": "nghĩ ra, phát minh ra"
+    },
+    {
+      "word": "get along with",
+      "pos": "phr v",
+      "meaning": "hòa hợp với"
+    },
+    {
+      "word": "get over",
+      "pos": "phr v",
+      "meaning": "vượt qua"
+    },
+    {
+      "word": "give up",
+      "pos": "phr v",
+      "meaning": "từ bỏ"
+    },
+    {
+      "word": "go on",
+      "pos": "phr v",
+      "meaning": "tiếp tục"
+    },
+    {
+      "word": "hold on",
+      "pos": "phr v",
+      "meaning": "chờ đợi, giữ máy"
+    },
+    {
+      "word": "look forward to",
+      "pos": "phr v",
+      "meaning": "mong chờ"
+    },
+    {
+      "word": "put off",
+      "pos": "phr v",
+      "meaning": "hoãn lại"
+    },
+    {
+      "word": "run out of",
+      "pos": "phr v",
+      "meaning": "hết, cạn kiệt"
+    },
+    {
+      "word": "set up",
+      "pos": "phr v",
+      "meaning": "thiết lập, sắp xếp"
+    },
+    {
+      "word": "take off",
+      "pos": "phr v",
+      "meaning": "cất cánh, cởi ra"
+    },
+    {
+      "word": "take up",
+      "pos": "phr v",
+      "meaning": "bắt đầu một sở thích, chiếm chỗ"
+    },
+    {
+      "word": "throw away",
+      "pos": "phr v",
+      "meaning": "ném đi, vứt bỏ"
+    },
+    {
+      "word": "turn down",
+      "pos": "phr v",
+      "meaning": "từ chối"
+    }
+  ]
+}

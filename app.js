@@ -39,12 +39,13 @@ const POS_LABELS = {
     n: 'danh từ', v: 'động từ', adj: 'tính từ', adv: 'trạng từ',
     prep: 'giới từ', pron: 'đại từ', conj: 'liên từ', det: 'hạn định từ',
     art: 'mạo từ', interj: 'thán từ', num: 'số từ', modal: 'động từ khuyết thiếu',
-    aux: 'trợ động từ', np: 'cụm danh từ'
+    aux: 'trợ động từ', np: 'cụm danh từ', 'phr v': 'cụm động từ', phr: 'cụm từ'
 };
 const POS_ALIASES = {
     noun: 'n', verb: 'v', adjective: 'adj', adverb: 'adv', preposition: 'prep',
     pronoun: 'pron', conjunction: 'conj', determiner: 'det', article: 'art',
-    interjection: 'interj', numeral: 'num', auxiliary: 'aux'
+    interjection: 'interj', numeral: 'num', auxiliary: 'aux',
+    'phrasal verb': 'phr v', phrase: 'phr'
 };
 
 // Tạo thêm các phần tử hiển thị phiên âm / từ loại (không cần sửa index.html)
