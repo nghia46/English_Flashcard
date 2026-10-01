@@ -528,6 +528,7 @@ select:focus {
 /* ===== THẺ FLASHCARD (tương thích Firefox: không dùng preserve-3d) ===== */
 .flashcard-wrapper {
   position: relative;
+   touch-action: pan-y;
   width: 100%;
   height: 300px; /* chiều cao thẻ, chỉnh tùy ý */
   margin-bottom: 0.75rem;

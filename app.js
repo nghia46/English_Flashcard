@@ -10,105 +10,146 @@ let topicUrls = {};
 let systemTopics = [];
 
 // Khai báo các phần tử DOM giao diện chính
-const card = document.getElementById('card');
-const frontWord = document.getElementById('frontWord');
-const backMeaning = document.getElementById('backMeaning');
-const counter = document.getElementById('counter');
-const progressBar = document.getElementById('progressBar');
-const fileInput = document.getElementById('fileInput');
-const fileLabel = document.getElementById('fileLabel');
-const listSelect = document.getElementById('listSelect');
-const mainTitle = document.getElementById('mainTitle');
+const card = document.getElementById("card");
+const frontWord = document.getElementById("frontWord");
+const backMeaning = document.getElementById("backMeaning");
+const counter = document.getElementById("counter");
+const progressBar = document.getElementById("progressBar");
+const fileInput = document.getElementById("fileInput");
+const fileLabel = document.getElementById("fileLabel");
+const listSelect = document.getElementById("listSelect");
+const mainTitle = document.getElementById("mainTitle");
 
-const prevBtn = document.getElementById('prevBtn');
-const nextBtn = document.getElementById('nextBtn');
-const shuffleBtn = document.getElementById('shuffleBtn');
-const themeBtn = document.getElementById('themeBtn');
-const manageBtn = document.getElementById('manageBtn');
-const modalOverlay = document.getElementById('modalOverlay');
-const checkerPanel = document.getElementById('checkerPanel');
-const checkerList = document.getElementById('checkerList');
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+const shuffleBtn = document.getElementById("shuffleBtn");
+const themeBtn = document.getElementById("themeBtn");
+const manageBtn = document.getElementById("manageBtn");
+const modalOverlay = document.getElementById("modalOverlay");
+const checkerPanel = document.getElementById("checkerPanel");
+const checkerList = document.getElementById("checkerList");
 
 // Các phần tử phục vụ tính năng Ôn tập tổng hợp
-const reviewCountSelect = document.getElementById('reviewCountSelect');
-const startReviewBtn = document.getElementById('startReviewBtn');
+const reviewCountSelect = document.getElementById("reviewCountSelect");
+const startReviewBtn = document.getElementById("startReviewBtn");
 
 // === 0. Định dạng từ mới: word / pos / pronunciation / meaning ===
 // Ví dụ: { "word": "army", "pos": "n", "pronunciation": "/ˈɑːmi/", "meaning": "quân đội" }
 const POS_LABELS = {
-    n: 'danh từ', v: 'động từ', adj: 'tính từ', adv: 'trạng từ',
-    prep: 'giới từ', pron: 'đại từ', conj: 'liên từ', det: 'hạn định từ',
-    art: 'mạo từ', interj: 'thán từ', num: 'số từ', modal: 'động từ khuyết thiếu',
-    aux: 'trợ động từ', np: 'cụm danh từ', 'phr v': 'cụm động từ', phr: 'cụm từ'
+  n: "danh từ",
+  v: "động từ",
+  adj: "tính từ",
+  adv: "trạng từ",
+  prep: "giới từ",
+  pron: "đại từ",
+  conj: "liên từ",
+  det: "hạn định từ",
+  art: "mạo từ",
+  interj: "thán từ",
+  num: "số từ",
+  modal: "động từ khuyết thiếu",
+  aux: "trợ động từ",
+  np: "cụm danh từ",
+  "phr v": "cụm động từ",
+  phr: "cụm từ",
 };
 const POS_ALIASES = {
-    noun: 'n', verb: 'v', adjective: 'adj', adverb: 'adv', preposition: 'prep',
-    pronoun: 'pron', conjunction: 'conj', determiner: 'det', article: 'art',
-    interjection: 'interj', numeral: 'num', auxiliary: 'aux',
-    'phrasal verb': 'phr v', phrase: 'phr'
+  noun: "n",
+  verb: "v",
+  adjective: "adj",
+  adverb: "adv",
+  preposition: "prep",
+  pronoun: "pron",
+  conjunction: "conj",
+  determiner: "det",
+  article: "art",
+  interjection: "interj",
+  numeral: "num",
+  auxiliary: "aux",
+  "phrasal verb": "phr v",
+  phrase: "phr",
 };
 
 // Tạo thêm các phần tử hiển thị phiên âm / từ loại (không cần sửa index.html)
-const frontPhonetic = document.createElement('div');
-frontPhonetic.className = 'phonetic';
+const frontPhonetic = document.createElement("div");
+frontPhonetic.className = "phonetic";
 frontPhonetic.hidden = true;
-const frontPos = document.createElement('span');
-frontPos.className = 'pos-badge';
+const frontPos = document.createElement("span");
+frontPos.className = "pos-badge";
 frontPos.hidden = true;
-const backPos = document.createElement('span');
-backPos.className = 'pos-badge';
+const backPos = document.createElement("span");
+backPos.className = "pos-badge";
 backPos.hidden = true;
-if (frontWord) frontWord.insertAdjacentElement('afterend', frontPhonetic);
-frontPhonetic.insertAdjacentElement('afterend', frontPos);
-if (backMeaning) backMeaning.insertAdjacentElement('afterend', backPos);
+if (frontWord) frontWord.insertAdjacentElement("afterend", frontPhonetic);
+frontPhonetic.insertAdjacentElement("afterend", frontPos);
+if (backMeaning) backMeaning.insertAdjacentElement("afterend", backPos);
 
 function pickField(raw, keys) {
-    for (const k of keys) {
-        if (raw[k] !== undefined && raw[k] !== null && String(raw[k]).trim() !== '') {
-            return String(raw[k]).trim();
-        }
+  for (const k of keys) {
+    if (
+      raw[k] !== undefined &&
+      raw[k] !== null &&
+      String(raw[k]).trim() !== ""
+    ) {
+      return String(raw[k]).trim();
     }
-    return '';
+  }
+  return "";
 }
 
 function normalizePos(value) {
-    if (!value) return { abbr: '', label: '' };
-    // Hỗ trợ nhiều từ loại ngăn cách bằng "/" (vd: "v/n") và viết tắt có dấu chấm (vd: "n.p")
-    const parts = value.split('/').map(s => s.trim()).filter(Boolean);
-    const keys = parts.map(p => {
-        const k = p.toLowerCase().replace(/\./g, '');
-        return POS_ALIASES[k] || k;
-    });
-    const labels = keys.map(k => POS_LABELS[k]).filter(Boolean);
-    return {
-        abbr: parts.join('/'),
-        label: labels.length === keys.length ? labels.join(' / ') : ''
-    };
+  if (!value) return { abbr: "", label: "" };
+  // Hỗ trợ nhiều từ loại ngăn cách bằng "/" (vd: "v/n") và viết tắt có dấu chấm (vd: "n.p")
+  const parts = value
+    .split("/")
+    .map((s) => s.trim())
+    .filter(Boolean);
+  const keys = parts.map((p) => {
+    const k = p.toLowerCase().replace(/\./g, "");
+    return POS_ALIASES[k] || k;
+  });
+  const labels = keys.map((k) => POS_LABELS[k]).filter(Boolean);
+  return {
+    abbr: parts.join("/"),
+    label: labels.length === keys.length ? labels.join(" / ") : "",
+  };
 }
 
 function normalizePronunciation(value) {
-    if (!value) return '';
-    const v = value.trim();
-    if (/^[\/\[].*[\/\]]$/.test(v)) return v;
-    return `/${v.replace(/^\/|\/$/g, '')}/`;
+  if (!value) return "";
+  const v = value.trim();
+  if (/^[\/\[].*[\/\]]$/.test(v)) return v;
+  return `/${v.replace(/^\/|\/$/g, "")}/`;
 }
 
 // Chuẩn hóa 1 từ về dạng { word, pos, pronunciation, meaning } (tương thích cả dữ liệu cũ chỉ có word + meaning)
 function normalizeWord(raw) {
-    if (!raw || typeof raw !== 'object') return null;
-    const word = pickField(raw, ['word', 'Word']);
-    const meaning = pickField(raw, ['meaning', 'Meaning', 'definition']);
-    if (!word) return null;
-    return {
-        word,
-        pos: pickField(raw, ['pos', 'partOfSpeech', 'part_of_speech', 'Part of speech', 'type']),
-        pronunciation: pickField(raw, ['pronunciation', 'Pronunciation', 'phonetic', 'ipa', 'pron']),
-        meaning
-    };
+  if (!raw || typeof raw !== "object") return null;
+  const word = pickField(raw, ["word", "Word"]);
+  const meaning = pickField(raw, ["meaning", "Meaning", "definition"]);
+  if (!word) return null;
+  return {
+    word,
+    pos: pickField(raw, [
+      "pos",
+      "partOfSpeech",
+      "part_of_speech",
+      "Part of speech",
+      "type",
+    ]),
+    pronunciation: pickField(raw, [
+      "pronunciation",
+      "Pronunciation",
+      "phonetic",
+      "ipa",
+      "pron",
+    ]),
+    meaning,
+  };
 }
 
 function normalizeWordList(list) {
-    return (Array.isArray(list) ? list : []).map(normalizeWord).filter(Boolean);
+  return (Array.isArray(list) ? list : []).map(normalizeWord).filter(Boolean);
 }
 
 // Đọc file .txt, hỗ trợ 3 kiểu:
@@ -116,662 +157,806 @@ function normalizeWordList(list) {
 //  2) Dạng dòng:  army | n | /ˈɑːmi/ | quân đội   (hoặc: từ | nghĩa)
 //  3) Dạng cũ:    army: quân đội;
 function parseTxtContent(text) {
-    const lines = text.replace(/\r/g, '').split('\n');
-    const result = [];
+  const lines = text.replace(/\r/g, "").split("\n");
+  const result = [];
 
-    const hasBlockFormat = /^\s*word\s*:/im.test(text) && /^\s*meaning\s*:/im.test(text);
-    if (hasBlockFormat) {
-        const labelMap = { 'word': 'word', 'part of speech': 'pos', 'pronunciation': 'pronunciation', 'meaning': 'meaning' };
-        let entry = null;
-        const flush = () => { const w = normalizeWord(entry); if (w) result.push(w); entry = null; };
-        lines.forEach(line => {
-            const m = line.match(/^\s*(word|part of speech|pronunciation|meaning)\s*:\s*(.*)$/i);
-            if (!m) return;
-            const field = labelMap[m[1].toLowerCase()];
-            if (field === 'word') { if (entry) flush(); entry = {}; }
-            if (entry) entry[field] = m[2].trim();
-        });
+  const hasBlockFormat =
+    /^\s*word\s*:/im.test(text) && /^\s*meaning\s*:/im.test(text);
+  if (hasBlockFormat) {
+    const labelMap = {
+      word: "word",
+      "part of speech": "pos",
+      pronunciation: "pronunciation",
+      meaning: "meaning",
+    };
+    let entry = null;
+    const flush = () => {
+      const w = normalizeWord(entry);
+      if (w) result.push(w);
+      entry = null;
+    };
+    lines.forEach((line) => {
+      const m = line.match(
+        /^\s*(word|part of speech|pronunciation|meaning)\s*:\s*(.*)$/i,
+      );
+      if (!m) return;
+      const field = labelMap[m[1].toLowerCase()];
+      if (field === "word") {
         if (entry) flush();
-        return result;
+        entry = {};
+      }
+      if (entry) entry[field] = m[2].trim();
+    });
+    if (entry) flush();
+    return result;
+  }
+
+  lines.forEach((line) => {
+    const clean = line.trim();
+    if (!clean) return;
+
+    if (clean.includes("|")) {
+      const p = clean.split("|").map((s) => s.trim());
+      let item;
+      if (p.length >= 4)
+        item = {
+          word: p[0],
+          pos: p[1],
+          pronunciation: p[2],
+          meaning: p.slice(3).join(" | "),
+        };
+      else if (p.length === 3)
+        item = /^[\/\[]/.test(p[1])
+          ? { word: p[0], pronunciation: p[1], meaning: p[2] }
+          : { word: p[0], pos: p[1], meaning: p[2] };
+      else item = { word: p[0], meaning: p[1] };
+      const w = normalizeWord(item);
+      if (w && w.meaning) result.push(w);
+      return;
     }
 
-    lines.forEach(line => {
-        const clean = line.trim();
-        if (!clean) return;
-
-        if (clean.includes('|')) {
-            const p = clean.split('|').map(s => s.trim());
-            let item;
-            if (p.length >= 4) item = { word: p[0], pos: p[1], pronunciation: p[2], meaning: p.slice(3).join(' | ') };
-            else if (p.length === 3) item = /^[\/\[]/.test(p[1])
-                ? { word: p[0], pronunciation: p[1], meaning: p[2] }
-                : { word: p[0], pos: p[1], meaning: p[2] };
-            else item = { word: p[0], meaning: p[1] };
-            const w = normalizeWord(item);
-            if (w && w.meaning) result.push(w);
-            return;
-        }
-
-        const idx = clean.indexOf(':');
-        if (idx > 0) {
-            const w = normalizeWord({
-                word: clean.slice(0, idx).trim(),
-                meaning: clean.slice(idx + 1).replace(/;$/, '').trim()
-            });
-            if (w && w.meaning) result.push(w);
-        }
-    });
-    return result;
+    const idx = clean.indexOf(":");
+    if (idx > 0) {
+      const w = normalizeWord({
+        word: clean.slice(0, idx).trim(),
+        meaning: clean
+          .slice(idx + 1)
+          .replace(/;$/, "")
+          .trim(),
+      });
+      if (w && w.meaning) result.push(w);
+    }
+  });
+  return result;
 }
 
 function renderCardExtras(card) {
-    const pron = normalizePronunciation(card ? card.pronunciation : '');
-    const pos = normalizePos(card ? card.pos : '');
-    const posText = pos.abbr ? (pos.label ? `${pos.abbr} · ${pos.label}` : pos.abbr) : '';
+  const pron = normalizePronunciation(card ? card.pronunciation : "");
+  const pos = normalizePos(card ? card.pos : "");
+  const posText = pos.abbr
+    ? pos.label
+      ? `${pos.abbr} · ${pos.label}`
+      : pos.abbr
+    : "";
 
-    frontPhonetic.textContent = pron;
-    frontPhonetic.hidden = !pron;
-    frontPos.textContent = posText;
-    frontPos.hidden = !posText;
-    backPos.textContent = posText;
-    backPos.hidden = !posText;
+  frontPhonetic.textContent = pron;
+  frontPhonetic.hidden = !pron;
+  frontPos.textContent = posText;
+  frontPos.hidden = !posText;
+  backPos.textContent = posText;
+  backPos.hidden = !posText;
 }
 
 // === 1. Xử lý Giao diện sáng / tối (Theme) ===
 function toggleTheme() {
-    const currentTheme = document.documentElement.getAttribute('data-theme');
-    if (currentTheme === 'dark') {
-        document.documentElement.setAttribute('data-theme', 'light');
-        if (themeBtn) themeBtn.textContent = '🌙';
-        localStorage.setItem('theme', 'light');
-    } else {
-        document.documentElement.setAttribute('data-theme', 'dark');
-        if (themeBtn) themeBtn.textContent = '☀️';
-        localStorage.setItem('theme', 'dark');
-    }
+  const currentTheme = document.documentElement.getAttribute("data-theme");
+  if (currentTheme === "dark") {
+    document.documentElement.setAttribute("data-theme", "light");
+    if (themeBtn) themeBtn.textContent = "🌙";
+    localStorage.setItem("theme", "light");
+  } else {
+    document.documentElement.setAttribute("data-theme", "dark");
+    if (themeBtn) themeBtn.textContent = "☀️";
+    localStorage.setItem("theme", "dark");
+  }
 }
 
 // Khôi phục cài đặt Theme từ bộ nhớ khi tải trang
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'dark') {
-    document.documentElement.setAttribute('data-theme', 'dark');
-    if (themeBtn) themeBtn.textContent = '☀️';
+const savedTheme = localStorage.getItem("theme");
+if (savedTheme === "dark") {
+  document.documentElement.setAttribute("data-theme", "dark");
+  if (themeBtn) themeBtn.textContent = "☀️";
 } else {
-    document.documentElement.setAttribute('data-theme', 'light');
-    if (themeBtn) themeBtn.textContent = '🌙';
+  document.documentElement.setAttribute("data-theme", "light");
+  if (themeBtn) themeBtn.textContent = "🌙";
 }
 
 // === 2. Tính năng Phát âm (Text-to-Speech) ===
 function speakWord(event) {
-    if (event) event.stopPropagation(); // Ngăn hành vi lật thẻ khi bấm nút loa
+  if (event) event.stopPropagation(); // Ngăn hành vi lật thẻ khi bấm nút loa
 
-    const currentIndex = topicProgress[currentTopicName] || 0;
-    if (flashcards.length === 0 || !flashcards[currentIndex]) return;
+  const currentIndex = topicProgress[currentTopicName] || 0;
+  if (flashcards.length === 0 || !flashcards[currentIndex]) return;
 
-    const wordText = flashcards[currentIndex].word;
-    window.speechSynthesis.cancel(); // Hủy các âm thanh đang chờ xếp hàng
+  const wordText = flashcards[currentIndex].word;
+  window.speechSynthesis.cancel(); // Hủy các âm thanh đang chờ xếp hàng
 
-    const utterance = new SpeechSynthesisUtterance(wordText);
-    utterance.lang = 'en-US';
-    utterance.rate = 0.9;
-    window.speechSynthesis.speak(utterance);
+  const utterance = new SpeechSynthesisUtterance(wordText);
+  utterance.lang = "en-US";
+  utterance.rate = 0.9;
+  window.speechSynthesis.speak(utterance);
 }
 
 // === 3. Cập nhật trạng thái hiển thị Flashcard ===
 function updateCard(direction) {
-    const currentIndex = topicProgress[currentTopicName] || 0;
+  const currentIndex = topicProgress[currentTopicName] || 0;
 
-    if (flashcards.length === 0) {
-        frontWord.textContent = "Welcome";
-        backMeaning.textContent = "Chào mừng";
-        renderCardExtras(null);
-        counter.textContent = "Vui lòng chọn hoặc nạp file";
-        progressBar.style.width = "0%";
+  if (flashcards.length === 0) {
+    frontWord.textContent = "Welcome";
+    backMeaning.textContent = "Chào mừng";
+    renderCardExtras(null);
+    counter.textContent = "Vui lòng chọn hoặc nạp file";
+    progressBar.style.width = "0%";
 
-        prevBtn.disabled = true;
-        nextBtn.disabled = true;
-        shuffleBtn.disabled = true;
-        return;
-    }
+    prevBtn.disabled = true;
+    nextBtn.disabled = true;
+    shuffleBtn.disabled = true;
+    return;
+  }
 
-    if (currentIndex >= flashcards.length) {
-        topicProgress[currentTopicName] = 0;
-    }
+  if (currentIndex >= flashcards.length) {
+    topicProgress[currentTopicName] = 0;
+  }
 
-    const currentCard = flashcards[topicProgress[currentTopicName]];
-    frontWord.textContent = currentCard.word;
-    backMeaning.textContent = currentCard.meaning;
-    renderCardExtras(currentCard);
+  const currentCard = flashcards[topicProgress[currentTopicName]];
+  frontWord.textContent = currentCard.word;
+  backMeaning.textContent = currentCard.meaning;
+  renderCardExtras(currentCard);
 
-    playSwitchAnimation(direction);
-    //counter.textContent = `Từ ${topicProgress[currentTopicName] + 1} / ${flashcards.length} (Chủ đề: ${currentTopicName})`;
-    counter.innerHTML = `
+  playSwitchAnimation(direction);
+  //counter.textContent = `Từ ${topicProgress[currentTopicName] + 1} / ${flashcards.length} (Chủ đề: ${currentTopicName})`;
+  counter.innerHTML = `
     Từ <span class="current-word">${topicProgress[currentTopicName] + 1}</span>
     /
     <span class="total-word">${flashcards.length}</span>
     <span class="topic-name">(Chủ đề: ${currentTopicName})</span>
 `;
-    const progressPercent = ((topicProgress[currentTopicName] + 1) / flashcards.length) * 100;
-    progressBar.style.width = `${progressPercent}%`;
+  const progressPercent =
+    ((topicProgress[currentTopicName] + 1) / flashcards.length) * 100;
+  progressBar.style.width = `${progressPercent}%`;
 
-    prevBtn.disabled = (topicProgress[currentTopicName] === 0);
-    nextBtn.disabled = (topicProgress[currentTopicName] === flashcards.length - 1);
-    shuffleBtn.disabled = false;
+  prevBtn.disabled = topicProgress[currentTopicName] === 0;
+  nextBtn.disabled = topicProgress[currentTopicName] === flashcards.length - 1;
+  shuffleBtn.disabled = false;
 }
 
 // === Hiệu ứng chuyển từ (Web Animations API - không phụ thuộc CSS) ===
 function playSwitchAnimation(direction) {
-    const wrapper = card.parentElement;
+  const wrapper = card.parentElement;
 
-    // Úp thẻ về mặt trước ngay lập tức (không xoay) để không lộ nghĩa của từ mới
-    card.classList.add('no-anim');
-    card.classList.remove('flipped');
-    void card.offsetWidth;
-    card.classList.remove('no-anim');
+  // Úp thẻ về mặt trước ngay lập tức (không xoay) để không lộ nghĩa của từ mới
+  card.classList.add("no-anim");
+  card.classList.remove("flipped");
+  void card.offsetWidth;
+  card.classList.remove("no-anim");
 
-    if (!direction || !wrapper.animate) return;
+  if (!direction || !wrapper.animate) return;
 
-    const frames = {
-        next: [
-            { opacity: 0, transform: 'translateX(80px) scale(0.95)' },
-            { opacity: 1, transform: 'translateX(0) scale(1)' }
-        ],
-        prev: [
-            { opacity: 0, transform: 'translateX(-80px) scale(0.95)' },
-            { opacity: 1, transform: 'translateX(0) scale(1)' }
-        ],
-        pop: [
-            { opacity: 0, transform: 'scale(0.85) rotate(-3deg)' },
-            { opacity: 1, transform: 'scale(1) rotate(0deg)' }
-        ]
-    }[direction];
+  const frames = {
+    next: [
+      { opacity: 0, transform: "translateX(80px) scale(0.95)" },
+      { opacity: 1, transform: "translateX(0) scale(1)" },
+    ],
+    prev: [
+      { opacity: 0, transform: "translateX(-80px) scale(0.95)" },
+      { opacity: 1, transform: "translateX(0) scale(1)" },
+    ],
+    pop: [
+      { opacity: 0, transform: "scale(0.85) rotate(-3deg)" },
+      { opacity: 1, transform: "scale(1) rotate(0deg)" },
+    ],
+  }[direction];
 
-    wrapper.getAnimations().forEach(a => a.cancel()); // huỷ animation đang chạy dở khi bấm nhanh
-    wrapper.animate(frames, { duration: 400, easing: 'cubic-bezier(0.22, 1, 0.36, 1)' });
+  wrapper.getAnimations().forEach((a) => a.cancel()); // huỷ animation đang chạy dở khi bấm nhanh
+  wrapper.animate(frames, {
+    duration: 400,
+    easing: "cubic-bezier(0.22, 1, 0.36, 1)",
+  });
 }
 
 function flipCard() {
-    if (flashcards.length === 0) return;
-    card.classList.toggle('flipped');
+  if (flashcards.length === 0) return;
+  card.classList.toggle("flipped");
 }
 
 function nextCard() {
-    const currentIndex = topicProgress[currentTopicName] || 0;
-    if (currentIndex < flashcards.length - 1) {
-        topicProgress[currentTopicName] = currentIndex + 1;
-        updateCard('next');
-        saveProgressToStorage();
-    } else {
-        alert(`🎉 Bạn đã học xong tất cả các từ trong chủ đề "${currentTopicName}"!`);
-    }
+  const currentIndex = topicProgress[currentTopicName] || 0;
+  if (currentIndex < flashcards.length - 1) {
+    topicProgress[currentTopicName] = currentIndex + 1;
+    updateCard("next");
+    saveProgressToStorage();
+  } else {
+    alert(
+      `🎉 Bạn đã học xong tất cả các từ trong chủ đề "${currentTopicName}"!`,
+    );
+  }
 }
 
 function prevCard() {
-    const currentIndex = topicProgress[currentTopicName] || 0;
-    if (currentIndex > 0) {
-        topicProgress[currentTopicName] = currentIndex - 1;
-        updateCard('prev');
-        saveProgressToStorage();
-    }
+  const currentIndex = topicProgress[currentTopicName] || 0;
+  if (currentIndex > 0) {
+    topicProgress[currentTopicName] = currentIndex - 1;
+    updateCard("prev");
+    saveProgressToStorage();
+  }
 }
 
 function shuffleCards() {
-    if (flashcards.length === 0) return;
-    for (let i = flashcards.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [flashcards[i], flashcards[j]] = [flashcards[j], flashcards[i]];
-    }
-    topicsData[currentTopicName] = [...flashcards];
-    topicProgress[currentTopicName] = 0;
-    updateCard('pop');
-    saveProgressToStorage();
+  if (flashcards.length === 0) return;
+  for (let i = flashcards.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [flashcards[i], flashcards[j]] = [flashcards[j], flashcards[i]];
+  }
+  topicsData[currentTopicName] = [...flashcards];
+  topicProgress[currentTopicName] = 0;
+  updateCard("pop");
+  saveProgressToStorage();
 }
 
 // === 4. Cơ chế Lazy-Loading: Nạp dữ liệu từ API danh mục khi chuyển đổi ===
 function switchTopic() {
-    const selectedTopic = listSelect.value;
-    if (!selectedTopic) {
-        resetToEmptyState();
-        return;
-    }
+  const selectedTopic = listSelect.value;
+  if (!selectedTopic) {
+    resetToEmptyState();
+    return;
+  }
 
-    currentTopicName = selectedTopic;
+  currentTopicName = selectedTopic;
 
-    // Nếu chủ đề thuộc API hệ thống và chưa được tải chi tiết từ vựng xuống bộ nhớ máy
-    if (topicsData[selectedTopic] && topicsData[selectedTopic].length === 0 && topicUrls[selectedTopic]) {
-        fileLabel.textContent = `⏳ Đang tải từ vựng cho "${selectedTopic}"...`;
+  // Nếu chủ đề thuộc API hệ thống và chưa được tải chi tiết từ vựng xuống bộ nhớ máy
+  if (
+    topicsData[selectedTopic] &&
+    topicsData[selectedTopic].length === 0 &&
+    topicUrls[selectedTopic]
+  ) {
+    fileLabel.textContent = `⏳ Đang tải từ vựng cho "${selectedTopic}"...`;
 
-        fetch(topicUrls[selectedTopic])
-            .then(res => {
-                if (!res.ok) throw new Error("Không thể tải dữ liệu.");
-                return res.json();
-            })
-            .then(wordList => {
-                if (!Array.isArray(wordList)) {
-                    if (typeof wordList === 'object' && wordList[selectedTopic]) {
-                        wordList = wordList[selectedTopic];
-                    }
-                }
+    fetch(topicUrls[selectedTopic])
+      .then((res) => {
+        if (!res.ok) throw new Error("Không thể tải dữ liệu.");
+        return res.json();
+      })
+      .then((wordList) => {
+        if (!Array.isArray(wordList)) {
+          if (typeof wordList === "object" && wordList[selectedTopic]) {
+            wordList = wordList[selectedTopic];
+          }
+        }
 
-                topicsData[selectedTopic] = normalizeWordList(wordList);
+        topicsData[selectedTopic] = normalizeWordList(wordList);
 
-                const currentOption = listSelect.querySelector(`option[value="${selectedTopic}"]`);
-                if (currentOption) {
-                    currentOption.textContent = `${selectedTopic} (${topicsData[selectedTopic].length} từ)`;
-                }
+        const currentOption = listSelect.querySelector(
+          `option[value="${selectedTopic}"]`,
+        );
+        if (currentOption) {
+          currentOption.textContent = `${selectedTopic} (${topicsData[selectedTopic].length} từ)`;
+        }
 
-                renderCheckerList();
-                proceedToLoadCard();
-            })
-            .catch(err => {
-                console.error(err);
-                fileLabel.textContent = `❌ Lỗi nạp dữ liệu chủ đề ${selectedTopic}`;
-                topicsData[selectedTopic] = [];
-                proceedToLoadCard();
-            });
-    } else {
+        renderCheckerList();
         proceedToLoadCard();
-    }
+      })
+      .catch((err) => {
+        console.error(err);
+        fileLabel.textContent = `❌ Lỗi nạp dữ liệu chủ đề ${selectedTopic}`;
+        topicsData[selectedTopic] = [];
+        proceedToLoadCard();
+      });
+  } else {
+    proceedToLoadCard();
+  }
 }
 
 function proceedToLoadCard() {
-    if (!topicsData[currentTopicName] || !Array.isArray(topicsData[currentTopicName])) {
-        flashcards = [];
-    } else {
-        flashcards = [...topicsData[currentTopicName]];
-    }
+  if (
+    !topicsData[currentTopicName] ||
+    !Array.isArray(topicsData[currentTopicName])
+  ) {
+    flashcards = [];
+  } else {
+    flashcards = [...topicsData[currentTopicName]];
+  }
 
-    if (topicProgress[currentTopicName] === undefined || topicProgress[currentTopicName] >= flashcards.length) {
-        topicProgress[currentTopicName] = 0;
-    }
+  if (
+    topicProgress[currentTopicName] === undefined ||
+    topicProgress[currentTopicName] >= flashcards.length
+  ) {
+    topicProgress[currentTopicName] = 0;
+  }
 
-    mainTitle.textContent = currentTopicName.charAt(0).toUpperCase() + currentTopicName.slice(1);
+  mainTitle.textContent =
+    currentTopicName.charAt(0).toUpperCase() + currentTopicName.slice(1);
 
-    prevBtn.disabled = (flashcards.length === 0);
-    nextBtn.disabled = (flashcards.length === 0);
-    shuffleBtn.disabled = (flashcards.length === 0);
-    if (manageBtn) manageBtn.disabled = false;
+  prevBtn.disabled = flashcards.length === 0;
+  nextBtn.disabled = flashcards.length === 0;
+  shuffleBtn.disabled = flashcards.length === 0;
+  if (manageBtn) manageBtn.disabled = false;
 
-    checkGlobalReviewButtonState();
-    updateCard();
-    saveProgressToStorage();
+  checkGlobalReviewButtonState();
+  updateCard();
+  saveProgressToStorage();
 }
 
 // === 5. Cập nhật danh sách Dropdown chủ đề ===
 function updateSelectDropdown(defaultActiveTopic = "") {
-    if (!listSelect) return;
-    listSelect.innerHTML = "";
-    const keys = Object.keys(topicsData);
+  if (!listSelect) return;
+  listSelect.innerHTML = "";
+  const keys = Object.keys(topicsData);
 
-    if (keys.length === 0) {
-        resetToEmptyState();
-        return;
-    }
+  if (keys.length === 0) {
+    resetToEmptyState();
+    return;
+  }
 
-    keys.forEach(topic => {
-        const option = document.createElement('option');
-        option.value = topic;
-        const countText = (topicsData[topic] && topicsData[topic].length > 0) ? ` (${topicsData[topic].length} từ)` : "";
-        option.textContent = topic + countText;
-        listSelect.appendChild(option);
-    });
+  keys.forEach((topic) => {
+    const option = document.createElement("option");
+    option.value = topic;
+    const countText =
+      topicsData[topic] && topicsData[topic].length > 0
+        ? ` (${topicsData[topic].length} từ)`
+        : "";
+    option.textContent = topic + countText;
+    listSelect.appendChild(option);
+  });
 
-    if (defaultActiveTopic && keys.includes(defaultActiveTopic)) {
-        listSelect.value = defaultActiveTopic;
-    } else {
-        listSelect.value = keys[0];
-    }
+  if (defaultActiveTopic && keys.includes(defaultActiveTopic)) {
+    listSelect.value = defaultActiveTopic;
+  } else {
+    listSelect.value = keys[0];
+  }
 
-    renderCheckerList();
-    switchTopic();
+  renderCheckerList();
+  switchTopic();
 }
 
 function resetToEmptyState() {
-    if (listSelect) listSelect.innerHTML = '<option value="">-- Chưa có dữ liệu chủ đề --</option>';
-    currentTopicName = "";
-    flashcards = [];
-    mainTitle.textContent = "Sight Words Flashcards";
-    updateCard();
-    renderCheckerList();
-    checkGlobalReviewButtonState();
+  if (listSelect)
+    listSelect.innerHTML =
+      '<option value="">-- Chưa có dữ liệu chủ đề --</option>';
+  currentTopicName = "";
+  flashcards = [];
+  mainTitle.textContent = "Sight Words Flashcards";
+  updateCard();
+  renderCheckerList();
+  checkGlobalReviewButtonState();
 }
 
 // === 6. Đọc File thủ công (Hỗ trợ cấu trúc file .txt dạng từ: nghĩa; giống Foods.txt) ===
 if (fileInput) {
-    fileInput.addEventListener('change', (e) => {
-        const files = e.target.files;
-        if (files.length === 0) return;
+  fileInput.addEventListener("change", (e) => {
+    const files = e.target.files;
+    if (files.length === 0) return;
 
-        let loadedCount = 0;
-        let firstNewTopic = "";
+    let loadedCount = 0;
+    let firstNewTopic = "";
 
-        Array.from(files).forEach(file => {
-            const reader = new FileReader();
-            const fileNameLower = file.name.toLowerCase();
-            const topicName = file.name.replace(/\.[^/.]+$/, ""); // Cắt đuôi .txt hoặc .json
+    Array.from(files).forEach((file) => {
+      const reader = new FileReader();
+      const fileNameLower = file.name.toLowerCase();
+      const topicName = file.name.replace(/\.[^/.]+$/, ""); // Cắt đuôi .txt hoặc .json
 
-            reader.onload = function (event) {
-                try {
-                    let parsedWords = [];
+      reader.onload = function (event) {
+        try {
+          let parsedWords = [];
 
-                    // Xử lý file văn bản .txt (dạng khối, dạng "từ | loại | phiên âm | nghĩa" hoặc dạng cũ "từ: nghĩa;")
-                    if (fileNameLower.endsWith('.txt')) {
-                        parsedWords = parseTxtContent(event.target.result);
+          // Xử lý file văn bản .txt (dạng khối, dạng "từ | loại | phiên âm | nghĩa" hoặc dạng cũ "từ: nghĩa;")
+          if (fileNameLower.endsWith(".txt")) {
+            parsedWords = parseTxtContent(event.target.result);
 
-                        if (parsedWords.length > 0) {
-                            topicsData[topicName] = parsedWords;
-                            if (topicProgress[topicName] === undefined) topicProgress[topicName] = 0;
-                            if (!firstNewTopic) firstNewTopic = topicName;
-                        }
-                    }
-                    // Xử lý cấu trúc file định dạng .json chuẩn
-                    else {
-                        const jsonData = JSON.parse(event.target.result);
-                        if (!Array.isArray(jsonData) && typeof jsonData === 'object') {
-                            Object.keys(jsonData).forEach((topic) => {
-                                if (Array.isArray(jsonData[topic])) {
-                                    topicsData[topic] = normalizeWordList(jsonData[topic]);
-                                    if (topicProgress[topic] === undefined) topicProgress[topic] = 0;
-                                    if (!firstNewTopic) firstNewTopic = topic;
-                                }
-                            });
-                        } else if (Array.isArray(jsonData)) {
-                            topicsData[topicName] = normalizeWordList(jsonData);
-                            if (topicProgress[topicName] === undefined) topicProgress[topicName] = 0;
-                            if (!firstNewTopic) firstNewTopic = topicName;
-                        }
-                    }
-
-                    loadedCount++;
-
-                    if (loadedCount === files.length) {
-                        fileLabel.textContent = `📁 Đã nạp thành công ${files.length} file cục bộ`;
-                        updateSelectDropdown(firstNewTopic || Object.keys(topicsData)[0]);
-                        saveProgressToStorage();
-                    }
-                } catch (err) {
-                    console.error("Lỗi phân tích tệp dữ liệu:", err);
-                    alert(`Không thể đọc tệp "${file.name}".`);
-                    loadedCount++;
+            if (parsedWords.length > 0) {
+              topicsData[topicName] = parsedWords;
+              if (topicProgress[topicName] === undefined)
+                topicProgress[topicName] = 0;
+              if (!firstNewTopic) firstNewTopic = topicName;
+            }
+          }
+          // Xử lý cấu trúc file định dạng .json chuẩn
+          else {
+            const jsonData = JSON.parse(event.target.result);
+            if (!Array.isArray(jsonData) && typeof jsonData === "object") {
+              Object.keys(jsonData).forEach((topic) => {
+                if (Array.isArray(jsonData[topic])) {
+                  topicsData[topic] = normalizeWordList(jsonData[topic]);
+                  if (topicProgress[topic] === undefined)
+                    topicProgress[topic] = 0;
+                  if (!firstNewTopic) firstNewTopic = topic;
                 }
-            };
-            reader.readAsText(file);
-        });
+              });
+            } else if (Array.isArray(jsonData)) {
+              topicsData[topicName] = normalizeWordList(jsonData);
+              if (topicProgress[topicName] === undefined)
+                topicProgress[topicName] = 0;
+              if (!firstNewTopic) firstNewTopic = topicName;
+            }
+          }
+
+          loadedCount++;
+
+          if (loadedCount === files.length) {
+            fileLabel.textContent = `📁 Đã nạp thành công ${files.length} file cục bộ`;
+            updateSelectDropdown(firstNewTopic || Object.keys(topicsData)[0]);
+            saveProgressToStorage();
+          }
+        } catch (err) {
+          console.error("Lỗi phân tích tệp dữ liệu:", err);
+          alert(`Không thể đọc tệp "${file.name}".`);
+          loadedCount++;
+        }
+      };
+      reader.readAsText(file);
     });
+  });
 }
 
 // === 7. Quản lý Bảng điều khiển Checklist (LÀM MỜ FILE API, POPUP ĐỘC LẬP) ===
 function toggleCheckerPanel() {
-    if (!modalOverlay) return;
-    if (modalOverlay.classList.contains('active')) {
-        modalOverlay.classList.remove('active');
-    } else {
-        renderCheckerList();
-        modalOverlay.classList.add('active');
-    }
+  if (!modalOverlay) return;
+  if (modalOverlay.classList.contains("active")) {
+    modalOverlay.classList.remove("active");
+  } else {
+    renderCheckerList();
+    modalOverlay.classList.add("active");
+  }
 }
 
 function closeModalOnOverlay(e) {
-    // Đóng modal khi click ra vùng ngoài overlay tối màu
-    if (e.target === modalOverlay) {
-        toggleCheckerPanel();
-    }
+  // Đóng modal khi click ra vùng ngoài overlay tối màu
+  if (e.target === modalOverlay) {
+    toggleCheckerPanel();
+  }
 }
 
 function renderCheckerList() {
-    if (!checkerList) return;
-    checkerList.innerHTML = "";
+  if (!checkerList) return;
+  checkerList.innerHTML = "";
 
-    const allKeys = Object.keys(topicsData).filter(topic => topic !== "🔄 Ôn tập tổng hợp");
+  const allKeys = Object.keys(topicsData).filter(
+    (topic) => topic !== "🔄 Ôn tập tổng hợp",
+  );
 
-    if (allKeys.length === 0) {
-        checkerList.innerHTML = "<div style='padding:20px; color:var(--text-secondary); text-align:center; font-size: 14px; font-style: italic;'>Danh sách trống</div>";
-        return;
+  if (allKeys.length === 0) {
+    checkerList.innerHTML =
+      "<div style='padding:20px; color:var(--text-secondary); text-align:center; font-size: 14px; font-style: italic;'>Danh sách trống</div>";
+    return;
+  }
+
+  allKeys.forEach((topic) => {
+    const isSystem = systemTopics.includes(topic);
+    const item = document.createElement("div");
+
+    // Thêm class phân loại hệ thống để định dạng CSS làm mờ và chặn tương tác
+    item.className = isSystem ? "checker-item system-item" : "checker-item";
+
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.value = topic;
+    checkbox.id = `check-${topic}`;
+
+    // Vô hiệu hóa nút tích chọn nếu thuộc hệ thống API trực tuyến
+    if (isSystem) {
+      checkbox.disabled = true;
     }
 
-    allKeys.forEach(topic => {
-        const isSystem = systemTopics.includes(topic);
-        const item = document.createElement('div');
+    const label = document.createElement("label");
+    label.htmlFor = `check-${topic}`;
+    const countText =
+      topicsData[topic] && topicsData[topic].length > 0
+        ? ` (${topicsData[topic].length} từ)`
+        : " (Chưa tải)";
 
-        // Thêm class phân loại hệ thống để định dạng CSS làm mờ và chặn tương tác
-        item.className = isSystem ? "checker-item system-item" : "checker-item";
+    // Tạo thẻ span chứa tên chủ đề
+    const textSpan = document.createElement("span");
+    textSpan.textContent = topic + countText;
 
-        const checkbox = document.createElement('input');
-        checkbox.type = "checkbox";
-        checkbox.value = topic;
-        checkbox.id = `check-${topic}`;
+    // Tạo Badge ghi chú loại chủ đề rõ ràng và đẹp mắt
+    const badge = document.createElement("span");
+    badge.className = isSystem
+      ? "checker-badge badge-system"
+      : "checker-badge badge-local";
+    badge.textContent = isSystem ? "Hệ thống" : "Cá nhân";
 
-        // Vô hiệu hóa nút tích chọn nếu thuộc hệ thống API trực tuyến
-        if (isSystem) {
-            checkbox.disabled = true;
-        }
+    label.appendChild(textSpan);
+    label.appendChild(badge);
 
-        const label = document.createElement('label');
-        label.htmlFor = `check-${topic}`;
-        const countText = (topicsData[topic] && topicsData[topic].length > 0) ? ` (${topicsData[topic].length} từ)` : " (Chưa tải)";
-
-        // Tạo thẻ span chứa tên chủ đề
-        const textSpan = document.createElement('span');
-        textSpan.textContent = topic + countText;
-
-        // Tạo Badge ghi chú loại chủ đề rõ ràng và đẹp mắt
-        const badge = document.createElement('span');
-        badge.className = isSystem ? "checker-badge badge-system" : "checker-badge badge-local";
-        badge.textContent = isSystem ? "Hệ thống" : "Cá nhân";
-
-        label.appendChild(textSpan);
-        label.appendChild(badge);
-
-        item.appendChild(checkbox);
-        item.appendChild(label);
-        checkerList.appendChild(item);
-    });
+    item.appendChild(checkbox);
+    item.appendChild(label);
+    checkerList.appendChild(item);
+  });
 }
 
 function toggleSelectAllCheckboxes() {
-    allCheckedState = !allCheckedState;
-    const checkboxes = checkerList.querySelectorAll('.checker-item:not(.system-item) input[type="checkbox"]');
-    checkboxes.forEach(cb => cb.checked = allCheckedState);
+  allCheckedState = !allCheckedState;
+  const checkboxes = checkerList.querySelectorAll(
+    '.checker-item:not(.system-item) input[type="checkbox"]',
+  );
+  checkboxes.forEach((cb) => (cb.checked = allCheckedState));
 }
 
 function deleteSelectedTopics() {
-    const checkboxes = checkerList.querySelectorAll('input[type="checkbox"]:checked');
-    if (checkboxes.length === 0) {
-        alert("Vui lòng tích chọn ít nhất một bộ từ vựng Local (Cá nhân) để thực hiện thao tác xóa.");
-        return;
+  const checkboxes = checkerList.querySelectorAll(
+    'input[type="checkbox"]:checked',
+  );
+  if (checkboxes.length === 0) {
+    alert(
+      "Vui lòng tích chọn ít nhất một bộ từ vựng Local (Cá nhân) để thực hiện thao tác xóa.",
+    );
+    return;
+  }
+
+  if (
+    confirm(
+      `Bạn có chắc muốn xóa vĩnh viễn ${checkboxes.length} chủ đề nạp thủ công được chọn?`,
+    )
+  ) {
+    checkboxes.forEach((cb) => {
+      const topicToDelete = cb.value;
+      // Chỉ cho xóa nếu bộ từ đó không thuộc mảng systemTopics (bảo mật lớp 2)
+      if (!systemTopics.includes(topicToDelete)) {
+        delete topicsData[topicToDelete];
+        delete topicProgress[topicToDelete];
+      }
+    });
+
+    allCheckedState = false;
+
+    const remainingKeys = Object.keys(topicsData);
+    let nextActiveTopic = "";
+    if (remainingKeys.length > 0) {
+      nextActiveTopic = remainingKeys.includes(currentTopicName)
+        ? currentTopicName
+        : remainingKeys[0];
     }
 
-    if (confirm(`Bạn có chắc muốn xóa vĩnh viễn ${checkboxes.length} chủ đề nạp thủ công được chọn?`)) {
-        checkboxes.forEach(cb => {
-            const topicToDelete = cb.value;
-            // Chỉ cho xóa nếu bộ từ đó không thuộc mảng systemTopics (bảo mật lớp 2)
-            if (!systemTopics.includes(topicToDelete)) {
-                delete topicsData[topicToDelete];
-                delete topicProgress[topicToDelete];
-            }
-        });
-
-        allCheckedState = false;
-
-        const remainingKeys = Object.keys(topicsData);
-        let nextActiveTopic = "";
-        if (remainingKeys.length > 0) {
-            nextActiveTopic = remainingKeys.includes(currentTopicName) ? currentTopicName : remainingKeys[0];
-        }
-
-        updateSelectDropdown(nextActiveTopic);
-        saveProgressToStorage();
-        alert("Đã gỡ bỏ thành công dữ liệu các chủ đề local.");
-    }
+    updateSelectDropdown(nextActiveTopic);
+    saveProgressToStorage();
+    alert("Đã gỡ bỏ thành công dữ liệu các chủ đề local.");
+  }
 }
 
 // === 8. Tính năng: Ôn tập tổng hợp kết hợp nhiều chủ đề ===
 function checkGlobalReviewButtonState() {
-    if (!startReviewBtn) return;
-    const loadedTopics = Object.keys(topicsData).filter(k => k !== "🔄 Ôn tập tổng hợp" && topicsData[k] && topicsData[k].length > 0);
-    startReviewBtn.disabled = (loadedTopics.length === 0);
+  if (!startReviewBtn) return;
+  const loadedTopics = Object.keys(topicsData).filter(
+    (k) =>
+      k !== "🔄 Ôn tập tổng hợp" && topicsData[k] && topicsData[k].length > 0,
+  );
+  startReviewBtn.disabled = loadedTopics.length === 0;
 }
 
 function startGlobalReview() {
-    const loadedTopics = Object.keys(topicsData).filter(k => k !== "🔄 Ôn tập tổng hợp" && topicsData[k] && topicsData[k].length > 0);
+  const loadedTopics = Object.keys(topicsData).filter(
+    (k) =>
+      k !== "🔄 Ôn tập tổng hợp" && topicsData[k] && topicsData[k].length > 0,
+  );
 
-    if (loadedTopics.length === 0) {
-        alert("Không có từ vựng khả dụng.");
-        return;
-    }
+  if (loadedTopics.length === 0) {
+    alert("Không có từ vựng khả dụng.");
+    return;
+  }
 
-    let globalPool = [];
-    loadedTopics.forEach(topic => {
-        globalPool = globalPool.concat(topicsData[topic]);
-    });
+  let globalPool = [];
+  loadedTopics.forEach((topic) => {
+    globalPool = globalPool.concat(topicsData[topic]);
+  });
 
-    for (let i = globalPool.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [globalPool[i], globalPool[j]] = [globalPool[j], globalPool[i]];
-    }
+  for (let i = globalPool.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [globalPool[i], globalPool[j]] = [globalPool[j], globalPool[i]];
+  }
 
-    const limitCount = parseInt(reviewCountSelect.value, 10);
-    if (limitCount > 0 && globalPool.length > limitCount) {
-        globalPool = globalPool.slice(0, limitCount);
-    }
+  const limitCount = parseInt(reviewCountSelect.value, 10);
+  if (limitCount > 0 && globalPool.length > limitCount) {
+    globalPool = globalPool.slice(0, limitCount);
+  }
 
-    const reviewSessionName = "🔄 Ôn tập tổng hợp";
-    topicsData[reviewSessionName] = globalPool;
-    topicProgress[reviewSessionName] = 0;
+  const reviewSessionName = "🔄 Ôn tập tổng hợp";
+  topicsData[reviewSessionName] = globalPool;
+  topicProgress[reviewSessionName] = 0;
 
-    let reviewOption = listSelect.querySelector(`option[value="${reviewSessionName}"]`);
-    if (!reviewOption) {
-        reviewOption = document.createElement('option');
-        reviewOption.value = reviewSessionName;
-        listSelect.appendChild(reviewOption);
-    }
-    reviewOption.textContent = `${reviewSessionName} (${globalPool.length} từ)`;
+  let reviewOption = listSelect.querySelector(
+    `option[value="${reviewSessionName}"]`,
+  );
+  if (!reviewOption) {
+    reviewOption = document.createElement("option");
+    reviewOption.value = reviewSessionName;
+    listSelect.appendChild(reviewOption);
+  }
+  reviewOption.textContent = `${reviewSessionName} (${globalPool.length} từ)`;
 
-    listSelect.value = reviewSessionName;
-    switchTopic();
+  listSelect.value = reviewSessionName;
+  switchTopic();
 
-    if (modalOverlay.classList.contains('active')) {
-        modalOverlay.classList.remove('active');
-    }
+  if (modalOverlay.classList.contains("active")) {
+    modalOverlay.classList.remove("active");
+  }
 }
 
 // === 9. Đồng bộ dữ liệu qua LocalStorage trình duyệt ===
 function saveProgressToStorage() {
-    const cleanTopicsData = { ...topicsData };
-    const cleanTopicProgress = { ...topicProgress };
-    delete cleanTopicsData["🔄 Ôn tập tổng hợp"];
-    delete cleanTopicProgress["🔄 Ôn tập tổng hợp"];
+  const cleanTopicsData = { ...topicsData };
+  const cleanTopicProgress = { ...topicProgress };
+  delete cleanTopicsData["🔄 Ôn tập tổng hợp"];
+  delete cleanTopicProgress["🔄 Ôn tập tổng hợp"];
 
-    localStorage.setItem('flashcard_topics_data', JSON.stringify(cleanTopicsData));
-    localStorage.setItem('flashcard_topic_progress', JSON.stringify(cleanTopicProgress));
-    localStorage.setItem('flashcard_topic_urls', JSON.stringify(topicUrls));
-    localStorage.setItem('flashcard_system_topics', JSON.stringify(systemTopics));
-    if (currentTopicName && currentTopicName !== "🔄 Ôn tập tổng hợp") {
-        localStorage.setItem('flashcard_current_topic', currentTopicName);
-    }
+  localStorage.setItem(
+    "flashcard_topics_data",
+    JSON.stringify(cleanTopicsData),
+  );
+  localStorage.setItem(
+    "flashcard_topic_progress",
+    JSON.stringify(cleanTopicProgress),
+  );
+  localStorage.setItem("flashcard_topic_urls", JSON.stringify(topicUrls));
+  localStorage.setItem("flashcard_system_topics", JSON.stringify(systemTopics));
+  if (currentTopicName && currentTopicName !== "🔄 Ôn tập tổng hợp") {
+    localStorage.setItem("flashcard_current_topic", currentTopicName);
+  }
 }
 
 function loadProgressFromStorage() {
-    try {
-        const storedData = localStorage.getItem('flashcard_topics_data');
-        const storedProgress = localStorage.getItem('flashcard_topic_progress');
-        const storedUrls = localStorage.getItem('flashcard_topic_urls');
-        const storedSystem = localStorage.getItem('flashcard_system_topics');
-        const storedCurrent = localStorage.getItem('flashcard_current_topic');
+  try {
+    const storedData = localStorage.getItem("flashcard_topics_data");
+    const storedProgress = localStorage.getItem("flashcard_topic_progress");
+    const storedUrls = localStorage.getItem("flashcard_topic_urls");
+    const storedSystem = localStorage.getItem("flashcard_system_topics");
+    const storedCurrent = localStorage.getItem("flashcard_current_topic");
 
-        if (storedData && storedProgress) {
-            topicsData = JSON.parse(storedData);
-            Object.keys(topicsData).forEach(t => { topicsData[t] = normalizeWordList(topicsData[t]); });
-            topicProgress = JSON.parse(storedProgress);
-            if (storedUrls) topicUrls = JSON.parse(storedUrls);
-            if (storedSystem) systemTopics = JSON.parse(storedSystem);
+    if (storedData && storedProgress) {
+      topicsData = JSON.parse(storedData);
+      Object.keys(topicsData).forEach((t) => {
+        topicsData[t] = normalizeWordList(topicsData[t]);
+      });
+      topicProgress = JSON.parse(storedProgress);
+      if (storedUrls) topicUrls = JSON.parse(storedUrls);
+      if (storedSystem) systemTopics = JSON.parse(storedSystem);
 
-            const keys = Object.keys(topicsData);
-            if (keys.length > 0) {
-                // fileLabel.textContent = `💾 Đã khôi phục tiến trình học tập từ bộ nhớ máy`;
-                const activeTopic = (storedCurrent && keys.includes(storedCurrent)) ? storedCurrent : keys[0];
-                updateSelectDropdown(activeTopic);
-                return true;
-            }
-        }
-    } catch (e) {
-        console.error(e);
+      const keys = Object.keys(topicsData);
+      if (keys.length > 0) {
+        // fileLabel.textContent = `💾 Đã khôi phục tiến trình học tập từ bộ nhớ máy`;
+        const activeTopic =
+          storedCurrent && keys.includes(storedCurrent)
+            ? storedCurrent
+            : keys[0];
+        updateSelectDropdown(activeTopic);
+        return true;
+      }
     }
-    return false;
+  } catch (e) {
+    console.error(e);
+  }
+  return false;
 }
 
 function clearSavedData() {
-    if (confirm("Xóa toàn bộ tiến trình học và bộ từ vựng cục bộ?")) {
-        localStorage.clear();
-        window.location.reload();
-    }
+  if (confirm("Xóa toàn bộ tiến trình học và bộ từ vựng cục bộ?")) {
+    localStorage.clear();
+    window.location.reload();
+  }
 }
 
 // === 10. Quản lý Sự kiện phím tắt bàn phím ===
-document.addEventListener('keydown', (e) => {
-    if (flashcards.length === 0) return;
-    if (e.target.tagName === 'SELECT' || e.target.tagName === 'INPUT') return;
+document.addEventListener("keydown", (e) => {
+  if (flashcards.length === 0) return;
+  if (e.target.tagName === "SELECT" || e.target.tagName === "INPUT") return;
 
-    if (e.code === 'Space') {
-        e.preventDefault();
-        flipCard();
-    } else if (e.code === 'ArrowRight') {
-        nextCard();
-    } else if (e.code === 'ArrowLeft') {
-        prevCard();
-    } else if (e.code === 'Escape') {
-        // Đóng modal quản lý bằng phím ESC
-        if (modalOverlay && modalOverlay.classList.contains('active')) {
-            toggleCheckerPanel();
-        }
+  if (e.code === "Space") {
+    e.preventDefault();
+    flipCard();
+  } else if (e.code === "ArrowRight") {
+    nextCard();
+  } else if (e.code === "ArrowLeft") {
+    prevCard();
+  } else if (e.code === "Escape") {
+    // Đóng modal quản lý bằng phím ESC
+    if (modalOverlay && modalOverlay.classList.contains("active")) {
+      toggleCheckerPanel();
     }
+  }
 });
 
 // === 11. KHỞI CHẠY KHI TẢI TRANG XONG ===
-window.addEventListener('DOMContentLoaded', () => {
-    const hasSavedData = loadProgressFromStorage();
+window.addEventListener("DOMContentLoaded", () => {
+  const hasSavedData = loadProgressFromStorage();
 
-    if (!hasSavedData) {
-        fileLabel.textContent = `⏳ Đang kết nối danh mục chủ đề từ hệ thống API...`;
+  if (!hasSavedData) {
+    fileLabel.textContent = `⏳ Đang kết nối danh mục chủ đề từ hệ thống API...`;
 
-        // Trỏ đến file mục lục tổng của bạn trên GitHub
-        const indexApiUrl = 'https://raw.githubusercontent.com/nghia46/English_Flashcard/refs/heads/master/index.json';
+    // Trỏ đến file mục lục tổng của bạn trên GitHub
+    const indexApiUrl =
+      "https://raw.githubusercontent.com/nghia46/English_Flashcard/refs/heads/master/index.json";
 
-        fetch(indexApiUrl)
-            .then(response => {
-                if (!response.ok) throw new Error("Lỗi API cấu hình.");
-                return response.json();
-            })
-            .then(indexData => {
-                const baseUrl = indexData.baseUrl || "";
-                const topics = indexData.topics || {};
+    fetch(indexApiUrl)
+      .then((response) => {
+        if (!response.ok) throw new Error("Lỗi API cấu hình.");
+        return response.json();
+      })
+      .then((indexData) => {
+        const baseUrl = indexData.baseUrl || "";
+        const topics = indexData.topics || {};
 
-                topicUrls = {};
-                topicsData = {};
-                systemTopics = [];
+        topicUrls = {};
+        topicsData = {};
+        systemTopics = [];
 
-                Object.keys(topics).forEach(topic => {
-                    topicUrls[topic] = baseUrl + topics[topic];
-                    topicsData[topic] = []; // Sử dụng cơ chế Lazy Loading
-                    systemTopics.push(topic); // ĐĂNG KÝ: Đánh dấu các chủ đề thuộc API trực tuyến
+        Object.keys(topics).forEach((topic) => {
+          topicUrls[topic] = baseUrl + topics[topic];
+          topicsData[topic] = []; // Sử dụng cơ chế Lazy Loading
+          systemTopics.push(topic); // ĐĂNG KÝ: Đánh dấu các chủ đề thuộc API trực tuyến
 
-                    if (topicProgress[topic] === undefined) {
-                        topicProgress[topic] = 0;
-                    }
-                });
+          if (topicProgress[topic] === undefined) {
+            topicProgress[topic] = 0;
+          }
+        });
 
-                const keys = Object.keys(topicsData);
-                if (keys.length > 0) {
-                    fileLabel.textContent = `📁 Đồng bộ dữ liệu API danh mục thành công`;
-                    updateSelectDropdown(keys[0]);
-                } else {
-                    resetToEmptyState();
-                }
-            })
-            .catch(error => {
-                console.error(error);
-                fileLabel.textContent = `❌ Không thể đồng bộ danh mục từ hệ thống API`;
-                resetToEmptyState();
-            });
-    }
+        const keys = Object.keys(topicsData);
+        if (keys.length > 0) {
+          fileLabel.textContent = `📁 Đồng bộ dữ liệu API danh mục thành công`;
+          updateSelectDropdown(keys[0]);
+        } else {
+          resetToEmptyState();
+        }
+      })
+      .catch((error) => {
+        console.error(error);
+        fileLabel.textContent = `❌ Không thể đồng bộ danh mục từ hệ thống API`;
+        resetToEmptyState();
+      });
+  }
+});
+// === Mobile Swipe Navigation ===
+
+let touchStartX = 0;
+let touchStartY = 0;
+let touchEndX = 0;
+let touchEndY = 0;
+
+const SWIPE_THRESHOLD = 60; // số pixel tối thiểu để tính là swipe
+
+card.addEventListener(
+  "touchstart",
+  (event) => {
+    const touch = event.changedTouches[0];
+
+    touchStartX = touch.clientX;
+    touchStartY = touch.clientY;
+  },
+  { passive: true },
+);
+
+card.addEventListener("touchend", (event) => {
+  const touch = event.changedTouches[0];
+
+  touchEndX = touch.clientX;
+  touchEndY = touch.clientY;
+
+  const deltaX = touchEndX - touchStartX;
+  const deltaY = touchEndY - touchStartY;
+
+  // Nếu vuốt theo chiều dọc nhiều hơn chiều ngang
+  // thì không xử lý như swipe card
+  if (Math.abs(deltaY) > Math.abs(deltaX)) {
+    return;
+  }
+
+  // Không đủ khoảng cách để tính là swipe
+  if (Math.abs(deltaX) < SWIPE_THRESHOLD) {
+    return;
+  }
+
+  if (deltaX < 0) {
+    // Vuốt trái → từ tiếp theo
+    nextCard();
+  } else {
+    // Vuốt phải → từ trước
+    prevCard();
+  }
 });
