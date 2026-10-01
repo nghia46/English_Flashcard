@@ -551,8 +551,6 @@ input:focus,
      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.02);
  }
 
-
-
  /* Mặt trước */
  .card-front {
      border-color: var(--primary);
