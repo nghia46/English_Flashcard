@@ -33,6 +33,141 @@ const checkerList = document.getElementById('checkerList');
 const reviewCountSelect = document.getElementById('reviewCountSelect');
 const startReviewBtn = document.getElementById('startReviewBtn');
 
+// === 0. Định dạng từ mới: word / pos / pronunciation / meaning ===
+// Ví dụ: { "word": "army", "pos": "n", "pronunciation": "/ˈɑːmi/", "meaning": "quân đội" }
+const POS_LABELS = {
+    n: 'danh từ', v: 'động từ', adj: 'tính từ', adv: 'trạng từ',
+    prep: 'giới từ', pron: 'đại từ', conj: 'liên từ', det: 'hạn định từ',
+    art: 'mạo từ', interj: 'thán từ', num: 'số từ', modal: 'động từ khuyết thiếu',
+    aux: 'trợ động từ'
+};
+const POS_ALIASES = {
+    noun: 'n', verb: 'v', adjective: 'adj', adverb: 'adv', preposition: 'prep',
+    pronoun: 'pron', conjunction: 'conj', determiner: 'det', article: 'art',
+    interjection: 'interj', numeral: 'num', auxiliary: 'aux'
+};
+
+// Tạo thêm các phần tử hiển thị phiên âm / từ loại (không cần sửa index.html)
+const frontPhonetic = document.createElement('div');
+frontPhonetic.className = 'phonetic';
+frontPhonetic.hidden = true;
+const frontPos = document.createElement('span');
+frontPos.className = 'pos-badge';
+frontPos.hidden = true;
+const backPos = document.createElement('span');
+backPos.className = 'pos-badge';
+backPos.hidden = true;
+if (frontWord) frontWord.insertAdjacentElement('afterend', frontPhonetic);
+frontPhonetic.insertAdjacentElement('afterend', frontPos);
+if (backMeaning) backMeaning.insertAdjacentElement('afterend', backPos);
+
+function pickField(raw, keys) {
+    for (const k of keys) {
+        if (raw[k] !== undefined && raw[k] !== null && String(raw[k]).trim() !== '') {
+            return String(raw[k]).trim();
+        }
+    }
+    return '';
+}
+
+function normalizePos(value) {
+    if (!value) return { abbr: '', label: '' };
+    const key = value.toLowerCase().replace(/\./g, '').trim();
+    const abbr = POS_ALIASES[key] || key;
+    return { abbr, label: POS_LABELS[abbr] || '' };
+}
+
+function normalizePronunciation(value) {
+    if (!value) return '';
+    const v = value.trim();
+    if (/^[\/\[].*[\/\]]$/.test(v)) return v;
+    return `/${v.replace(/^\/|\/$/g, '')}/`;
+}
+
+// Chuẩn hóa 1 từ về dạng { word, pos, pronunciation, meaning } (tương thích cả dữ liệu cũ chỉ có word + meaning)
+function normalizeWord(raw) {
+    if (!raw || typeof raw !== 'object') return null;
+    const word = pickField(raw, ['word', 'Word']);
+    const meaning = pickField(raw, ['meaning', 'Meaning', 'definition']);
+    if (!word) return null;
+    return {
+        word,
+        pos: pickField(raw, ['pos', 'partOfSpeech', 'part_of_speech', 'Part of speech', 'type']),
+        pronunciation: pickField(raw, ['pronunciation', 'Pronunciation', 'phonetic', 'ipa', 'pron']),
+        meaning
+    };
+}
+
+function normalizeWordList(list) {
+    return (Array.isArray(list) ? list : []).map(normalizeWord).filter(Boolean);
+}
+
+// Đọc file .txt, hỗ trợ 3 kiểu:
+//  1) Dạng khối:  Word: army / Part of speech: n / Pronunciation: /ˈɑːmi/ / Meaning: quân đội
+//  2) Dạng dòng:  army | n | /ˈɑːmi/ | quân đội   (hoặc: từ | nghĩa)
+//  3) Dạng cũ:    army: quân đội;
+function parseTxtContent(text) {
+    const lines = text.replace(/\r/g, '').split('\n');
+    const result = [];
+
+    const hasBlockFormat = /^\s*word\s*:/im.test(text) && /^\s*meaning\s*:/im.test(text);
+    if (hasBlockFormat) {
+        const labelMap = { 'word': 'word', 'part of speech': 'pos', 'pronunciation': 'pronunciation', 'meaning': 'meaning' };
+        let entry = null;
+        const flush = () => { const w = normalizeWord(entry); if (w) result.push(w); entry = null; };
+        lines.forEach(line => {
+            const m = line.match(/^\s*(word|part of speech|pronunciation|meaning)\s*:\s*(.*)$/i);
+            if (!m) return;
+            const field = labelMap[m[1].toLowerCase()];
+            if (field === 'word') { if (entry) flush(); entry = {}; }
+            if (entry) entry[field] = m[2].trim();
+        });
+        if (entry) flush();
+        return result;
+    }
+
+    lines.forEach(line => {
+        const clean = line.trim();
+        if (!clean) return;
+
+        if (clean.includes('|')) {
+            const p = clean.split('|').map(s => s.trim());
+            let item;
+            if (p.length >= 4) item = { word: p[0], pos: p[1], pronunciation: p[2], meaning: p.slice(3).join(' | ') };
+            else if (p.length === 3) item = /^[\/\[]/.test(p[1])
+                ? { word: p[0], pronunciation: p[1], meaning: p[2] }
+                : { word: p[0], pos: p[1], meaning: p[2] };
+            else item = { word: p[0], meaning: p[1] };
+            const w = normalizeWord(item);
+            if (w && w.meaning) result.push(w);
+            return;
+        }
+
+        const idx = clean.indexOf(':');
+        if (idx > 0) {
+            const w = normalizeWord({
+                word: clean.slice(0, idx).trim(),
+                meaning: clean.slice(idx + 1).replace(/;$/, '').trim()
+            });
+            if (w && w.meaning) result.push(w);
+        }
+    });
+    return result;
+}
+
+function renderCardExtras(card) {
+    const pron = normalizePronunciation(card ? card.pronunciation : '');
+    const pos = normalizePos(card ? card.pos : '');
+    const posText = pos.abbr ? (pos.label ? `${pos.abbr} · ${pos.label}` : pos.abbr) : '';
+
+    frontPhonetic.textContent = pron;
+    frontPhonetic.hidden = !pron;
+    frontPos.textContent = posText;
+    frontPos.hidden = !posText;
+    backPos.textContent = posText;
+    backPos.hidden = !posText;
+}
+
 // === 1. Xử lý Giao diện sáng / tối (Theme) ===
 function toggleTheme() {
     const currentTheme = document.documentElement.getAttribute('data-theme');
@@ -80,6 +215,7 @@ function updateCard(direction) {
     if (flashcards.length === 0) {
         frontWord.textContent = "Welcome";
         backMeaning.textContent = "Chào mừng";
+        renderCardExtras(null);
         counter.textContent = "Vui lòng chọn hoặc nạp file";
         progressBar.style.width = "0%";
 
@@ -96,6 +232,7 @@ function updateCard(direction) {
     const currentCard = flashcards[topicProgress[currentTopicName]];
     frontWord.textContent = currentCard.word;
     backMeaning.textContent = currentCard.meaning;
+    renderCardExtras(currentCard);
 
     playSwitchAnimation(direction);
     //counter.textContent = `Từ ${topicProgress[currentTopicName] + 1} / ${flashcards.length} (Chủ đề: ${currentTopicName})`;
@@ -207,7 +344,7 @@ function switchTopic() {
                     }
                 }
 
-                topicsData[selectedTopic] = Array.isArray(wordList) ? wordList : [];
+                topicsData[selectedTopic] = normalizeWordList(wordList);
 
                 const currentOption = listSelect.querySelector(`option[value="${selectedTopic}"]`);
                 if (currentOption) {
@@ -308,25 +445,9 @@ if (fileInput) {
                 try {
                     let parsedWords = [];
 
-                    // Xử lý file văn bản .txt (Dạng: từ: nghĩa;)
+                    // Xử lý file văn bản .txt (dạng khối, dạng "từ | loại | phiên âm | nghĩa" hoặc dạng cũ "từ: nghĩa;")
                     if (fileNameLower.endsWith('.txt')) {
-                        const textContent = event.target.result;
-                        const lines = textContent.split('\n');
-
-                        lines.forEach(line => {
-                            const cleanLine = line.trim();
-                            if (!cleanLine) return;
-
-                            const parts = cleanLine.split(':');
-                            if (parts.length >= 2) {
-                                const word = parts[0].trim();
-                                const meaning = parts.slice(1).join(':').replace(/;$/, '').trim();
-
-                                if (word && meaning) {
-                                    parsedWords.push({ word: word, meaning: meaning });
-                                }
-                            }
-                        });
+                        parsedWords = parseTxtContent(event.target.result);
 
                         if (parsedWords.length > 0) {
                             topicsData[topicName] = parsedWords;
@@ -340,13 +461,13 @@ if (fileInput) {
                         if (!Array.isArray(jsonData) && typeof jsonData === 'object') {
                             Object.keys(jsonData).forEach((topic) => {
                                 if (Array.isArray(jsonData[topic])) {
-                                    topicsData[topic] = jsonData[topic];
+                                    topicsData[topic] = normalizeWordList(jsonData[topic]);
                                     if (topicProgress[topic] === undefined) topicProgress[topic] = 0;
                                     if (!firstNewTopic) firstNewTopic = topic;
                                 }
                             });
                         } else if (Array.isArray(jsonData)) {
-                            topicsData[topicName] = jsonData;
+                            topicsData[topicName] = normalizeWordList(jsonData);
                             if (topicProgress[topicName] === undefined) topicProgress[topicName] = 0;
                             if (!firstNewTopic) firstNewTopic = topicName;
                         }
@@ -551,6 +672,7 @@ function loadProgressFromStorage() {
 
         if (storedData && storedProgress) {
             topicsData = JSON.parse(storedData);
+            Object.keys(topicsData).forEach(t => { topicsData[t] = normalizeWordList(topicsData[t]); });
             topicProgress = JSON.parse(storedProgress);
             if (storedUrls) topicUrls = JSON.parse(storedUrls);
             if (storedSystem) systemTopics = JSON.parse(storedSystem);

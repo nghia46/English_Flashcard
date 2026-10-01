@@ -793,3 +793,41 @@ button.primary-btn:hover:not(:disabled) {
     transform: scale(1) rotate(0);
   }
 }
+
+/* ===== Phiên âm & từ loại ===== */
+.phonetic {
+  font-size: 20px;
+  font-family: "Segoe UI", "Noto Sans", "Lucida Sans Unicode", Arial, sans-serif;
+  color: var(--text-secondary);
+  text-align: center;
+  margin-bottom: 10px;
+  word-break: break-word;
+}
+
+.pos-badge {
+  display: inline-block;
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  font-style: italic;
+  letter-spacing: 0.3px;
+  background-color: rgba(79, 70, 229, 0.12);
+  color: var(--primary);
+}
+
+.card-back .pos-badge {
+  background-color: rgba(16, 185, 129, 0.18);
+  color: var(--card-text-back);
+}
+
+.phonetic[hidden],
+.pos-badge[hidden] {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .phonetic {
+    font-size: 17px;
+  }
+}

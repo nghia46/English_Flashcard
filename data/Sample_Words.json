@@ -1,0 +1,29 @@
+{
+  "Sample_Words": [
+    { "word": "army", "pos": "n", "pronunciation": "/ˈɑːmi/", "meaning": "quân đội" },
+    { "word": "navy", "pos": "n", "pronunciation": "/ˈneɪvi/", "meaning": "hải quân" },
+    { "word": "soldier", "pos": "n", "pronunciation": "/ˈsəʊldʒə(r)/", "meaning": "người lính" },
+    { "word": "book", "pos": "n", "pronunciation": "/bʊk/", "meaning": "quyển sách" },
+    { "word": "water", "pos": "n", "pronunciation": "/ˈwɔːtə(r)/", "meaning": "nước" },
+    { "word": "house", "pos": "n", "pronunciation": "/haʊs/", "meaning": "ngôi nhà" },
+    { "word": "friend", "pos": "n", "pronunciation": "/frend/", "meaning": "bạn bè" },
+    { "word": "school", "pos": "n", "pronunciation": "/skuːl/", "meaning": "trường học" },
+    { "word": "run", "pos": "v", "pronunciation": "/rʌn/", "meaning": "chạy" },
+    { "word": "eat", "pos": "v", "pronunciation": "/iːt/", "meaning": "ăn" },
+    { "word": "learn", "pos": "v", "pronunciation": "/lɜːn/", "meaning": "học" },
+    { "word": "write", "pos": "v", "pronunciation": "/raɪt/", "meaning": "viết" },
+    { "word": "speak", "pos": "v", "pronunciation": "/spiːk/", "meaning": "nói" },
+    { "word": "big", "pos": "adj", "pronunciation": "/bɪɡ/", "meaning": "to, lớn" },
+    { "word": "small", "pos": "adj", "pronunciation": "/smɔːl/", "meaning": "nhỏ" },
+    { "word": "happy", "pos": "adj", "pronunciation": "/ˈhæpi/", "meaning": "vui vẻ, hạnh phúc" },
+    { "word": "beautiful", "pos": "adj", "pronunciation": "/ˈbjuːtɪfl/", "meaning": "đẹp" },
+    { "word": "quickly", "pos": "adv", "pronunciation": "/ˈkwɪkli/", "meaning": "một cách nhanh chóng" },
+    { "word": "always", "pos": "adv", "pronunciation": "/ˈɔːlweɪz/", "meaning": "luôn luôn" },
+    { "word": "in", "pos": "prep", "pronunciation": "/ɪn/", "meaning": "trong" },
+    { "word": "with", "pos": "prep", "pronunciation": "/wɪð/", "meaning": "cùng với" },
+    { "word": "and", "pos": "conj", "pronunciation": "/ænd/", "meaning": "và" },
+    { "word": "but", "pos": "conj", "pronunciation": "/bʌt/", "meaning": "nhưng" },
+    { "word": "he", "pos": "pron", "pronunciation": "/hiː/", "meaning": "anh ấy" },
+    { "word": "they", "pos": "pron", "pronunciation": "/ðeɪ/", "meaning": "họ" }
+  ]
+}
