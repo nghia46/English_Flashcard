@@ -1,0 +1,286 @@
+{
+  "Unit2_Vocabulary": [
+    {
+      "word": "multicultural",
+      "pos": "adj",
+      "pronunciation": "/ˌmʌltiˈkʌltʃərəl/",
+      "meaning": "đa văn hoá"
+    },
+    {
+      "word": "cultural diversity",
+      "pos": "n.p",
+      "pronunciation": "/ˈkʌltʃərəl daɪˈvɜːsəti/",
+      "meaning": "đa dạng văn hoá"
+    },
+    {
+      "word": "cuisine",
+      "pos": "n",
+      "pronunciation": "/kwɪˈziːn/",
+      "meaning": "ẩm thực"
+    },
+    {
+      "word": "booth",
+      "pos": "n",
+      "pronunciation": "/buːð/",
+      "meaning": "gian hàng"
+    },
+    {
+      "word": "spicy",
+      "pos": "adj",
+      "pronunciation": "/ˈspaɪsi/",
+      "meaning": "cay"
+    },
+    {
+      "word": "autograph",
+      "pos": "n",
+      "pronunciation": "/ˈɔːtəɡrɑːf/",
+      "meaning": "chữ ký của người nổi tiếng"
+    },
+    {
+      "word": "souvenir",
+      "pos": "n",
+      "pronunciation": "/ˌsuːvəˈnɪə(r)/",
+      "meaning": "đồ lưu niệm"
+    },
+    {
+      "word": "tug of war",
+      "pos": "n",
+      "pronunciation": "/ˌtʌɡ əv ˈwɔː(r)/",
+      "meaning": "trò chơi kéo co"
+    },
+    {
+      "word": "bamboo dancing",
+      "pos": "n",
+      "pronunciation": "/ˌbæmˈbuː ˈdɑːnsɪŋ/",
+      "meaning": "nhảy sạp"
+    },
+    {
+      "word": "delicious = tasty",
+      "pos": "adj",
+      "pronunciation": "/dɪˈlɪʃəs/ = /ˈteɪsti/",
+      "meaning": "ngon miệng"
+    },
+    {
+      "word": "identity",
+      "pos": "n",
+      "pronunciation": "/aɪˈdentəti/",
+      "meaning": "bản sắc, đặc điểm nhận dạng"
+    },
+    {
+      "word": "origin",
+      "pos": "n",
+      "pronunciation": "/ˈɒrɪdʒɪn/",
+      "meaning": "nguồn gốc"
+    },
+    {
+      "word": "popularity",
+      "pos": "n",
+      "pronunciation": "/ˌpɒpjuˈlærəti/",
+      "meaning": "sự phổ biến"
+    },
+    {
+      "word": "festivity",
+      "pos": "n",
+      "pronunciation": "/feˈstɪvəti/",
+      "meaning": "ngày hội"
+    },
+    {
+      "word": "trend",
+      "pos": "n",
+      "pronunciation": "/trend/",
+      "meaning": "xu hướng"
+    },
+    {
+      "word": "custom",
+      "pos": "n",
+      "pronunciation": "/ˈkʌstəm/",
+      "meaning": "phong tục"
+    },
+    {
+      "word": "mystery",
+      "pos": "n",
+      "pronunciation": "/ˈmɪstri/",
+      "meaning": "điều bí ẩn"
+    },
+    {
+      "word": "globalisation",
+      "pos": "n",
+      "pronunciation": "/ˌɡləʊbəlaɪˈzeɪʃn/",
+      "meaning": "toàn cầu hoà"
+    },
+    {
+      "word": "connected",
+      "pos": "adj",
+      "pronunciation": "/kəˈnektɪd/",
+      "meaning": "kết nối"
+    },
+    {
+      "word": "respect",
+      "pos": "n",
+      "pronunciation": "/rɪˈspekt/",
+      "meaning": "khía cạnh"
+    },
+    {
+      "word": "dish",
+      "pos": "n",
+      "pronunciation": "/dɪʃ/",
+      "meaning": "món ăn"
+    },
+    {
+      "word": "ingredient",
+      "pos": "n",
+      "pronunciation": "/ɪnˈɡriːdiənt/",
+      "meaning": "nguyên liệu, thành phần"
+    },
+    {
+      "word": "unique",
+      "pos": "adj",
+      "pronunciation": "/juˈniːk/",
+      "meaning": "độc đáo"
+    },
+    {
+      "word": "specialty",
+      "pos": "n",
+      "pronunciation": "/ˈspeʃəlti/",
+      "meaning": "đặc sản"
+    },
+    {
+      "word": "captivate",
+      "pos": "v",
+      "pronunciation": "/ˈkæptɪveɪt/",
+      "meaning": "thu hút, lôi cuốn"
+    },
+    {
+      "word": "cross-cultural",
+      "pos": "adj",
+      "pronunciation": "/ˌkrɒs ˈkʌltʃərəl/",
+      "meaning": "giao thoa văn hoá"
+    },
+    {
+      "word": "blend",
+      "pos": "v",
+      "pronunciation": "/blend/",
+      "meaning": "pha trộn"
+    },
+    {
+      "word": "reflect",
+      "pos": "v",
+      "pronunciation": "/rɪˈflekt/",
+      "meaning": "phản ánh"
+    },
+    {
+      "word": "richness",
+      "pos": "n",
+      "pronunciation": "/ˈrɪtʃnəs/",
+      "meaning": "sự phong phú"
+    },
+    {
+      "word": "appreciate",
+      "pos": "v",
+      "pronunciation": "/əˈpriːʃieɪt/",
+      "meaning": "thưởng thức, trân trọng"
+    },
+    {
+      "word": "lifestyle",
+      "pos": "n",
+      "pronunciation": "/ˈlaɪfstaɪl/",
+      "meaning": "lối sống"
+    },
+    {
+      "word": "celebrate",
+      "pos": "v",
+      "pronunciation": "/ˈselɪbreɪt/",
+      "meaning": "tổ chức, ăn mừng"
+    },
+    {
+      "word": "extracurricular",
+      "pos": "adj",
+      "pronunciation": "/ˌekstrəkəˈrɪkjələ(r)/",
+      "meaning": "ngoại khoá"
+    },
+    {
+      "word": "culture shock",
+      "pos": "n",
+      "pronunciation": "/ˈkʌltʃə ʃɒk/",
+      "meaning": "sốc văn hoá"
+    },
+    {
+      "word": "language barrier",
+      "pos": "n",
+      "pronunciation": "/ˈlæŋɡwɪdʒ ˈbæriə(r)/",
+      "meaning": "rào cản ngôn ngữ"
+    },
+    {
+      "word": "unfamiliar",
+      "pos": "adj",
+      "pronunciation": "/ˌʌnfəˈmɪliə(r)/",
+      "meaning": "không quen thuộc"
+    },
+    {
+      "word": "insulting",
+      "pos": "adj",
+      "pronunciation": "/ɪnˈsʌltɪŋ/",
+      "meaning": "xúc phạm"
+    },
+    {
+      "word": "overcome",
+      "pos": "v",
+      "pronunciation": "/ˌəʊvəˈkʌm/",
+      "meaning": "vượt qua"
+    },
+    {
+      "word": "staple",
+      "pos": "adj",
+      "pronunciation": "/ˈsteɪpl/",
+      "meaning": "cơ bản, thiết yếu"
+    },
+    {
+      "word": "costume",
+      "pos": "n",
+      "pronunciation": "/ˈkɒstjuːm/",
+      "meaning": "trang phục"
+    },
+    {
+      "word": "admire",
+      "pos": "v",
+      "pronunciation": "/ədˈmaɪə(r)/",
+      "meaning": "ngắm nhìn, chiêm ngưỡng"
+    },
+    {
+      "word": "confusion",
+      "pos": "n",
+      "pronunciation": "/kənˈfjuːʒn/",
+      "meaning": "sự bối rối"
+    },
+    {
+      "word": "anxiety",
+      "pos": "n",
+      "pronunciation": "/æŋˈzaɪəti/",
+      "meaning": "sự lo lắng"
+    },
+    {
+      "word": "a wide range of something",
+      "meaning": "đa dạng thứ gì"
+    },
+    {
+      "word": "gain (in) popularity",
+      "meaning": "ngày càng trở nên phổ biến"
+    },
+    {
+      "word": "be on the rise",
+      "meaning": "đang gia tăng"
+    },
+    {
+      "word": "keep up with",
+      "meaning": "theo kịp, bắt kịp"
+    },
+    {
+      "word": "sense of identity",
+      "meaning": "tinh thần bản sắc"
+    },
+    {
+      "word": "take something seriously",
+      "meaning": "để tâm, chú ý, coi trọng thứ gì"
+    }
+  ]
+}

@@ -39,7 +39,7 @@ const POS_LABELS = {
     n: 'danh từ', v: 'động từ', adj: 'tính từ', adv: 'trạng từ',
     prep: 'giới từ', pron: 'đại từ', conj: 'liên từ', det: 'hạn định từ',
     art: 'mạo từ', interj: 'thán từ', num: 'số từ', modal: 'động từ khuyết thiếu',
-    aux: 'trợ động từ'
+    aux: 'trợ động từ', np: 'cụm danh từ'
 };
 const POS_ALIASES = {
     noun: 'n', verb: 'v', adjective: 'adj', adverb: 'adv', preposition: 'prep',
@@ -72,9 +72,17 @@ function pickField(raw, keys) {
 
 function normalizePos(value) {
     if (!value) return { abbr: '', label: '' };
-    const key = value.toLowerCase().replace(/\./g, '').trim();
-    const abbr = POS_ALIASES[key] || key;
-    return { abbr, label: POS_LABELS[abbr] || '' };
+    // Hỗ trợ nhiều từ loại ngăn cách bằng "/" (vd: "v/n") và viết tắt có dấu chấm (vd: "n.p")
+    const parts = value.split('/').map(s => s.trim()).filter(Boolean);
+    const keys = parts.map(p => {
+        const k = p.toLowerCase().replace(/\./g, '');
+        return POS_ALIASES[k] || k;
+    });
+    const labels = keys.map(k => POS_LABELS[k]).filter(Boolean);
+    return {
+        abbr: parts.join('/'),
+        label: labels.length === keys.length ? labels.join(' / ') : ''
+    };
 }
 
 function normalizePronunciation(value) {
