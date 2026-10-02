@@ -1,0 +1,498 @@
+{
+  "Unit_10": [
+    {
+      "word": "acquire",
+      "pos": "v",
+      "meaning": "đạt được, thu được"
+    },
+    {
+      "word": "adapt",
+      "pos": "v",
+      "meaning": "thích nghi"
+    },
+    {
+      "word": "adequate",
+      "pos": "adj",
+      "meaning": "đầy đủ, thỏa đáng"
+    },
+    {
+      "word": "boost",
+      "pos": "v",
+      "meaning": "thúc đẩy, tăng cường"
+    },
+    {
+      "word": "broaden",
+      "pos": "v",
+      "meaning": "mở rộng"
+    },
+    {
+      "word": "complex",
+      "pos": "adj",
+      "meaning": "phức tạp"
+    },
+    {
+      "word": "determination",
+      "pos": "n",
+      "meaning": "sự quyết tâm"
+    },
+    {
+      "word": "distraction",
+      "pos": "n",
+      "meaning": "sự sao nhãng"
+    },
+    {
+      "word": "hardship",
+      "pos": "n",
+      "meaning": "gian khổ, khó khăn"
+    },
+    {
+      "word": "governess",
+      "pos": "n",
+      "meaning": "cô giáo dạy tại nhà"
+    },
+    {
+      "word": "imprison",
+      "pos": "v",
+      "meaning": "bỏ tù, giam cầm"
+    },
+    {
+      "word": "informed",
+      "pos": "adj",
+      "meaning": "có hiểu biết, am hiểu"
+    },
+    {
+      "word": "intelligence",
+      "pos": "n",
+      "meaning": "trí tuệ, sự thông minh"
+    },
+    {
+      "word": "maintain",
+      "pos": "v",
+      "meaning": "duy trì"
+    },
+    {
+      "word": "martial",
+      "pos": "adj",
+      "meaning": "thuộc về võ thuật, quân sự"
+    },
+    {
+      "word": "biology",
+      "pos": "n",
+      "meaning": "sinh học"
+    },
+    {
+      "word": "psychology",
+      "pos": "n",
+      "meaning": "tâm lý học"
+    },
+    {
+      "word": "relevant",
+      "pos": "adj",
+      "meaning": "có liên quan"
+    },
+    {
+      "word": "widen",
+      "pos": "v",
+      "meaning": "làm rộng ra"
+    },
+    {
+      "word": "wonder",
+      "pos": "n",
+      "meaning": "điều kỳ diệu"
+    },
+    {
+      "word": "facilitate",
+      "pos": "v",
+      "meaning": "tạo điều kiện, làm cho dễ dàng"
+    },
+    {
+      "word": "flexibility",
+      "pos": "n",
+      "meaning": "tính linh hoạt"
+    },
+    {
+      "word": "genuine",
+      "pos": "adj",
+      "meaning": "chân thật, chính cống"
+    },
+    {
+      "word": "institution",
+      "pos": "n",
+      "meaning": "tổ chức, học viện"
+    },
+    {
+      "word": "initiative",
+      "pos": "n",
+      "meaning": "sáng kiến"
+    },
+    {
+      "word": "opportunity",
+      "pos": "n",
+      "meaning": "cơ hội"
+    },
+    {
+      "word": "pursuit",
+      "pos": "n",
+      "meaning": "sự theo đuổi"
+    },
+    {
+      "word": "voluntarily",
+      "pos": "adv",
+      "meaning": "một cách tự nguyện"
+    },
+    {
+      "word": "voluntary",
+      "pos": "adj",
+      "meaning": "tự nguyện"
+    },
+    {
+      "word": "lifelong",
+      "pos": "adj",
+      "meaning": "suốt đời"
+    },
+    {
+      "word": "ultimate",
+      "pos": "adj",
+      "meaning": "sau cùng, tối thượng"
+    },
+    {
+      "word": "employable",
+      "pos": "adj",
+      "meaning": "có thể được tuyển dụng"
+    },
+    {
+      "word": "interaction",
+      "pos": "n",
+      "meaning": "sự tương tác"
+    },
+    {
+      "word": "obstacle",
+      "pos": "n",
+      "meaning": "chướng ngại vật"
+    },
+    {
+      "word": "inform",
+      "pos": "v",
+      "meaning": "thông báo, cho biết"
+    },
+    {
+      "word": "report",
+      "pos": "n",
+      "meaning": "báo cáo"
+    },
+    {
+      "word": "press",
+      "pos": "n",
+      "meaning": "báo chí; hành động nhấn, ép"
+    },
+    {
+      "word": "trouble",
+      "pos": "n",
+      "meaning": "rắc rối, khó khăn"
+    },
+    {
+      "word": "physical",
+      "pos": "adj",
+      "meaning": "thuộc thể chất"
+    },
+    {
+      "word": "midnight",
+      "pos": "n",
+      "meaning": "nửa đêm"
+    },
+    {
+      "word": "journal",
+      "pos": "n",
+      "meaning": "nhật ký, tạp chí"
+    },
+    {
+      "word": "discipline",
+      "pos": "n",
+      "meaning": "kỷ luật"
+    },
+    {
+      "word": "patience",
+      "pos": "n",
+      "meaning": "sự kiên nhẫn"
+    },
+    {
+      "word": "motivation",
+      "pos": "n",
+      "meaning": "động lực"
+    },
+    {
+      "word": "creative",
+      "pos": "adj",
+      "meaning": "sáng tạo"
+    },
+    {
+      "word": "critical",
+      "pos": "adj",
+      "meaning": "tư duy phản biện, có tính phê phán"
+    },
+    {
+      "word": "reflect",
+      "pos": "v",
+      "meaning": "phản chiếu; suy ngẫm"
+    },
+    {
+      "word": "pursue",
+      "pos": "v",
+      "meaning": "theo đuổi"
+    },
+    {
+      "word": "summary",
+      "pos": "n",
+      "meaning": "bản tóm tắt"
+    },
+    {
+      "word": "skill",
+      "pos": "n",
+      "meaning": "kỹ năng"
+    },
+    {
+      "word": "learner",
+      "pos": "n",
+      "meaning": "người học"
+    },
+    {
+      "word": "success",
+      "pos": "n",
+      "meaning": "thành công"
+    },
+    {
+      "word": "knowledge",
+      "pos": "n",
+      "meaning": "kiến thức"
+    },
+    {
+      "word": "education",
+      "pos": "n",
+      "meaning": "giáo dục"
+    },
+    {
+      "word": "in advance",
+      "meaning": "trước"
+    },
+    {
+      "word": "a variety of",
+      "meaning": "nhiều, đa dạng"
+    },
+    {
+      "word": "a range of",
+      "meaning": "một loạt, nhiều loại"
+    },
+    {
+      "word": "adult education",
+      "meaning": "giáo dục người lớn"
+    },
+    {
+      "word": "book summary",
+      "meaning": "bản tóm tắt sách"
+    },
+    {
+      "word": "career development",
+      "meaning": "sự phát triển nghề nghiệp"
+    },
+    {
+      "word": "continuing education",
+      "meaning": "giáo dục thường xuyên"
+    },
+    {
+      "word": "distance learning",
+      "meaning": "học từ xa"
+    },
+    {
+      "word": "employment opportunity",
+      "meaning": "cơ hội việc làm"
+    },
+    {
+      "word": "face-to-face class",
+      "meaning": "lớp học trực tiếp"
+    },
+    {
+      "word": "learning community",
+      "meaning": "cộng đồng học tập"
+    },
+    {
+      "word": "learning goal",
+      "meaning": "mục tiêu học tập"
+    },
+    {
+      "word": "lifelong learner",
+      "meaning": "người học suốt đời"
+    },
+    {
+      "word": "lifelong learning",
+      "meaning": "học tập suốt đời"
+    },
+    {
+      "word": "martial art",
+      "meaning": "võ thuật"
+    },
+    {
+      "word": "molecular biology",
+      "meaning": "sinh học phân tử"
+    },
+    {
+      "word": "night school",
+      "meaning": "trường lớp buổi tối"
+    },
+    {
+      "word": "professional development",
+      "meaning": "phát triển chuyên môn / nghề nghiệp"
+    },
+    {
+      "word": "remote learning",
+      "meaning": "học trực tuyến / học từ xa"
+    },
+    {
+      "word": "role model",
+      "meaning": "hình mẫu"
+    },
+    {
+      "word": "thinking skill",
+      "meaning": "kỹ năng tư duy"
+    },
+    {
+      "word": "ask",
+      "pos": "v",
+      "meaning": "yêu cầu, nhờ — cấu trúc: S + asked + O + (not) to V. VD: He asked me to wait. / He asked me not to be late. Lưu ý: Dùng phổ biến để tường thuật yêu cầu lịch sự."
+    },
+    {
+      "word": "tell",
+      "pos": "v",
+      "meaning": "bảo, dặn — cấu trúc: S + told + O + (not) to V. VD: She told us to sit down. / She told us not to talk. Lưu ý: Không dùng “tell” nếu thiếu tân ngữ."
+    },
+    {
+      "word": "advise",
+      "pos": "v",
+      "meaning": "khuyên — cấu trúc: S + advised + O + (not) to V. VD: My doctor advised me to rest. / My doctor advised me not to drive. Lưu ý: Có thể dùng advise + against + V-ing."
+    },
+    {
+      "word": "command",
+      "pos": "v",
+      "meaning": "ra lệnh (trang trọng) — cấu trúc: S + commanded + O + (not) to V. VD: The officer commanded them to move. / The officer commanded them not to move. Lưu ý: Trang trọng, dùng trong quân đội."
+    },
+    {
+      "word": "order",
+      "pos": "v",
+      "meaning": "ra lệnh — cấu trúc: S + ordered + O + (not) to V. VD: He ordered me to leave. / He ordered me not to touch it. Lưu ý: Thường dùng với cấp trên – cấp dưới."
+    },
+    {
+      "word": "instruct",
+      "pos": "v",
+      "meaning": "hướng dẫn — cấu trúc: S + instructed + O + (not) to V. VD: She instructed us to fill in the form. / She instructed us not to share it. Lưu ý: Trang trọng, phổ biến trong môi trường học thuật."
+    },
+    {
+      "word": "invite",
+      "pos": "v",
+      "meaning": "mời — cấu trúc: S + invited + O + (not) to V. VD: They invited me to join the club. / They invited me not to bring pets. Lưu ý: Mang sắc thái lịch sự."
+    },
+    {
+      "word": "encourage",
+      "pos": "v",
+      "meaning": "khuyến khích — cấu trúc: S + encouraged + O + (not) to V. VD: She encouraged me to apply. / She encouraged me not to give up. Lưu ý: Có thể theo sau by V-ing."
+    },
+    {
+      "word": "persuade",
+      "pos": "v",
+      "meaning": "thuyết phục — cấu trúc: S + persuaded + O + (not) to V. VD: He persuaded me to try again. / He persuaded me not to quit. Lưu ý: Nhấn mạnh quá trình thuyết phục."
+    },
+    {
+      "word": "remind",
+      "pos": "v",
+      "meaning": "nhắc nhở — cấu trúc: S + reminded + O + (not) to V. VD: She reminded me to call her. / She reminded me not to forget. Lưu ý: Cũng dùng remind O that…."
+    },
+    {
+      "word": "warn",
+      "pos": "v",
+      "meaning": "cảnh báo — cấu trúc: S + warned + O + (not) to V. VD: They warned us to stay inside. / They warned us not to swim. Lưu ý: Có thể dùng warn O against V-ing."
+    },
+    {
+      "word": "beg",
+      "pos": "v",
+      "meaning": "cầu xin — cấu trúc: S + begged + O + (not) to V. VD: He begged me to forgive him. / He begged me not to go. Lưu ý: Sắc thái mạnh về cảm xúc."
+    },
+    {
+      "word": "urge",
+      "pos": "v",
+      "meaning": "thúc giục — cấu trúc: S + urged + O + (not) to V. VD: Doctors urged people to get vaccinated. / He urged me not to delay. Lưu ý: Trang trọng, phổ biến trong báo chí."
+    },
+    {
+      "word": "forbid",
+      "pos": "v",
+      "meaning": "cấm — cấu trúc: S + forbade + O + to V. VD: The school forbade students to smoke. Lưu ý: Phủ định nằm trong nghĩa “cấm”."
+    },
+    {
+      "word": "allow",
+      "pos": "v",
+      "meaning": "cho phép — cấu trúc: S + allowed + O + to V. VD: They allowed us to leave early. Lưu ý: Trái nghĩa với “forbid”."
+    },
+    {
+      "word": "request",
+      "pos": "v",
+      "meaning": "yêu cầu (trang trọng) — cấu trúc: S + requested + O + (not) to V. VD: They requested us to stay seated. / They requested us not to smoke. Lưu ý: Trang trọng, văn viết."
+    },
+    {
+      "word": "require",
+      "pos": "v",
+      "meaning": "yêu cầu, đòi hỏi — cấu trúc: S + required + O + to V. VD: The law requires drivers to stop. Lưu ý: Thường dùng trong quy định."
+    },
+    {
+      "word": "expect",
+      "pos": "v",
+      "meaning": "mong ai làm gì — cấu trúc: S + expected + O + to V. VD: They expected me to finish. Lưu ý: Mang nghĩa “trông đợi”."
+    },
+    {
+      "word": "force",
+      "pos": "v",
+      "meaning": "ép buộc — cấu trúc: S + forced + O + to V. VD: They forced him to confess. / They forced him not to leave. Lưu ý: Mạnh hơn “persuade”."
+    },
+    {
+      "word": "get",
+      "pos": "v",
+      "meaning": "khiến, nhờ — cấu trúc: S + got + O + to V. VD: I got him to help me. / I got him not to complain. Lưu ý: Gần nghĩa “persuade”."
+    },
+    {
+      "word": "offer",
+      "pos": "v",
+      "meaning": "đề nghị — cấu trúc: S + offered + to V. VD: He offered to help. / He offered not to charge me. Lưu ý: Không dùng offer O to V."
+    },
+    {
+      "word": "agree",
+      "pos": "v",
+      "meaning": "đồng ý — cấu trúc: S + agreed + to V. VD: They agreed to pay for it. / They agreed not to delay. Lưu ý: Thường dùng trong đối thoại trang trọng."
+    },
+    {
+      "word": "refuse",
+      "pos": "v",
+      "meaning": "từ chối — cấu trúc: S + refused + to V. VD: She refused to answer. / She refused not to comply. Lưu ý: Phủ định kép hiếm gặp."
+    },
+    {
+      "word": "decide",
+      "pos": "v",
+      "meaning": "quyết định — cấu trúc: S + decided + to V. VD: I decided to apply. / I decided not to apply."
+    },
+    {
+      "word": "promise",
+      "pos": "v",
+      "meaning": "hứa — cấu trúc: S + promised + to V. VD: He promised to call. / He promised not to be late. Lưu ý: Dùng nhiều trong giao tiếp."
+    },
+    {
+      "word": "threaten",
+      "pos": "v",
+      "meaning": "đe dọa — cấu trúc: S + threatened + to V. VD: He threatened to quit. / He threatened not to cooperate."
+    },
+    {
+      "word": "demand",
+      "pos": "v",
+      "meaning": "đòi hỏi — cấu trúc: S + demanded + to V. VD: She demanded to speak. Lưu ý: Cũng dùng demand that S (should) V."
+    },
+    {
+      "word": "propose",
+      "pos": "v",
+      "meaning": "đề nghị — cấu trúc: S + proposed + to V. VD: He proposed to postpone the meeting. / He proposed not to continue. Lưu ý: Thường dùng propose V-ing."
+    }
+  ]
+}

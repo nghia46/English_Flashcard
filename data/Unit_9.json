@@ -1,0 +1,738 @@
+{
+  "Unit_9": [
+    {
+      "word": "architect",
+      "pos": "n",
+      "meaning": "kiến trúc sư"
+    },
+    {
+      "word": "chef",
+      "pos": "n",
+      "meaning": "đầu bếp"
+    },
+    {
+      "word": "dentist",
+      "pos": "n",
+      "meaning": "nha sĩ"
+    },
+    {
+      "word": "engineer",
+      "pos": "n",
+      "meaning": "kỹ sư"
+    },
+    {
+      "word": "journalist",
+      "pos": "n",
+      "meaning": "nhà báo"
+    },
+    {
+      "word": "lawyer",
+      "pos": "n",
+      "meaning": "luật sư"
+    },
+    {
+      "word": "mechanic",
+      "pos": "n",
+      "meaning": "thợ máy"
+    },
+    {
+      "word": "pharmacist",
+      "pos": "n",
+      "meaning": "dược sĩ"
+    },
+    {
+      "word": "pilot",
+      "pos": "n",
+      "meaning": "phi công"
+    },
+    {
+      "word": "scientist",
+      "pos": "n",
+      "meaning": "nhà khoa học"
+    },
+    {
+      "word": "technician",
+      "pos": "n",
+      "meaning": "kỹ thuật viên"
+    },
+    {
+      "word": "translator",
+      "pos": "n",
+      "meaning": "phiên dịch viên"
+    },
+    {
+      "word": "vet",
+      "pos": "n",
+      "meaning": "bác sĩ thú y"
+    },
+    {
+      "word": "teacher",
+      "pos": "n",
+      "meaning": "giáo viên"
+    },
+    {
+      "word": "doctor",
+      "pos": "n",
+      "meaning": "bác sĩ"
+    },
+    {
+      "word": "manager",
+      "pos": "n",
+      "meaning": "quản lý"
+    },
+    {
+      "word": "farmer",
+      "pos": "n",
+      "meaning": "nông dân"
+    },
+    {
+      "word": "musician",
+      "pos": "n",
+      "meaning": "nhạc sĩ"
+    },
+    {
+      "word": "artist",
+      "pos": "n",
+      "meaning": "nghệ sĩ"
+    },
+    {
+      "word": "nurse",
+      "pos": "n",
+      "meaning": "y tá"
+    },
+    {
+      "word": "ambitious",
+      "pos": "adj",
+      "meaning": "tham vọng"
+    },
+    {
+      "word": "creative",
+      "pos": "adj",
+      "meaning": "sáng tạo"
+    },
+    {
+      "word": "decisive",
+      "pos": "adj",
+      "meaning": "quyết đoán"
+    },
+    {
+      "word": "dependable",
+      "pos": "adj",
+      "meaning": "đáng tin cậy"
+    },
+    {
+      "word": "independent",
+      "pos": "adj",
+      "meaning": "độc lập"
+    },
+    {
+      "word": "logical",
+      "pos": "adj",
+      "meaning": "hợp lý"
+    },
+    {
+      "word": "patient",
+      "pos": "adj",
+      "meaning": "kiên nhẫn"
+    },
+    {
+      "word": "practical",
+      "pos": "adj",
+      "meaning": "thực tế"
+    },
+    {
+      "word": "punctual",
+      "pos": "adj",
+      "meaning": "đúng giờ"
+    },
+    {
+      "word": "reliable",
+      "pos": "adj",
+      "meaning": "đáng tin cậy"
+    },
+    {
+      "word": "responsible",
+      "pos": "adj",
+      "meaning": "có trách nhiệm"
+    },
+    {
+      "word": "sociable",
+      "pos": "adj",
+      "meaning": "hòa đồng"
+    },
+    {
+      "word": "active",
+      "pos": "adj",
+      "meaning": "năng động"
+    },
+    {
+      "word": "dynamic",
+      "pos": "adj",
+      "meaning": "nhiệt huyết"
+    },
+    {
+      "word": "honest",
+      "pos": "adj",
+      "meaning": "trung thực"
+    },
+    {
+      "word": "sympathetic",
+      "pos": "adj",
+      "meaning": "cảm thông"
+    },
+    {
+      "word": "careful",
+      "pos": "adj",
+      "meaning": "cẩn thận"
+    },
+    {
+      "word": "career",
+      "pos": "n",
+      "meaning": "sự nghiệp"
+    },
+    {
+      "word": "ability",
+      "pos": "n",
+      "meaning": "khả năng"
+    },
+    {
+      "word": "application",
+      "pos": "n",
+      "meaning": "đơn xin việc"
+    },
+    {
+      "word": "degree",
+      "pos": "n",
+      "meaning": "bằng cấp"
+    },
+    {
+      "word": "employment",
+      "pos": "n",
+      "meaning": "việc làm"
+    },
+    {
+      "word": "experience",
+      "pos": "n",
+      "meaning": "kinh nghiệm"
+    },
+    {
+      "word": "interview",
+      "pos": "n",
+      "meaning": "phỏng vấn"
+    },
+    {
+      "word": "knowledge",
+      "pos": "n",
+      "meaning": "kiến thức"
+    },
+    {
+      "word": "opportunity",
+      "pos": "n",
+      "meaning": "cơ hội"
+    },
+    {
+      "word": "position",
+      "pos": "n",
+      "meaning": "vị trí"
+    },
+    {
+      "word": "profession",
+      "pos": "n",
+      "meaning": "nghề nghiệp"
+    },
+    {
+      "word": "qualification",
+      "pos": "n",
+      "meaning": "trình độ chuyên môn"
+    },
+    {
+      "word": "salary",
+      "pos": "n",
+      "meaning": "lương"
+    },
+    {
+      "word": "training",
+      "pos": "n",
+      "meaning": "sự đào tạo"
+    },
+    {
+      "word": "development",
+      "pos": "n",
+      "meaning": "sự phát triển"
+    },
+    {
+      "word": "education",
+      "pos": "n",
+      "meaning": "giáo dục"
+    },
+    {
+      "word": "future",
+      "pos": "n",
+      "meaning": "tương lai"
+    },
+    {
+      "word": "choice",
+      "pos": "n",
+      "meaning": "sự lựa chọn"
+    },
+    {
+      "word": "worker",
+      "pos": "n",
+      "meaning": "công nhân"
+    },
+    {
+      "word": "pharmacy",
+      "pos": "n",
+      "meaning": "ngành dược"
+    },
+    {
+      "word": "industry",
+      "pos": "n",
+      "meaning": "ngành công nghiệp"
+    },
+    {
+      "word": "company",
+      "pos": "n",
+      "meaning": "công ty"
+    },
+    {
+      "word": "business",
+      "pos": "n",
+      "meaning": "kinh doanh"
+    },
+    {
+      "word": "office",
+      "pos": "n",
+      "meaning": "văn phòng"
+    },
+    {
+      "word": "skill",
+      "pos": "n",
+      "meaning": "kỹ năng"
+    },
+    {
+      "word": "goal",
+      "pos": "n",
+      "meaning": "mục tiêu"
+    },
+    {
+      "word": "task",
+      "pos": "n",
+      "meaning": "nhiệm vụ"
+    },
+    {
+      "word": "success",
+      "pos": "n",
+      "meaning": "thành công"
+    },
+    {
+      "word": "plan",
+      "pos": "n",
+      "meaning": "kế hoạch"
+    },
+    {
+      "word": "job",
+      "pos": "n",
+      "meaning": "công việc"
+    },
+    {
+      "word": "work",
+      "pos": "n",
+      "meaning": "công việc"
+    },
+    {
+      "word": "income",
+      "pos": "n",
+      "meaning": "thu nhập"
+    },
+    {
+      "word": "motivation",
+      "pos": "n",
+      "meaning": "động lực"
+    },
+    {
+      "word": "career path",
+      "meaning": "con đường sự nghiệp"
+    },
+    {
+      "word": "career choice",
+      "meaning": "lựa chọn nghề nghiệp"
+    },
+    {
+      "word": "career development",
+      "meaning": "sự phát triển sự nghiệp"
+    },
+    {
+      "word": "job application",
+      "meaning": "đơn xin việc"
+    },
+    {
+      "word": "job interview",
+      "meaning": "buổi phỏng vấn xin việc"
+    },
+    {
+      "word": "job offer",
+      "meaning": "lời mời làm việc"
+    },
+    {
+      "word": "work experience",
+      "meaning": "kinh nghiệm làm việc"
+    },
+    {
+      "word": "work environment",
+      "meaning": "môi trường làm việc"
+    },
+    {
+      "word": "work skills",
+      "meaning": "kỹ năng làm việc"
+    },
+    {
+      "word": "communication skills",
+      "meaning": "kỹ năng giao tiếp"
+    },
+    {
+      "word": "problem-solving skills",
+      "meaning": "kỹ năng giải quyết vấn đề"
+    },
+    {
+      "word": "practical skills",
+      "meaning": "kỹ năng thực tế"
+    },
+    {
+      "word": "academic qualifications",
+      "meaning": "bằng cấp học thuật"
+    },
+    {
+      "word": "professional qualifications",
+      "meaning": "bằng cấp nghề nghiệp"
+    },
+    {
+      "word": "gain experience",
+      "meaning": "tích lũy kinh nghiệm"
+    },
+    {
+      "word": "previous experience",
+      "meaning": "kinh nghiệm trước đây"
+    },
+    {
+      "word": "interview skills",
+      "meaning": "kỹ năng phỏng vấn"
+    },
+    {
+      "word": "interview questions",
+      "meaning": "câu hỏi phỏng vấn"
+    },
+    {
+      "word": "general knowledge",
+      "meaning": "kiến thức chung"
+    },
+    {
+      "word": "specialist knowledge",
+      "meaning": "kiến thức chuyên môn"
+    },
+    {
+      "word": "knowledge of sth",
+      "meaning": "hiểu biết về cái gì đó"
+    },
+    {
+      "word": "high salary",
+      "meaning": "mức lương cao"
+    },
+    {
+      "word": "monthly salary",
+      "meaning": "lương hàng tháng"
+    },
+    {
+      "word": "competitive salary",
+      "meaning": "mức lương cạnh tranh"
+    },
+    {
+      "word": "career opportunity",
+      "meaning": "cơ hội nghề nghiệp"
+    },
+    {
+      "word": "job opportunity",
+      "meaning": "cơ hội việc làm"
+    },
+    {
+      "word": "equal opportunities",
+      "meaning": "cơ hội bình đẳng"
+    },
+    {
+      "word": "training course",
+      "meaning": "khóa đào tạo"
+    },
+    {
+      "word": "vocational training",
+      "meaning": "đào tạo nghề"
+    },
+    {
+      "word": "on-the-job training",
+      "meaning": "đào tạo tại chỗ"
+    },
+    {
+      "word": "take responsibility",
+      "meaning": "chịu trách nhiệm"
+    },
+    {
+      "word": "sense of responsibility",
+      "meaning": "ý thức trách nhiệm"
+    },
+    {
+      "word": "great responsibility",
+      "meaning": "trách nhiệm lớn"
+    },
+    {
+      "word": "high motivation",
+      "meaning": "động lực cao"
+    },
+    {
+      "word": "self-motivation",
+      "meaning": "tự tạo động lực"
+    },
+    {
+      "word": "lack of motivation",
+      "meaning": "thiếu động lực"
+    },
+    {
+      "word": "look forward to",
+      "pos": "phr v",
+      "meaning": "mong đợi"
+    },
+    {
+      "word": "put up with",
+      "pos": "phr v",
+      "meaning": "chịu đựng"
+    },
+    {
+      "word": "get along with",
+      "pos": "phr v",
+      "meaning": "hòa hợp với"
+    },
+    {
+      "word": "catch up with",
+      "pos": "phr v",
+      "meaning": "bắt kịp"
+    },
+    {
+      "word": "keep up with",
+      "pos": "phr v",
+      "meaning": "theo kịp"
+    },
+    {
+      "word": "run out of",
+      "pos": "phr v",
+      "meaning": "hết, cạn kiệt"
+    },
+    {
+      "word": "come up with",
+      "pos": "phr v",
+      "meaning": "nảy ra ý tưởng"
+    },
+    {
+      "word": "look down on",
+      "pos": "phr v",
+      "meaning": "coi thường"
+    },
+    {
+      "word": "look up to",
+      "pos": "phr v",
+      "meaning": "kính trọng"
+    },
+    {
+      "word": "face up to",
+      "pos": "phr v",
+      "meaning": "đối mặt với"
+    },
+    {
+      "word": "break in on",
+      "pos": "phr v",
+      "meaning": "ngắt lời"
+    },
+    {
+      "word": "check up on",
+      "pos": "phr v",
+      "meaning": "kiểm tra, giám sát"
+    },
+    {
+      "word": "drop out of",
+      "pos": "phr v",
+      "meaning": "bỏ học, bỏ cuộc"
+    },
+    {
+      "word": "get away with",
+      "pos": "phr v",
+      "meaning": "thoát khỏi sự trừng phạt"
+    },
+    {
+      "word": "go in for",
+      "pos": "phr v",
+      "meaning": "tham gia (thi đấu)"
+    },
+    {
+      "word": "live up to",
+      "pos": "phr v",
+      "meaning": "xứng đáng với"
+    },
+    {
+      "word": "make up for",
+      "pos": "phr v",
+      "meaning": "đền bù, bù đắp"
+    },
+    {
+      "word": "come in for",
+      "pos": "phr v",
+      "meaning": "hứng chịu (chỉ trích, phê bình)"
+    },
+    {
+      "word": "cut down on",
+      "pos": "phr v",
+      "meaning": "cắt giảm"
+    },
+    {
+      "word": "keep away from",
+      "pos": "phr v",
+      "meaning": "tránh xa"
+    },
+    {
+      "word": "look back on",
+      "pos": "phr v",
+      "meaning": "hồi tưởng, nhớ lại"
+    },
+    {
+      "word": "come down with",
+      "pos": "phr v",
+      "meaning": "mắc bệnh"
+    },
+    {
+      "word": "come up against",
+      "pos": "phr v",
+      "meaning": "đương đầu với"
+    },
+    {
+      "word": "do away with",
+      "pos": "phr v",
+      "meaning": "bãi bỏ, loại bỏ"
+    },
+    {
+      "word": "get on with",
+      "pos": "phr v",
+      "meaning": "tiếp tục làm, hòa hợp với"
+    },
+    {
+      "word": "get out of",
+      "pos": "phr v",
+      "meaning": "thoát ra, tránh khỏi"
+    },
+    {
+      "word": "go back on",
+      "pos": "phr v",
+      "meaning": "nuốt lời, thất hứa"
+    },
+    {
+      "word": "go through with",
+      "pos": "phr v",
+      "meaning": "hoàn thành, thực hiện; làm đến cùng, kiên trì"
+    },
+    {
+      "word": "look out for",
+      "pos": "phr v",
+      "meaning": "cẩn thận, coi chừng"
+    },
+    {
+      "word": "look in on",
+      "pos": "phr v",
+      "meaning": "ghé thăm; thăm nhanh, ghé qua"
+    },
+    {
+      "word": "put up to",
+      "pos": "phr v",
+      "meaning": "xúi giục ai làm gì"
+    },
+    {
+      "word": "run out on",
+      "pos": "phr v",
+      "meaning": "bỏ rơi, bỏ trốn"
+    },
+    {
+      "word": "stand up to",
+      "pos": "phr v",
+      "meaning": "đương đầu với, chống lại"
+    },
+    {
+      "word": "come down on",
+      "pos": "phr v",
+      "meaning": "chỉ trích nặng nề"
+    },
+    {
+      "word": "come up to",
+      "pos": "phr v",
+      "meaning": "đáp ứng được (kỳ vọng)"
+    },
+    {
+      "word": "go along with",
+      "pos": "phr v",
+      "meaning": "đồng ý với, ủng hộ"
+    },
+    {
+      "word": "keep out of",
+      "pos": "phr v",
+      "meaning": "tránh xa, không dính vào"
+    },
+    {
+      "word": "put up for",
+      "pos": "phr v",
+      "meaning": "đề cử, tiến cử"
+    },
+    {
+      "word": "stand in for",
+      "pos": "phr v",
+      "meaning": "thay thế cho"
+    },
+    {
+      "word": "take up with",
+      "pos": "phr v",
+      "meaning": "kết giao với"
+    },
+    {
+      "word": "get round to",
+      "pos": "phr v",
+      "meaning": "có thời gian để làm"
+    },
+    {
+      "word": "go down with",
+      "pos": "phr v",
+      "meaning": "mắc bệnh"
+    },
+    {
+      "word": "look in at",
+      "pos": "phr v",
+      "meaning": "ghé thăm ngắn"
+    },
+    {
+      "word": "put down to",
+      "pos": "phr v",
+      "meaning": "quy cho, gán cho"
+    },
+    {
+      "word": "get on to",
+      "pos": "phr v",
+      "meaning": "liên hệ với, báo cho"
+    },
+    {
+      "word": "come over to",
+      "pos": "phr v",
+      "meaning": "chuyển sang, ghé thăm"
+    },
+    {
+      "word": "get through to",
+      "pos": "phr v",
+      "meaning": "liên lạc với, làm ai hiểu"
+    },
+    {
+      "word": "catch up on",
+      "pos": "phr v",
+      "meaning": "làm bù, làm kịp"
+    }
+  ]
+}
